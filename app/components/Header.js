@@ -1,0 +1,91 @@
+// import Image from "next/image";
+import Link from "next/link";
+import { BsTelephone } from "react-icons/bs";
+import { HiOutlineMail } from "react-icons/hi"
+import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
+import { RxHamburgerMenu } from "react-icons/rx"
+// import { useState } from "react";
+// import { BgVideo } from "./BgVideo";
+
+const Header = () => {
+
+    // const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+
+    // const handleDropdown = (e) => {
+    //     setDropdownIsOpen(!dropdownIsOpen)
+    // }
+
+
+    return (
+        <header className="flex flex-col mb-24">
+            <p>Header Test</p>
+            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
+                <div className="flex">
+                    {/* <Image src="/dcam_logo_white.png" width="230" height="100" /> */}
+                </div>
+                <div className="md:flex">
+                    <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
+                        <Link 
+                            href="https://www.facebook.com/dacapomusic.ca/" target="_blank" 
+                            className="hover:text-lightRed me-5">
+                            <FaFacebookSquare size="2em"/> 
+                        </Link>
+                        <Link 
+                            href="https://www.instagram.com/dacapomusic.ca/" target="_blank" 
+                            className="hover:text-lightRed me-5">
+                            <FaInstagramSquare size="2em" />
+                        </Link>
+                        <Link 
+                            href="https://www.youtube.com/watch?v=gSPAOkyO4AA&feature=youtu.be" target="_blank" className="hover:text-lightRed">
+                            <FaYoutubeSquare size="2em" />
+                        </Link>
+                    </div>
+                    <div className="flex md:flex-col justify-center">
+                        <Link href = "mailto: info@dacapomusic.ca" className="flex items-center me-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</Link>
+                        <Link href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</Link>
+                    </div>
+                </div>
+            </div>
+            <nav className="bg-regBlue h-10 text-gray-100 relative">
+                {/* <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownIsOpen && "90deg"}} onClick={(e) => handleDropdown(e)} /></div> */}
+
+                {/* <ul className={`absolute ${dropdownIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-10`}>
+                    <li>
+                        <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Home</Link>
+                    </li>
+                    <li>
+                        <Link href="/lessons" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Lessons</Link>
+                    </li>
+                    <li>
+                        <Link href="/rates"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Rates</Link>
+                    </li>
+                    <li>
+                        <Link href="/teachers"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Teachers</Link>
+                    </li>
+                    <li>
+                        <Link href="/reviews"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Reviews</Link>
+                    </li>
+                    <li>
+                        <Link href="/gallery"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Gallery</Link>
+                    </li>
+                    <li>
+                        <Link href="/about"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>About Us</Link>
+                    </li>
+                    <li>
+                        <Link href="/contact"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Contact</Link>
+                    </li>
+                    <li>
+                        <Link href="/blog"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Blog</Link>
+                    </li>
+                </ul> */}
+            </nav>
+
+            <div className="header-main h-80 bg-green-300 relative">
+                {/* <BgVideo /> */}
+                <p>Temporary filler</p>
+            </div>
+        </header> 
+     );
+}
+ 
+export default Header;
