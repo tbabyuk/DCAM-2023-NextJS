@@ -17,10 +17,10 @@ const HamburgerBtn = ({children}) => {
 
     return ( 
         <>
-        <RxHamburgerMenu onClick={handleDropdown} />
+        <RxHamburgerMenu className="cursor-pointer" size="2em" onClick={handleDropdown} />
             {dropdownIsOpen && (
                 <>
-                {children}
+                    {children}
                 </>
             )}
         </>

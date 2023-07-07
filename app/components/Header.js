@@ -23,7 +23,7 @@ const Header = () => {
             
             <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <div className="flex">
-                    <Image src="/dcam_logo_white.png" width="230" height="100" />
+                    <Link href="/"><Image src="/dcam_logo_white.png" width="230" height="100" /></Link>
                 </div>
                 <div className="md:flex">
                     <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
@@ -48,6 +48,8 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
+            {/* NAVIGATION */}
             <nav className="bg-regBlue h-10 text-gray-100 relative">
                 <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownIsOpen && "90deg"}} onClick={(e) => handleDropdown(e)} /></div>
 

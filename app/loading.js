@@ -1,8 +1,9 @@
+import Spinner from "./components/Spinner";
 
 
 const Loading = () => {
     return ( 
-        <h1>Loading......</h1>
+        <Spinner />
      );
 }
  
