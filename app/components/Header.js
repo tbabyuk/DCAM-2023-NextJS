@@ -1,27 +1,29 @@
-// import Image from "next/image";
+"use client"
+
+import Image from "next/image";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 import { RxHamburgerMenu } from "react-icons/rx"
-// import { useState } from "react";
+import { useState } from "react";
 // import { BgVideo } from "./BgVideo";
 
 const Header = () => {
 
-    // const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+    const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
 
-    // const handleDropdown = (e) => {
-    //     setDropdownIsOpen(!dropdownIsOpen)
-    // }
+    const handleDropdown = (e) => {
+        setDropdownIsOpen(!dropdownIsOpen)
+    }
 
 
     return (
         <header className="flex flex-col mb-24">
-            <p>Header Test</p>
+            
             <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <div className="flex">
-                    {/* <Image src="/dcam_logo_white.png" width="230" height="100" /> */}
+                    <Image src="/dcam_logo_white.png" width="230" height="100" />
                 </div>
                 <div className="md:flex">
                     <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
@@ -47,9 +49,9 @@ const Header = () => {
                 </div>
             </div>
             <nav className="bg-regBlue h-10 text-gray-100 relative">
-                {/* <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownIsOpen && "90deg"}} onClick={(e) => handleDropdown(e)} /></div> */}
+                <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownIsOpen && "90deg"}} onClick={(e) => handleDropdown(e)} /></div>
 
-                {/* <ul className={`absolute ${dropdownIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-10`}>
+                <ul className={`absolute ${dropdownIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-10`}>
                     <li>
                         <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Home</Link>
                     </li>
@@ -77,12 +79,11 @@ const Header = () => {
                     <li>
                         <Link href="/blog"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Blog</Link>
                     </li>
-                </ul> */}
+                </ul>
             </nav>
 
             <div className="header-main h-80 bg-green-300 relative">
                 {/* <BgVideo /> */}
-                <p>Temporary filler</p>
             </div>
         </header> 
      );
