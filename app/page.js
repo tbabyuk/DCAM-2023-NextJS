@@ -28,28 +28,28 @@ export default function Home() {
                   </div>
               </div>
               <div className="flex">
-                  <span class="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>calendar_month</span>
+                  <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>calendar_month</span>
                   <div className="ps-6">
                     <h4 className="text-2xl font-ovo font-semibold text-regRed">FLEXIBILITY</h4>
                     <p>Choose 1-hour, 45-minute, or 30-minute lessons</p>
                   </div>
               </div>
               <div className="flex">
-                  <span class="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>store</span>
+                  <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>store</span>
                   <div className="ps-6">
                     <h4 className="text-2xl font-ovo font-semibold text-regRed">GREAT VENUE</h4>
                     <p>Individual music rooms, recital area and a lounge</p>
                   </div>
               </div>
               <div className="flex">
-                  <span class="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>pin_drop</span>
+                  <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>pin_drop</span>
                   <div className="ps-6">
                       <h4 className="text-2xl font-ovo font-semibold text-regRed">GOOD LOCATION</h4>
                       <p>Humbertown Plaza: free parking, shops and cafés</p>
                   </div>        
               </div>
               <div className="flex">
-                  <span class="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>account_balance_wallet</span>
+                  <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>account_balance_wallet</span>
                   <div className="ps-6">
                       <h4 className="text-2xl font-ovo font-semibold text-regRed">AWESOME DEALS</h4>
                       <p>Referral incentives and family member discounts!</p>

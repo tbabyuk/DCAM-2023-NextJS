@@ -7,6 +7,7 @@ import { HiOutlineMail } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react";
+import Slider from "./Slider";
 // import { BgVideo } from "./BgVideo";
 
 const Header = () => {
@@ -23,7 +24,7 @@ const Header = () => {
             
             <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <div className="flex">
-                    <Link href="/"><Image src="/dcam_logo_white.png" width="230" height="100" /></Link>
+                    <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "250px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
                 </div>
                 <div className="md:flex">
                     <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
@@ -42,8 +43,8 @@ const Header = () => {
                             <FaYoutubeSquare size="2em" />
                         </Link>
                     </div>
-                    <div className="flex md:flex-col justify-center">
-                        <Link href = "mailto: info@dacapomusic.ca" className="flex items-center me-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</Link>
+                    <div className="flex flex-col justify-center items-center md:items-start">
+                        <Link href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</Link>
                         <Link href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</Link>
                     </div>
                 </div>
@@ -83,10 +84,8 @@ const Header = () => {
                     </li>
                 </ul>
             </nav>
+            <Slider />
 
-            <div className="header-main h-80 bg-green-300 relative">
-                {/* <BgVideo /> */}
-            </div>
         </header> 
      );
 }
