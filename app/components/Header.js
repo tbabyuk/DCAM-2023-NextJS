@@ -8,15 +8,23 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icon
 import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react";
 import Slider from "./Slider";
+import { IoMdArrowDropdown } from "react-icons/io"
 // import { BgVideo } from "./BgVideo";
 
 const Header = () => {
 
     const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+    const [lessonsDropdownIsOpen, setLessonsDropdownIsOpen] = useState(false)
 
     const handleDropdown = (e) => {
         setDropdownIsOpen(!dropdownIsOpen)
     }
+
+    const handleLessonsDropdown = (e) => {
+        setLessonsDropdownIsOpen(true)
+    }
+
+
 
 
     return (
@@ -59,7 +67,33 @@ const Header = () => {
                         <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Home</Link>
                     </li>
                     <li>
-                        <Link href="/lessons" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Lessons</Link>
+                        <Link href="/lessons" className="flex items-center px-4 hover:bg-darkBlue cursor-pointer" onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>Lessons&nbsp;<IoMdArrowDropdown size="1.2rem" /></Link>
+                        {lessonsDropdownIsOpen && (
+                            <ul className="bg-regBlue w-52 absolute cursor-pointer" onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/piano-lessons-etobicoke">Piano Lessons</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/guitar-lessons-etobicoke">Guitar Lessons</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/drum-lessons-etobicoke">Drum Lessons</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/voice-lessons-etobicoke">Voice Lessons</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/music-theory-lessons-etobicoke">Music Theory Lessons</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/toddler-music-classes-etobicoke">Toddler Classes</Link>
+                                </li>
+                                <li className="flex ps-4 hover:bg-darkBlue">
+                                    <Link href="/intro-to-music-program">Intro to Music</Link>
+                                </li>
+
+                            </ul>
+                        )}
                     </li>
                     <li>
                         <Link href="/rates"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Rates</Link>
@@ -85,9 +119,17 @@ const Header = () => {
                 </ul>
             </nav>
             <Slider />
-
         </header> 
+
      );
+
+    //  {lessonsDropdownIsOpen && (
+    //     <p>This is a test</p>
+    // )}
 }
+
+
+
+
  
 export default Header;
