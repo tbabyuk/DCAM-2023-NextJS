@@ -15,15 +15,15 @@ const Slider = () => {
   const sliderArray = ["/sliders/slide1.jpg", "/sliders/slide2.jpg", "/sliders/slide3.jpg"]
 
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const interval = setInterval(() => {
-        setSliderIndex((prevIndex) => (prevIndex + 1) % sliderArray.length);    
-    }, 3000)
+  //   const interval = setInterval(() => {
+  //       setSliderIndex((prevIndex) => (prevIndex + 1) % sliderArray.length);    
+  //   }, 3000)
 
-    return () => clearInterval(interval)
+  //   return () => clearInterval(interval)
 
-  }, [])
+  // }, [])
 
   return (
     <div className="h-72">

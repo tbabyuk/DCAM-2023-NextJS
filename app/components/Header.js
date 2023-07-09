@@ -24,7 +24,7 @@ const Header = () => {
             
             <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <div className="flex">
-                    <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "250px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
+                    <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "220px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
                 </div>
                 <div className="md:flex">
                     <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
@@ -74,7 +74,7 @@ const Header = () => {
                         <Link href="/gallery"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Gallery</Link>
                     </li>
                     <li>
-                        <Link href="/about"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>About Us</Link>
+                        <Link href="/about"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>About</Link>
                     </li>
                     <li>
                         <Link href="/contact"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Contact</Link>
