@@ -13,24 +13,19 @@ import { IoMdArrowDropdown } from "react-icons/io"
 
 const Header = () => {
 
-    const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
+    const [dropdownMenuIsOpen, setDropdownMenuIsOpen] = useState(false)
     const [lessonsDropdownIsOpen, setLessonsDropdownIsOpen] = useState(false)
 
-    const handleDropdown = (e) => {
-        setDropdownIsOpen(!dropdownIsOpen)
+    const handleDropdownMenu = () => {
+        setDropdownMenuIsOpen((prev) => !prev)
     }
-
-    const handleLessonsDropdown = (e) => {
-        setLessonsDropdownIsOpen(true)
-    }
-
 
 
 
     return (
         <header className="flex flex-col mb-24">
             
-            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-lightBlue via-darkBlue to-darkBlue text-gray-100 flex flex-col md:flex-row justify-between items-center">
+            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <div className="flex">
                     <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "220px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
                 </div>
@@ -60,35 +55,35 @@ const Header = () => {
 
             {/* NAVIGATION */}
             <nav className="bg-regBlue h-10 text-gray-100 relative">
-                <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownIsOpen && "90deg"}} onClick={(e) => handleDropdown(e)} /></div>
+                <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownMenuIsOpen && "90deg"}} onClick={handleDropdownMenu} /></div>
 
-                <ul className={`absolute ${dropdownIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-10`}>
+                <ul className={`absolute ${dropdownMenuIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-10`}>
                     <li>
-                        <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Home</Link>
+                        <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Home</Link>
                     </li>
                     <li>
-                        <Link href="/lessons" className="flex items-center px-4 hover:bg-darkBlue cursor-pointer" onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>Lessons&nbsp;<IoMdArrowDropdown size="1.2rem" /></Link>
+                        <Link href="" className="flex items-center justify-center px-4 hover:bg-darkBlue" onClick={() => setLessonsDropdownIsOpen((prev) => !prev)} onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>Lessons&nbsp;<IoMdArrowDropdown size="1.2rem" /></Link>
                         {lessonsDropdownIsOpen && (
-                            <ul className="bg-regBlue w-52 absolute cursor-pointer" onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                            <ul className="bg-gray-800 opacity-100 md:w-52 relative sm:absolute cursor-pointer flex flex-col" onClick={() => setLessonsDropdownIsOpen(true)} onMouseEnter={() => setLessonsDropdownIsOpen(true)} onMouseLeave={() => setLessonsDropdownIsOpen(false)}>
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/piano-lessons-etobicoke">Piano Lessons</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/guitar-lessons-etobicoke">Guitar Lessons</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/drum-lessons-etobicoke">Drum Lessons</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/voice-lessons-etobicoke">Voice Lessons</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/music-theory-lessons-etobicoke">Music Theory Lessons</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/toddler-music-classes-etobicoke">Toddler Classes</Link>
                                 </li>
-                                <li className="flex ps-4 hover:bg-darkBlue">
+                                <li className="md:flex md:ps-4 hover:bg-darkBlue">
                                     <Link href="/intro-to-music-program">Intro to Music</Link>
                                 </li>
 
@@ -96,25 +91,25 @@ const Header = () => {
                         )}
                     </li>
                     <li>
-                        <Link href="/rates"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Rates</Link>
+                        <Link href="/rates"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Rates</Link>
                     </li>
                     <li>
-                        <Link href="/teachers"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Teachers</Link>
+                        <Link href="/teachers"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Teachers</Link>
                     </li>
                     <li>
-                        <Link href="/reviews"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Reviews</Link>
+                        <Link href="/reviews"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Reviews</Link>
                     </li>
                     <li>
-                        <Link href="/gallery"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Gallery</Link>
+                        <Link href="/gallery"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Gallery</Link>
                     </li>
                     <li>
-                        <Link href="/about"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>About</Link>
+                        <Link href="/about"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>About</Link>
                     </li>
                     <li>
-                        <Link href="/contact"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Contact</Link>
+                        <Link href="/contact"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Contact</Link>
                     </li>
                     <li>
-                        <Link href="/blog"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownIsOpen(false)}>Blog</Link>
+                        <Link href="/blog"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Blog</Link>
                     </li>
                 </ul>
             </nav>
@@ -122,10 +117,6 @@ const Header = () => {
         </header> 
 
      );
-
-    //  {lessonsDropdownIsOpen && (
-    //     <p>This is a test</p>
-    // )}
 }
 
 

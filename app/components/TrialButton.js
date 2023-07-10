@@ -2,7 +2,7 @@
 
 
 import { useState } from "react";
-import styles from "./TrialButton.module.css"
+// import styles from "./TrialButton.module.css"
 
 
 export const TrialButton = () => {
