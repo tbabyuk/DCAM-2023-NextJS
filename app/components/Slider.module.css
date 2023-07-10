@@ -1,28 +1,11 @@
-.image-slider {
-    position: relative;
-    height: 400px;
-  }
-  
-  .image-slider img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    animation-name: fade;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-  }
-  
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .image-slider img.active {
-    z-index: 1;
-  }
+
+
+.slider-image {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.slider-image.active {
+  opacity: 1;
+}
