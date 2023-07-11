@@ -24,14 +24,14 @@ export default function Home() {
                   <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>school</span>
                   <div className="ps-6">
                     <h4 className="text-2xl font-ovo font-semibold text-regRed">EXAM PREP</h4>
-                    <p>We prepare students for all types of music exams</p>
+                    <p>We prepare students for RCM and other music exams</p>
                   </div>
               </div>
               <div className="flex">
                   <span className="material-symbols-outlined" style={{fontSize: "50px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>calendar_month</span>
                   <div className="ps-6">
                     <h4 className="text-2xl font-ovo font-semibold text-regRed">FLEXIBILITY</h4>
-                    <p>Choose 1-hour, 45-minute, or 30-minute lessons</p>
+                    <p>Choose 30-minute, 45-minute, or 1-hour lessons</p>
                   </div>
               </div>
               <div className="flex">

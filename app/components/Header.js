@@ -57,7 +57,7 @@ const Header = () => {
             <nav className="bg-regBlue h-10 text-gray-100 relative">
                 <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownMenuIsOpen && "90deg"}} onClick={handleDropdownMenu} /></div>
 
-                <ul className={`absolute ${dropdownMenuIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-40`}>
+                <ul className={`absolute ${dropdownMenuIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-20 md:z-10`}>
                     <li>
                         <Link href="/" className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Home</Link>
                     </li>
