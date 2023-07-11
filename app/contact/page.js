@@ -53,27 +53,27 @@ const Contact = () => {
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td className="border-2 p-3"><Link href="https://www.kcs.on.ca/" target="_blank" className="hover:text-lightRed">Kingsway College School (KCS)</Link></td>
+                                    <td className="border-2 p-3"><Link href="https://www.kcs.on.ca/" target="_blank" className="dcam-link">Kingsway College School (KCS)</Link></td>
                                     <td className="border-2">2 minutes</td>
                                     <td className="border-2">8 minutes</td>
                                 </tr>
                                 <tr>
-                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/humbervalley" target="_blank" className="hover:text-lightRed">Humber Valley Village Junior Middle School</Link></td>
+                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/humbervalley" target="_blank" className="dcam-link">Humber Valley Village Junior Middle School</Link></td>
                                     <td className="border-2">4 minutes</td>
                                     <td className="border-2">13 minutes</td>
                                 </tr>
                                 <tr>
-                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/lambtonkingsway" target="_blank" className="hover:text-lightRed">Lambton-Kingsway Junior Middle School</Link></td>
+                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/lambtonkingsway" target="_blank" className="dcam-link">Lambton-Kingsway Junior Middle School</Link></td>
                                     <td className="border-2">4 minutes</td>
                                     <td className="border-2">15 minutes</td>
                                 </tr>
                                 <tr>
-                                    <td className="border-2 p-3"><Link href="https://www.tcdsb.org/o/ourladyofsorrows" target="_blank" className="hover:text-lightRed">Our Lady of Sorrows Catholic School</Link></td>
+                                    <td className="border-2 p-3"><Link href="https://www.tcdsb.org/o/ourladyofsorrows" target="_blank" className="dcam-link">Our Lady of Sorrows Catholic School</Link></td>
                                     <td className="border-2">5 minutes</td>
                                     <td className="border-2">20 minutes</td>
                                 </tr>
                                 <tr>
-                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/etobicokeci" target="_blank" className="hover:text-lightRed">Etobicoke Collegiate Institute (ECI)</Link></td>
+                                    <td className="border-2 p-3"><Link href="https://schoolweb.tdsb.on.ca/etobicokeci" target="_blank" className="dcam-link">Etobicoke Collegiate Institute (ECI)</Link></td>
                                     <td className="border-2">4 minutes</td>
                                     <td className="border-2">17 minutes</td>
                                 </tr>

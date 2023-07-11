@@ -7,3 +7,7 @@
 .dcam-button {
   @apply bg-regGreen py-3 px-6 rounded text-gray-100 hover:bg-[#439d4b] flex justify-center items-center
 }
+
+.dcam-link {
+  @apply hover:text-lightRed border-b border-b-gray-400
+}

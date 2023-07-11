@@ -2,13 +2,17 @@
 
 
 import { PageTitle } from "../components/PageTitle";
+import { PageSubtitle } from "../components/PageSubtitle";
+import Link from "next/link";
+import { TrialButton } from "../components/TrialButton";
+import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
 
 const PianoLessonsPage = () => {
     return ( 
         <main className="piano-page px-5 md:px-20 xl:px-60">
             <PageTitle title={"Piano Lessons in Etobicoke"} />
 
-            <h2 className="font-ovo text-regRed text-2xl text-center mb-8">Overview</h2>
+            <PageSubtitle subtitle={"Overview"} />
             <div className="flex flex-col items-center sm:block">
                 <img src="/lessons/piano_lessons.jpg" className="float-left me-5 mb-5 rounded-md" style={{width: "250px"}} />
                 <p>Piano is the most popular instrument in the world – and for many good reasons. It’s very visual, expressive, and, unlike many other instruments, allows us to play a large number of notes at the same time. It’s sort of like having a whole orchestra at your fingertips! But as a wise man once said (and as many experienced pianists will tell you): “It’s easy to play the piano, but it’s hard to play it well”.<br /><br />
@@ -21,25 +25,44 @@ const PianoLessonsPage = () => {
                 </p>
             </div>
 
-            <h2 className="font-ovo text-regRed text-2xl text-center mt-20 mb-8">What is a good age to start piano lessons?</h2>
+            <PageSubtitle subtitle={"What is a good age to start piano lessons?"}/>
             <p>Five is the age at which most children have enough mental focus, self-awareness, and finger strength to start piano lessons. At this age, 30-minute lessons are the recommended option.<br /><br />
             If your child is younger than 5 and you think they are ready to start lessons – sign them up for a free trial lesson and we will be happy to give you our recommendation!</p>
 
-            <h2 className="font-ovo text-regRed text-2xl text-center mt-20 mb-8">Lesson Format</h2>
+            <PageSubtitle subtitle={"Lesson Format"}/>
             <p><strong>Private lessons</strong>: these are one-on-one lessons with student and teacher. Private lessons are a great option for students looking for highly-focused and individualized music instruction. The teacher is able to give their full attention to one student and students normally progress faster in this environment.<br /><br />
 
             <strong>Semi-private lessons</strong>: these lessons consist of two students per teacher. Semi-private lessons can be a budget-friendly option for parents with two children or two friends wanting to learn the same instrument together. The one obvious drawback is that students don’t receive as much focused and individualized attention from the teacher as they do with private lessons.</p>
 
-            <h2 className="font-ovo text-regRed text-2xl text-center mt-20 mb-8">Lesson Duration</h2>
+            <PageSubtitle subtitle={"Lesson Duration"}/>
             <p>At DCAM, students can choose between 30-minute, 45-minute, or 1-hour lessons. Small children generally start with 30-minute lessons and increase lesson duration as they get older and/or with the recommendation from their teacher. For teenagers and adults, a minimum lesson time of 45 minutes is strongly recommended.</p>
 
-            <h2 className="font-ovo text-regRed text-2xl text-center mt-20 mb-8">Materials</h2>
+            <PageSubtitle subtitle={"Materials"}/>
             <div className="flex flex-col items-center sm:flex-row sm:items-start">
                 <img src="/lessons/abc_books.jpg" className="float-left me-5 mb-5 rounded-md" style={{width: "250px"}} />
                 <p>For complete beginners, we like to use “The ABC of Piano Playing” series by Boris Berlin, which contains Books 1, 2, and 3. These books are a great introduction to the keyboard and music notation and contain many simple and catchy tunes. After finishing all three of these books, students have several options. Those following the Royal Conservatory path will be able to start either the “Preparatory A Piano Repertoire” or jump straight into the “Level 1 Piano Repertoire”. For students who do not wish to do the Royal Conservatory exams, books will be chosen based on their individual musical preferences.
                 </p>
             </div>
 
+            <PageSubtitle subtitle={"Instruments"}/>
+            <div className="flex flex-col items-center">
+                <p>At DCAM, students learn using upright acoustic pianos. While we don’t expect all our students to have an acoustic piano at home, we do recommend getting at least a weighted keyboard. Weighted simply means that the keys have a slight resistance, similar to that of a real piano.<br /><br />
+                <span className="italic block">Interested in getting a piano? Talk to us or check out <a href="https://www.long-mcquade.com/" className="dcam-link" target="_blank">Long & McQuade</a>. They offer a variety of pianos for both sale and rent.</span>
+                </p>
+                <div className="flex flex-col md:flex-row w-full justify-evenly mt-8">
+                    <img src="/lessons/eterna.jpg" className="w-full md:w-80 rounded-md mb-6 md:mb-0 md:me-6" />
+                    <img src="/lessons/kawai.jpg" className="w-full md:w-80 rounded-md" />
+                </div>
+
+                <PageSubtitle subtitle={"Styles"}/>
+                <p>Students can choose to learn any musical style they want on the piano, such as pop, jazz,  classical, etc. Those wishing to go the Royal Conservatory route should expect a heavy focus on classical music.</p>
+
+                <PageSubtitle subtitle={"Teachers"}/>
+                <p className="mb-20">Our teachers are all qualified professionals and passionate musicians. We do our best to match a student with a teacher that we think would best fit their musical goals as well as their personalities. We understand that while some students prefer a relaxed teaching approach, there are always those for whom a more strict approach is more effective. Students also have the option to request to change their teacher if they wish to do so. Learn more about our teachers on our <Link href="/teachers" className="dcam-link">Teachers Section</Link>.</p>
+
+                <PageBottomTrialButton />
+
+            </div>
         </main>
      );
 }
