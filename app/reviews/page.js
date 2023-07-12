@@ -26,7 +26,7 @@ const Reviews = async () => {
                 reviews.map((review) => <ReviewCard review={review} />
             )}
             
-            <div className="text-center mt-10"><Link href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</Link></div>
+            <div className="text-center mt-10"><a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</a></div>
         </main>
      );
 }

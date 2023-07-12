@@ -24,7 +24,7 @@ const Header = () => {
         <header className="flex flex-col mb-24">
             
             {/* LOGO & CONTACT HEADER */}
-            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
+            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-regRed via-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
 
                 <div className="flex">
                     <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "210px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
@@ -47,8 +47,8 @@ const Header = () => {
                         </Link>
                     </div>
                     <div className="flex flex-col justify-center items-center md:items-start">
-                        <Link href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</Link>
-                        <Link href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</Link>
+                        <a href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
+                        <a href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
                     </div>
                 </div>
             </div>
