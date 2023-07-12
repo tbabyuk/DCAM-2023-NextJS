@@ -21,7 +21,7 @@ const Header = () => {
 
 
     return (
-        <header className="flex flex-col mb-24">
+        <header className="flex flex-col mb-28">
             
             {/* LOGO & CONTACT HEADER */}
             <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-regRed via-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">

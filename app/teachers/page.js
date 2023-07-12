@@ -6,7 +6,7 @@ import TeacherProfile from "../components/TeacherProfile";
 const Teachers = () => {
     return ( 
         <main className="teachers-page px-5 md:px-20 xl:px-60">
-            <PageTitle title={"Teachers"} />
+            <PageTitle title="Teachers" />
             <TeacherProfile 
                 photo="/teachers/raul.jpg"
                 name="Raul Pineda"

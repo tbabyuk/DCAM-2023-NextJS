@@ -21,22 +21,22 @@ async function Home() {
 
   return (
     <main>
-          <div className="px-5 lg:px-40">
+          <div className="px-5">
             <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
             <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
-          </div>     
+          </div>
             
-          <section className="intro bg-gray-100 my-28 py-20 px-5 lg:px-40">
+          <section className="intro bg-gray-100 my-28 py-20 px-5 lg:px-36 xl:px-52">
             <div className="flex flex-col items-center sm:block">
-                <img src="/lessons/piano_lessons.jpg" className="float-left me-5 mb-5 rounded-md" style={{width: "250px"}} />
+                <img src="/lessons/piano_lessons.jpg" className="float-left me-5 rounded-md" style={{width: "250px"}} />
                 <p>Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson! <br /><br />
-                Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible. Interested in music lessons with us? Awesome! Fill out our “Free Trial Lesson” form and we will contact you to schedule your free, no-obligation trial lesson!
+                Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!
                 </p>
             </div>
           </section>
 
-          <section className="offers my-28 py-20 px-5 lg:px-40">
+          <section className="offers my-28 py-20 px-5 lg:px-36 xl:px-52">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">What We Offer</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -84,7 +84,7 @@ async function Home() {
             </div>
           </section>
 
-          <section className="reviews my-28 px-5 lg:px-40">
+          <section className="reviews my-28 px-5 lg:px-36 xl:px-52">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">What Our Customers Say</h2>
             {reviews && 
               reviews.map((review) => (

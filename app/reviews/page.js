@@ -20,7 +20,7 @@ const Reviews = async () => {
 
     return ( 
         <main className="reviews-page px-5 md:px-20 lg:px-40 xl:px-80">
-            <PageTitle title={"Reviews"} />
+            <PageTitle title="Reviews" />
 
             {reviews && 
                 reviews.map((review) => <ReviewCard review={review} />
