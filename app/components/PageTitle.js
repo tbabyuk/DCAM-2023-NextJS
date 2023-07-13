@@ -2,6 +2,6 @@
 
 export const PageTitle = ({title}) => {
     return ( 
-            <h1 className="border-b-2 border-regRed font-ovo text-regRed text-3xl inline-block lg:mx-36 xl:mx-52">{title}</h1>
+            <h1 className="font-ovo text-regRed text-4xl px-5 lg:px-36 xl:px-52">{title}</h1>
      );
 }

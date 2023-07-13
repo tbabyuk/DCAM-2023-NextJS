@@ -1,10 +1,8 @@
 
 
-
 import { PageTitle } from "../components/PageTitle";
 import { PageSubtitle } from "../components/PageSubtitle";
 import Link from "next/link";
-import { TrialButton } from "../components/TrialButton";
 import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
 
 const PianoLessonsPage = () => {
@@ -14,15 +12,13 @@ const PianoLessonsPage = () => {
 
             <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-10 mt-24">
                 <PageSubtitle subtitle="Overview" />
-                <div>
-                    <img src="/lessons/piano_lessons.jpg" className="mx-auto md:float-left md:me-5 mb-5 rounded-md" style={{width: "250px"}} />
+                <div className="md:flex md:items-center">
+                    <img src="/lessons/piano_lessons.jpg" className="mx-auto md:me-5 mb-5 md:h-80 rounded-md" />
                     <p>Piano is the most popular instrument in the world – and for many good reasons. It’s very visual, expressive, and, unlike many other instruments, allows us to play a large number of notes at the same time. It’s sort of like having a whole orchestra at your fingertips! But as a wise man once said (and as many experienced pianists will tell you): “It’s easy to play the piano, but it’s hard to play it well”.<br /><br />
 
                     At DCAM, we believe technique can make or break your piano playing, which is why we do our best to make sure our students (especially young children) learn correct technique from the very beginning – before it becomes a habit. Having good technique is an absolutely essential foundation to the student’s proper development and growth as a musician.<br /><br />
 
                     We also realize that our students come in many different “shapes and sizes”, which is why our teachers do their best to tailor lessons to each student’s individual skill level and musical taste.
-
-                    We cordially invite you to start your musical journey with us and see for yourself why we have the best piano lessons in Etobicoke!
                     </p>
                 </div>
             </section>
@@ -46,8 +42,8 @@ const PianoLessonsPage = () => {
 
             <section className="materials px-5 lg:px-36 xl:px-52 bg-gray-100 py-10 mt-24">
             <PageSubtitle subtitle="Materials" />
-            <div className="flex flex-col items-center sm:flex-row sm:items-start">
-                <img src="/lessons/abc_books.jpg" className="float-left me-5 mb-5 rounded-md" style={{width: "250px"}} />
+            <div className="md:flex md:items-center">
+                <img src="/lessons/abc_books.jpg" className="me-5 mb-5 md:mb-0 rounded-md md:h-48" />
                 <p>For complete beginners, we like to use “The ABC of Piano Playing” series by Boris Berlin, which contains Books 1, 2, and 3. These books are a great introduction to the keyboard and music notation and contain many simple and catchy tunes. After finishing all three of these books, students have several options. Those following the Royal Conservatory path will be able to start either the “Preparatory A Piano Repertoire” or jump straight into the “Level 1 Piano Repertoire”. For students who do not wish to do the Royal Conservatory exams, books will be chosen based on their individual musical preferences.
                 </p>
             </div>
