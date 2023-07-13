@@ -3,7 +3,7 @@ import { TrialButton } from "./TrialButton"
 
 export const PageBottomTrialButton = () => {
   return (
-    <div className="flex flex-col border-t-2 border-t-gray-200 pt-10 my-10 px-5 md:px-20 lg:px-36 xl:px-80 mt-5">
+    <div className="flex flex-col border-t-2 border-t-gray-200 px-5 pt-20 md:px-20 lg:px-36 xl:px-80">
         <div className="flex justify-center mb-5">
             <TrialButton />
         </div>

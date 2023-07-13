@@ -65,6 +65,8 @@ return (
                                 <option value="drums">drums</option>
                                 <option value="voice">voice</option>
                                 <option value="theory">music theory</option>
+                                <option value="theory">music for toddlers</option>
+                                <option value="theory">intro to music</option>
                             </select>
                         </label>
                         <label className="mb-4">
