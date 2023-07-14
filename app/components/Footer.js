@@ -34,8 +34,8 @@ const Footer = () => {
                     <li><Link href="#" className="hover:text-lightRed">Drum Lessons</Link></li>
                     <li><Link href="#" className="hover:text-lightRed">Voice Lessons</Link></li>
                     <li><Link href="#" className="hover:text-lightRed">Music Theory Lessons</Link></li>
+                    <li><Link href="#" className="hover:text-lightRed">Toddler Music Classes</Link></li>
                     <li><Link href="#" className="hover:text-lightRed">Intro to Music Program</Link></li>
-                    <li><Link href="#" className="hover:text-lightRed">Musical Beginnings Program</Link></li>
                 </ul>
             </div>
             <div>

@@ -8,6 +8,7 @@ import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react";
 import Slider from "./Slider";
 import { IoMdArrowDropdown } from "react-icons/io"
+import { MMSLoginButton } from "./MMSLoginButton";
 
 const Header = () => {
 
@@ -29,24 +30,27 @@ const Header = () => {
                 <div className="flex">
                     <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "210px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
                 </div>
-                <div className="md:flex">
-                    <div className="flex justify-center items-center py-10 md:py-0 md:me-14">
-                        <Link 
+
+                <MMSLoginButton />
+
+                <div className="flex flex-col lg:flex-row lg:items-center">
+                    <div className="flex justify-center md:hidden my-10 lg:my-0 lg:me-10 lg:block">
+                        <a
                             href="https://www.facebook.com/dacapomusic.ca/" target="_blank" 
-                            className="hover:text-lightRed me-5">
+                            className="hover:text-lightRed me-5 inline-block">
                             <FaFacebookSquare size="2em"/> 
-                        </Link>
-                        <Link 
+                        </a>
+                        <a
                             href="https://www.instagram.com/dacapomusic.ca/" target="_blank" 
-                            className="hover:text-lightRed me-5">
+                            className="hover:text-lightRed me-5 inline-block">
                             <FaInstagramSquare size="2em" />
-                        </Link>
-                        <Link 
-                            href="https://www.youtube.com/watch?v=gSPAOkyO4AA&feature=youtu.be" target="_blank" className="hover:text-lightRed">
+                        </a>
+                        <a
+                            href="https://www.youtube.com/watch?v=gSPAOkyO4AA&feature=youtu.be" target="_blank" className="hover:text-lightRed inline-block">
                             <FaYoutubeSquare size="2em" />
-                        </Link>
+                        </a>
                     </div>
-                    <div className="flex flex-col justify-center items-center md:items-start">
+                    <div className="flex flex-col items-center md:items-start">
                         <a href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
                         <a href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
                     </div>
@@ -81,10 +85,10 @@ const Header = () => {
                                     <Link href="/music-theory-lessons-etobicoke">Music Theory Lessons</Link>
                                 </li>
                                 <li className="md:flex md:ps-4 hover:bg-darkBlue">
-                                    <Link href="/toddler-music-classes-etobicoke">Toddler Classes</Link>
+                                    <Link href="/toddler-music-classes-etobicoke">Toddler Music Classes</Link>
                                 </li>
                                 <li className="md:flex md:ps-4 hover:bg-darkBlue">
-                                    <Link href="/intro-to-music-program">Intro to Music</Link>
+                                    <Link href="/intro-to-music-program">Intro to Music Program</Link>
                                 </li>
 
                             </ul>

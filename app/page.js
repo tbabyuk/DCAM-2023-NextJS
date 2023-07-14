@@ -84,7 +84,7 @@ async function Home() {
             </div>
           </section>
 
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-28">
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-28 bg-gray-100">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">What Our Customers Say</h2>
             {reviews && 
               reviews.map((review) => (

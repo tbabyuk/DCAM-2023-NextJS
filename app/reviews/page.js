@@ -19,14 +19,16 @@ const Reviews = async () => {
 
 
     return ( 
-        <main className="reviews-page px-5 md:px-20 lg:px-40 xl:px-80">
+        <main className="reviews-page">
             <PageTitle title="Reviews" />
 
-            {reviews && 
-                reviews.map((review) => <ReviewCard review={review} />
-            )}
-            
-            <div className="text-center mt-10"><a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</a></div>
+            <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+                {reviews && 
+                    reviews.map((review) => <ReviewCard review={review} />
+                )}
+                
+                <div className="text-center mt-10"><a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</a></div>
+            </section>
         </main>
      );
 }

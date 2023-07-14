@@ -3,6 +3,7 @@
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
 import SliderOverlay from "./SliderOverlay"
+import MMSStudentLoginForm from "./MMSLoginForm"
 
 
 const Slider = () => {
@@ -25,6 +26,8 @@ const Slider = () => {
 
   return (
     <div className="h-80 relative">
+
+        {/* <MMSStudentLoginForm /> */}
 
         <SliderOverlay />
 

@@ -14,10 +14,10 @@ const Contact = () => {
             <Head>
                 <title>Da Capo Academy of Music | Contact</title>
             </Head>
-            <main className="contact-page px-5 lg:px-20 xl:px-60">
+            <main className="contact-page">
                 <PageTitle title="Contact Us" />
-                    <div className="grid md:grid-cols-2 mb-24 md:mb-32">
-                        <section className="mb-10 md:mb-0 md:pe-5 lg:pe-10">
+                    <div className="grid md:grid-cols-2 lg:px-36 xl:px-52 py-20 mt-24 bg-gray-100">
+                        <section className="contact mb-10 md:mb-0 md:pe-5 lg:pe-10 px-5 lg:px-0">
                             <div className="mb-10">
                                 <h2 className="text-lg font-semibold">Telephone:</h2><Link href="tel:+4162379595" className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</Link>
                             </div>
@@ -34,13 +34,15 @@ const Contact = () => {
                                     </p>
                             </div>
                         </section>
-                        <section>
+
+                        <section className="address px-5">
                             <h2 className="text-lg font-semibold">Our Location:</h2>
                             <p>270 The Kingsway, Etobicoke, ON M9A 3T7</p>
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3584966482185!2d-79.52234452407666!3d43.66151347110163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37bb608630c7%3A0x69f2141676b811d2!2sDa%20Capo%20Academy%20of%20Music!5e0!3m2!1sen!2sca!4v1688345265242!5m2!1sen!2sca" className="w-full" height="280" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />                       
                         </section>
                     </div>
-                    <section className="text-center">
+
+                    <section className="neighbourhood text-center px-5 lg:px-36 xl:px-52 py-20">
                         <h2 className="text-lg font-semibold mb-5">OUR NEIGHBOURHOOD:</h2>
                         <p>Located in the beautiful Etobicoke neighbourhood of <Link href="https://en.wikipedia.org/wiki/Humber_Valley_Village" target="_blank" className="hover:text-lightRed">Humber Valley Village</Link>, we are just minutes away from the following schools:</p>
                         <table className="mx-auto my-10">

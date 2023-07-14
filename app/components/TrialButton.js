@@ -93,6 +93,7 @@ return (
                                 <option value="" disabled selected>choose option</option>
                                 <option value="google">google search</option>
                                 <option value="humbertown">humbertown sign</option>
+                                <option value="humbertown">friend/relative</option>
                                 <option value="social">social media (FB/IG)</option>
                                 <option value="flyer">print flyer</option>
                                 <option value="blog">blog article</option>
