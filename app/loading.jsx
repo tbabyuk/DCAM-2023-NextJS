@@ -2,8 +2,10 @@ import Spinner from "./components/Spinner";
 
 
 const Loading = () => {
-    return ( 
-        <Spinner />
+    return (
+        <div className="grid place-items-center">
+            <Spinner />
+        </div>
      );
 }
  

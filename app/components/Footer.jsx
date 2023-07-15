@@ -41,8 +41,6 @@ const Footer = () => {
             <div>
                 <h4 className="mb-6 inline-block border-b-2">LEARN MORE:</h4>
                 <ul className="text-sm leading-7 font-light">
-                    <li><Link href="/" className="hover:text-lightRed">Home</Link></li>
-                    <li><Link href="/lessons" className="hover:text-lightRed">Lessons</Link></li>
                     <li><Link href="/rates" className="hover:text-lightRed">Rates</Link></li>
                     <li><Link href="/teachers" className="hover:text-lightRed">Teachers</Link></li>
                     <li><Link href="/reviews" className="hover:text-lightRed">Reviews</Link></li>
