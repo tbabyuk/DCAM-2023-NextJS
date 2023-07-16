@@ -1,5 +1,5 @@
 
-
+import Link from "next/link";
 
 
 export const BlogCard = ({title, date, imageUrl, description, blogLink, category}) => {
@@ -9,7 +9,7 @@ export const BlogCard = ({title, date, imageUrl, description, blogLink, category
             <small className=" text-gray-500">{date}</small>
             <img className="py-6" src={imageUrl} />
             <p className="mb-4">{description}</p>
-            <button className="block mb-4 dcam-button">Read More</button>
+            <button className="block mb-4 dcam-button"><Link href={blogLink}>Read More</Link></button>
             <small className=" text-gray-500">Category: {category}</small>
         </div>
      );

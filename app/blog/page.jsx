@@ -341,7 +341,7 @@ const BlogPage = () => {
                     date="June 22, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/06/rcm_piano_exam_requirements_cover.jpg"
                     description="Introduction If you are a piano student planning to do your RCM practical exams and want to know precisely what you will be graded on – you’ve come to the right place! This …"
-                    blogLink="Read More"
+                    blogLink="/rcm-piano-exam-mark-guide/"
                     category="RCM, Piano"
                 />
 
