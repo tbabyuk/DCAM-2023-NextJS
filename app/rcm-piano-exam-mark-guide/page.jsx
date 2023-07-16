@@ -35,7 +35,7 @@ const PostPianoExamMarkGuide = () => {
 
             <PostHeading heading="RCM PIANO EXAM REQUIREMENTS FOR: ELEMENTARY LEVELS (Preparatory A - Level 4)" />
             <PostSubheading subheading="Preparatory A Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/prep_a_requirements.jpg" alt="mark breakdown for RCM Prep A piano" />
                 </div>
@@ -48,7 +48,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Preparatory B Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/prep_b_requirements.jpg" alt="mark breakdown for RCM Prep B piano" />
                 </div>
@@ -61,7 +61,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 1 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_1_requirements.jpg" alt="mark breakdown for RCM Level 1 piano" />
                 </div>
@@ -74,7 +74,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 2 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_2_requirements.jpg" alt="mark breakdown for RCM Level 2 piano" />
                 </div>
@@ -87,7 +87,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 3 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_3_requirements.jpg" alt="mark breakdown for RCM Level 3 piano" />
                 </div>
@@ -100,7 +100,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 4 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_4_requirements.jpg" alt="mark breakdown for RCM Level 4 piano" />
                 </div>
@@ -116,7 +116,7 @@ const PostPianoExamMarkGuide = () => {
 
             <PostHeading heading="RCM PIANO EXAM REQUIREMENTS FOR: INTERMEDIATE LEVELS (Level 5 - Level 8)" />
             <PostSubheading subheading="Level 5 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_5_requirements.jpg" alt="mark breakdown for RCM Level 5 piano" />
                 </div>
@@ -130,7 +130,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 6 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_6_requirements.jpg" alt="mark breakdown for RCM Level 6 piano" />
                 </div>
@@ -144,7 +144,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 7 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_7_requirements.jpg" alt="mark breakdown for RCM Level 7 piano" />
                 </div>
@@ -158,7 +158,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 8 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_8_requirements.jpg" alt="mark breakdown for RCM Level 8 piano" />
                 </div>
@@ -175,7 +175,7 @@ const PostPianoExamMarkGuide = () => {
 
             <PostHeading heading="RCM PIANO EXAM REQUIREMENTS FOR: ADVANCED LEVELS (Level 9 - Level 10)" />
             <PostSubheading subheading="Level 9 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_9_requirements.jpg" alt="mark breakdown for RCM Level 9 piano" />
                 </div>
@@ -189,7 +189,7 @@ const PostPianoExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 10 Piano (new 2022 syllabus)" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/level_10_requirements.jpg" alt="mark breakdown for RCM Level 10 piano" />
                 </div>

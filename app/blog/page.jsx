@@ -134,7 +134,7 @@ const BlogPage = () => {
                     date="July 28, 2021"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/07/rcm_guitar_requirements_cover.jpg"
                     description="Introduction Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You’ve come to the right place! This guide will tell you what each section of the exam is worth to …"
-                    blogLink="Read More"
+                    blogLink="/rcm-guitar-exam-mark-guide/"
                     category="RCM, Guitar"
                 />
 

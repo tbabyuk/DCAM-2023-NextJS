@@ -18,7 +18,7 @@ export const metadata = {
 
 const PostViolinExamMarkGuide = () => {
   return (
-            <main className="rcm-piano-exam-mark-guide-post text-gray-700 text-[0.9rem]">
+            <main className="rcm-violin-exam-mark-guide-post text-gray-700 text-[0.9rem]">
             <PostTitle title="RCM Violin Exam Requirements (all grades)" date="July 2, 2020" />
             <PostImage url="https://dacapomusic.ca/wp-content/uploads/2020/07/rcm_violin_exam_requirements_cover.jpg" alt="RCM Violin Exam requirements cover photo"/>
 
@@ -33,7 +33,7 @@ const PostViolinExamMarkGuide = () => {
 
             <PostHeading heading="RCM VIOLIN EXAM REQUIREMENTS FOR: ELEMENTARY LEVELS (Preparatory - Level 4)" />
             <PostSubheading subheading="Preparatory Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_prep_requirements.jpg" alt="mark breakdown for Preparatory Violin" style={{width: "400px"}} />
                 </div>
@@ -46,7 +46,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 1 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_1_requirements.jpg" alt="mark breakdown for RCM Level 1 Violin" style={{width: "400px"}} />
                 </div>
@@ -59,7 +59,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 2 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_2_requirements.jpg" alt="mark breakdown for RCM Level 2 Violin" style={{width: "400px"}} />
                 </div>
@@ -72,7 +72,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 3 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_3_requirements.jpg" alt="mark breakdown for RCM Level 3 Violin" style={{width: "400px"}} />
                 </div>
@@ -85,7 +85,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 4 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_4_requirements.jpg" alt="mark breakdown for RCM Level 4 Violin" style={{width: "400px"}} />
                 </div>
@@ -102,7 +102,7 @@ const PostViolinExamMarkGuide = () => {
 
             <PostHeading heading="RCM VIOLIN EXAM REQUIREMENTS FOR: INTERMEDIATE LEVELS (Level 5 - Level 8)" />
             <PostSubheading subheading="Level 5 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_5_requirements.jpg" alt="mark breakdown for RCM Level 5 Violin" style={{width: "400px"}} />
                 </div>
@@ -116,7 +116,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 6 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_6_requirements.jpg" alt="mark breakdown for RCM Level 6 Violin" style={{width: "400px"}} />
                 </div>
@@ -130,7 +130,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 7 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_7_requirements.jpg" alt="mark breakdown for RCM Level 7 Violin" style={{width: "400px"}} />
                 </div>
@@ -145,7 +145,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 8 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_8_requirements.jpg" alt="mark breakdown for RCM Level 8 Violin" style={{width: "400px"}} />
                 </div>
@@ -164,7 +164,7 @@ const PostViolinExamMarkGuide = () => {
 
             <PostHeading heading="RCM VIOLIN EXAM REQUIREMENTS FOR: ADVANCED LEVELS (Level 9 - Level 10)" />
             <PostSubheading subheading="Level 9 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_9_requirements.jpg" alt="mark breakdown for RCM Level 9 Violin" style={{width: "400px"}} />
                 </div>
@@ -179,7 +179,7 @@ const PostViolinExamMarkGuide = () => {
             </section>
 
             <PostSubheading subheading="Level 10 Violin" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24 flex flex-col md:flex-row">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
                     <img src="/blog_images/violin_level_10_requirements.jpg" alt="mark breakdown for RCM Level 10 Violin" style={{width: "400px"}} />
                 </div>
