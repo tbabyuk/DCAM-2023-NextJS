@@ -1,11 +1,9 @@
 
 import { PostTitle } from "../components/PostTitle"
-import { PostSubtitle } from "../components/PostSubtitle"
 import { PostSource } from "../components/PostSource"
 import { PostSectionHeading } from "../components/PostSectionHeading"
 import { PostHeading } from "../components/PostHeading"
 import { PostSubheading } from "../components/PostSubheading"
-import Link from "next/link"
 import { PageBottomTrialButton } from "../components/PageBottomTrialButton"
 import { PostDivider } from "../components/PostDivider"
 import PostImage from "../components/PostImage"
@@ -14,7 +12,7 @@ import PostImage from "../components/PostImage"
 export const metadata = {
     title: "RCM Piano Exam Requirements | Da Capo Academy of Music",
     description: "Breakdown of marks for all RCM Piano Exams",
-    keywords: ["RCM", "RCM Exams", "RCM Pian Exams", "RCM Piano Exam Marks"]
+    keywords: ["RCM", "RCM Exams", "RCM Piano Exams", "RCM Piano Exam Marks"]
   }
 
 

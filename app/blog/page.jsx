@@ -332,7 +332,7 @@ const BlogPage = () => {
                     date="July 2, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/07/rcm_violin_exam_requirements_cover.jpg"
                     description="If you are a violin student planning to do your RCM practical exams and want to know precisely what you will be graded on – this is the page for you! This guide will tell you exactly what each …"
-                    blogLink="Read More"
+                    blogLink="/rcm-violin-exam-mark-guide/"
                     category="RCM"
                 />
 
