@@ -1,13 +1,16 @@
-
-
-
-
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Voice Lessons in Etobicoke | Da Capo Academy of Music",
+    description: "Looking for voice lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+    keywords: ["voice lessons", "voice lessons etobicoke"]
+}
 
 const VoiceLessonsPage = () => {
+
     return ( 
         <main className="voice-page">
             <PageTitle title="Voice Lessons in Etobicoke" />

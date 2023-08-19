@@ -1,20 +1,18 @@
 
-import { PostTitle } from "../components/PostTitle"
-import { PostSource } from "../components/PostSource"
-import { PostSectionHeading } from "../components/PostSectionHeading"
-import { PostHeading } from "../components/PostHeading"
-import { PostSubheading } from "../components/PostSubheading"
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton"
-import { PostDivider } from "../components/PostDivider"
-import PostImage from "../components/PostImage"
-
+import { PostTitle } from "../../components/PostTitle"
+import { PostSource } from "../../components/PostSource"
+import { PostSectionHeading } from "../../components/PostSectionHeading"
+import { PostHeading } from "../../components/PostHeading"
+import { PostSubheading } from "../../components/PostSubheading"
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
+import { PostDivider } from "../../components/PostDivider"
+import PostImage from "../../components/PostImage"
 
 export const metadata = {
-    title: "RCM Guitar Exam Requirements | Da Capo Academy of Music",
-    description: "Breakdown of marks for all RCM Guitar Exams",
+    title: "RCM Guitar Exam Requirements (all grades) | Da Capo Academy of Music",
+    description: "Planning to do your RCM guitar exams? Find out what you need to know and exactly how you will be graded in our RCM guitar exam mark guide!",
     keywords: ["RCM", "RCM Exams", "RCM Guitar Exams", "RCM Guitar Exam Marks"]
-  }
-
+}
 
 const PostGuitarExamMarkGuide = () => {
   return (

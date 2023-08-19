@@ -1,11 +1,13 @@
-
-
-
-
 import { PageTitle } from "../components/PageTitle";
 import { BlogCard } from "../components/BlogCard";
 
+export const metadata = {
+    title: "DCAM | Blog",
+    description: "List of all our blog articles"
+}
+
 const BlogPage = () => {
+
     return ( 
         <main className="blog-page">
             <PageTitle title="Blog" />

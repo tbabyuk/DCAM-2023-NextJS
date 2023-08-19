@@ -1,12 +1,13 @@
-
-
-
 import { PageTitle } from "../components/PageTitle";
 import Head from "next/head";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
+export const metadata = {
+    title: "DCAM | Contact",
+    description: "Contact information"
+}
 
 const Contact = () => {
     return ( 

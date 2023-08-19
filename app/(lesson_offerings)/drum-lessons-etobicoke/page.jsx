@@ -1,11 +1,13 @@
-
-
-
-
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Drum Lessons in Etobicoke | Da Capo Academy of Music",
+    description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+    keywords: ["drum lessons", "drum lessons etobicoke"]
+}
 
 const DrumLessonsPage = () => {
     return ( 

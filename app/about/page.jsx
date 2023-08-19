@@ -1,13 +1,13 @@
-
 import { PageTitle } from "../components/PageTitle";
-import { PageDivider } from "../components/PageDivider";
 import Head from "next/head";
-import Link from "next/link";
-import { BsTelephone } from "react-icons/bs";
-import { HiOutlineMail } from "react-icons/hi";
 
+export const metadata = {
+    title: "DCAM | About",
+    description: "Our story"
+}
 
 const About = () => {
+    
     return ( 
         <>
             <Head>

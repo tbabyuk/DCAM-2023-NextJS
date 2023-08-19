@@ -1,9 +1,13 @@
-
-
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Intro to Music Program | Da Capo Academy of Music",
+    description: "This program is designed to give students a chance to try out several different instruments to help them decide which one they like best.",
+    keywords: ["intro to music"]
+}
 
 const IntroToMusicPage = () => {
     return ( 

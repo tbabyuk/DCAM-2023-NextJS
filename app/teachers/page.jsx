@@ -1,9 +1,15 @@
-
-
 import { PageTitle } from "../components/PageTitle";
 import TeacherProfile from "../components/TeacherProfile";
 
+
+export const metadata = {
+    title: "DCAM | Teachers",
+    description: "Our Teachers"
+}
+
+
 const Teachers = () => {
+
     return ( 
         <main className="teachers-page">
             <PageTitle title="Teachers" />

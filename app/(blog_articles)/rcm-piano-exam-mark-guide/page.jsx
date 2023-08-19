@@ -1,20 +1,18 @@
 
-import { PostTitle } from "../components/PostTitle"
-import { PostSource } from "../components/PostSource"
-import { PostSectionHeading } from "../components/PostSectionHeading"
-import { PostHeading } from "../components/PostHeading"
-import { PostSubheading } from "../components/PostSubheading"
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton"
-import { PostDivider } from "../components/PostDivider"
-import PostImage from "../components/PostImage"
-
+import { PostTitle } from "../../components/PostTitle"
+import { PostSource } from "../../components/PostSource"
+import { PostSectionHeading } from "../../components/PostSectionHeading"
+import { PostHeading } from "../../components/PostHeading"
+import { PostSubheading } from "../../components/PostSubheading"
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
+import { PostDivider } from "../../components/PostDivider"
+import PostImage from "../../components/PostImage"
 
 export const metadata = {
-    title: "RCM Piano Exam Requirements | Da Capo Academy of Music",
-    description: "Breakdown of marks for all RCM Piano Exams",
+    title: "RCM Piano Exam Requirements (all grades) | Da Capo Academy of Music",
+    description: "Find out exactly what the rcm piano exam requirements are for all grades and how each exam will be marked in this quick-reference guide.",
     keywords: ["RCM", "RCM Exams", "RCM Piano Exams", "RCM Piano Exam Marks"]
-  }
-
+}
 
 const PostPianoExamMarkGuide = () => {
   return (

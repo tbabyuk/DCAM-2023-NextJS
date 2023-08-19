@@ -1,11 +1,13 @@
-
-
-
-
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Toddler Music Classes | Da Capo Academy of Music",
+    description: "Group music classes aimed at toddlers and preschoolers (ages 2-5)",
+    keywords: ["toddler music classes", "toddler music classes etobicoke"]
+}
 
 const ToddlerMusicPage = () => {
     return ( 

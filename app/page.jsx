@@ -1,22 +1,24 @@
 
-import Link from "next/link"
 import 'material-symbols';
-import { PageTitle } from "./components/PageTitle";
-import ReviewCard from "./components/ReviewCard";
-import {BsPeopleFill, BsFillCalendar2DayFill} from "react-icons/bs"
+import { ReviewCard } from "./components/ReviewCard";
 
 
 const fetchReviews = async () => {
-  const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJxzCGYLs3K4gR0hG4dhYU8mk&key=${process.env.API_KEY}&fields=reviews&maxheight=10`)
-
+    const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJxzCGYLs3K4gR0hG4dhYU8mk&key=${process.env.API_KEY}&fields=reviews&maxheight=10`, {
+      next: {
+          revalidate: 604800
+      }
+    })
   const data = await res.json()
-  
-  return (
-     data.result.reviews
- )
-} 
+  return data.result.reviews
+}
 
-async function Home() {
+export const metadata = {
+  title: "DCAM | Home",
+  description: "Music lessons in Etobicoke"
+}
+
+const Home = async () => {
   const reviews = await fetchReviews()
 
   return (

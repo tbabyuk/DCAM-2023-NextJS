@@ -1,11 +1,18 @@
 
 
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Guitar Lessons in Etobicoke | Da Capo Academy of Music",
+    description: "Looking for guitar lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+    keywords: ["guitar lessons", "ukulele lessons", "guitar lessons etobicoke", "ukulele lessons etobicoke"]
+}
 
 const GuitarLessonsPage = () => {
+
     return ( 
         <main className="guitar-page">
             <PageTitle title="Guitar Lessons in Etobicoke" />

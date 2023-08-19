@@ -1,11 +1,16 @@
-
-
-import { PageTitle } from "../components/PageTitle";
-import { PageSubtitle } from "../components/PageSubtitle";
+import { PageTitle } from "../../components/PageTitle";
+import { PageSubtitle } from "../../components/PageSubtitle";
 import Link from "next/link";
-import { PageBottomTrialButton } from "../components/PageBottomTrialButton";
+import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
+
+export const metadata = {
+    title: "Music Theory Lessons in Etobicoke | Da Capo Academy of Music",
+    description: "Looking for music theory lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+    keywords: ["music theory lessons", "music theory lessons etobicoke"]
+}
 
 const TheoryLessonsPage = () => {
+    
     return ( 
         <main className="theory-page">
             <PageTitle title="Music Theory Lessons in Etobicoke" />

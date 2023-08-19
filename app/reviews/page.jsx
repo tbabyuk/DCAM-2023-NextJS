@@ -1,24 +1,26 @@
-
-import ReviewCard from "../components/ReviewCard";
-import Link from "next/link";
+import { ReviewCard } from "../components/ReviewCard";
 import { PageTitle } from "../components/PageTitle";
 
 
 const fetchReviews = async () => {
-     const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJxzCGYLs3K4gR0hG4dhYU8mk&key=${process.env.API_KEY}&fields=reviews&maxheight=10`)
-
+     const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJxzCGYLs3K4gR0hG4dhYU8mk&key=${process.env.API_KEY}&fields=reviews&maxheight=10`, {
+        next: {
+            revalidate: 604800
+        }
+     })
     //  await new Promise((resolve) => setTimeout(resolve, 1000)) 
-
     const data = await res.json()
-    return (
-        data.result.reviews
-    )
-} 
+    return data.result.reviews
+}
+
+export const metadata = {
+    title: "DCAM | Reviews",
+    description: "What our customers say"
+}
 
 
 const Reviews = async () => {
     const reviews = await fetchReviews()
-
 
     return ( 
         <main className="reviews-page">

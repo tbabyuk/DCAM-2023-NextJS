@@ -2,7 +2,7 @@
 import {AiFillStar} from "react-icons/ai"
 
 
-const ReviewCard = ({review}) => {
+export const ReviewCard = ({review}) => {
 
     const numStars = Array.from({length: review.rating})
 
@@ -18,5 +18,3 @@ const ReviewCard = ({review}) => {
         </div>
      );
 }
- 
-export default ReviewCard;

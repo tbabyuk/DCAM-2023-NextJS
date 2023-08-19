@@ -4,11 +4,12 @@ import { PageTitle } from "../components/PageTitle";
 
 
 export const metadata = {
-    title: 'DCAM | Rates',
-    description: 'Our rates and term dates',
-  }
+    title: "DCAM | Rates",
+    description: "Our rates and term dates"
+}
 
 const Rates = () => {
+    
     return (
         <>
             <main className="rates-page">
