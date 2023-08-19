@@ -18,7 +18,7 @@ const PostViolinExamMarkGuide = () => {
   return (
             <main className="rcm-violin-exam-mark-guide-post text-gray-700 text-[0.9rem]">
             <PostTitle title="RCM Violin Exam Requirements (all grades)" date="July 2, 2020" />
-            <PostImage url="https://dacapomusic.ca/wp-content/uploads/2020/07/rcm_violin_exam_requirements_cover.jpg" alt="RCM Violin Exam requirements cover photo"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Frcm_violin_exam_requirements_cover.jpg?alt=media&token=3d10b0fd-add2-4f0c-a474-5ae99ed7549e" alt="RCM Violin Exam requirements cover photo"/>
 
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />
@@ -33,7 +33,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Preparatory Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_prep_requirements.jpg" alt="mark breakdown for Preparatory Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_prep_requirements.jpg?alt=media&token=22279b70-ffaa-48e9-866c-bc237a0b5177" alt="mark breakdown for Preparatory Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 2 pieces and can earn 3 extra marks per piece if they have it memorized. This section is worth 56 marks.</p>
@@ -46,7 +46,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 1 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_1_requirements.jpg" alt="mark breakdown for RCM Level 1 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_1_requirements.jpg?alt=media&token=8e7c6a64-9eb6-41e7-9c90-4434321b2ad9" alt="mark breakdown for RCM Level 1 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 2 pieces and can earn 3 extra marks per piece if they have it memorized. This section is worth 56 marks.</p>
@@ -59,7 +59,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 2 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_2_requirements.jpg" alt="mark breakdown for RCM Level 2 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_2_requirements.jpg?alt=media&token=c9015077-5303-4460-bee0-896bc079f419" alt="mark breakdown for RCM Level 2 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 2 pieces and can earn 3 extra marks per piece if they have it memorized. This section is worth 56 marks.</p>
@@ -72,7 +72,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 3 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_3_requirements.jpg" alt="mark breakdown for RCM Level 3 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_3_requirements.jpg?alt=media&token=e63114eb-b140-49b7-bf7e-e4214e8c5ee8" alt="mark breakdown for RCM Level 3 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 3 pieces and can earn 2 extra marks per piece if they have it memorized. This section is worth 60 marks.</p>
@@ -85,7 +85,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 4 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_4_requirements.jpg" alt="mark breakdown for RCM Level 4 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_4_requirements.jpg?alt=media&token=9707711f-302c-4261-b1b7-8f4ce5f138aa" alt="mark breakdown for RCM Level 4 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 3 pieces and can earn 2 extra marks per piece if they have it memorized. This section is worth 60 marks.</p>
@@ -102,7 +102,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 5 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_5_requirements.jpg" alt="mark breakdown for RCM Level 5 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_5_requirements.jpg?alt=media&token=7d605e0f-adb3-46af-b179-a8a5aa3b1029" alt="mark breakdown for RCM Level 5 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 3 pieces and can earn 3 extra marks for List A and C pieces if they have them memorized. This section is worth 60 marks.</p>
@@ -116,7 +116,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 6 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_6_requirements.jpg" alt="mark breakdown for RCM Level 6 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_6_requirements.jpg?alt=media&token=e02fe93a-2416-4952-90c1-39e0b9818e5f" alt="mark breakdown for RCM Level 6 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 3 pieces and can earn 3 extra marks for List A and C  pieces if they have them memorized. This section is worth 60 marks.</p>
@@ -130,7 +130,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 7 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_7_requirements.jpg" alt="mark breakdown for RCM Level 7 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_7_requirements.jpg?alt=media&token=0c82f47f-17b9-4c75-8f5a-89032fc5a444" alt="mark breakdown for RCM Level 7 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 3 pieces and can earn 3 extra marks for List A and C pieces if they have them memorized. This section is worth 50 marks.</p>
@@ -145,7 +145,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 8 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_8_requirements.jpg" alt="mark breakdown for RCM Level 8 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_8_requirements.jpg?alt=media&token=40a9b3a0-6ad1-4b3f-a5ff-94d79b6088b3" alt="mark breakdown for RCM Level 8 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 4 pieces and can earn 2 extra marks for List A, C and D pieces if they have them memorized.  This section is worth 50 marks.</p>
@@ -164,7 +164,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 9 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_9_requirements.jpg" alt="mark breakdown for RCM Level 9 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_9_requirements.jpg?alt=media&token=029d20a6-a88a-4b79-8218-8d8603824097" alt="mark breakdown for RCM Level 9 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 4 pieces for Level 9 Repertoire. A number of marks (see parentheses) will be deducted for not having memorized the indicated pieces. A maximum of 50 marks can be earned for this section.</p>
@@ -179,7 +179,7 @@ const PostViolinExamMarkGuide = () => {
             <PostSubheading subheading="Level 10 Violin" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20 flex flex-col md:flex-row">
                 <div className="flex-shrink-0 flex justify-center items-start">
-                    <img src="/blog_images/violin_level_10_requirements.jpg" alt="mark breakdown for RCM Level 10 Violin" style={{width: "400px"}} />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Fviolin_level_10_requirements.jpg?alt=media&token=1a95241d-bac1-40ee-b181-2922e0a2547a" alt="mark breakdown for RCM Level 10 Violin" style={{width: "400px"}} />
                 </div>
                 <div className="mt-8 md:mt-0 md:ms-8">
                     <p className="mb-5"><span className="underline">Repertoire</span>: students are required to perform a total of 4 pieces for Level 10 Repertoire. A number of marks (see parentheses) will be deducted for not having memorized the indicated pieces. A maximum of 50 marks can be earned for this section.</p>
