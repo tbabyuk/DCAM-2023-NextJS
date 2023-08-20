@@ -352,7 +352,7 @@ const BlogPage = () => {
                     date="June 18, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/06/rcm_piano_exam_requirements_cover.jpg"
                     description="Overview You know them for their acting skills, but you probably didn’t know that these famous actors could also impress you on the piano! Here is our list of the top 5 actors who can play the piano! (ordered by …"
-                    blogLink="Read More"
+                    blogLink="/actors-who-play-piano/"
                     category="Music General"
                 />
 
