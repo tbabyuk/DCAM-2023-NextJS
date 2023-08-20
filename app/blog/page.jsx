@@ -46,7 +46,7 @@ const BlogPage = () => {
                     date="November 20, 2022"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2022/11/toronto_bands_cover_photo.jpg"
                     description="Toronto and the GTA (Greater Toronto Area) has produced a good number of bands that have managed to hit it big around the world. In this article, we will take a look at the most popular of these, and …"
-                    blogLink="Read More"
+                    blogLink="/famous-bands-from-toronto"
                     category="Canadian Music, Music General"
                 />
 
