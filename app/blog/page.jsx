@@ -143,9 +143,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="Famous Canadian Pianists" 
                     date="May 9, 2021"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/05/famous_canadian_pianists_featured_image.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-canadian-pianists%2Ffamous_canadian_pianists_cover.jpg?alt=media&token=fea3b2a6-4ff1-4f2b-939f-e2fe12f27553"
                     description="Introduction Over the years, Canada has produced its own share of pianistic talent. While some of these pianists have managed to gain world-wide fame and leave a lasting legacy in the world of music, others are still relatively young and …"
-                    blogLink="Read More"
+                    blogLink="/famous-canadian-pianists/"
                     category="Canadian Music, Music General"
                 />
 

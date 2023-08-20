@@ -17,5 +17,5 @@ input {
 }
 
 .dcam-link {
-  @apply hover:text-lightRed border-b border-b-gray-400
+  @apply border-b border-b-gray-400 hover:text-lightRed hover:border-b-lightRed
 }
