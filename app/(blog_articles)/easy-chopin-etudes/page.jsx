@@ -12,9 +12,9 @@ import { PostDivider } from "../../components/PostDivider"
 import PostImage from "../../components/PostImage"
 
 export const metadata = {
-    title: "Famous Musicians from Toronto | Da Capo Academy of Music",
-    description: "You probably didn't know that these world-famous artists all call Toronto their home!",
-    keywords: ["toronto artists", "toronto musicians", "toronto singers", "artists from toronto", "musicians from toronto", "singers from toronto"]
+    title: "The 3 Easiest Chopin Etudes (piano) | Da Capo Academy of Music",
+    description: "Looking to learn a beautiful Chopin etude that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
+    keywords: ["chopin etudes", "easy chopin etudes", "easy chopin pieces"]
 }
 
 const PostEasyChopinEtudes = () => {
