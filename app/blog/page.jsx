@@ -163,7 +163,7 @@ const BlogPage = () => {
                     date="April 13, 2021"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/04/easy_chopin_etudes_cover.jpg"
                     description="Introduction Chopin is known to have written a total of 27 etudes, most of which are contained in Op. 25 and Op. 10 of his works. In this article, I chose 3 of these 27 that are generally considered the …"
-                    blogLink="Read More"
+                    blogLink="/easy-chopin-etudes/"
                     category="Easy Pieces Series, Piano"
                 />
 
