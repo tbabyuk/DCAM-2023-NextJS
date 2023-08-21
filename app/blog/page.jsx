@@ -359,9 +359,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="Famous Musicians from Toronto" 
                     date="May 27, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/06/rcm_piano_exam_requirements_cover.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-toronto-musicians%2Ffamous_toronto_musicians_cover.jpg?alt=media&token=4c94ba43-53ae-4eac-a29a-250e05b3b87b"
                     description="Being the most populous city and metropolitan area in Canada, Toronto (and the GTA) is almost destined to produce all sorts of talented individuals. In this article we will take a look at some of this city’s most …"
-                    blogLink="Read More"
+                    blogLink="/famous-toronto-musicians/"
                     category="Music General, Canadian Music"
                 />
 

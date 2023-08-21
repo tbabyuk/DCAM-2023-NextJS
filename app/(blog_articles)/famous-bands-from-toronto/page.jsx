@@ -11,7 +11,7 @@ import Link from "next/link"
 
 export const metadata = {
     title: "Famous Bands from Toronto | Da Capo Academy of Music",
-    description: "You probably didn't know that these world-famous artists all call Toronto their home!",
+    description: "You probably didn't know that these world-famous bands all call Toronto their home!",
     keywords: ["toronto bands", "bands from toronto", "toronto musicians"]
 }
 
