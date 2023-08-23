@@ -14,13 +14,13 @@ export async function POST(request, response) {
         service: "gmail",
         // host: "smtp.gmail.com",
         auth: {
-            user: "tbabyuk@gmail.com",
-            pass: "ebpeqyrnqotpmdrp"
+            user: "info@dacapomusic.ca",
+            pass: "kwrmhfzqejjsnmry"
         }
         })
 
         const mailOptions = {
-            from: "tbabyuk@gmail.com",
+            from: "info@dacapomusic.ca",
             to,
             subject,
             text: message
