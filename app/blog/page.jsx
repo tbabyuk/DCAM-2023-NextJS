@@ -233,9 +233,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="Easy Czerny Etudes (piano)" 
                     date="September 11, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/09/easy_czerny_etudes_cover_photo.jpg"
-                    description="Carl Czerny was an Austrian pianist, teacher, and composer of Czech origin who lived from 1791 to 1857. Over his lifetime, he wrote many works for the piano (over a 1000) and many of these are widely used today …"
-                    blogLink="Read More"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-czerny-etudes%2Feasy_czerny_etudes_cover_photo.jpg?alt=media&token=4eb69890-69e2-485a-9fa1-fb5f557d5bfc"
+                    description="Carl Czerny was an Austrian pianist, teacher, and composer of Czech origin who lived from 1791 to 1857. Over his lifetime, he wrote many works for the piano (over a 1000) and many of these are widely used …"
+                    blogLink="/easy-czerny-etudes/"
                     category="Easy Pieces Series, Piano"
                 />
 
