@@ -181,7 +181,7 @@ const BlogPage = () => {
                     date="March 8, 2021"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/03/easy_beethoven_sonatas_cover_photo.jpg"
                     description="Introduction Let’s get something straight – when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of which he is known to have written about 32. The …"
-                    blogLink="Read More"
+                    blogLink="/easy-beethoven-sonatas/"
                     category="Easy Pieces Series"
                 />
 
@@ -244,7 +244,7 @@ const BlogPage = () => {
                     date="September 9, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/09/easy_mozart_sonatas_featured_image.jpg"
                     description="Let’s begin with a disclaimer – there is no such thing as an easy Mozart sonata, or even an easy sonata for that matter, which are by their nature complex, multi-movement works. That being said, it doesn’t mean that …"
-                    blogLink="Read More"
+                    blogLink="/easy-mozart-sonatas/"
                     category="Easy Pieces Series, Piano"
                 />
 
