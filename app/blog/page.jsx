@@ -280,7 +280,7 @@ const BlogPage = () => {
                     date="July 27, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/07/easy_chopin_waltzes_cover.jpg"
                     description="Introduction Although Chopin is known to have written a total of about 20 waltzes, most of them require a pre-advanced to advanced mastery of the piano to be able to perform comfortably. Luckily, there are 3 that are easier than …"
-                    blogLink="Read More"
+                    blogLink="/easy-chopin-waltzes/"
                     category="Easy Pieces Series, Piano"
                 />
 
