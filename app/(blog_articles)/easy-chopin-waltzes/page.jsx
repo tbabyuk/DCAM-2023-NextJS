@@ -1,6 +1,3 @@
-
-
-
 import { PostTitle } from "../../components/PostTitle"
 import { PostSource } from "../../components/PostSource"
 import { PostSectionHeading } from "../../components/PostSectionHeading"
@@ -20,7 +17,7 @@ const PostEasyChopinWaltzes = () => {
   return (
             <main className="text-gray-700 text-[0.9rem]">
             <PostTitle title="The 3 Easiest Chopin Waltzes (piano)" date="July 27, 2020" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f" alt="Easy Mozart Sonatas cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f" alt="Easy Chopin Waltzes cover"/>
 
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />

@@ -80,9 +80,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Chopin Nocturnes (piano)" 
                     date="October 22, 2022"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2022/10/easy_chopin_nocturnes_cover.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-nocturnes%2Feasy_chopin_nocturnes_cover.jpg?alt=media&token=0a02a5af-6cc0-4b2f-b304-6fcf75de2454"
                     description="Introduction Chopin is known to have written a total of 21 nocturnes, 18 of which were published during his lifetime and 3 posthumously. Today, his nocturnes are held in very high regard among musicians …"
-                    blogLink="Read More"
+                    blogLink="/easy-chopin-nocturnes"
                     category="Easy Pieces Series"
                 />
 
