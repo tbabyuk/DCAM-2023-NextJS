@@ -26,9 +26,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Debussy Piano Pieces" 
                     date="May 17, 2023"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2023/05/debussy.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-debussy-pieces%2Feasy_debussy_pieces_cover.jpg?alt=media&token=7fd595a7-7ffb-4b03-ad3e-c1258122b355"
                     description="As is usually the case with my “easy” series, I try to put together a collection of pieces that are not just “easy” relative to the composer’s other works, but also ones I consider to be the most beautiful. …"
-                    blogLink="Read More"
+                    blogLink="/easy-debussy-pieces/"
                     category="Easy Pieces Series', Piano"
                 />
 
