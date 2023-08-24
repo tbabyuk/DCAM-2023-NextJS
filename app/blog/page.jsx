@@ -60,11 +60,11 @@ const BlogPage = () => {
                 />
 
                 <BlogCard
-                    title="Easy Clementi Sonatinas (piano)" 
+                    title="The 3 Easiest Clementi Sonatinas (piano)" 
                     date="October 30, 2022"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2022/10/easy_clementi_sonatinas_cover_image.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-clementi-sonatinas%2Feasy_clementi_sonatinas_cover.jpg?alt=media&token=ef9c5aaa-360c-474d-bc25-c12a0a0790cd"
                     description="Muzio Clementi (1752-1832) was an influential Italian pianist, composer, teacher, editor, and music publisher. His musical output had an important influence on many future generations of musicians and composers …"
-                    blogLink="Read More"
+                    blogLink="/easy-clementi-sonatinas/"
                     category="Easy Pieces Series"
                 />
 
