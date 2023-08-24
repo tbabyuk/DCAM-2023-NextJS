@@ -1,4 +1,3 @@
-
 import { PostTitle } from "../../components/PostTitle"
 import { PostSource } from "../../components/PostSource"
 import { PostSectionHeading } from "../../components/PostSectionHeading"
@@ -17,7 +16,7 @@ export const metadata = {
 
 const PostFamousBandsFromToronto = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Famous Bands from Toronto" date="November 20, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-bands-from-toronto%2Ffamous_bands_from_toronto_cover.jpg?alt=media&token=598d99c9-4fd5-4be1-80f4-ae7341e0a774" alt="Famous Bands from Toronto cover image"/>
 

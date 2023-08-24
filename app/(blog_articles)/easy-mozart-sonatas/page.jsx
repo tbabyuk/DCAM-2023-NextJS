@@ -1,6 +1,3 @@
-
-
-
 import { PostTitle } from "../../components/PostTitle"
 import { PostSource } from "../../components/PostSource"
 import { PostSectionHeading } from "../../components/PostSectionHeading"
@@ -18,7 +15,7 @@ export const metadata = {
 
 const PostEasyMozartSonatas = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="The 3 Easiest Mozart Sonatas (piano)" date="September 9, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-mozart-sonatas%2Feasy_mozart_sonatas_featured_image.jpg?alt=media&token=08e9fc73-330c-4fbe-8911-1270cbf2be76" alt="Easy Mozart Sonatas cover"/>
 

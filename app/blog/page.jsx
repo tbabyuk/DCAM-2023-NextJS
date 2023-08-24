@@ -125,9 +125,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="Easy sonatinas for piano students" 
                     date="July 30, 2021"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/08/accidentals_cover_photo.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-piano-sonatinas%2Feasy_sonatinas_cover.jpg?alt=media&token=640a7125-50e0-4de1-92cc-2d835fcf8cb1"
                     description="the “Sonatina” A sonatina is a musical composition resembling a mini-sonata. Where a sonata is considered a sophisticated and relatively complex piece of music, a sonatina is a lot shorter, lighter in character, and less …"
-                    blogLink="Read More"
+                    blogLink="/easy-piano-sonatinas/"
                     category="Easy Pieces Series, Piano"
                 />
 

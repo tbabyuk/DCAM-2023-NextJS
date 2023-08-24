@@ -15,7 +15,7 @@ export const metadata = {
 
 const PostEasyDebussyPianoPieces = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="The 3 Easiest Debussy Piano Pieces" date="May 17, 2023" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-debussy-pieces%2Feasy_debussy_pieces_cover.jpg?alt=media&token=7fd595a7-7ffb-4b03-ad3e-c1258122b355" alt="Easy Debussy Pieces cover"/>
 

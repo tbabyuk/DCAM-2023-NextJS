@@ -1,4 +1,3 @@
-
 import { PostTitle } from "../../components/PostTitle"
 import { PostSource } from "../../components/PostSource"
 import { PostSectionHeading } from "../../components/PostSectionHeading"
@@ -16,7 +15,7 @@ export const metadata = {
 
 const PostViolinExamMarkGuide = () => {
   return (
-            <main className="rcm-violin-exam-mark-guide-post text-gray-700 text-[0.9rem]">
+            <main className="rcm-violin-exam-mark-guide-post text-gray-700 text-[0.95rem]">
             <PostTitle title="RCM Violin Exam Requirements (all grades)" date="July 2, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Frcm_violin_exam_requirements_cover.jpg?alt=media&token=3d10b0fd-add2-4f0c-a474-5ae99ed7549e" alt="RCM Violin Exam requirements cover photo"/>
 

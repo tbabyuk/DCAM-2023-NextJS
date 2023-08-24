@@ -1,6 +1,3 @@
-
-
-
 import { PostTitle } from "../../components/PostTitle"
 import { PostSource } from "../../components/PostSource"
 import { PostSectionHeading } from "../../components/PostSectionHeading"
@@ -18,7 +15,7 @@ export const metadata = {
 
 const PostEasyCzernyEtudes = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Easy Czerny Etudes (piano)" date="September 11, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-czerny-etudes%2Feasy_czerny_etudes_cover_photo.jpg?alt=media&token=4eb69890-69e2-485a-9fa1-fb5f557d5bfc" alt="Easy Czerny Etudes cover"/>
 

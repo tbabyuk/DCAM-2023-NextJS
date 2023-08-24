@@ -17,7 +17,7 @@ const PostEasyPianoSonatinas = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Easy Sonatinas for Piano Students" date="July 30, 2021" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-clementi-sonatinas%2Feasy_clementi_sonatinas_cover.jpg?alt=media&token=ef9c5aaa-360c-474d-bc25-c12a0a0790cd" alt="Easy Clementi Sonatinas cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-piano-sonatinas%2Feasy_sonatinas_cover.jpg?alt=media&token=640a7125-50e0-4de1-92cc-2d835fcf8cb1" alt="Easy Piano Sonatinas cover"/>
 
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />

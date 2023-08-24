@@ -18,7 +18,7 @@ export const metadata = {
 
 const PostEasyBeethovenSonatas = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="The 3 Easiest Beethoven Sonatas (piano)" date="March 8, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-beethoven-sonatas%2Feasy_beethoven_sonatas_cover_photo.jpg?alt=media&token=d3359bf6-2880-4ad2-bcbe-e016809837ab" alt="Easy Beethoven Sonatas cover"/>
 

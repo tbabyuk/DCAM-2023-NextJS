@@ -16,7 +16,7 @@ export const metadata = {
 
 const PostGuitarExamMarkGuide = () => {
   return (
-            <main className="rcm-piano-exam-mark-guide-post text-gray-700 text-[0.9rem]">
+            <main className="rcm-piano-exam-mark-guide-post text-gray-700 text-[0.95rem]">
             <PostTitle title="RCM Guitar Exam Requirements (all grades)" date="July 28, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-guitar-exam-mark-guide%2Frcm_guitar_requirements_cover.jpg?alt=media&token=fbc771be-a559-4d96-94fc-51041d4e8358" alt="RCM Guitar Exam requirements cover photo"/>
 

@@ -15,7 +15,7 @@ export const metadata = {
 
 const PostEasyChopinNocturnes = () => {
   return (
-            <main className="text-gray-700 text-[0.9rem]">
+            <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="The 3 Easiest Chopin Nocturnes (piano)" date="October 22, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-nocturnes%2Feasy_chopin_nocturnes_cover.jpg?alt=media&token=0a02a5af-6cc0-4b2f-b304-6fcf75de2454" alt="Easy Chopin Nocturnes cover"/>
 
