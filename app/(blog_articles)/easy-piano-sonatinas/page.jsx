@@ -9,7 +9,7 @@ import PostImage from "../../components/PostImage"
 
 export const metadata = {
     title: "Easy Sonatinas for Piano Students | Da Capo Academy of Music",
-    description: "Playing sonatinas is a great way to ease your way into more complex piano repertoire. Here are some easy sonatinas to get started with!",
+    description: "Playing sonatinas is a great way to ease your way into more complex piano repertoire. Here are a few easy sonatinas to get started with!",
     keywords: ["easy sonatinas", "beginner sonatinas", "easy sonatinas for piano students"]
 }
 

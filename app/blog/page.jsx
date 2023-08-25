@@ -44,7 +44,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="Famous Bands from Toronto" 
                     date="November 20, 2022"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2022/11/toronto_bands_cover_photo.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-bands-from-toronto%2Ffamous_bands_from_toronto_cover.jpg?alt=media&token=598d99c9-4fd5-4be1-80f4-ae7341e0a774"
                     description="Toronto and the GTA (Greater Toronto Area) has produced a good number of bands that have managed to hit it big around the world. In this article, we will take a look at the most popular of these, and …"
                     blogLink="/famous-bands-from-toronto"
                     category="Canadian Music, Music General"
@@ -144,7 +144,7 @@ const BlogPage = () => {
                     title="Famous Canadian Pianists" 
                     date="May 9, 2021"
                     imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-canadian-pianists%2Ffamous_canadian_pianists_cover.jpg?alt=media&token=fea3b2a6-4ff1-4f2b-939f-e2fe12f27553"
-                    description="Introduction Over the years, Canada has produced its own share of pianistic talent. While some of these pianists have managed to gain world-wide fame and leave a lasting legacy in the world of music, others are still relatively young and …"
+                    description="Introduction Over the years, Canada has produced its own share of pianistic talent. While some of these pianists have managed to gain world-wide fame and leave a lasting legacy in the world of music, others are still …"
                     blogLink="/famous-canadian-pianists/"
                     category="Canadian Music, Music General"
                 />
@@ -161,7 +161,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Chopin Etudes (piano)" 
                     date="April 13, 2021"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/04/easy_chopin_etudes_cover.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-etudes%2Feasy_chopin_etudes_cover.jpg?alt=media&token=041c33f1-835d-4b2e-bad3-414564570477"
                     description="Introduction Chopin is known to have written a total of 27 etudes, most of which are contained in Op. 25 and Op. 10 of his works. In this article, I chose 3 of these 27 that are generally considered the …"
                     blogLink="/easy-chopin-etudes/"
                     category="Easy Pieces Series, Piano"
@@ -179,7 +179,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Beethoven Sonatas (piano)" 
                     date="March 8, 2021"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/03/easy_beethoven_sonatas_cover_photo.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-beethoven-sonatas%2Feasy_beethoven_sonatas_cover_photo.jpg?alt=media&token=d3359bf6-2880-4ad2-bcbe-e016809837ab"
                     description="Introduction Let’s get something straight – when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of which he is known to have written about 32. The …"
                     blogLink="/easy-beethoven-sonatas/"
                     category="Easy Pieces Series"
@@ -189,7 +189,7 @@ const BlogPage = () => {
                     title="6 Reasons to Take RCM Exams (Royal Conservatory)" 
                     date="November 26, 2020"
                     imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/11/six_reasons_to_take_rcm_exams.jpg"
-                    description="Introduction Let’s get something straight – when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of which he is known to have written about 32. The …"
+                    description="Introduction Let’s get something straight – when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of …"
                     blogLink="Read More"
                     category="RCM"
                 />
@@ -242,7 +242,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Mozart Sonatas (piano)" 
                     date="September 9, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/09/easy_mozart_sonatas_featured_image.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-mozart-sonatas%2Feasy_mozart_sonatas_featured_image.jpg?alt=media&token=08e9fc73-330c-4fbe-8911-1270cbf2be76"
                     description="Let’s begin with a disclaimer – there is no such thing as an easy Mozart sonata, or even an easy sonata for that matter, which are by their nature complex, multi-movement works. That being said, it doesn’t mean that …"
                     blogLink="/easy-mozart-sonatas/"
                     category="Easy Pieces Series, Piano"
@@ -278,7 +278,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="The 3 Easiest Chopin Waltzes (piano)" 
                     date="July 27, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/07/easy_chopin_waltzes_cover.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f"
                     description="Introduction Although Chopin is known to have written a total of about 20 waltzes, most of them require a pre-advanced to advanced mastery of the piano to be able to perform comfortably. Luckily, there are 3 that are easier than …"
                     blogLink="/easy-chopin-waltzes/"
                     category="Easy Pieces Series, Piano"
@@ -321,11 +321,11 @@ const BlogPage = () => {
                 />
 
                 <BlogCard
-                    title="How Music Intervals Work (illustrated with examples)" 
+                    title="How Music Intervals Work (with examples)" 
                     date="July 4, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/07/child_guitar_sizes_featured_image.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmusic_intervals_cover.jpg?alt=media&token=d7d4e709-2a3f-42df-8f1e-8ffa483d0868"
                     description="Music intervals are an essential component of music theory and simply one of those things that every musician should know. This article is designed to give you a full understanding of this topic in a way that is logical …"
-                    blogLink="Read More"
+                    blogLink="/how-music-intervals-work/"
                     category="Music Theory"
                 />
 
@@ -350,7 +350,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="Famous Actors Who Can Play the Piano" 
                     date="June 18, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/06/rcm_piano_exam_requirements_cover.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Factors-who-play-piano%2Factors_who_play_piano_cover.jpg?alt=media&token=c08d7994-a9c7-41b6-a30a-6b232edf2759"
                     description="Overview You know them for their acting skills, but you probably didn’t know that these famous actors could also impress you on the piano! Here is our list of the top 5 actors who can play the piano! (ordered by …"
                     blogLink="/actors-who-play-piano/"
                     category="Music General"

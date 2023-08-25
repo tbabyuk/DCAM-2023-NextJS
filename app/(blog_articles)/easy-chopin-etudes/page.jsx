@@ -17,7 +17,7 @@ const PostEasyChopinEtudes = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="The 3 Easiest Chopin Etudes (piano)" date="April 13, 2021" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-etudes%2Feasy_chopin_etudes_cover.jpg?alt=media&token=041c33f1-835d-4b2e-bad3-414564570477" alt="Famous Musicians from Toronto cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-etudes%2Feasy_chopin_etudes_cover.jpg?alt=media&token=041c33f1-835d-4b2e-bad3-414564570477" alt="Easy Chopin Etudes cover"/>
 
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />

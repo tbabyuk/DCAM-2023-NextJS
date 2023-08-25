@@ -19,3 +19,9 @@ input {
 .dcam-link {
   @apply border-b border-b-gray-400 hover:text-lightRed hover:border-b-lightRed
 }
+
+.blog-table table, 
+.blog-table th,
+.blog-table td {
+  @apply border-2 border-gray-200 py-2
+}
