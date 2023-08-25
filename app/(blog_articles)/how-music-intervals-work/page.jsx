@@ -145,7 +145,7 @@ const PostHowMusicIntervalsWork = () => {
 
             <PostDivider />
 
-            <PostHeading heading="How to Identify Intervals in a Staff" bottom="mb-14" />
+            <PostHeading heading="How to Identify Intervals on a Staff" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <p className="leading-8">First, let’s look at how to identify intervals we can see visually on the music staff. The secret to doing this lies in the major scale. To demonstrate, we are going to use our favourite beginner-friendly scale – the “C Major”. Here it is for reference:</p>
                 <figure className="py-8 flex-shrink-0 flex flex-col justify-center items-center">
@@ -155,9 +155,108 @@ const PostHowMusicIntervalsWork = () => {
                 <figure className="py-8 flex-shrink-0 flex flex-col justify-center items-center">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmajor_intervals.jpg?alt=media&token=cb696cd8-c688-443d-a850-b829350d75d7" alt="harmonic interval example" className="rounded-md md:w-[45%]" />
                 </figure>
+                <p className="leading-8 mb-14">Several important observations can be made from tha above chart:</p>
+                    <ol className="list-decimal list-inside mb-10 leading-8">
+                        <li>The 1st, 4th, 5th and 8th intervals are all <span className="italic">perfect</span></li>
+                        <li>The 2nd, 3rd, 6th and 7th intervals are all <span className="italic">major</span></li>
+                    </ol>
+                <p className="font-bold leading-8 mb-14">This pattern holds true for any major scale and is the key to naming intervals!</p>
+                <p className="leading-8">
+                    Okay, so we understand what “major” and “perfect” intervals are, but what about the others: “minor”, “diminished” and “augmented”? The remaining three interval types can be thought of as deriving from the first two. The following table illustrates how we get “minor”, “diminished” and “augmented” intervals from “major” and “perfect” intervals:
+                </p>
+                <table className="mx-auto my-10 bg-gray-100 w-full md:w-[50%] blog-table">
+                    <thead>
+                        <tr>
+                            <th>Starting <br />Interval</th>
+                            <th>Change</th>
+                            <th>Becomes</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-center">
+                        <tr>
+                            <td rowSpan="3">Major</td>
+                            <td>1 half step bigger</td>
+                            <td>Augmented</td>
+                        </tr>
+                        <tr>
+                            <td>1 half step smaller</td>
+                            <td>Minor</td>
+                        </tr>
+                        <tr>
+                            <td>2 half steps smaller</td>
+                            <td>Diminished</td>
+                        </tr>
+                        <tr>
+                            <td rowSpan="2">Perfect</td>
+                            <td>1 half step bigger</td>
+                            <td>Augmented</td>
+                        </tr>
+                        <tr>
+                            <td>1 half step smaller</td>
+                            <td>Diminished</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p className="leading-8 mb-14">And voila – you are now armed with all the tools you need to identify any interval!</p>
+                <p className="leading-8 mb-14">Next, let’s work through a few exercises to check your understanding.</p>
+            </section>
 
+            <PostDivider />
 
-                
+            <PostHeading heading="Example Exercises" bottom="mb-14" />
+            <section className="px-5 lg:px-36 xl:px-64 mb-20">
+                <p className="leading-8">First, let’s look at how to identify intervals we can see visually on the music staff. The secret to doing this lies in the major scale. To demonstrate, we are going to use our favourite beginner-friendly scale – the “C Major”. Here it is for reference:</p>
+                <figure className="py-8 flex-shrink-0 flex flex-col justify-center items-center">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fc_major_scale.png?alt=media&token=bd533e05-f8cd-4f01-aca3-567183587c83" alt="harmonic interval example" className="rounded-md md:w-[55%]" />
+                </figure>
+                <p className="leading-8">As you might already know, every major scale follows the same pattern of whole steps and half steps, which means that the distance relationship between the notes is the same across all major scales. Keeping this fact in mind, here are the names of intervals between notes of the major scale (using “C” as our reference point). Let’s do our best to memorize these:</p>
+                <figure className="py-8 flex-shrink-0 flex flex-col justify-center items-center">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmajor_intervals.jpg?alt=media&token=cb696cd8-c688-443d-a850-b829350d75d7" alt="harmonic interval example" className="rounded-md md:w-[45%]" />
+                </figure>
+                <p className="leading-8 mb-14">Several important observations can be made from tha above chart:</p>
+                    <ol className="list-decimal list-inside mb-10 leading-8">
+                        <li>The 1st, 4th, 5th and 8th intervals are all <span className="italic">perfect</span></li>
+                        <li>The 2nd, 3rd, 6th and 7th intervals are all <span className="italic">major</span></li>
+                    </ol>
+                <p className="font-bold leading-8 mb-14">This pattern holds true for any major scale and is the key to naming intervals!</p>
+                <p className="leading-8">
+                    Okay, so we understand what “major” and “perfect” intervals are, but what about the others: “minor”, “diminished” and “augmented”? The remaining three interval types can be thought of as deriving from the first two. The following table illustrates how we get “minor”, “diminished” and “augmented” intervals from “major” and “perfect” intervals:
+                </p>
+                <table className="mx-auto my-10 bg-gray-100 w-full md:w-[50%] blog-table">
+                    <thead>
+                        <tr>
+                            <th>Starting <br />Interval</th>
+                            <th>Change</th>
+                            <th>Becomes</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-center">
+                        <tr>
+                            <td rowSpan="3">Major</td>
+                            <td>1 half step bigger</td>
+                            <td>Augmented</td>
+                        </tr>
+                        <tr>
+                            <td>1 half step smaller</td>
+                            <td>Minor</td>
+                        </tr>
+                        <tr>
+                            <td>2 half steps smaller</td>
+                            <td>Diminished</td>
+                        </tr>
+                        <tr>
+                            <td rowSpan="2">Perfect</td>
+                            <td>1 half step bigger</td>
+                            <td>Augmented</td>
+                        </tr>
+                        <tr>
+                            <td>1 half step smaller</td>
+                            <td>Diminished</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p className="leading-8 mb-14">And voila – you are now armed with all the tools you need to identify any interval!</p>
+                <p className="leading-8 mb-14">Next, let’s work through a few exercises to check your understanding.</p>
             </section>
 
             <PageBottomTrialButton />
