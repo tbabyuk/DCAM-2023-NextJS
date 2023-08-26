@@ -1,9 +1,13 @@
 "use client"
 
 import { useState, useEffect, useRef } from "react";
+import { useRouter } from "next/navigation";
+
+
 
 export const TrialButton = () => {
 
+const router = useRouter()
 const studentNameRef = useRef()
 const parentNameRef = useRef()
 const instrumentRef = useRef()
@@ -12,6 +16,7 @@ const emailRef = useRef()
 const sourceRef = useRef()
 
 const [modalIsOpen, setModalIsOpen] = useState(false)
+const [submitting, setSubmitting] = useState(false)
 
     const handleCloseModal = (e) => {
         if(e.target.classList.contains("backdrop") || (e.target.classList.contains("exit"))) {
@@ -23,7 +28,7 @@ const [modalIsOpen, setModalIsOpen] = useState(false)
         e.preventDefault()
 
         // console.log(studentNameRef.current.value, parentNameRef.current.value, instrumentRef.current.value, phoneRef.current.value, emailRef.current.value, sourceRef.current.value)
-
+        setSubmitting(true)
         const response = await fetch("/api/submit", {
             method: "POST",
             headers: {
@@ -37,14 +42,15 @@ const [modalIsOpen, setModalIsOpen] = useState(false)
                 email: emailRef.current.value,
                 source: sourceRef.current.value
             })
-    })
+        })
 
-    if(response.ok) {
-        const responseData = await response.json()
-        console.log(responseData)
-    }
-
-    
+        if(response.ok) {
+            const responseData = await response.json()
+            console.log(responseData)
+            setSubmitting(false)
+            router.push("/success")
+            setModalIsOpen(false)
+        }
     }
 
 
@@ -123,7 +129,8 @@ return (
                                 <option value="other">other</option>
                             </select>
                         </label>
-                        <button className="dcam-button w-full mt-3 h-10">Submit</button>
+                        <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>Submit</button>
+                        <small className="h-3 text-center text-green-600">{submitting && "submitting form..."}</small>
                     </form>
                 </div>
             </div>
