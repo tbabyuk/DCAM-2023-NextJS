@@ -25,3 +25,7 @@ input {
 .blog-table td {
   @apply border-2 border-gray-200 py-2
 }
+
+button:disabled {
+  @apply bg-gray-400 hover:bg-gray-400
+}
