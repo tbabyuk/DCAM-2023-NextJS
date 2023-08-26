@@ -19,9 +19,32 @@ const [modalIsOpen, setModalIsOpen] = useState(false)
         }
     }
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
-        console.log(studentNameRef.current.value, parentNameRef.current.value, instrumentRef.current.value, phoneRef.current.value, emailRef.current.value, sourceRef.current.value)
+
+        // console.log(studentNameRef.current.value, parentNameRef.current.value, instrumentRef.current.value, phoneRef.current.value, emailRef.current.value, sourceRef.current.value)
+
+        const response = await fetch("/api/submit", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                student: studentNameRef.current.value,
+                parent: parentNameRef.current.value,
+                instrument: instrumentRef.current.value,
+                phone: phoneRef.current.value,
+                email: emailRef.current.value,
+                source: sourceRef.current.value
+            })
+    })
+
+    if(response.ok) {
+        const responseData = await response.json()
+        console.log(responseData)
+    }
+
+    
     }
 
 
@@ -31,7 +54,7 @@ return (
 
         {modalIsOpen && (
             <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center" onClick={(e) => handleCloseModal(e)}>
-            <span className="exit absolute top-0 right-8 md:right-10 text-white text-7xl cursor-pointer">&times;</span>
+            <span className="exit absolute top-0 right-6 md:right-10 text-white text-7xl cursor-pointer">&times;</span>
                 <div className="modal w-[85%] sm:w-[380px] px-5 sm:px-10 py-7 mt-8 bg-gray-100 text-black rounded">
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <h2 className="text-center font-bold text-xl text-regGreen">FREE TRIAL LESSON</h2>
