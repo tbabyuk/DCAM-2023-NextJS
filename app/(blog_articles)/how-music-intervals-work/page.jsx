@@ -13,7 +13,6 @@ export const metadata = {
     keywords: ["music theory", "music intervals", "identify music intervals"]
 }
 
-
 const PostHowMusicIntervalsWork = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">

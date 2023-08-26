@@ -30,9 +30,9 @@ return (
         <button className="dcam-button text-lg" onClick={() => setModalIsOpen(true)}>Free Trial Lesson</button>
 
         {modalIsOpen && (
-            <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center px-5" onClick={(e) => handleCloseModal(e)}>
-            <span className="exit absolute top-0 right-5 sm:right-10 text-white text-7xl cursor-pointer">&times;</span>
-                <div className="modal w-11/12 sm:w-8/12 md:w-6/12 lg:w-5/12 xl:w-4/12 2xl:w-3/12 px-5 sm:px-10 py-7 mt-6 sm:mt-12 bg-gray-100 text-black">
+            <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center" onClick={(e) => handleCloseModal(e)}>
+            <span className="exit absolute top-0 right-8 md:right-10 text-white text-7xl cursor-pointer">&times;</span>
+                <div className="modal w-[90%] sm:w-[380px] px-5 sm:px-10 py-7 mt-20 md:mt-8 bg-gray-100 text-black">
                     <form className="flex flex-col" onSubmit={handleSubmit}>
                         <h2 className="text-center font-bold text-xl text-regGreen">FREE TRIAL LESSON</h2>
                         <p className="text-xs text-center mb-6">Get started with your free trial lesson today!</p>
