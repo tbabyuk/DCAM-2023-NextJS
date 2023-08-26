@@ -152,9 +152,9 @@ const BlogPage = () => {
                 <BlogCard
                     title="What is a trill and how to play it (piano)" 
                     date="April 20, 2021"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2021/04/trill_cover_photo.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-play-a-trill-correctly-piano%2Ftrill_cover_photo.jpg?alt=media&token=ae7afeb7-5e1f-47e1-9f78-d0e723455de3"
                     description="Introduction A trill is one of the most common musical ornaments and can sound beautiful when done well. If you are not confident about your understanding of what a trill is or how to play it correctly, look no further. …"
-                    blogLink="Read More"
+                    blogLink="/how-to-play-a-trill-correctly-piano"
                     category="Music Theory, Piano"
                 />
 
