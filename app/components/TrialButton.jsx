@@ -130,7 +130,6 @@ return (
                             </select>
                         </label>
                         <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting..." : "Submit"}</button>
-                        {/* <small className="h-3 text-center text-green-600">{submitting && "submitting form..."}</small> */}
                     </form>
                 </div>
             </div>

@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server'
 import nodemailer from "nodemailer"
 
- 
 // THE BELOW CODE WORKED
 // export async function GET(request, response) {
 //     return NextResponse.json({greeting: "Hello"}, {status: 200})
