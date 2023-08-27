@@ -115,7 +115,7 @@ const PostGraceNotesExplained = () => {
                         <figcaption className="text-gray-500"><small>Four-note grace note</small></figcaption>
                     </figure>
                 </div>
-                <p className="leading-8 mb-10 font-semibold text-[0.9rem]">* Although multiple grace notes do not have a diagonal line going through them, you should play them the same way you would play the acciaccatura. In other words, they should be unaccented and should come before the main beat.</p>
+                <p className="mb-10 font-semibold text-[0.9rem]">* Although multiple grace notes do not have a diagonal line going through them, you should play them the same way you would play the acciaccatura. In other words, they should be unaccented and should come before the main beat.</p>
                 <p className="leading-8 mb-10">The two-note grace note is also known as a <span className="font-bold">double appoggiatura</span>, the three-note grace note as a <span className="font-bold">triple appoggiatura</span>, and so on. But this name can be misleading, since these are almost never played on the beat, like the regular appoggiatura is. Instead, they are played in a “crushed” manner, like the acciaccatura.</p>
             </section>
 

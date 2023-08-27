@@ -96,7 +96,7 @@ const BlogPage = () => {
                 />
 
                 <BlogCard
-                    title="What is a grace note and to play it" 
+                    title="What is a grace note and how to play it"
                     date="August 25, 2021"
                     imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fgrace_notes_cover.jpg?alt=media&token=7090278a-b646-4d30-a4d2-45f742301034"
                     description="Perhaps you’ve heard your teacher mention the term “grace note” during one of your lessons and even point one out to you in your sheet music, but you’re still not quite sure what they are and how exactly they …"

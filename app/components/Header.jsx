@@ -25,16 +25,16 @@ const Header = () => {
         <header className="flex flex-col mb-28">
             
             {/* LOGO & CONTACT HEADER */}
-            <div className="header-top px-5 py-10 md:py-5 bg-gradient-to-r from-regRed via-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
+            <div className="header-top px-5 py-8 md:py-4 bg-gradient-to-r from-regRed via-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
 
-                <div className="flex">
-                    <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "210px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
+                <Link href="/"><img src="/dcam_logo_white.png" style={{maxWidth: "180px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
+
+                <div className="hidden md:block">
+                    <MMSLoginButton  />
                 </div>
 
-                <MMSLoginButton />
-
                 <div className="flex flex-col lg:flex-row lg:items-center">
-                    <div className="flex justify-center md:hidden my-10 lg:my-0 lg:me-10 lg:block">
+                    <div className="flex justify-center md:hidden my-8 lg:my-0 lg:me-10 lg:block">
                         <a
                             href="https://www.facebook.com/dacapomusic.ca/" target="_blank" 
                             className="hover:text-lightRed me-5 inline-block">
@@ -51,8 +51,8 @@ const Header = () => {
                         </a>
                     </div>
                     <div className="flex flex-col items-center md:items-start">
-                        <a href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
-                        <a href="tel:+4162379595"className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
+                        <a href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
+                        <a href="tel:+4162379595"className="flex items-center hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
                     </div>
                 </div>
             </div>
