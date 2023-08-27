@@ -30,7 +30,7 @@ const PostHowMusicIntervalsWork = () => {
 
             <PostHeading heading="What Is a Music Interval?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
-                <div className="bio flex flex-col md:flex-row mb-16">
+                <div className="flex flex-col md:flex-row mb-16">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Finterval.PNG?alt=media&token=553cc536-ef1a-4b0f-8189-fc764646ba23" alt="music interval example" style={{width: "220px"}} className="rounded-md" />
                     </figure>

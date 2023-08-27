@@ -287,7 +287,7 @@ const BlogPage = () => {
                 <BlogCard
                     title="An Illustrated Guide to Child Guitar Sizes" 
                     date="July 19, 2020"
-                    imageUrl="https://dacapomusic.ca/wp-content/uploads/2020/07/child_guitar_sizes_featured_image.jpg"
+                    imageUrl="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fchild_guitar_sizes_cover.jpg?alt=media&token=1524c4ed-97f0-4891-bd12-de8f606278b7"
                     description="Introduction If your child is about to start guitar lessons, you might wonder what the right guitar size for them is, given all the available options. This guide is designed to help you answer this question, with lots of other …"
                     blogLink="Read More"
                     category="Music General, Guitar"
