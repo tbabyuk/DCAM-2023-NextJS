@@ -18,7 +18,13 @@ export const metadata = {
     initialScale: 1,
     maximumScale: 1,
   },
+  // PermissionsPolicy: {
+  //   interestCohort: "()"
+  // }
 }
+
+// trying to fix error in console with below code, no success thus far
+{/* <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> */}
 
 export default function RootLayout({ children }) {
   return (

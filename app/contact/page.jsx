@@ -39,7 +39,7 @@ const Contact = () => {
                         <section className="address px-5">
                             <h2 className="text-lg font-semibold">Our Location:</h2>
                             <p>270 The Kingsway, Etobicoke, ON M9A 3T7</p>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3584966482185!2d-79.52234452407666!3d43.66151347110163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37bb608630c7%3A0x69f2141676b811d2!2sDa%20Capo%20Academy%20of%20Music!5e0!3m2!1sen!2sca!4v1688345265242!5m2!1sen!2sca" className="w-full" height="280" style={{border: 0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" />                       
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.3584966482185!2d-79.52234452407666!3d43.66151347110163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b37bb608630c7%3A0x69f2141676b811d2!2sDa%20Capo%20Academy%20of%20Music!5e0!3m2!1sen!2sca!4v1688345265242!5m2!1sen!2sca" className="w-full" height="280" style={{border: 0}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />                       
                         </section>
                     </div>
 

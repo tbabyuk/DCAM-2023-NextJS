@@ -16,7 +16,7 @@ export const metadata = {
 const PostChildGuitarSizes = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="How Music Intervals Work (with examples)" date="July 4, 2020" />
+            <PostTitle title="An Illustrated Guide to Child Guitar Sizes" date="July 19, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fchild_guitar_sizes_cover.jpg?alt=media&token=1524c4ed-97f0-4891-bd12-de8f606278b7" alt="Child Guitar Sizes cover"/>
 
             <PostSectionHeading heading="Introduction" />
