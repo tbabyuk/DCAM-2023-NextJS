@@ -1,11 +1,9 @@
-import { PostTitle } from "../../components/PostTitle"
-import { PostSource } from "../../components/PostSource"
-import { PostSectionHeading } from "../../components/PostSectionHeading"
-import { PostHeading } from "../../components/PostHeading"
-import { PostSubheading } from "../../components/PostSubheading"
-import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
-import { PostDivider } from "../../components/PostDivider"
-import PostImage from "../../components/PostImage"
+import { PostTitle } from "@/app/components/PostTitle"
+import { PostSectionHeading } from "@/app/components/PostSectionHeading"
+import { PostHeading } from "@/app/components/PostHeading"
+import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
+import { PostDivider } from "@/app/components/PostDivider"
+import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "What is a trill and how to play it (piano) | Da Capo Academy of Music",
@@ -14,10 +12,10 @@ export const metadata = {
 }
 
 
-const PostWhatIsATrill = () => {
+const PostPianoTrillsExplained = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="What is a trill and how to play it (piano)" date="April 20, 2021" />
+            <PostTitle title="Piano Trills Explained" date="April 20, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-play-a-trill-correctly-piano%2Ftrill_cover_photo.jpg?alt=media&token=ae7afeb7-5e1f-47e1-9f78-d0e723455de3" alt="Music Intervals cover"/>
 
             <PostSectionHeading heading="Introduction" />
@@ -114,4 +112,4 @@ const PostWhatIsATrill = () => {
   )
 }
 
-export default PostWhatIsATrill
+export default PostPianoTrillsExplained

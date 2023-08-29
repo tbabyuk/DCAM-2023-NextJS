@@ -1,11 +1,10 @@
-import { PostTitle } from "../../components/PostTitle"
-import { PostSource } from "../../components/PostSource"
-import { PostSectionHeading } from "../../components/PostSectionHeading"
-import { PostHeading } from "../../components/PostHeading"
-import { PostSubheading } from "../../components/PostSubheading"
-import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
-import { PostDivider } from "../../components/PostDivider"
-import PostImage from "../../components/PostImage"
+import { PostTitle } from "@/app/components/PostTitle"
+import { PostSectionHeading } from "@/app/components/PostSectionHeading"
+import { PostHeading } from "@/app/components/PostHeading"
+import { PostSubheading } from "@/app/components/PostSubheading"
+import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
+import { PostDivider } from "@/app/components/PostDivider"
+import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "How Music Intervals Work | Da Capo Academy of Music",
@@ -13,7 +12,7 @@ export const metadata = {
     keywords: ["music theory", "music intervals", "identify music intervals"]
 }
 
-const PostHowMusicIntervalsWork = () => {
+const PostMusicIntervalsExplained = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="How Music Intervals Work (with examples)" date="July 4, 2020" />
@@ -344,4 +343,4 @@ const PostHowMusicIntervalsWork = () => {
   )
 }
 
-export default PostHowMusicIntervalsWork
+export default PostMusicIntervalsExplained

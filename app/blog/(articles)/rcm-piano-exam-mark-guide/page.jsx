@@ -1,11 +1,11 @@
-import { PostTitle } from "../../components/PostTitle"
-import { PostSource } from "../../components/PostSource"
-import { PostSectionHeading } from "../../components/PostSectionHeading"
-import { PostHeading } from "../../components/PostHeading"
-import { PostSubheading } from "../../components/PostSubheading"
-import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
-import { PostDivider } from "../../components/PostDivider"
-import PostImage from "../../components/PostImage"
+import { PostTitle } from "@/app/components/PostTitle"
+import { PostSource } from "@/app/components/PostSource"
+import { PostSectionHeading } from "@/app/components/PostSectionHeading"
+import { PostHeading } from "@/app/components/PostHeading"
+import { PostSubheading } from "@/app/components/PostSubheading"
+import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
+import { PostDivider } from "@/app/components/PostDivider"
+import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "RCM Piano Exam Requirements (all grades) | Da Capo Academy of Music",

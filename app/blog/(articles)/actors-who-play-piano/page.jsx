@@ -1,12 +1,10 @@
 
-import { PostTitle } from "../../components/PostTitle"
-import { PostSource } from "../../components/PostSource"
-import { PostSectionHeading } from "../../components/PostSectionHeading"
-import { PostHeading } from "../../components/PostHeading"
-import { PostSubheading } from "../../components/PostSubheading"
-import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
-import { PostDivider } from "../../components/PostDivider"
-import PostImage from "../../components/PostImage"
+import { PostTitle } from "@/app/components/PostTitle"
+import { PostSectionHeading } from "@/app/components/PostSectionHeading"
+import { PostHeading } from "@/app/components/PostHeading"
+import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
+import { PostDivider } from "@/app/components/PostDivider"
+import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "Famous Actors Who Can Play the Piano | Da Capo Academy of Music",

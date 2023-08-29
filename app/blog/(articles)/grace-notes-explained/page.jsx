@@ -1,11 +1,10 @@
-import { PostTitle } from "../../components/PostTitle"
-import { PostSource } from "../../components/PostSource"
-import { PostSectionHeading } from "../../components/PostSectionHeading"
-import { PostHeading } from "../../components/PostHeading"
-import { PostSubheading } from "../../components/PostSubheading"
-import { PageBottomTrialButton } from "../../components/PageBottomTrialButton"
-import { PostDivider } from "../../components/PostDivider"
-import PostImage from "../../components/PostImage"
+import { PostTitle } from "@/app/components/PostTitle"
+import { PostSectionHeading } from "@/app/components/PostSectionHeading"
+import { PostHeading } from "@/app/components/PostHeading"
+import { PostSubheading } from "@/app/components/PostSubheading"
+import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
+import { PostDivider } from "@/app/components/PostDivider"
+import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "What is a grace note and to play it | Da Capo Academy of Music",
@@ -16,7 +15,7 @@ export const metadata = {
 const PostGraceNotesExplained = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="What is a grace note and to play it" date="August 25, 2021" />
+            <PostTitle title="Grace Notes Explained" date="August 25, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fgrace_notes_cover.jpg?alt=media&token=7090278a-b646-4d30-a4d2-45f742301034" alt="Grace Notes cover"/>
 
             <PostSectionHeading heading="Introduction" />
