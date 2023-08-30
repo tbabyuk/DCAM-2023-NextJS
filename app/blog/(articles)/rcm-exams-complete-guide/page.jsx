@@ -4,6 +4,7 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PostSubheading } from "@/app/components/PostSubheading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
+import { PostSource } from "@/app/components/PostSource"
 import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
@@ -80,164 +81,196 @@ const PostRCMExamsGuide = () => {
             
             <PostDivider />
             
-            <PostHeading heading="List of RCM Exams" bottom="mb-4" />
-            <PostSubheading subheading="Practical Exams" align="text-center" bottom="mb-8" />
-            <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 2 - 5</h3>
+            <PostHeading heading="List of RCM Exams" bottom="mb-16" />
+            <PostSubheading subheading="Practical Exams" align="text-center" bottom="mb-8" />     
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="bio flex flex-col md:flex-row mb-8">
-                    <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fukulele_200.jpg?alt=media&token=63dacc55-03a4-4855-9b82-a8e3bf95dd5f" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
-                        <figcaption className="text-gray-500"><small>Kala nylon-string soprano ukulele</small></figcaption>
-                    </figure>
-                    <div className="mt-8 md:mt-0 md:ms-10 leading-8">
-                        <p className="leading-8 mb-8">Although technically not a guitar, the ukulele can be a great starter instrument for little kids. Children as young as 2 can start plucking away at the strings and experiment with the different sounds they make. It is small, light-weight, and uses nylon strings, which are easy on the fingers.</p>
-                        <p className="leading-8">An important distinctive feature of the ukulele is that it has 4 strings as opposed to the standard 6 of the guitalele or other guitars. This definitely makes it easier for kids to play, but those who plan to move on to a guitar will eventually have to make the transition to 6 strings.</p>
-                    </div>
-                </div>            
-                <p className="leading-8 mb-8">There are 4 main types of ukuleles: <span className="font-bold">soprano</span>, <span className="font-bold">concert</span>, <span className="font-bold">tenor</span> and <span className="font-bold">baritone</span>. Each one is slightly bigger and has a slightly different sound. The one we discuss here (see photo above) is a soprano ukulele, which is by far the most popular type and is what is considered a “standard” ukulele.</p>
-                <p className="leading-8 mb-8">In addition to being a neat starter instrument for kids, the ukulele is also an instrument in its own right. Plenty of adults play the ukulele instead of guitar and really enjoy its compact size and distinctive sound.</p>
-                <div className="border-2 border-gray-200 bg-green-100 p-5">
-                    <p className="font-bold mb-8">Thinking of buying a ukulele? Here are our recommendations based on our students’ experience and feedback:</p>
-                    <p className="mb-8">A basic, cheaper option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/Mahalo-Ukuleles-MK1-TBR-Soprano-Transparent/dp/B00MWRYZWI?crid=2CSB71PJ3TO03&keywords=Soprano%2BUkulele&qid=1669657327&qu=eyJxc2MiOiI2LjUyIiwicXNhIjoiNi4xNiIsInFzcCI6IjQuODIifQ%3D%3D&s=musical-instruments&sprefix=soprano%2Bukulele%2Cmi%2C77&sr=1-4&th=1&linkCode=sl1&tag=dcam08-20&linkId=d21b2617d7ab0aa40657a05639ed4212&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Soprano Ukulele</a> (External Link)</li>
-                    </ul>
-                    <p className="mb-8">A fancier, brand-name option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/KALA-KA-S-Soprano-Mahogany-Ukulele/dp/B00172UV6S?crid=ZD1B5T9AAJJC&keywords=kala%2Bsoprano%2Bukulele&qid=1669657690&qu=eyJxc2MiOiI0LjI2IiwicXNhIjoiNC4xNSIsInFzcCI6IjIuNDIifQ%3D%3D&s=musical-instruments&sprefix=kala%2Bsoprano%2Bukulele,mi,84&sr=1-5&th=1&linkCode=sl1&tag=dcam08-20&linkId=e62459efbbed77171d2eb6cbda943a3a&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Kala KA-S Soprano Ukulele</a> (External Link)</li>
-                    </ul>
-                </div>
+                <p className="leading-8 mb-10">Note: exams and exam names might differ from instrument to instrument. For purposes of demonstration, the following list is for <span className="font-bold">piano</span>. To see a list of practical exams for other instruments, download the appropriate syllabus from the RCM website by clicking <a href="https://www.rcmusic.com/learning/examinations/academic-resources-and-policies/syllabi-and-syllabi-errata" target="_blank" className="dcam-link">here</a>.</p>
+                <table className="blog-table mx-auto w-full md:w-[50%]">
+                    <thead>
+                        <tr>
+                            <th>Exams (piano only example)</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-center">
+                        <tr>
+                            <td>Preparatory A</td>
+                        </tr>
+                        <tr>
+                            <td>Preparatory B</td>
+                        </tr>
+                        <tr>
+                            <td>Level 1</td>
+                        </tr>
+                        <tr>
+                            <td>Level 2</td>
+                        </tr>
+                        <tr>
+                            <td>Level 3</td>
+                        </tr>
+                        <tr>
+                            <td>Level 4</td>
+                        </tr>
+                        <tr>
+                            <td>Level 5</td>
+                        </tr>
+                        <tr>
+                            <td>Level 6</td>
+                        </tr>
+                        <tr>
+                            <td>Level 7</td>
+                        </tr>
+                        <tr>
+                            <td>Level 8</td>
+                        </tr>
+                        <tr>
+                            <td>Level 9</td>
+                        </tr>
+                        <tr>
+                            <td>Level 10</td>
+                        </tr>
+                        <tr>
+                            <td>Associate Diploma (ARCT) in Piano, Performer</td>
+                        </tr>
+                        <tr>
+                            <td>Associate Diploma (ARCT) in Piano, Pedagogy</td>
+                        </tr>
+                        <tr>
+                            <td>Licentiate Diploma (LRCM) in Piano, Performer</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <PostSource source="RCM Piano Syllabus, 2022 Edition" />
+            </section>
+            <PostSubheading subheading="Written Exams" align="text-center" bottom="mb-8" />
+            <section className="px-5 lg:px-36 xl:px-64 mb-20">     
+                <p className="leading-8 mb-10">Note: this list only includes exams that are part of the “Celebrate Theory” book series (and are also the most popular). You can find more exams in the “RCM Exam Fees” section. Keep in mind that Preparatory to Level 4 theory levels are not tested with formal examinations.</p>
+                <table className="blog-table mx-auto w-full md:w-[50%]">
+                    <thead>
+                        <tr>
+                            <th>Exams</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-center">
+                        <tr>
+                            <td>Level 5 Theory</td>
+                        </tr>
+                        <tr>
+                            <td>Level 6 Theory</td>
+                        </tr>
+                        <tr>
+                            <td>Level 7 Theory</td>
+                        </tr>
+                        <tr>
+                            <td>Level 8 Theory</td>
+                        </tr>
+                        <tr>
+                            <td>Level 9 Harmony</td>
+                        </tr>
+                        <tr>
+                            <td>Level 9 History</td>
+                        </tr>
+                        <tr>
+                            <td>Level 10 Harmony & Counterpoint</td>
+                        </tr>
+                        <tr>
+                            <td>Level 10 History</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT Harmony & Counterpoint</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT History</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT Analysis</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <PostSource source="RCM Theory Syllabus, 2016 Edition" />
             </section>
 
             <PostDivider />
 
-            <PostHeading heading="Guitalele" bottom="mb-4" />
-            <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 3 - 5</h3>
+            <PostHeading heading="How Long Are RCM Exams?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="bio flex flex-col md:flex-row mb-8">
-                    <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fguitalele_200.jpg?alt=media&token=f7ca366c-3391-4f41-b2b2-53338f548a00" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
-                        <figcaption className="text-gray-500"><small>Yamaha nylon-string guitalele</small></figcaption>
-                    </figure>
-                    <div className="mt-8 md:mt-0 md:ms-10 leading-8">
-                        <p className="leading-8 mb-8">Another great option for little kids is the guitalele, which is ideal for 3 to 5 year-olds. The manufacturer Yamaha, who first introduced this instrument, describes it as “Half guitar, half ukulele…100% fun!”</p>
-                        <p className="leading-8">As the name suggests, the guitalele is a sort of hybrid between the guitar and the ukulele. It is closer to the ukulele in the way it sounds and closer to a guitar in its more mature shape and its number of strings (6). Also like the ukulele, it uses nylon strings.</p>
-                    </div>
+                <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fc_major_scale.png?alt=media&token=bd533e05-f8cd-4f01-aca3-567183587c83" alt="harmonic interval example" className="rounded-md md:w-[55%]" />
+                </figure>
+                <PostSubheading subheading="Practical Exams" align="text-center" bottom="mb-8" />     
+                <p className="leading-8 mb-10">RCM does not specify exact length for its practical exams, but they generally go anywhere from 15 minutes for beginner levels to over 1 hour for the advanced levels.</p>
+                <PostSubheading subheading="Written Exams" align="text-center" bottom="mb-8" />     
+                <p className="leading-8 mb-10">Written exams have time limits and students must finish their exam within the allotted time.</p>
+                <table className="blog-table mx-auto w-full md:w-[50%] mb-12">
+                    <thead>
+                        <tr>
+                            <th>Exam</th>
+                            <th>In-Person</th>
+                            <th>Online</th>
+                        </tr>
+                    </thead>
+                    <tbody className="text-center">
+                        <tr>
+                            <td>Level 5 Theory</td>
+                            <td>1 hour</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Level 6 Theory</td>
+                            <td>2 hours</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Level 7 Theory</td>
+                            <td>2 hours</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Level 8 Theory</td>
+                            <td>2 hours</td>
+                            <td>1 hour</td>
+                        </tr>
+                        <tr>
+                            <td>Level 9 Harmony</td>
+                            <td>3 hours</td>
+                            <td>not available</td>
+                        </tr>
+                        <tr>
+                            <td>Level 9 History</td>
+                            <td>not available</td>
+                            <td>70 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>Level 10 Harmony & Counterpoint</td>
+                            <td>3 hours</td>
+                            <td>not available</td>
+                        </tr>
+                        <tr>
+                            <td>Level 10 History</td>
+                            <td>not available</td>
+                            <td>110 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT Harmony & Counterpoint</td>
+                            <td>3 hours</td>
+                            <td>not available</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT History</td>
+                            <td>not available</td>
+                            <td>150 minutes</td>
+                        </tr>
+                        <tr>
+                            <td>ARCT Analysis</td>
+                            <td>3 hours</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div className="px-5 mt-10 lg:px-36 xl:px-64 text-center">
+                    <p className="italic text-gray-500">For all other exams and up-to-date information on this topic, please visit the RCM website at <a href="https://www.rcmusic.com/learning/examinations/remote-exams/remote-theory-exams/overview" target="_blank" className="dcam-link">this link</a></p>
                 </div>            
-                <p className="leading-8 mb-8">Although it resembles a guitar – it is actually tuned differently than a guitar – a 4th up. So, from bottom to top, the guitalele’s strings are A-D-G-C-E-A as opposed to the guitar’s E-A-D-G-B-E. This means that the chord shapes on a guitalele won’t give you the same chords as on the guitar. Despite this, it will get your child accustomed to 6 strings.</p>
-                <p className="leading-8 mb-8">Some people prefer the guitalele to the ukulele precisely because it has the standard 6 strings of a regular guitar, which makes a later transition to a guitar a bit easier.</p>
-                <div className="border-2 border-gray-200 bg-green-100 p-5">
-                    <p className="font-bold mb-8">Thinking of buying a guitalele? Here are our recommendations based on our students’ experience and feedback:</p>
-                    <p className="mb-8">A solid and reliable choice:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/gp/product/B00AC0OBYE?ie=UTF8&th=1&linkCode=sl1&tag=dcam08-20&linkId=0a008e8bf59c3c96edfab17ded46104f&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Yamaha GL Series Guitalele</a> (External Link)</li>
-                    </ul>
-                </div>
             </section>
 
-            <PostDivider />
-
-            <PostHeading heading="1/2 (half-size) Guitar" bottom="mb-4" />
-            <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 5 - 8</h3>
-            <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="bio flex flex-col md:flex-row mb-8">
-                    <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fhalf_size_200.jpg?alt=media&token=33061534-32d9-4317-931c-534ecda9ddba" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
-                        <figcaption className="text-gray-500"><small>1/2 size Denver nylon-string</small></figcaption>
-                    </figure>
-                    <div className="mt-8 md:mt-0 md:ms-10 leading-8">
-                        <p className="leading-8 mb-8">Half size guitars are aimed at 5 to 8 year-olds, which makes them quite popular since many children start taking guitar lessons at this age.</p>
-                        <p className="leading-8 mb-8">1/2 size guitars are tuned just like real guitars, so children get a genuine guitar experience with this instrument.</p>
-                        <p className="leading-8">They come in classical (nylon strings) and acoustic (steel strings) versions, though the nylon-string versions are recommended and preferred by most for learning as they are easier on the fingers.</p>
-                    </div>
-                </div>            
-                <p className="leading-8 mb-8">Some electric versions of the 1/2 guitar also exist on the market, though most teachers would not recommend an electric guitar at this stage (unless your child is absolutely set on one!).</p>
-                <div className="border-2 border-gray-200 bg-green-100 p-5">
-                    <p className="font-bold mb-8">Thinking of buying a 1/2 guitar? Here are our recommendations based on our students’ experience and feedback:</p>
-                    <p className="mb-8">A cheap, beginner option (30"):</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/CB-SKY-ACOUSTIC-Acoustic-instrument/dp/B07TJW9KMT?crid=1H7BSF8Q3NA53&keywords=half%2Bsize%2Bdenver%2Bnylon%2Bstring%2Bguitar&qid=1669703628&qu=eyJxc2MiOiIwLjk3IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&s=musical-instruments&sprefix=half%2Bsize%2Bdenver%2Bnylon%2Bstring%2Bguita,mi,100&sr=1-22&th=1&linkCode=sl1&tag=dcam08-20&linkId=e62d6c56c6bd1075cc84a9730f83ecaa&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">CB Sky Acoustic Guitar</a> (External Link)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <PostDivider />
-
-            <PostHeading heading="3/4 (three-quarter size) Guitar" bottom="mb-4" />
-            <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 8 - 12</h3>
-            <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="bio flex flex-col md:flex-row mb-8">
-                    <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fthree_quarter_200.jpg?alt=media&token=ab19fc40-ee86-47ba-b776-069d8028bb33" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
-                        <figcaption className="text-gray-500"><small>3/4 size Denver steel-string</small></figcaption>
-                    </figure>
-                    <div className="mt-8 md:mt-0 md:ms-10 leading-8">
-                        <p className="leading-8 mb-8">The 3/4 size guitar is another very popular guitar size for young children and is best suited for 8 to 12 year-olds. As with the 1/2 size guitar, it also comes in classical, acoustic, and electric versions.</p>
-                        <p className="leading-8 mb-8">The 3/4 guitar has standard guitar tuning (E-A-D-G-B-E) and, at 36″ inches, is very close in size and feel to the full size guitar.</p>
-                        <p className="leading-8">Although the classical (nylon strings) version is still the preferred choice for most, some students at this stage will already begin using acoustic versions (steel strings) to start preparing their fingers for the real, full size acoustic guitar.</p>
-                    </div>
-                </div>            
-                <p className="leading-8 mb-8">Because of its slightly smaller size, some adults actually prefer to play the 3/4 size guitar as opposed to a full size one. In fact, the famous singer/songwriter Ed Sheeran is known to prefer 3/4 size guitars.</p>
-                <div className="border-2 border-gray-200 bg-green-100 p-5">
-                    <p className="font-bold mb-8">Thinking of buying a 3/4 size guitar? Here are our recommendations based on our students’ experience and feedback:</p>
-                    <p className="mb-8">Cheaper option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/Classical-Acoustic-Starter-Beginners-Student/dp/B07LH31N5H?crid=2KLGHFLJQRIZC&keywords=nylon%2Bstring%2Bguitar%2B3/4&qid=1669657897&qu=eyJxc2MiOiIyLjQ3IiwicXNhIjoiMS45MiIsInFzcCI6IjAuMDAifQ%3D%3D&s=musical-instruments&sprefix=nylon%2Bstring%2Bguitar%2B3/4,mi,83&sr=1-8&th=1&linkCode=sl1&tag=dcam08-20&linkId=59758f75695f83a0ddf9aad1926ab327&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">J&Z 3/4 Size Acoustic Classical Guitar</a> (External Link)</li>
-                    </ul>
-                    <p className="mb-8">More expensive option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/gp/product/B00009J580?ie=UTF8&linkCode=sl1&tag=dcam08-20&linkId=adef856ef3e702a4bbb00b061e89e88c&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Yamaha 3/4 Acoustic Guitar </a> (External Link)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <PostDivider />
-
-            <PostHeading heading="Full Size Guitar" bottom="mb-4" />
-            <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 12 +</h3>
-            <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="bio flex flex-col md:flex-row mb-8">
-                    <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Ffull_size_200.jpg?alt=media&token=efb80f62-d667-481b-a0e8-833aeee3d790" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
-                        <figcaption className="text-gray-500"><small>Full size Yamaha steel-string</small></figcaption>
-                    </figure>
-                    <div className="mt-8 md:mt-0 md:ms-10 leading-8">
-                        <p className="leading-8 mb-8">When we hear the word “guitar”, we usually mean a full size guitar. This is the famous instrument that many of your favourite bands and artists use and the one we usually hear on the radio or on recordings.</p>
-                        <p className="leading-8 mb-8">There are numerous brands and varieties of acoustic, classical, and electric full size guitars to choose from, so you are sure to find something that appeals to your taste.</p>
-                        <p className="leading-8">Except for classical versions, full size guitars mostly come with steel strings.</p>
-                    </div>
-                </div>            
-                <div className="border-2 border-gray-200 bg-green-100 p-5">
-                    <p className="font-bold mb-8">Thinking of buying a full size guitar? Here are our recommendations based on our students’ experience and feedback:</p>
-                    <p className="font-bold mb-8 bg-green-200">For classical (nylon strings) full size guitars:</p>
-                    <p className="mb-8">Cheaper option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/Classical-DCG-1-Beginner-Acoustic-Mahogany/dp/B07FZXJ8FX?crid=W1H8W1SYIQLQ&keywords=full%2Bsize%2Bnylon%2Bstring%2Bguitar&qid=1669702599&qu=eyJxc2MiOiIxLjgwIiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&s=musical-instruments&sprefix=full%2Bsize%2Bnylon%2Bstring%2Bguitar,mi,88&sr=1-1-spons&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzVDI4NjM2OTJJNlBBJmVuY3J5cHRlZElkPUEwNDQ3ODg1M1BKWEFHMVc2REVMOSZlbmNyeXB0ZWRBZElkPUEwOTYxMTA4MjBENTRYREZDVDk5ViZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU&th=1&linkCode=sl1&tag=dcam08-20&linkId=8c5b182566fd124768814409c12c1641&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Donner Full Size Classical Guitar</a> (External Link)</li>
-                    </ul>
-                    <p className="mb-8">More pricey but reliable option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/gp/product/B0064ZFBMW?ie=UTF8&linkCodeCheaper%2Boption:=as2&th=1&linkCode=sl1&tag=dcam08-20&linkId=6efd3bf9d3ec210073493de4282f6592&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Yamaha Full Size Classical Guitar</a> (External Link)</li>
-                    </ul>
-                    <p className="font-bold mb-8 bg-green-200">For acoustic (steel strings) full size guitar:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/gp/product/B00P4AEJF8?ie=UTF8&linkCode=sl1&tag=dcam08-20&linkId=7054c1bfff45ddd193ce6bcc54f5db5a&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Yamaha F325D Acoustic Guitar</a> (External Link)</li>
-                    </ul>
-                    <p className="font-bold mb-8 bg-green-200">For electric full size guitar:</p>
-                    <p className="mb-8">Cheaper option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/Fender-Stratocaster-Beginner-Fingerboard-Sunburst/dp/B07G4VRMWZ?crid=DBLF5N8ZPENX&keywords=squier%2Bby%2Bfender%2Belectric&qid=1669702922&qu=eyJxc2MiOiIyLjE0IiwicXNhIjoiMC4wMCIsInFzcCI6IjAuMDAifQ%3D%3D&s=musical-instruments&sprefix=squier%2Bby%2Bfender%2Belectri,mi,103&sr=1-8&th=1&linkCode=sl1&tag=dcam08-20&linkId=1d5a1a76bd8887ae242458881d1d72d8&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Squier by Fender Electric Guitar</a> (External Link)</li>
-                    </ul>
-                    <p className="mb-8">Much fancier option:</p>
-                    <ul className="list-disc list-inside mb-8">
-                        <li><a href="https://www.amazon.ca/gp/product/B07CTYPNL3?ie=UTF8&th=1&linkCode=sl1&tag=dcam08-20&linkId=0c686da544d06840987a021ea6bce7e6&language=en_CA&ref_=as_li_ss_tl" target="_blank" className="dcam-link font-semibold">Fender Stratocaster Electric Guitar</a> (External Link)</li>
-                    </ul>
-                </div>
-            </section>
-
-            <PostSectionHeading heading="Conclusion" />
-            <section className="conclusion px-5 lg:px-36 xl:px-64 mb-20">
-                <p className="leading-8">Figuring out the right guitar size for your child can be daunting, and we hope that we were able to simply and demystify this process for you in this guide. We wish you and your family the best of luck and lots of interesting musical adventures ahead!</p>
-            </section>
 
             <PageBottomTrialButton />
         </main>
