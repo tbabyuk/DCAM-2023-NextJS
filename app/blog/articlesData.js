@@ -249,7 +249,7 @@ export const articles = [
         id: 17,
         title: "RCM Piano Repertoire - Full List of Pieces",
         date: "August 4, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/08/rcm_piano_repertoire_all_pieces.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_piano_repertoire_all_pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=81c41c74-26ba-4b6c-8e9e-0d88d61f9a6e",
         description: "The complete list of RCM Piano Repertoire pieces students can choose from to prepare for their RCM examinations. Source: RCM Celebration Series books, 2022 Edition (latest edition) IMPORTANT: While the …",
         blogLink: "/blog/rcm-piano-repertoire-all-pieces",
         category: "RCM, Piano"
