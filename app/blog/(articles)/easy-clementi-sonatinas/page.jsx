@@ -58,7 +58,7 @@ const PostEasyClementiSonatinas = () => {
                     <div className="leading-8">
                         <h3 className="text-xl underline mb-4">WHAT YOU MIGHT FIND DIFFICULT:</h3>
                         <ul className="list-disc list-inside">
-                            <li>The two faster movements, especially the third one – <span className="italic">Vivace</span>. The sixteenth notes especially will require quick and balanced fingering at this tempo.</li>
+                            <li>The two faster movements, especially the third one - <span className="italic">Vivace</span>. The sixteenth notes especially will require quick and balanced fingering at this tempo.</li>
                         </ul>
                     </div>
             </section>

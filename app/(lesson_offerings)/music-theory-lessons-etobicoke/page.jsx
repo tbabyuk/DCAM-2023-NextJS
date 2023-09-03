@@ -32,7 +32,7 @@ const TheoryLessonsPage = () => {
             <section className="format px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Lesson Format" />
                 <p><strong>Private lessons</strong>: these are one-on-one lessons with student and teacher. Private lessons are a great option for students looking for highly-focused and individualized music instruction. For music theory, the teacher introduces the various concepts of music theory to the student and the student then does multiple practice exercises to ensure they understand and can apply the concept correctly. Prior to writing an official RCM theory exam, students are also given practice tests taken from previous theory examinations, which helps familiarize them with the test structure and gain confidence going into the exam.<br /><br />
-                <strong>Semi-private lessons</strong>: these lessons consist of two students per teacher. Semi-private lessons can be a budget-friendly option for parents with two children or two friends wanting to learn the same instrument together. The one obvious drawback is that students don’t receive as much focused and individualized attention from the teacher as they do with private lessons. With regards to theory, the lesson format would look very similar to the one described in “private lessons”, with the addition of some pair-work and peer-checking exercises where students would get to work together.</p>
+                <strong>Semi-private lessons</strong>: these lessons consist of two students per teacher. Semi-private lessons can be a budget-friendly option for parents with two children or two friends wanting to learn the same instrument together. The one obvious drawback is that students don't receive as much focused and individualized attention from the teacher as they do with private lessons. With regards to theory, the lesson format would look very similar to the one described in “private lessons”, with the addition of some pair-work and peer-checking exercises where students would get to work together.</p>
             </section>
 
             <section className="duration px-5 lg:px-36 xl:px-52 py-20">
@@ -44,7 +44,7 @@ const TheoryLessonsPage = () => {
                 <PageSubtitle subtitle="Materials" />
                 <div className="md:flex md:items-center">
                     <img src="/lessons/theory_books.jpg" className="mx-auto mb-5 md:mb-0 md:me-5 md:h-40 rounded-md" />
-                    <p>Since many of our students eventually intend to write the RCM theory exams, RCM books are our most popular choice for theory studies. However, there are plenty of other great theory books out there which we would be happy to teach if that is what our students would prefer. One example of such books is Barbara Wharram’s “Rudimentary Rudiments of Music”.</p>
+                    <p>Since many of our students eventually intend to write the RCM theory exams, RCM books are our most popular choice for theory studies. However, there are plenty of other great theory books out there which we would be happy to teach if that is what our students would prefer. One example of such books is Barbara Wharram's “Rudimentary Rudiments of Music”.</p>
                 </div>
             </section>
 

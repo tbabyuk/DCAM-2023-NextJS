@@ -61,7 +61,7 @@ const PostPianoTrillsExplained = () => {
                         allowFullScreen
                     />
                 </div>
-                <p className="text-center leading-8 text-sm text-gray-500">Example of a trill in “L’isle Joyeuse” by Claude Debussy</p>
+                <p className="text-center leading-8 text-sm text-gray-500">Example of a trill in "L'isle Joyeuse" by Claude Debussy</p>
             </section>
 
             <PostDivider />
@@ -69,7 +69,7 @@ const PostPianoTrillsExplained = () => {
             <PostHeading heading="What note does a trill start on?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <p className="leading-8 mb-10">This is a very common question and one many students and music enthusiasts get confused about. Here is the simple answer:</p>
-                <p className="leading-8 mb-10"><span className="font-bold">Before the 1800s (Baroque & Classical Eras):</span><br /> The trill started on the note above the one indicated by the trill. So for example if the note “E” was marked by a trill, you would start the trill on note “F”.</p>
+                <p className="leading-8 mb-10"><span className="font-bold">Before the 1800s (Baroque & Classical Eras):</span><br /> The trill started on the note above the one indicated by the trill. So for example if the note "E" was marked by a trill, you would start the trill on note “F”.</p>
                 <p className="leading-8 mb-10"><span className="font-bold">After the 1800s (Romantic Era up to present day):</span><br />
                 The trill begins on the same note that is indicated by the trill. So if the note “E” is marked by a trill, you start the trill on “E” as well.</p>
             </section>
@@ -78,7 +78,7 @@ const PostPianoTrillsExplained = () => {
 
             <PostHeading heading="Trill vs. Mordent" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-24">
-                <p className="leading-8 mb-10">The main difference between trills and mordents is in in the number of alternations between the adjacent notes. With mordents, we alternate only once between the principal note (the note symbolized by the mordent) and either the upper note (in the case of a <span className="font-bold">mordent</span>) or lower note (in the case of an <span className="font-bold">inverted mordent</span>). With trills, the number of alternations is longer, though the exact number will depend on the rhythm as well as the musician’s individual interpretation.</p>
+                <p className="leading-8 mb-10">The main difference between trills and mordents is in in the number of alternations between the adjacent notes. With mordents, we alternate only once between the principal note (the note symbolized by the mordent) and either the upper note (in the case of a <span className="font-bold">mordent</span>) or lower note (in the case of an <span className="font-bold">inverted mordent</span>). With trills, the number of alternations is longer, though the exact number will depend on the rhythm as well as the musician's individual interpretation.</p>
                 <p className="leading-8 mb-10">Also, trills by definition alternate with the higher note, while with mordents it can be either the higher or lower note (see diagram below).</p>
                 <p className="leading-8 mb-10">A mordent is sometimes referred to as a short trill, which contributes to the occasional confusion between the two terms.</p>
 

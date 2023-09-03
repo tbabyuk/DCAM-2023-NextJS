@@ -73,14 +73,14 @@ const PostMusicIntervalsExplained = () => {
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fsize_and_quality.png?alt=media&token=b6277e11-900d-48f6-8a1f-55f2a627aa7b" alt="harmonic interval example" style={{width: "160px"}} className="rounded-md" />
                     </figure>
                 </div>
-                <p className="leading-8">Let’s look more carefully at what exactly "size" and "quality" mean and how they work.</p>
+                <p className="leading-8">Let's look more carefully at what exactly "size" and "quality" mean and how they work.</p>
             </section>
 
             <PostSubheading subheading="Interval Size" bottom="mb-10" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <div className="mt-8 leading-8 mb-14">
                     <p><span className="font-bold">Interval size</span> is a number that tells us how far two notes are from each other. When calculating interval size, we count from the lower to the higher note in alphabetical order. Accidentals (sharps, flats, natural signs, etc.) have no effect on interval size.</p><br />
-                    <p>Let’s look at a few examples:</p>
+                    <p>Let's look at a few examples:</p>
                 </div>
                 <div className="p-5 md:p-0 grid grid-cols-1 md:grid-cols-2 gap-3 mb-16 bg-gray-200">
                     <div className="mb-12 md:mb-0 md:p-5">
@@ -144,11 +144,11 @@ const PostMusicIntervalsExplained = () => {
 
             <PostHeading heading="How to Identify Intervals on a Staff" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <p className="leading-8 mb-10">First, let’s look at how to identify intervals we can see visually on the music staff. The secret to doing this lies in the major scale. To demonstrate, we are going to use our favourite beginner-friendly scale – the "C Major". Here it is for reference:</p>
+                <p className="leading-8 mb-10">First, let's look at how to identify intervals we can see visually on the music staff. The secret to doing this lies in the major scale. To demonstrate, we are going to use our favourite beginner-friendly scale - the "C Major". Here it is for reference:</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fc_major_scale.png?alt=media&token=bd533e05-f8cd-4f01-aca3-567183587c83" alt="harmonic interval example" className="rounded-md md:w-[55%]" />
                 </figure>
-                <p className="leading-8 mb-10">As you might already know, every major scale follows the same pattern of whole steps and half steps, which means that the distance relationship between the notes is the same across all major scales. Keeping this fact in mind, here are the names of intervals between notes of the major scale (using "C" as our reference point). Let’s do our best to memorize these:</p>
+                <p className="leading-8 mb-10">As you might already know, every major scale follows the same pattern of whole steps and half steps, which means that the distance relationship between the notes is the same across all major scales. Keeping this fact in mind, here are the names of intervals between notes of the major scale (using "C" as our reference point). Let's do our best to memorize these:</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmajor_intervals.jpg?alt=media&token=cb696cd8-c688-443d-a850-b829350d75d7" alt="harmonic interval example" className="rounded-md md:w-[45%]" />
                 </figure>
@@ -192,15 +192,15 @@ const PostMusicIntervalsExplained = () => {
                         </tr>
                     </tbody>
                 </table>
-                <p className="leading-8 mb-10">And voila – you are now armed with all the tools you need to identify any interval!</p>
-                <p className="leading-8">Next, let’s work through a few exercises to check your understanding.</p>
+                <p className="leading-8 mb-10">And voila - you are now armed with all the tools you need to identify any interval!</p>
+                <p className="leading-8">Next, let's work through a few exercises to check your understanding.</p>
             </section>
 
             <PostDivider />
 
             <PostHeading heading="Exercises" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <p className="leading-8 mb-20">Let’s put what we have learned into practice. We will look several intervals and then go through the logical steps to figure what kind of interval each one is.</p>
+                <p className="leading-8 mb-20">Let's put what we have learned into practice. We will look several intervals and then go through the logical steps to figure what kind of interval each one is.</p>
                 {/* Exercise 1 */}
                 <h3 className="text-2xl font-bold mb-4 border-b-2 border-b-gray-200">Exercise #1</h3>
                 <p className="leading-8 mb-10">Identify the following interval:</p>
@@ -208,7 +208,7 @@ const PostMusicIntervalsExplained = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fex_1.PNG?alt=media&token=d87ee138-6999-43d4-81be-e9a7a961f4c8" alt="interval exercise 1" className="rounded-md md:w-[20%]" />
                 </figure>
                 <p className="leading-8 mb-20"><span className="italic underline">Solution:</span><br />
-                Counting up from the lower note (G) to the higher note (C) gives us 4, so our interval size is a "4th". Now, let’s think about its quality. Because our lowest note is "G", we are going to assume that we are in the key of "G Major". Our knowledge of major scales tells us that "G Major" only has an "F#", which means the note "C" is natural in this scale (just as it is in our interval). From the table above, we know that in any major scale, the interval between the tonic note and the 4th note is called "perfect". Therefore, we can safely conclude that our interval is a <span className="font-bold">Perfect 4th</span>.</p>
+                Counting up from the lower note (G) to the higher note (C) gives us 4, so our interval size is a "4th". Now, let's think about its quality. Because our lowest note is "G", we are going to assume that we are in the key of "G Major". Our knowledge of major scales tells us that "G Major" only has an "F#", which means the note "C" is natural in this scale (just as it is in our interval). From the table above, we know that in any major scale, the interval between the tonic note and the 4th note is called "perfect". Therefore, we can safely conclude that our interval is a <span className="font-bold">Perfect 4th</span>.</p>
                 {/* Exercise 2 */}
                 <h3 className="text-2xl font-bold mb-4 border-b-2 border-b-gray-200">Exercise #2</h3>
                 <p className="leading-8 mb-10">Identify the following interval:</p>
@@ -216,7 +216,7 @@ const PostMusicIntervalsExplained = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fex_2.PNG?alt=media&token=b89cd7d1-05ba-42d4-a7ff-17ee516ea4d2" alt="interval exercise 2" className="rounded-md md:w-[20%]" />
                 </figure>
                 <p className="leading-8 mb-20"><span className="italic underline">Solution:</span><br />
-                Counting up from the lower note (D) to the higher note (A#) gives us 5, so our interval size is a "5th". Now, let’s think about its quality. Because our lower note is "D", we assume that we are in the key of "D Major". "D Major" has 2 sharps: "F#" and "C#", with all the other notes being natural. So, if our "A" was natural, the interval would be a "Perfect 5th". But our "A" is in fact sharp, meaning it was moved up by 1 half step. From the table above, we know that when a "Perfect" interval is raised by 1 half step, it becomes "Augmented". Therefore, we can safely conclude that our interval is an <span className="font-bold">Augmented 5th</span>.</p>
+                Counting up from the lower note (D) to the higher note (A#) gives us 5, so our interval size is a "5th". Now, let's think about its quality. Because our lower note is "D", we assume that we are in the key of "D Major". "D Major" has 2 sharps: "F#" and "C#", with all the other notes being natural. So, if our "A" was natural, the interval would be a "Perfect 5th". But our "A" is in fact sharp, meaning it was moved up by 1 half step. From the table above, we know that when a "Perfect" interval is raised by 1 half step, it becomes "Augmented". Therefore, we can safely conclude that our interval is an <span className="font-bold">Augmented 5th</span>.</p>
                 {/* Exercise 3 */}
                 <h3 className="text-2xl font-bold mb-4 border-b-2 border-b-gray-200">Exercise #3</h3>
                 <p className="leading-8 mb-10">Identify the following interval:</p>
@@ -224,7 +224,7 @@ const PostMusicIntervalsExplained = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fex_3.PNG?alt=media&token=1a48ebaf-c31c-48e3-9199-ba560d1bfba1" alt="interval exercise 3" className="rounded-md md:w-[20%]" />
                 </figure>
                 <p className="leading-8 mb-20"><span className="italic underline">Solution:</span><br />
-                This one looks a bit disorienting at first, as the first note is higher than the second. But we should not let that stop us – remember, we always start counting from the lower note, which in this case is "F". Counting up from "F" to "D" gives us a 6, so our interval size is a "6th". Now, let’s think about the quality. The key of "F Major" only has a "B♭" in it, which means the "D" is natural. If our "D" was also natural, the interval would be a "Major 6th". However, our "D" has been lowered by 1 half step to "D♭". Remembering our interval table, we know that a major interval lowered by 1 half step becomes a minor interval. Therefore, we can safely conclude that our interval is a <span className="font-bold">Minor 6th</span>.</p>
+                This one looks a bit disorienting at first, as the first note is higher than the second. But we should not let that stop us - remember, we always start counting from the lower note, which in this case is "F". Counting up from "F" to "D" gives us a 6, so our interval size is a "6th". Now, let's think about the quality. The key of "F Major" only has a "B♭" in it, which means the "D" is natural. If our "D" was also natural, the interval would be a "Major 6th". However, our "D" has been lowered by 1 half step to "D♭". Remembering our interval table, we know that a major interval lowered by 1 half step becomes a minor interval. Therefore, we can safely conclude that our interval is a <span className="font-bold">Minor 6th</span>.</p>
                 {/* Exercise 4 */}
                 <h3 className="text-2xl font-bold mb-4 border-b-2 border-b-gray-200">Exercise #4</h3>
                 <p className="leading-8 mb-10">Identify the following interval:</p>
@@ -232,7 +232,7 @@ const PostMusicIntervalsExplained = () => {
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fex_4.PNG?alt=media&token=265f3c42-b7c8-4612-bb6f-28b7d08ff70a" alt="interval exercise 4" className="rounded-md md:w-[20%]" />
                 </figure>
                 <p className="leading-8 mb-20"><span className="italic underline">Solution:</span><br />
-                Counting up from "A" to "G" gives us 7, so we know that our interval is some kind of 7th. Now for the quality. I chose this example on purpose because students often get stuck on this type of interval. The problem is, there isn’t really an "A# Major" key in the standard list of major keys. So what are we supposed to do? The trick here is to temporarily imagine that "A" has no sharp and treat it as just an "A". From here, we know that "A Major" scale has 3 sharps: "F#", "C#", and "G#". So if our "G" was sharp, the interval would be a major 7th (assuming we are in "A major"). Because our "G" has no sharp, it means it is 1 half step smaller, meaning that our interval (so far) is in fact a "Minor 7th". But we are not finished yet. It’s only a "Minor 7th" if our bottom note is "A", but it is actually an "A#". Referring back to Figure 2.0, we learn that a minor interval made 1 half step smaller becomes "diminished". Therefore, we can safely conclude that our interval is a <span className="font-bold">Diminished 7th</span>.</p>
+                Counting up from "A" to "G" gives us 7, so we know that our interval is some kind of 7th. Now for the quality. I chose this example on purpose because students often get stuck on this type of interval. The problem is, there isn't really an "A# Major" key in the standard list of major keys. So what are we supposed to do? The trick here is to temporarily imagine that "A" has no sharp and treat it as just an "A". From here, we know that "A Major" scale has 3 sharps: "F#", "C#", and "G#". So if our "G" was sharp, the interval would be a major 7th (assuming we are in "A major"). Because our "G" has no sharp, it means it is 1 half step smaller, meaning that our interval (so far) is in fact a "Minor 7th". But we are not finished yet. It's only a "Minor 7th" if our bottom note is "A", but it is actually an "A#". Referring back to Figure 2.0, we learn that a minor interval made 1 half step smaller becomes "diminished". Therefore, we can safely conclude that our interval is a <span className="font-bold">Diminished 7th</span>.</p>
                 {/* Exercise 5 */}
                 <h3 className="text-2xl font-bold mb-4 border-b-2 border-b-gray-200">Exercise #5</h3>
                 <p className="leading-8 mb-10">Identify the following interval:</p>
@@ -256,7 +256,7 @@ const PostMusicIntervalsExplained = () => {
                     </div>
                 </div>      
                 <p className="leading-8 mb-10"><span className="font-bold">Relative pitch</span> refers to the ability to identify a particular note (or interval) by using another note as a reference. In other words, we are identifying the second note "relative" to the first note.</p>
-                <p className="leading-8 mb-14"><span className="italic">But how can I know what the first note is? Don’t you need "perfect pitch" for that?</span> Actually, it is absolutely unnecessary to know what the first note is in order to identify an interval. All you need to be able to do is judge the distance between the two notes. To help us do that, we are going to use songs! That’s right, songs that you very likely already know and can recall at will. For every interval, I am going to give you an example of a song that uses it. Once you learn to associate an interval to a specific song, you should be able to identify any interval like a pro!</p>
+                <p className="leading-8 mb-14"><span className="italic">But how can I know what the first note is? Don't you need "perfect pitch" for that?</span> Actually, it is absolutely unnecessary to know what the first note is in order to identify an interval. All you need to be able to do is judge the distance between the two notes. To help us do that, we are going to use songs! That's right, songs that you very likely already know and can recall at will. For every interval, I am going to give you an example of a song that uses it. Once you learn to associate an interval to a specific song, you should be able to identify any interval like a pro!</p>
                 <table className="mx-auto bg-gray-100 w-full md:w-[70%] blog-table text-[0.8rem] mb-14">
                     <thead>
                         <tr>

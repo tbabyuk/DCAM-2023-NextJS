@@ -22,7 +22,7 @@ const PostEasyChopinNocturnes = () => {
                 <div>
                     <p className="leading-8">Chopin is known to have written a total of 21 nocturnes, 18 of which were published during his lifetime and 3 posthumously. Today, his nocturnes are held in very high regard among musicians and continue to enjoy widespread popularity in contemporary concert repertoire.</p><br />
 
-                    <p className="leading-8">Keep in mind that the word “easy” is used here relative to Chopin’s other nocturnes, and does not mean that these works are easy to play. To be able to perform these pieces comfortably, one must be at a minimum an intermediate to high-intermediate pianist.</p><br />
+                    <p className="leading-8">Keep in mind that the word “easy” is used here relative to Chopin's other nocturnes, and does not mean that these works are easy to play. To be able to perform these pieces comfortably, one must be at a minimum an intermediate to high-intermediate pianist.</p><br />
 
                     <p className="leading-8">*The pieces are not ranked in any particular order.</p>
                 </div>
@@ -31,7 +31,7 @@ const PostEasyChopinNocturnes = () => {
             <PostHeading heading="#1. Nocturne in C Minor, P. 2 No. 8" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">
                     <div className="leading-8 mb-12">
-                        <p>Although composed in 1837, this nocturne was not published until 1938, long after Chopin’s death. It is known for its relative simplicity and a beautiful, folk-like melody in the right hand.</p>
+                        <p>Although composed in 1837, this nocturne was not published until 1938, long after Chopin's death. It is known for its relative simplicity and a beautiful, folk-like melody in the right hand.</p>
                     </div>
                     <div className="info-table p-5 mt-8 mb-12 md:mt-0 bg-regRed text-gray-50 w-fit max-w-[100%] mx-auto rounded">
                         <h3 className="text-2xl text-center mb-3 bg-lightRed rounded">Quick Facts</h3>
@@ -73,7 +73,7 @@ const PostEasyChopinNocturnes = () => {
             <PostHeading heading="#2. Nocturne in C Sharp Minor, P. 1, No. 16 ('Reminiscence')" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">
                     <div className="leading-8 mb-12">
-                        <p>As was the case with our first nocturne, this one was also published posthumously, in 1870. Chopin had dedicated this composition to his older sister, Ludwika Chopin. These days, many people know this piece from the soundtrack to Roman Polanski’s 2002 film “The Pianist”.</p>
+                        <p>As was the case with our first nocturne, this one was also published posthumously, in 1870. Chopin had dedicated this composition to his older sister, Ludwika Chopin. These days, many people know this piece from the soundtrack to Roman Polanski's 2002 film “The Pianist”.</p>
                     </div>
                     <div className="info-table p-5 mt-8 mb-12 md:mt-0 bg-regRed text-gray-50 w-fit max-w-[100%] mx-auto rounded">
                         <h3 className="text-2xl text-center mb-3 bg-lightRed rounded">Quick Facts</h3>

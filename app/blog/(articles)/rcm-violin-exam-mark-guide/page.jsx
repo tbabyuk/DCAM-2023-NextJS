@@ -23,7 +23,7 @@ const PostViolinExamMarkGuide = () => {
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />
                 <div>
-                    <p className="mb-5">If you are a violin student planning to do your RCM practical exams and want to know precisely what you will be graded on – this is the page for you! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created our “Ultimate RCM Violin Exam Mark Guide” with you – the student – in mind!</p>
+                    <p className="mb-5">If you are a violin student planning to do your RCM practical exams and want to know precisely what you will be graded on - this is the page for you! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created our “Ultimate RCM Violin Exam Mark Guide” with you - the student - in mind!</p>
 
                     <PostSource source="RCM Violin Syllabus, 2021" />
                 </div>

@@ -22,7 +22,7 @@ const PostGuitarExamMarkGuide = () => {
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />
                 <div>
-                    <p className="mb-5">Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You’ve come to the right place! This guide will tell you what each section of the exam is worth to help you decide how to better allocate your prep time for optimal results! We created this RCM Guitar Exam Mark Guide with you – the student – in mind!</p>
+                    <p className="mb-5">Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You've come to the right place! This guide will tell you what each section of the exam is worth to help you decide how to better allocate your prep time for optimal results! We created this RCM Guitar Exam Mark Guide with you - the student - in mind!</p>
 
                     <PostSource source="RCM Classical Guitar Syllabus, 2018" />
                 </div>

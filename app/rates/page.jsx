@@ -31,9 +31,9 @@ const Rates = () => {
                     <DownloadButton text="Download Payment Schedule" file="private-summer-2023.pdf" />
                     <h4 className="font-ovo text-xl text-regRed font-semibold pb-3">PRIVATE LESSONS (one-on-one):</h4>
                     <ul className="text-sm">
-                        <li>* there is no sales tax on music lessons – rates are exactly as indicated</li>
+                        <li>* there is no sales tax on music lessons - rates are exactly as indicated</li>
                         <li>* payment for each term must be made in full before the first lesson of that term</li>
-                        <li>* lessons may be discontinued with one week’s notice. Refund will be provided minus $25 early withdrawal fee</li>
+                        <li>* lessons may be discontinued with one week's notice. Refund will be provided minus $25 early withdrawal fee</li>
                         <li>* all lessons must be completed by the end of each term and cannot be carried over to the next term</li>
                         <li>* students are welcome to register for lessons mid-term, your lessons will simply be pro-rated to the end of ongoing term</li>
                         <li>* families with more than one child enrolled in private lessons qualify for our Family Discount</li>
@@ -50,9 +50,9 @@ const Rates = () => {
                     <DownloadButton text="Download Payment Schedule" file="semi-private-summer-2023.pdf" />
                     <h4 className="font-ovo text-xl text-regRed font-semibold pb-3">SEMI-PRIVATE LESSONS (two students per teacher):</h4>
                     <ul className="text-sm">
-                        <li>* There is no sales tax on music lessons – rates are exactly as indicated</li>
+                        <li>* There is no sales tax on music lessons - rates are exactly as indicated</li>
                         <li>* Payment for each term must be made in full before the first lesson of that term</li>
-                        <li>* Lessons may be discontinued with one week’s notice. Refund will be provided minus $25 early withdrawal fee</li>
+                        <li>* Lessons may be discontinued with one week's notice. Refund will be provided minus $25 early withdrawal fee</li>
                         <li>* All lessons must be completed by the end of each term and cannot be carried over to the next term</li>
                         <li>* Students are welcome to register for lessons mid-term, your lessons will simply be pro-rated to the end of ongoing term</li>
                         <li>* Unlike for private lessons, the Family Member discount cannot be applied to Semi-Private Lessons</li>

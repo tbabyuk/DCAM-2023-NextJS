@@ -38,7 +38,7 @@ const PostEasyChopinEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Technique focus</span>: light touch, polyrhythm</li>
                             <li className="font-light"><span className="font-semibold">Key</span>: F Minor</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Presto (very fast)</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 10 – advanced</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 10 - advanced</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -137,7 +137,7 @@ const PostEasyChopinEtudes = () => {
                     <div className="leading-8 mb-10">
                         <h3 className="text-xl underline mb-4">WHAT'S EASY ABOUT IT:</h3>
                         <ul className="list-disc list-inside">
-                            <li><span className="font-bold">It's short</span>. In fact, this is the shortest of all Chopin’s etudes. If played at the indicated tempo, it is just under a minute in duration.</li>
+                            <li><span className="font-bold">It's short</span>. In fact, this is the shortest of all Chopin's etudes. If played at the indicated tempo, it is just under a minute in duration.</li>
                         </ul>
                     </div>
                     <div className="leading-8">

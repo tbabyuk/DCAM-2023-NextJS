@@ -18,7 +18,7 @@ export const metadata = {
 const PostRCMPianoRepertoireAllPieces = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="RCM Piano Repertoire – Full List of Pieces" date="August 4, 2020" />
+            <PostTitle title="RCM Piano Repertoire - Full List of Pieces" date="August 4, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_piano_repertoire_all_pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=81c41c74-26ba-4b6c-8e9e-0d88d61f9a6e" alt="RCM Piano Repertoire All Pieces cover"/>
 
             <PostSectionHeading heading="Introduction" />
@@ -150,7 +150,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>21</td>
                         </tr>
                         <tr>
-                            <td>What’s That Noise?</td>
+                            <td>What's That Noise?</td>
                             <td>Martha Mier</td>
                             <td>22</td>
                         </tr>
@@ -456,7 +456,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>18</td>
                         </tr>
                         <tr>
-                            <td>This Guy’s Disguised</td>
+                            <td>This Guy's Disguised</td>
                             <td>Bradley Sowash</td>
                             <td>20</td>
                         </tr>
@@ -680,7 +680,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                     </thead>
                     <tbody className="text-center">
                     <tr>
-                        <td>Soldier’s March, op. 68, no. 2*</td>
+                        <td>Soldier's March, op. 68, no. 2*</td>
                         <td>Robert Schumann</td>
                         <td>14</td>
                     </tr>
@@ -1398,7 +1398,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                         </tr>
                         <tr>
                             <td>Polka, op. 39, no. 10</td>
-                            <td>Pyotr Il’yitch Tchaikovsky</td>
+                            <td>Pyotr Il'yitch Tchaikovsky</td>
                             <td>27</td>
                         </tr>
                         <tr>
@@ -1503,7 +1503,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>4</td>
                         </tr>
                         <tr>
-                            <td>L’indifferente</td>
+                            <td>L'indifferente</td>
                             <td>Jean-Philippe Rameau</td>
                             <td>6</td>
                         </tr>
@@ -2143,7 +2143,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>6</td>
                         </tr>
                         <tr>
-                            <td>L’Egyptienne</td>
+                            <td>L'Egyptienne</td>
                             <td>Jean-Philippe Rameau</td>
                             <td>8</td>
                         </tr>
@@ -2250,7 +2250,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                         </tr>
                         <tr>
                             <td>October (Autumn Song), op. 37b, no. 10</td>
-                            <td>Pyotr Il’yich Tchaikovsky</td>
+                            <td>Pyotr Il'yich Tchaikovsky</td>
                             <td>72</td>
                         </tr>
                         <tr>
@@ -2317,7 +2317,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>103</td>
                         </tr>
                         <tr>
-                            <td>Golliwogg’s Cake-walk</td>
+                            <td>Golliwogg's Cake-walk</td>
                             <td>Claude Debussy</td>
                             <td>106</td>
                         </tr>
@@ -2564,7 +2564,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
                             <td>145</td>
                         </tr>
                         <tr>
-                            <td>Cassandra’s Dream</td>
+                            <td>Cassandra's Dream</td>
                             <td>James Domine</td>
                             <td>150</td>
                         </tr>

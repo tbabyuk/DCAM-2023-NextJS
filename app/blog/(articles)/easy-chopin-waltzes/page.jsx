@@ -20,9 +20,9 @@ const PostEasyChopinWaltzes = () => {
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />
                 <div>
-                    <p className="leading-8">Although Chopin is known to have written a total of about 20 waltzes, most of them require a pre-advanced to advanced mastery of the piano to be able to perform comfortably. Luckily, there are 3 that are easier than the others in difficulty level, and should be very manageable for intermediate and high-intermediate level students (think at least 3 years of consistent piano playing). They are: “Waltz in A Minor, op. posth., B 150”, “Waltz in B minor, op. 69, no. 2”, and “Waltz in A flat Major, op. 69, no. 1 (‘L’adieu’)”. Although less technically-demanding than his other waltzes, they are just as beautiful!</p><br />
+                    <p className="leading-8">Although Chopin is known to have written a total of about 20 waltzes, most of them require a pre-advanced to advanced mastery of the piano to be able to perform comfortably. Luckily, there are 3 that are easier than the others in difficulty level, and should be very manageable for intermediate and high-intermediate level students (think at least 3 years of consistent piano playing). They are: “Waltz in A Minor, op. posth., B 150”, “Waltz in B minor, op. 69, no. 2”, and “Waltz in A flat Major, op. 69, no. 1 ("L'adieu')". Although less technically-demanding than his other waltzes, they are just as beautiful!</p><br />
 
-                    <p className="leading-8">Let’s look at each of these pieces in turn and get inspired to learn them!</p>
+                    <p className="leading-8">Let's look at each of these pieces in turn and get inspired to learn them!</p>
                 </div>
             </section>
 
@@ -35,7 +35,7 @@ const PostEasyChopinWaltzes = () => {
                             <li className="font-light"><span className="font-semibold">Pages</span>: 2</li>
                             <li className="font-light"><span className="font-semibold">Key</span>: A Minor</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Allegretto (fairly fast)</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 6 – intermediate</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 6 - intermediate</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -61,7 +61,7 @@ const PostEasyChopinWaltzes = () => {
                         <ul className="list-disc list-inside">
                             <li className="mb-4"><span className="font-bold">Ornaments</span>. There are quite a few grace notes and several mordents in this waltz. Make sure to play them quickly and lightly, while maintaining the main beat.</li>
                             <li className="mb-4"><span className="font-bold">Arpeggio run</span>. In one section of the piece, there is an E Major arpeggio that needs to be played quite fast (a triplet followed by a quintuplet). This might need a bit of practice.</li>
-                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin’s compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
+                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin's compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
                         </ul>
                     </div>
                 </section>
@@ -77,7 +77,7 @@ const PostEasyChopinWaltzes = () => {
                             <li className="font-light"><span className="font-semibold">Pages</span>: 4 (just over)</li>
                             <li className="font-light"><span className="font-semibold">Key</span>: B Minor (with one part in B Major)</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Moderato</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 8 – upper intermediate</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 8 - upper intermediate</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -100,9 +100,9 @@ const PostEasyChopinWaltzes = () => {
                     <div className="leading-8">
                         <h3 className="text-xl underline mb-4">WHAT YOU MIGHT FIND DIFFICULT:</h3>
                         <ul className="list-disc list-inside">
-                            <li className="mb-4"><span className="font-bold">Double notes</span>. The second section of the waltz (the one in B Major) uses quite a few double notes, which might take some practice to get good at – particularly the legato double thirds.</li>
-                            <li className="mb-4"><span className="font-bold">The B Major section</span>. As mentioned earlier, this section of the waltz uses five sharps, which is bit of a change from just two. Luckily, the section doesn’t last long.</li>
-                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin’s compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
+                            <li className="mb-4"><span className="font-bold">Double notes</span>. The second section of the waltz (the one in B Major) uses quite a few double notes, which might take some practice to get good at - particularly the legato double thirds.</li>
+                            <li className="mb-4"><span className="font-bold">The B Major section</span>. As mentioned earlier, this section of the waltz uses five sharps, which is bit of a change from just two. Luckily, the section doesn't last long.</li>
+                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin's compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
                         </ul>
                     </div>
                 </section>
@@ -121,7 +121,7 @@ const PostEasyChopinWaltzes = () => {
                             <li className="font-light"><span className="font-semibold">Pages</span>: 4-5</li>
                             <li className="font-light"><span className="font-semibold">Key</span>: A Flat Major</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Tempo di Valse</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 8 – upper intermediate</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 8 - upper intermediate</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 4/5 (very nice!)</li>
                         </ul>
                     </div>
@@ -146,7 +146,7 @@ const PostEasyChopinWaltzes = () => {
                         <ul className="list-disc list-inside">
                             <li className="mb-4"><span className="font-bold">The key</span>. With its four flats, A flat Major is by no means the hardest key to play in, but not the easiest either. So be prepared for four flats.</li>
                             <li className="mb-4"><span className="font-bold">The "tuplets"</span>. The piece contains several instances of quintuplets, sextuplets, and septuplets (groups of 5, 6 and 7 sixteenth notes played in time of one beat). This will require dexterity and finger agility.</li>
-                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin’s compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
+                            <li><span className="font-bold">LH jumps</span>. As is the case with a lot of Chopin's compositions, the left hand tends to jump quite a bit between a single note and a chord. Tip: practice the LH separately to get really comfortable with it before doing it HT (hands together).</li>
                         </ul>
                     </div>
                 </section>

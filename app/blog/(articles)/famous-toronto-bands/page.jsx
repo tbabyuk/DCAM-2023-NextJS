@@ -51,7 +51,7 @@ const PostFamousBandsFromToronto = () => {
                         <figcaption className="text-gray-500"><small>Broken Social Scene</small></figcaption>
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8 self-start">
-                        <p>Formed in Toronto in 1999, Broken Social Scene is more of a musical collective than a band. While it has around five core members, the group has had up to nineteen people at different times. The band is known to experiment quite a bit with different sounds and orchestration, and their music often spans the genres of indie rock, experimental rock, noise pop, and others. They have released 5 full-length albums and some of the band’s popular songs include “Lover’s Spit”, “Anthems For a Seventeen-Year-Old Girl” and “7/4 Shoreline”.</p>
+                        <p>Formed in Toronto in 1999, Broken Social Scene is more of a musical collective than a band. While it has around five core members, the group has had up to nineteen people at different times. The band is known to experiment quite a bit with different sounds and orchestration, and their music often spans the genres of indie rock, experimental rock, noise pop, and others. They have released 5 full-length albums and some of the band's popular songs include “Lover's Spit”, “Anthems For a Seventeen-Year-Old Girl” and “7/4 Shoreline”.</p>
                     </div>
                 </div>
                 <p className="mb-10 w-fit ms-auto">BSC's <a href="https://brokensocialscene.ca/" target="_blank" className="dcam-link">official website</a></p>
@@ -67,7 +67,7 @@ const PostFamousBandsFromToronto = () => {
                         <figcaption className="text-gray-500"><small>Metric</small></figcaption>
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8 self-start">
-                        <p>Metric is a four-member band formed in Toronto in 1998. While they are mostly considered an indie rock band, their music also contains elements of new wave, synth-pop, and dance rock, among others.  As of 2022, the band has released eight albums and has won many awards for their music. They have toured extensively in North American, South America, and Europe, and continue to be active on the music scene. Some of their biggest hits include songs such as “Help I’m Alive”, “Gold Guns Girls” and “Breathing Under Water”.</p>
+                        <p>Metric is a four-member band formed in Toronto in 1998. While they are mostly considered an indie rock band, their music also contains elements of new wave, synth-pop, and dance rock, among others.  As of 2022, the band has released eight albums and has won many awards for their music. They have toured extensively in North American, South America, and Europe, and continue to be active on the music scene. Some of their biggest hits include songs such as “Help I'm Alive”, “Gold Guns Girls” and “Breathing Under Water”.</p>
                     </div>
                 </div>
                 <p className="mb-10 w-fit ms-auto">Metric's <a href="https://www.ilovemetric.com/" target="_blank" className="dcam-link">official website</a></p>
@@ -115,7 +115,7 @@ const PostFamousBandsFromToronto = () => {
                         <figcaption className="text-gray-500"><small>Barenaked Ladies</small></figcaption>
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8 self-start">
-                        <p>Barenaked Ladies is a rock band formed in 1998 in the Toronto district of Scarborough. The band began with just two members, eventually arriving at its current number of four. After achieving mainstream success in Canada in the period of 1991-1992, their popularity began spilling over to the United States from 1998 onward. They have sold over 15 million albums and were inducted into the Canadian Music Hall of Fame in 2018. Some of the band’s biggest hits include songs such as “One Week”,  “If I Had $1000000”, “It’s All Been Done”.</p>
+                        <p>Barenaked Ladies is a rock band formed in 1998 in the Toronto district of Scarborough. The band began with just two members, eventually arriving at its current number of four. After achieving mainstream success in Canada in the period of 1991-1992, their popularity began spilling over to the United States from 1998 onward. They have sold over 15 million albums and were inducted into the Canadian Music Hall of Fame in 2018. Some of the band's biggest hits include songs such as “One Week”,  “If I Had $1000000”, “It's All Been Done”.</p>
                     </div>
                 </div>
                 <p className="mb-10 w-fit ms-auto">BL's <a href="https://www.facebook.com/barenakedladies/" target="_blank" className="dcam-link">facebook page</a></p>
@@ -131,7 +131,7 @@ const PostFamousBandsFromToronto = () => {
                         <figcaption className="text-gray-500"><small>Rush</small></figcaption>
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8 self-start">
-                        <p>Formed in Toronto in 1968, Rush was a rock band active between 1968 and 2018. They enjoyed chart success in Canada, the US, and the UK, especially during 1980s and 1990s. The band was known for its complex compositions and unique lyrics that often drew on motifs from science fiction, fantasy, and philosophy. They are estimated to have sold about 42 million albums worldwide, won numerous awards for their music, and were inducted into the Canadian Music Hall of Fame in 1994 and the Rock and Roll Hall of Fame in 2013. Some of the band’s biggest hits include songs like “Tom Sawyer”, “Fly By Night”, “Closer to the Heart”.</p>
+                        <p>Formed in Toronto in 1968, Rush was a rock band active between 1968 and 2018. They enjoyed chart success in Canada, the US, and the UK, especially during 1980s and 1990s. The band was known for its complex compositions and unique lyrics that often drew on motifs from science fiction, fantasy, and philosophy. They are estimated to have sold about 42 million albums worldwide, won numerous awards for their music, and were inducted into the Canadian Music Hall of Fame in 1994 and the Rock and Roll Hall of Fame in 2013. Some of the band's biggest hits include songs like “Tom Sawyer”, “Fly By Night”, “Closer to the Heart”.</p>
                     </div>
                 </div>
                 <p className="mb-10 w-fit ms-auto">Rush's <a href="https://www.rush.com/" target="_blank" className="dcam-link">official website</a></p>

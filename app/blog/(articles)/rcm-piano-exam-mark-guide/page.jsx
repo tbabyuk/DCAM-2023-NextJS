@@ -22,7 +22,7 @@ const PostPianoExamMarkGuide = () => {
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
                 <PostSectionHeading heading="Introduction" />
                 <div>
-                    <p className="mb-5">If you are a piano student planning to do your RCM practical exams and want to know precisely what you will be graded on – you’ve come to the right place! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created this RCM Piano Exam Mark Guide with you – the student – in mind!</p>
+                    <p className="mb-5">If you are a piano student planning to do your RCM practical exams and want to know precisely what you will be graded on - you've come to the right place! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created this RCM Piano Exam Mark Guide with you - the student - in mind!</p>
 
                     <p className="mb-5">Although the grading information in this article has been updated according to the latest, 2022 RCM Piano Syllabus, we kept the grading schemes for the old, 2015 Syllabus as we thought our readers might find it useful to compare what has changed, if anything. We hope you find it useful!</p>
 

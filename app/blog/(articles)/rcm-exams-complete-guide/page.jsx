@@ -44,7 +44,7 @@ const PostRCMExamsGuide = () => {
             <section className="px-5 lg:px-36 xl:px-64">
                 <div className="flex flex-col-reverse md:flex-row mb-6">
                     <div className="mt-8 md:mt-0 md:me-10 leading-8">
-                        <p>RCM stands for Royal Conservatory of Music, which was founded in Toronto, Canada in 1886 and prides itself on being one of the largest and most respected music-education institutions in the world. RCM offers a variety of exams as part of its popular “Certificate Program”. These exams evaluate students’ proficiency on a musical instrument or knowledge of music-related concepts and topics. Students who successfully pass their exams receive an official certificate recognizing their achievement. RCM certificates are well-regarded and widely-recognized as being an objective and reliable measure of a student’s musical proficiency. According to RCM, more than 100,000 of their exams are taken every year across North America.</p>
+                        <p>RCM stands for Royal Conservatory of Music, which was founded in Toronto, Canada in 1886 and prides itself on being one of the largest and most respected music-education institutions in the world. RCM offers a variety of exams as part of its popular “Certificate Program”. These exams evaluate students' proficiency on a musical instrument or knowledge of music-related concepts and topics. Students who successfully pass their exams receive an official certificate recognizing their achievement. RCM certificates are well-regarded and widely-recognized as being an objective and reliable measure of a student's musical proficiency. According to RCM, more than 100,000 of their exams are taken every year across North America.</p>
                     </div>
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_building_toronto.jpeg?alt=media&token=60f05310-a6aa-4d3a-b36c-d3e70c3316e5" alt="rcm building in Toronto" style={{width: "320px"}} className="rounded-md" />
@@ -84,7 +84,7 @@ const PostRCMExamsGuide = () => {
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Fwritten_exams.png?alt=media&token=bf6b1b9e-5ba5-476d-9e75-46020c7165d5" alt="RCM practical exams" style={{width: "190px"}} className="rounded-md" />
                     </figure>
                 </div>
-                <p className="leading-8 mb-6"><span className="font-bold">2. History</span> - as the name suggests, history exams test students’ knowledge of important dates, musical eras and developments associated with each one, biographical information of well-known composers, etc. Expect to do plenty of memorizing here.</p>
+                <p className="leading-8 mb-6"><span className="font-bold">2. History</span> - as the name suggests, history exams test students' knowledge of important dates, musical eras and developments associated with each one, biographical information of well-known composers, etc. Expect to do plenty of memorizing here.</p>
                 <p className="leading-8 mb-6"><span className="font-bold">3. Harmony</span> - harmony is what happens when many sounds come together. On this exam, students are tested on their knowledge of concepts such as counterpoint, chord progressions, harmonization, cadences, modulations, phrase structures, compositional techniques, and more.</p>
             </section>
 
@@ -849,7 +849,7 @@ const PostRCMExamsGuide = () => {
                     <p>1-2 weeks after the examination</p>
                 </div>
                 <div className="leading-8 text-center">
-                    <p className="font-bold">Official results and examiner’s comments:</p>
+                    <p className="font-bold">Official results and examiner's comments:</p>
                     <p>4-6 weeks after the examination</p>
                 </div>
             </section>

@@ -22,7 +22,7 @@ const PostEasyCzernyEtudes = () => {
                 <div>
                     <p className="leading-8">Carl Czerny was an Austrian pianist, teacher, and composer of Czech origin who lived from 1791 to 1857. Over his lifetime, he wrote many works for the piano (over a 1000) and many of these are widely used today by students learning to play the piano. I myself played many of his compositions in the past and remember really enjoying them. Now as a teacher, I find teaching them to my students just as enjoyable, not to mention useful in developing their piano technique and helping them grow as pianists. In this article, I have gathered six of (what I think are) his best etudes for beginning piano students. All of these etudes are also featured in the RCM (Royal Conservatory) curriculum for piano students. Enjoy!</p><br />
 
-                    <p className="leading-8">Let’s look at each of these pieces in turn and get inspired to learn them!</p>
+                    <p className="leading-8">Let's look at each of these pieces in turn and get inspired to learn them!</p>
                 </div>
             </section>
 
@@ -35,7 +35,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 3/8</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Allegro (fast)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: even touch and sustained bass notes</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 2 – beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 2 - beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -69,7 +69,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 3/4</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Allegro (fast)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: grace notes</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 – high beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 - high beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -103,7 +103,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 4/4</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Allegro (fast)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: broken chords divided between hands</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 – high beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 - high beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 4/5 (very nice!)</li>
                         </ul>
                     </div>
@@ -121,7 +121,7 @@ const PostEasyCzernyEtudes = () => {
                         <h3 className="text-xl underline mb-4">WHAT YOU MIGHT FIND DIFFICULT:</h3>
                         <ul className="list-disc list-inside">
                             <li className="mb-4"><span className="font-bold">The tempo</span>. Allegro is not an easy tempo for beginners and lots of slow practice is required to make the piece sound well at this tempo.</li>
-                            <li><span className="font-bold">RH LH timing</span>. The trick here is to make each chord sound as if it’s being played by one hand, even though in reality it’s broken up between two hands. This will require good timing so that the hands can transition seamlessly from one to another.</li>
+                            <li><span className="font-bold">RH LH timing</span>. The trick here is to make each chord sound as if it's being played by one hand, even though in reality it's broken up between two hands. This will require good timing so that the hands can transition seamlessly from one to another.</li>
                         </ul>
                     </div>
             </section>
@@ -137,7 +137,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 2/4</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Allegro (fast)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: arpeggios divided between hands, hand crossing</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 – high beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 3 - high beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -155,7 +155,7 @@ const PostEasyCzernyEtudes = () => {
                         <h3 className="text-xl underline mb-4">WHAT YOU MIGHT FIND DIFFICULT:</h3>
                         <ul className="list-disc list-inside">
                             <li className="mb-4"><span className="font-bold">The tempo</span>. Allegro is not an easy tempo for beginners and lots of slow practice is required to make the piece sound well at this tempo.</li>
-                            <li><span className="font-bold">Hand crossing</span>. For beginning piano students, this might their first introduction to the crossing of hands, which might be awkward at first. However, it’s very important skill to develop for more advanced pieces in the future.</li>
+                            <li><span className="font-bold">Hand crossing</span>. For beginning piano students, this might their first introduction to the crossing of hands, which might be awkward at first. However, it's very important skill to develop for more advanced pieces in the future.</li>
                         </ul>
                     </div>
             </section>
@@ -171,7 +171,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 4/4</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Lento cantabile (slow, in a singing style)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: LH broken chords with held notes</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 4 – high beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 4 - high beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>
@@ -205,7 +205,7 @@ const PostEasyCzernyEtudes = () => {
                             <li className="font-light"><span className="font-semibold">Time</span>: 3/8</li>
                             <li className="font-light"><span className="font-semibold">Tempo</span>: Vivace (lively)</li>
                             <li className="font-light"><span className="font-semibold">Technical focus</span>: LH broken chords & RH grace notes</li>
-                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 4 – high beginner</li>
+                            <li className="font-light"><span className="font-semibold">Ability Level</span>: RCM Level 4 - high beginner</li>
                             <li className="font-light"><span className="font-semibold">My personal rating</span>: 5/5 (love it!)</li>
                         </ul>
                     </div>

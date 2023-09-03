@@ -20,7 +20,7 @@ const PostGraceNotesExplained = () => {
 
             <PostSectionHeading heading="Introduction" />
             <section className="introduction px-5 lg:px-36 xl:px-64 mb-24">
-                <p className="leading-8 mb-14">Perhaps you’ve heard your teacher mention the term “grace note” during one of your lessons and even point one out to you in your sheet music, but you’re still not quite sure what they are and how exactly they work. Well, one thing you should definitely know is that they are not notes that belong to a Grace! (bad joke, I know). But all joking aside, let us put on our music nerd hats and explore what these interesting-sounding notes are all about!</p>
+                <p className="leading-8 mb-14">Perhaps you've heard your teacher mention the term “grace note” during one of your lessons and even point one out to you in your sheet music, but you're still not quite sure what they are and how exactly they work. Well, one thing you should definitely know is that they are not notes that belong to a Grace! (bad joke, I know). But all joking aside, let us put on our music nerd hats and explore what these interesting-sounding notes are all about!</p>
             </section>
 
             <PostHeading heading="Grace Note Defined" bottom="mb-16" />
