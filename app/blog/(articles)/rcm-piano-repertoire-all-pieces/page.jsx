@@ -19,7 +19,7 @@ const PostRCMPianoRepertoireAllPieces = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="RCM Piano Repertoire - Full List of Pieces" date="August 4, 2020" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_piano_repertoire_all_pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=81c41c74-26ba-4b6c-8e9e-0d88d61f9a6e" alt="RCM Piano Repertoire All Pieces cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-piano-repertoire-all-pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=0f198dda-54df-4463-852c-348dd2cffbd0" alt="RCM Piano Repertoire All Pieces cover"/>
 
             <PostSectionHeading heading="Introduction" />
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">

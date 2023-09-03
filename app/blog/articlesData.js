@@ -78,7 +78,7 @@ export const articles = [
         id: 36,
         title: "Should We Observe Repeats in RCM Pieces?", 
         date: "October 21, 2022",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2022/10/repeat_signs_blog_cover-1.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frepeats-in-rcm-pieces%2Frepeat_signs_cover.jpg?alt=media&token=c875bbad-a456-4ffd-80b4-5088f126ee6b",
         description: "A common question asked by students preparing for their RCM exams is whether or not repeat signs or other similar markings should be observed or ignored. This is precisely the question we are going to answer …",
         blogLink: "/blog/repeats-in-rcm-pieces",
         category: "RCM"
@@ -240,7 +240,7 @@ export const articles = [
         id: 18,
         title: "RCM Piano Etudes - Full List of Pieces",
         date: "August 29, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/08/rcm_piano_etudes_all_pieces.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_piano_etudes_all_pieces%2Frcm_piano_etudes_all_pieces_cover.jpg?alt=media&token=91d114e3-b4d2-4682-8a83-8a90d477ad6a",
         description: "The complete list of RCM Piano Etudes pieces students can choose from to prepare for their RCM examinations. Source: RCM Celebration Series books, 2022 Edition (latest edition) IMPORTANT: While the names of …",
         blogLink: "/blog/rcm-piano-etudes-all-pieces",
         category: "RCM, Piano"
@@ -249,7 +249,7 @@ export const articles = [
         id: 17,
         title: "RCM Piano Repertoire - Full List of Pieces",
         date: "August 4, 2020",
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_piano_repertoire_all_pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=81c41c74-26ba-4b6c-8e9e-0d88d61f9a6e",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-piano-repertoire-all-pieces%2Frcm_piano_repertoire_all_pieces_cover.jpg?alt=media&token=0f198dda-54df-4463-852c-348dd2cffbd0",
         description: "The complete list of RCM Piano Repertoire pieces students can choose from to prepare for their RCM examinations. Source: RCM Celebration Series books, 2022 Edition (latest edition) IMPORTANT: While the …",
         blogLink: "/blog/rcm-piano-repertoire-all-pieces",
         category: "RCM, Piano"
