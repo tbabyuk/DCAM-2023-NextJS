@@ -205,6 +205,9 @@ const PostRCMExamsGuide = () => {
             <span id="instruments_offered" />
             <PostHeading heading="List of Instruments Offered" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
+                <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Finstruments.png?alt=media&token=29a5ae65-959e-4059-a85f-c0daa66cd5e6" alt="musical instruments" className="rounded-md md:w-[55%]" style={{width: "250px"}} />
+                </figure>
                 <table className="blog-table mx-auto w-full md:w-[50%] mb-12">
                     <tbody className="text-center">
                         <tr>
@@ -294,7 +297,7 @@ const PostRCMExamsGuide = () => {
             <PostHeading heading="How Long Are RCM Exams?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fc_major_scale.png?alt=media&token=bd533e05-f8cd-4f01-aca3-567183587c83" alt="harmonic interval example" className="rounded-md md:w-[55%]" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_exam_length.png?alt=media&token=bcb65b3a-32de-4cf6-b87c-c695d7686382" alt="a clock" className="rounded-md md:w-[55%]" style={{width: "200px"}} />
                 </figure>
                 <PostSubheading subheading="Practical Exams" align="text-center" bottom="mb-8" />     
                 <p className="leading-8 mb-10">RCM does not specify exact length for its practical exams, but they generally go anywhere from 15 minutes for beginner levels to over 1 hour for the advanced levels.</p>
@@ -812,7 +815,7 @@ const PostRCMExamsGuide = () => {
                 <table className="blog-table mx-auto w-full md:w-[50%] mb-12">
                     <tbody className="text-center">
                         <tr>
-                            <td>FIRST CLASS HONORS WITH DISTINCTION</td>
+                            <td>FIRST CLASS HONORS<br /> WITH DISTINCTION</td>
                             <td>90 - 100%</td>
                         </tr>
                         <tr>
@@ -867,7 +870,7 @@ const PostRCMExamsGuide = () => {
             <span id="rcm_contact" />
             <PostHeading heading="RCM Contact Information" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
-                <div className="leading-8 grid grid-cols-2 py-10 gap-8 bg-gray-100">
+                <div className="leading-8 grid md:grid-cols-2 py-10 gap-8 bg-gray-100">
                     <div className="text-center">
                         <h3 className="text-lg font-bold mb-6">CANADA</h3>
                         <p><span className="font-semibold">Phone</span>: (416) 408-5019 or 1-800-461-6058</p>
