@@ -285,7 +285,7 @@ export const articles = [
         id: 13,
         title: "Online vs. In-Person Music Lessons",
         date: "July 14, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/07/child_guitar_sizes_featured_image.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fonline-vs-in-person-music-lessons%2Fonline_vs_in_person_lessons_cover.jpg?alt=media&token=1c0ad664-6496-4e1f-b9ef-00a14a8fec4a",
         description: "Like it or not, online learning is the new reality for millions of people around the world - and it's here to stay! Music lessons have certainly not escaped this new trend, but the question many music teachers, students, …",
         blogLink: "/blog/online-vs-in-person-music-lessons",
         category: "Music General"
