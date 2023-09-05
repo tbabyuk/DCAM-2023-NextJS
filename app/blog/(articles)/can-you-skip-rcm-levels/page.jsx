@@ -4,20 +4,19 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
-import { PostSource } from "@/app/components/PostSource"
 import { PostSubheading } from "@/app/components/PostSubheading"
 
 export const metadata = {
-    title: "Should we observe repeats in RCM pieces? | Da Capo Academy of Music",
-    description: "Do we observe repeat signs for RCM examinations? What about Da Capo and Dal Segno signs? Here is what the Royal Conservatory says about this.",
-    keywords: ["repeats in rcm pieces", "observing repeats in rcm"]
+    title: "Can you skip RCM levels? | Da Capo Academy of Music",
+    description: "Can you skip RCM levels? When is it okay to skip and when is it better to do your level exams in order? Read on to find out!",
+    keywords: ["skipping rcm levels", "skipping rcm exams"]
 }
 
 const PostCanYouSkipRCMLevels = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Can you skip RCM levels?" date="November 23, 2020" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fcan-you-skip-rcm-levels%2Fskip_rcm_levels_cover.jpg?alt=media&token=cfa33773-cfc5-4751-aae3-0c800d2b2c24" alt="Repeats in RCM Pieces cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fcan-you-skip-rcm-levels%2Fskip_rcm_levels_cover.jpg?alt=media&token=cfa33773-cfc5-4751-aae3-0c800d2b2c24" alt="Can You Skip RCM Levels cover"/>
 
             <PostSectionHeading heading="Introduction: Defining the Terms" />
             <section className="introduction px-5 lg:px-36 xl:px-64 mb-20">

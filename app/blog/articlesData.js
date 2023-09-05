@@ -177,7 +177,7 @@ export const articles = [
         id: 25,
         title: "6 Reasons to Take RCM Exams (Royal Conservatory)",
         date: "November 26, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/six_reasons_to_take_rcm_exams.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwhy-take-rcm-exams%2Fwhy_take_rcm_exams_cover.jpg?alt=media&token=69927c65-1e36-4346-bd0d-d843bb717df8",
         description: "Let's get something straight - when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of …",
         blogLink: "/blog/why-take-rcm-exams",
         category: "RCM"
