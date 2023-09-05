@@ -186,7 +186,7 @@ export const articles = [
         id: 24,
         title: "Can You Skip RCM Levels?",
         date: "November 23, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/skip_rcm_levels_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fcan-you-skip-rcm-levels%2Fskip_rcm_levels_cover.jpg?alt=media&token=cfa33773-cfc5-4751-aae3-0c800d2b2c24",
         description: "The short answer Yes, RCM allows students to skip level exams, but think carefully about your reason for wanting to do this. The fact is, there are no short-cuts for developing proper technique at your instrument and a proper understanding …",
         blogLink: "/blog/can-you-skip-rcm-levels",
         category: "RCM"

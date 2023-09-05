@@ -1,7 +1,6 @@
 import { PostTitle } from "@/app/components/PostTitle"
 import { PostSectionHeading } from "@/app/components/PostSectionHeading"
 import { PostHeading } from "@/app/components/PostHeading"
-import { PostSubheading } from "@/app/components/PostSubheading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
@@ -98,8 +97,8 @@ const PostOnlineVsInPersonMusicLessons = () => {
                     <div className="mt-12 md:mt-0 md:me-10 leading-8">
                         <p className="text-lg font-bold mb-6">Disadvantages:</p>
                         <ul className="list-disc list-inside">
-                            <li>teacher not able to physically correct student’s body posture, hand position, and technique</li>
-                            <li>young children require parent’s presence and assistance during lessons</li>
+                            <li>teacher not able to physically correct student's body posture, hand position, and technique</li>
+                            <li>young children require parent's presence and assistance during lessons</li>
                             <li>lesson quality can suffer if either side has problem with internet connection or connection speed</li>
                             <li>sound quality of musical instrument might not be great even with good connection speed</li>
                         </ul>                    
