@@ -1,6 +1,5 @@
 import { PostTitle } from "@/app/components/PostTitle"
 import { PostSectionHeading } from "@/app/components/PostSectionHeading"
-import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"

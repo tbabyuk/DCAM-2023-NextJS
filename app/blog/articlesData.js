@@ -60,7 +60,7 @@ export const articles = [
         id: 39,
         title: "RCM Violin Repertoire - Full List of Pieces", 
         date: "October 25, 2022",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2022/10/rcm_violin_repertoire_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_violin_repertoire_all_pieces%2Frcm_violin_repertoire_cover.jpg?alt=media&token=a16fb064-f32c-4183-bd4c-77ebaa953e75",
         description: "The complete list of RCM Violin Repertoire pieces students can choose from to prepare for their RCM examinations. Source: RCM Celebration Series books, 2021 Edition (latest edition) Preparatory Violin …",
         blogLink: "/blog/rcm-violin-repertoire-all-pieces",
         category: "RCM"
