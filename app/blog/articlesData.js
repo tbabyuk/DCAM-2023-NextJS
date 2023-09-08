@@ -375,7 +375,7 @@ export const articles = [
         id: 3,
         title: "How to Build a Major Scale",
         date: "April 22, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/04/major_scale_featured_image-1.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-major-scale%2Fmajor_scale_cover.jpg?alt=media&token=e8194246-47de-461b-bef2-8bcf93e58e9c",
         description: "The major scale is one the most widely-used scales in music and certainly one that every musician should know. Like other scales, it follows a particular pattern (i.e. formula) of whole steps and half steps, which is what gives …",
         blogLink: "/blog/build-a-major-scale",
         category: "Music Theory"

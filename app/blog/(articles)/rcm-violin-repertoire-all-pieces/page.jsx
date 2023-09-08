@@ -7,7 +7,6 @@ import { PostDivider } from "@/app/components/PostDivider"
 import { PostSource } from "@/app/components/PostSource"
 import Link from "next/link"
 import PostImage from "@/app/components/PostImage"
-import { PostNote } from "@/app/components/PostNote"
 
 export const metadata = {
     title: "RCM Violin Repertoire - Full List of Pieces | Da Capo Academy of Music",
@@ -102,7 +101,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>12</td>
                         </tr>
                         <tr>
-                            <td>The Bells of St. Basil’s</td>
+                            <td>The Bells of St. Basil's</td>
                             <td>Paul de Keyser</td>
                             <td>13</td>
                         </tr>                    
@@ -255,7 +254,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>14</td>
                         </tr>
                         <tr>
-                            <td>On Eagle’s Wings</td>
+                            <td>On Eagle's Wings</td>
                             <td>M. Joncas, arr. H. Birston</td>
                             <td>16</td>
                         </tr>
@@ -328,7 +327,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>33</td>
                         </tr>
                         <tr>
-                            <td>Soldier’s March, op. 68, no. 2</td>
+                            <td>Soldier's March, op. 68, no. 2</td>
                             <td>Robert Schumann</td>
                             <td>34</td>
                         </tr>
@@ -449,7 +448,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>24</td>
                         </tr>
                         <tr>
-                            <td>Flash of Light’ning</td>
+                            <td>Flash of Light'ning</td>
                             <td>C. Lumsden and B. Attwood</td>
                             <td>25</td>
                         </tr>
@@ -549,7 +548,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>8</td>
                         </tr>
                         <tr>
-                            <td>Mouvement d’une serenade</td>
+                            <td>Mouvement d'une serenade</td>
                             <td>G. Sammartini, arr. A. Moffat</td>
                             <td>10</td>
                         </tr>
@@ -635,7 +634,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>33</td>
                         </tr>
                         <tr>
-                            <td>The Farmers’ Market</td>
+                            <td>The Farmers' Market</td>
                             <td>Christine Donkin</td>
                             <td>34</td>
                         </tr>
@@ -660,7 +659,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>43</td>
                         </tr>
                         <tr>
-                            <td>Wallaby’s Lullaby, op. 5</td>
+                            <td>Wallaby's Lullaby, op. 5</td>
                             <td>George Fiala</td>
                             <td>46</td>
                         </tr>
@@ -705,7 +704,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>8</td>
                         </tr>
                         <tr>
-                            <td>Concerto in F Major: 3rd Movement: Farmers’ Dance</td>
+                            <td>Concerto in F Major: 3rd Movement: Farmers' Dance</td>
                             <td>Arnoldo Sartorio</td>
                             <td>13</td>
                         </tr>
@@ -942,7 +941,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>45</td>
                         </tr>
                         <tr>
-                            <td>Toy Soldiers’ March</td>
+                            <td>Toy Soldiers' March</td>
                             <td>Fritz Kreisler</td>
                             <td>48</td>
                         </tr>
@@ -1349,7 +1348,7 @@ const PostRCMViolinRepertoireAllPieces = () => {
                             <td>45</td>
                         </tr>
                         <tr>
-                            <td>Salut d’amour, op. 12</td>
+                            <td>Salut d'amour, op. 12</td>
                             <td>Edward Elgar</td>
                             <td>48</td>
                         </tr>
