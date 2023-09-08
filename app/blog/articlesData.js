@@ -357,7 +357,7 @@ export const articles = [
         id: 5,
         title: "How to Build a Harmonic Minor Scale",
         date: "May 6, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/05/featured2.png",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-harmonic-minor-scale%2Fbuild_a_harmonic_minor_scale_cover.jpg?alt=media&token=e4afb2cc-b602-4369-8d96-9bfca54c76a7",
         description: "The harmonic minor scale is arguably the most popular of the three minor scales (the others being the natural minor and melodic minor). It is pleasing to the ear but at the same time has a certain melancholic quality, as …",
         blogLink: "/blog/build-a-harmonic-minor-scale",
         category: "Music Theory"
