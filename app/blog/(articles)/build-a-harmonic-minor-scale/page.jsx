@@ -56,7 +56,7 @@ const PostBuildAHarmonicMinorScale = () => {
             <PostHeading heading="Putting It to Practice" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64 leading-8 mb-20">
                 <PostSubheadingRed subheading='Example 1: "A Harmonic Minor Scale"' bottom="mb-12" />
-                <PostSubheading subheading="1. Using the formula" bottom="mb-6" />
+                <PostSubheading subheading="1. Using the Formula" bottom="mb-6" />
                 <p className="mb-10">For our first example, let's build the <span className="font-bold">A Harmonic Minor</span> scale using the formula method. Starting on "A", let's start applying our pattern of whole steps and half steps.</p>
                 <figure className="flex-shrink-0 flex justify-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-harmonic-minor-scale%2Fa_har_min_by_formula.PNG?alt=media&token=f3ed531b-eaa4-4fb2-b276-88d1471df373" alt="A harmonic minor scale using formula" className="w-[100%] md:w-[70%] rounded-md" />
@@ -84,7 +84,7 @@ const PostBuildAHarmonicMinorScale = () => {
                 </figure>
 
                 <PostSubheadingRed subheading='Example 2: "D Harmonic Minor Scale"' bottom="mb-12" />
-                <PostSubheading subheading="1. Using the formula" bottom="mb-6" />
+                <PostSubheading subheading="1. Using the Formula" bottom="mb-6" />
                 <p className="mb-10">Let's apply our formula pattern starting from D:</p>
                 <figure className="flex-shrink-0 flex justify-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-harmonic-minor-scale%2Fd_har_min_by_formula.jpg?alt=media&token=42522184-28bd-4360-a49d-3334fab6937c" alt="D harmonic minor scale using the formula" className="w-[100%] md:w-[70%] rounded-md" />
@@ -112,7 +112,7 @@ const PostBuildAHarmonicMinorScale = () => {
 
                 <PostSubheadingRed subheading='Example 3: "C Sharp Harmonic Minor Scale"' bottom="mb-6" />
                 <p className="mb-12">Lastly, let's try something a bit harder, the <span className="font-bold">C Sharp Harmonic Minor</span> scale.</p>
-                <PostSubheading subheading="1. Using the formula" bottom="mb-10" />
+                <PostSubheading subheading="1. Using the Formula" bottom="mb-10" />
                 <figure className="flex-shrink-0 flex justify-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-harmonic-minor-scale%2Fc_sharp_har_min_by_formula.PNG?alt=media&token=9168b161-57f2-4e99-a542-c6915741f57c" alt="C sharp harmonic minor scale using the formula" className="w-[100%] md:w-[70%] rounded-md" />
                 </figure>
