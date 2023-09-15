@@ -115,6 +115,9 @@ const Header = () => {
                     <li>
                         <Link href="/blog"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Blog</Link>
                     </li>
+                    <li>
+                        <Link href="/shop"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Shop</Link>
+                    </li>
                 </ul>
             </nav>
             {/* SLIDER */}
