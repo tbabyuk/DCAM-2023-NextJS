@@ -4,11 +4,15 @@ import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
+import { GiShoppingCart } from "react-icons/gi"
 import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react";
 import Slider from "./Slider";
 import { IoMdArrowDropdown } from "react-icons/io"
 import { MMSLoginButton } from "./MMSLoginButton";
+import { useShopContext } from "../hooks/useShopContext";
+
+
 
 const Header = () => {
 
@@ -18,6 +22,8 @@ const Header = () => {
     const handleDropdownMenu = () => {
         setDropdownMenuIsOpen((prev) => !prev)
     }
+
+    const {numCartItems, addItem} = useShopContext()
 
 
 
@@ -119,6 +125,7 @@ const Header = () => {
                         <Link href="/shop"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Shop</Link>
                     </li>
                 </ul>
+                <Link href="/cart"><button className="z-10 cart absolute right-0 bg-green-500 text-white bg- h-full px-4 flex items-center"><GiShoppingCart className="me-1" />Cart ({numCartItems})</button></Link>
             </nav>
             {/* SLIDER */}
             <Slider />
