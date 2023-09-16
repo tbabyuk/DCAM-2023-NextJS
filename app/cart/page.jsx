@@ -4,7 +4,7 @@
 import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
 import { booksList } from "../shop/shopItems"
-import { CartProductCard } from "../shop/CartProductCard"
+import { CartProductRow } from "./CartProductRow"
 
 
 const Cart = () => {
@@ -24,6 +24,7 @@ const Cart = () => {
             <table className="w-full">
                 <thead>
                     <tr className="text-center bg-gray-200 border-2 border-gray-200">
+                        <td>Remove</td>
                         <td>Item</td>
                         <td>Description</td>
                         <td>Price</td>
@@ -33,17 +34,7 @@ const Cart = () => {
                 </thead>
                 <tbody>
                     {cartItems.map((item) => (
-                            <tr key={item.id}>
-                                <td className="w-[30%] py-6 border-2 border-gray-200">
-                                    <div className="h-[120px] flex justify-center"> 
-                                        <img src={item.imageUrl} alt={item.title} style={{maxHeight: "100%"}} />
-                                    </div>
-                                </td>
-                                <td className="w-[30%] border-2 border-gray-200 px-5">{item.title}</td>
-                                <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${item.price}</td>
-                                <td className="w-[20%] border-2 border-gray-200 px-5 text-center">quantity</td>
-                                <td className="w-[10%] border-2 border-gray-200 px-5 text-center">$2</td>
-                            </tr>
+                        <CartProductRow key={item.id} item={item} />
                     ))}
                 </tbody>
             </table>
