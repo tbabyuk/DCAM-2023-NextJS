@@ -2,8 +2,6 @@
 
 import { createContext, useState } from "react"
 import { toast } from "react-toastify"
-// import 'react-toastify/dist/ReactToastify.css';
-
 
 export const ShopContext = createContext()
 
@@ -42,9 +40,9 @@ export const ShopContextProvider = ({children}) => {
         const itemIndex = cart.findIndex((item) => item.id === id)
         const updatedCart = [...cart]
         updatedCart[itemIndex].quantity -= 1
-        notifySubtract(item.title)
         setCart(updatedCart)
         setCartItemsTotal((prev) => prev - 1)
+        notifySubtract(item.title)
     }
 
     const removeFromCart = (id) => {

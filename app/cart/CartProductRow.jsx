@@ -39,20 +39,20 @@ export const CartProductRow = ({item}) => {
 
   return (
     <tr>
-      <td className="w-[5%] border-2 border-gray-200">
+      <td className="w-[5%] min-w-[80px] border-2 border-gray-200">
         <div className="w-full flex justify-center">
           <RxCross1 className="text-[1.5rem] text-gray-500 cursor-pointer" onClick={handleRemove} />
         </div>
       </td>
-      <td className="w-[25%] py-6 border-2 border-gray-200">
-          <div className="h-[120px] flex justify-center"> 
+      <td className="w-[25%] min-w-[150px] py-6 border-2 border-gray-200">
+          <div className="h-[120px] flex flex-shrink-0 justify-center"> 
               <img src={item.imageUrl} alt={item.title} style={{maxHeight: "100%"}} />
           </div>
       </td>
-      <td className="w-[30%] border-2 border-gray-200 px-5">{item.title}</td>
-      <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${item.price}</td>
-      <td className="w-[20%] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{item.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
-      <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${(item.price * item.quantity).toFixed(2)}</td>
+      <td className="w-[30%] min-w-[180px] border-2 border-gray-200 px-5">{item.title}</td>
+      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${item.price}</td>
+      <td className="w-[20%] min-w-[180px] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{item.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
+      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${(item.price * item.quantity).toFixed(2)}</td>
     </tr>
   )
 }

@@ -3,8 +3,8 @@
 
 import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
-import { booksList } from "../shop/shopItems"
 import { CartProductRow } from "./CartProductRow"
+import { useEffect } from "react"
 
 
 const Cart = () => {
@@ -12,15 +12,26 @@ const Cart = () => {
   const {cart} = useShopContext()
 
 
-  console.log("logging cart from Cart component:", cart)
+  // GET SUBTOTAL OF ALL CART ITEMS
+  const getSubtotal = () => {
+    const subtotal = cart.reduce((accumulator, item) => {
+      return accumulator + item.price * item.quantity;
+    }, 0);
+    return subtotal.toFixed(2)
+  }
 
-//   const newObject = cart.map((item) => ({id: item.id, quantity: item.quantity}))
 
-//   console.log("new Object is:", newObject)
+  const getTaxTotal = () => {
+    const taxTotal = cart.reduce((accumulator, item) => {
+        return accumulator + item.price * item.quantity * item.tax;
+    }, 0)
+    return taxTotal.toFixed(2)
+  }
 
-//   const currentOrderItemsById = currentOrder.map((item) => item.id)
 
-//   const cartItems = booksList.filter((book) => currentOrderItemsById.includes(book.id));
+//   useEffect(() => {
+//     getTaxTotal()
+//   }, [cart])
 
 
   return (
@@ -42,6 +53,21 @@ const Cart = () => {
                     {cart.map((item) => (
                         <CartProductRow key={item.id} item={item} />
                     ))}
+                    <tr>
+                        <td colSpan="4"></td>
+                        <td className="text-right">Subtotal:</td>
+                        <td className="text-center">${getSubtotal()}</td>
+                    </tr>
+                    <tr>
+                        <td colSpan="4"></td>
+                        <td className="text-right">Tax:</td>
+                        <td className="text-center">${getTaxTotal()}</td>
+                    </tr>
+                    <tr>
+                        <td colSpan="4"></td>
+                        <td className="text-right font-bold">Total:</td>
+                        <td className="text-center font-bold">${(+getSubtotal() + +getTaxTotal()).toFixed(2)}</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
