@@ -23,7 +23,7 @@ const Header = () => {
         setDropdownMenuIsOpen((prev) => !prev)
     }
 
-    const {numCartItems, addItem} = useShopContext()
+    const {cartItemsTotal} = useShopContext()
 
 
 
@@ -125,7 +125,7 @@ const Header = () => {
                         <Link href="/shop"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Shop</Link>
                     </li>
                 </ul>
-                <Link href="/cart"><button className="z-10 cart absolute right-0 bg-green-500 text-white bg- h-full px-4 flex items-center"><GiShoppingCart className="me-1" />Cart ({numCartItems})</button></Link>
+                <Link href="/cart"><button className="z-10 cart absolute right-0 bg-green-500 text-white bg- h-full px-4 flex items-center"><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
             </nav>
             {/* SLIDER */}
             <Slider />

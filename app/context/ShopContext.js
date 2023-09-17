@@ -11,41 +11,59 @@ export const ShopContext = createContext()
 export const ShopContextProvider = ({children}) => {
 
     const notifyAdd = (item) => toast.success(`"${item}" \n was added to your cart!`)
-    const notifyAddQty = () => toast.success(`Item added!`)
-    const notifySubtractQty = () => toast.success(`Item removed!`)
-    const notifyItemRemoved = () => toast.success("Item deleted!")
-    const [numCartItems, setNumCartItems] = useState(0)
-    const [checkoutList, setCheckoutList] = useState([])
+    const notifySubtract = (item) => toast.success(`"${item}" \n was removed from your cart!`)
+    const notifyItemRemoved = () => toast.success("Item removed!")
+    const [cartItemsTotal, setCartItemsTotal] = useState(0)
 
-    const name = "Brad"
-    const addItem = (itemName, itemId) => {
-        setNumCartItems((prev) => prev + 1)
-        notifyAdd(itemName)
-        console.log(itemName, itemId)
-        setCheckoutList((prev) => [...checkoutList, itemId])
+
+    const [cart, setCart] = useState([])
+
+
+    console.log("cart contents:", cart)
+
+
+    // ADD ITEM TO CART BY EITHER CLICKING 'ADD TO CART' BUTTON OR INCREASING ITEM QUANTITY
+    const addToCart = (item, id) => {
+        // check if this item is already in the cart
+        const itemIndex = cart.findIndex((item) => item.id === id)
+        if(itemIndex === -1) {
+            setCart((prev) => [...prev, item])
+            setCartItemsTotal((prev) => prev + 1)
+        } else {
+            const updatedCart = [...cart]
+            updatedCart[itemIndex].quantity += 1
+            setCart(updatedCart)
+            setCartItemsTotal((prev) => prev + 1)
+        }
+        notifyAdd(item.title)
     }
 
-    const addItemQuantity = () => {
-        setNumCartItems((prev) => prev + 1)
-        notifyAddQty()
+    const subtractFromCart = (item, id) => {
+        const itemIndex = cart.findIndex((item) => item.id === id)
+        const updatedCart = [...cart]
+        updatedCart[itemIndex].quantity -= 1
+        notifySubtract(item.title)
+        setCart(updatedCart)
+        setCartItemsTotal((prev) => prev - 1)
     }
 
-    const subtractItemQuantity = () => {
-        setNumCartItems((prev) => prev - 1)
-        notifySubtractQty()
-    }
-
-    const updateCheckoutList = (id, quantity) => {
-        const newCheckoutList = checkoutList.filter((item) => item !== id)
-        setCheckoutList(newCheckoutList)
-        setNumCartItems((prev) => prev - quantity)
+    const removeFromCart = (id) => {
+        const updatedCart = cart.filter((item) => item.id !== id)
+        setCart(updatedCart)
         notifyItemRemoved()
     }
 
-    console.log("checkList is:", checkoutList)
+    const exportsList = {
+        cartItemsTotal,
+        setCartItemsTotal,
+        removeFromCart,
+        addToCart,
+        subtractFromCart,
+        cart
+    }
 
     return (
-        <ShopContext.Provider value={{numCartItems, addItem, checkoutList, updateCheckoutList, addItemQuantity, subtractItemQuantity}}>
+        <ShopContext.Provider value={exportsList}>
             {children}
         </ShopContext.Provider>
     )

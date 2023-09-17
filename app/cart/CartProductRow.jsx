@@ -4,27 +4,36 @@ import { useState } from "react"
 import { BiLeftArrow, BiRightArrow } from "react-icons/bi"
 import { RxCross1 } from "react-icons/rx"
 import { useShopContext } from "../hooks/useShopContext"
+import { toast } from "react-toastify"
 
 
 
 export const CartProductRow = ({item}) => {
 
-  const {updateCheckoutList, addItemQuantity, subtractItemQuantity} = useShopContext()
 
-  const [quantity, setQuantity] = useState(1)
+  const {addToCart, subtractFromCart, removeFromCart, setCartItemsTotal} = useShopContext()
 
-  const handleAddQuantity = () => {
-    if(quantity < 10) {
-      setQuantity((prev) => prev + 1)
+
+  const handleAdd = () => {
+    if(item.quantity < 10) {
+        addToCart(item, item.id)
+    } else {
+        toast.error("Oops, you've reached the maximum number of items available in stock!")
     }
-    addItemQuantity()
   }
 
-  const handleSubtractQuantity = () => {
-    if(quantity > 1) {
-      setQuantity((prev) => prev - 1)
-      subtractItemQuantity()
+  const handleSubtract = () => {
+    if(item.quantity > 1) {
+        subtractFromCart(item, item.id)
+    } else {
+        removeFromCart(item.id)
+        setCartItemsTotal((prev) => prev - 1)
     }
+  }
+
+  const handleRemove = () => {
+      removeFromCart(item.id)
+      setCartItemsTotal((prev) => prev - item.quantity)
   }
 
 
@@ -32,7 +41,7 @@ export const CartProductRow = ({item}) => {
     <tr>
       <td className="w-[5%] border-2 border-gray-200">
         <div className="w-full flex justify-center">
-          <RxCross1 className="text-[1.5rem] text-gray-500 cursor-pointer" onClick={() => updateCheckoutList(item.id, quantity)} />
+          <RxCross1 className="text-[1.5rem] text-gray-500 cursor-pointer" onClick={handleRemove} />
         </div>
       </td>
       <td className="w-[25%] py-6 border-2 border-gray-200">
@@ -42,9 +51,8 @@ export const CartProductRow = ({item}) => {
       </td>
       <td className="w-[30%] border-2 border-gray-200 px-5">{item.title}</td>
       <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${item.price}</td>
-      <td className="w-[20%] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtractQuantity} />{quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAddQuantity}/></td>
-      <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${(item.price * quantity).toFixed(2)}</td>
+      <td className="w-[20%] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{item.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
+      <td className="w-[10%] border-2 border-gray-200 px-5 text-center">${(item.price * item.quantity).toFixed(2)}</td>
     </tr>
   )
 }
-

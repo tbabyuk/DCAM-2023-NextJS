@@ -9,18 +9,24 @@ import { CartProductRow } from "./CartProductRow"
 
 const Cart = () => {
 
-  const {checkoutList} = useShopContext()
-
-  const cartItems = booksList.filter((book) => checkoutList.includes(book.id));
+  const {cart} = useShopContext()
 
 
-  console.log("from cart page:", cartItems)
+  console.log("logging cart from Cart component:", cart)
+
+//   const newObject = cart.map((item) => ({id: item.id, quantity: item.quantity}))
+
+//   console.log("new Object is:", newObject)
+
+//   const currentOrderItemsById = currentOrder.map((item) => item.id)
+
+//   const cartItems = booksList.filter((book) => currentOrderItemsById.includes(book.id));
 
 
   return (
-    <main className="shot-page">
+    <main className="cart-page">
         <PageTitle title="Cart - Checkout" />
-        <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24">
+        <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24 overflow-x-auto">
             <table className="w-full">
                 <thead>
                     <tr className="text-center bg-gray-200 border-2 border-gray-200">
@@ -33,7 +39,7 @@ const Cart = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {cartItems.map((item) => (
+                    {cart.map((item) => (
                         <CartProductRow key={item.id} item={item} />
                     ))}
                 </tbody>
