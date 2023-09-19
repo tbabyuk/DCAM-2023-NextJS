@@ -11,6 +11,7 @@ import Slider from "./Slider";
 import { IoMdArrowDropdown } from "react-icons/io"
 import { MMSLoginButton } from "./MMSLoginButton";
 import { useShopContext } from "../hooks/useShopContext";
+import { usePathname } from "next/navigation";
 
 
 
@@ -18,6 +19,7 @@ const Header = () => {
 
     const [dropdownMenuIsOpen, setDropdownMenuIsOpen] = useState(false)
     const [lessonsDropdownIsOpen, setLessonsDropdownIsOpen] = useState(false)
+    const path = usePathname()
 
     const handleDropdownMenu = () => {
         setDropdownMenuIsOpen((prev) => !prev)
@@ -25,11 +27,8 @@ const Header = () => {
 
     const {cartItemsTotal} = useShopContext()
 
-
-
     return (
         <header className="flex flex-col mb-28">
-            
             {/* LOGO & CONTACT HEADER */}
             <div className="header-top px-5 py-8 md:py-4 bg-gradient-to-r from-regRed via-regRed to-darkRed text-gray-100 flex flex-col md:flex-row justify-between items-center">
 
@@ -62,7 +61,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-
+            <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
             {/* NAVIGATION */}
             <nav className="bg-regBlue h-10 text-gray-100 relative">
                 <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownMenuIsOpen && "90deg"}} onClick={handleDropdownMenu} /></div>
@@ -125,7 +124,6 @@ const Header = () => {
                         <Link href="/shop"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Shop</Link>
                     </li>
                 </ul>
-                <Link href="/cart"><button className="z-10 cart absolute right-0 bg-green-500 text-white bg- h-full px-4 flex items-center"><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
             </nav>
             {/* SLIDER */}
             <Slider />

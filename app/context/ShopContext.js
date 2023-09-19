@@ -51,7 +51,7 @@ export const ShopContextProvider = ({children}) => {
         notifyItemRemoved()
     }
 
-    const exportsList = {
+    const contextExports = {
         cartItemsTotal,
         setCartItemsTotal,
         removeFromCart,
@@ -61,7 +61,7 @@ export const ShopContextProvider = ({children}) => {
     }
 
     return (
-        <ShopContext.Provider value={exportsList}>
+        <ShopContext.Provider value={contextExports}>
             {children}
         </ShopContext.Provider>
     )
