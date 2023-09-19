@@ -33,6 +33,42 @@ const Cart = () => {
 //     getTaxTotal()
 //   }, [cart])
 
+  // const handleCheckout = async () => {
+  //   await fetch("http://localhost:3000/checkout", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json"
+  //     },
+  //     body: JSON.stringify({items: cart})
+  //   }).then((response) => {
+  //     return response.json()
+  //   }).then((response) => {
+  //     if(response.url) {
+  //       window.location.assign(response.url)
+  //     }
+  //   })
+  // }
+
+    const handleCheckout = async () => {
+    console.log("sending these items to backend...", cart)
+
+    const res = await fetch("http://localhost:3000/api/checkout", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      // body: JSON.stringify({items: cart})
+      body: JSON.stringify({
+        items: cart
+      })
+    })
+
+    if(res.ok) {
+      const {url} = await res.json()
+      window.location.assign(url)
+  }
+  }
+
 
   return (
     <main className="cart-page">
@@ -70,6 +106,7 @@ const Cart = () => {
                     </tr>
                 </tbody>
             </table>
+            <button className="bg-green-500 mt-6 text-gray-50 p-5 float-right" onClick={handleCheckout}>Checkout</button>
         </div>
     </main>
   )

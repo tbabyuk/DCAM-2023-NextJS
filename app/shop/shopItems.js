@@ -3,7 +3,7 @@
 
 export const booksList = [
     {
-        id: 1,
+        id: "price_1Nrw1DBzVRorr5QYQyAqbZkX",
         title: "ABC of Piano Playing - Book 1",
         publisher: "Publisher name",
         author: "Boris Berlin",
@@ -33,7 +33,7 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc3.png?alt=media&token=7e7fa82d-fc89-44ac-9f07-a4a63f787a37"
     },
     {
-        id: 4,
+        id: "price_1Nrw3cBzVRorr5QYNy5udmbd",
         title: "RCM Lvl 1 Piano - Technical Requirements",
         author: "The Royal Conservatory", 
         publisher: "Publisher name",
@@ -71,7 +71,7 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Flvl1sight.jpg?alt=media&token=3e2d3bd7-d6ff-4282-bf2e-011bee1dedcc"
     },
     {
-        id: 8,
+        id: "price_1Ns51KBzVRorr5QYgXneEgEn",
         title: "RCM Level 1 Piano - Theory",
         author: "The Royal Conservatory",
         price: 19.95,
