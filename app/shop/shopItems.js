@@ -126,10 +126,6 @@ export const booksList = [
         quantity: 1,
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Flvl2theory.jpg?alt=media&token=cee3a248-5af2-4518-8cbf-7ebf3e1a1640"
     },
-
-
-
-
     {
         id: "price_1NsJ7fBzVRorr5QYHYietldD",
         title: "RCM Lvl 3 Piano - Technical Requirements",

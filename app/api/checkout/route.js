@@ -26,6 +26,12 @@ export async function POST(request) {
         automatic_tax: {
             enabled: true,
         },
+        shipping_address_collection: {
+            allowed_countries: ["CA"]
+        },
+        // shipping_cost: {
+        //     shipping_rate: "shr_1NsU8nBzVRorr5QY9hRRIQHs"
+        // },
         success_url: "http://localhost:3000/checkout/success",
         cancel_url: "http://localhost:3000/checkout/cancel"
     })
