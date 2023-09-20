@@ -23,12 +23,14 @@ export async function POST(request) {
     const session = await stripe.checkout.sessions.create({
         line_items: lineItems,
         mode: "payment",
+        automatic_tax: {
+            enabled: true,
+        },
         success_url: "http://localhost:3000/checkout/success",
         cancel_url: "http://localhost:3000/checkout/cancel"
     })
 
     return NextResponse.json({
         url: session.url
-        // lineItems
     })
 }

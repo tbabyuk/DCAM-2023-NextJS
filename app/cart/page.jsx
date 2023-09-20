@@ -5,6 +5,14 @@ import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
 import { CartProductRow } from "./CartProductRow"
 import { useEffect } from "react"
+import Script from "next/script"
+
+
+export const metadata = {
+  title: "How to Build a Harmonic Minor Scale | Da Capo Academy of Music",
+  description: "Master building the harmonic minor scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
+  keywords: ["build a minor scale", "build a harmonic minor scale", "minor scale music theory", "harmonic minor scale music theory"]
+}
 
 
 const Cart = () => {
@@ -71,44 +79,52 @@ const Cart = () => {
 
 
   return (
-    <main className="cart-page">
-        <PageTitle title="Cart - Checkout" />
-        <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24 overflow-x-auto">
-            <table className="w-full">
-                <thead>
-                    <tr className="text-center bg-gray-200 border-2 border-gray-200">
-                        <td>Remove</td>
-                        <td>Item</td>
-                        <td>Description</td>
-                        <td>Price</td>
-                        <td>Quantity</td>
-                        <td>Total</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    {cart.map((item) => (
-                        <CartProductRow key={item.id} item={item} />
-                    ))}
-                    <tr>
-                        <td colSpan="4"></td>
-                        <td className="text-right">Subtotal:</td>
-                        <td className="text-center">${getSubtotal()}</td>
-                    </tr>
-                    <tr>
-                        <td colSpan="4"></td>
-                        <td className="text-right">Tax:</td>
-                        <td className="text-center">${getTaxTotal()}</td>
-                    </tr>
-                    <tr>
-                        <td colSpan="4"></td>
-                        <td className="text-right font-bold">Total:</td>
-                        <td className="text-center font-bold">${(+getSubtotal() + +getTaxTotal()).toFixed(2)}</td>
-                    </tr>
-                </tbody>
-            </table>
-            <button className="bg-green-500 mt-6 text-gray-50 p-5 float-right" onClick={handleCheckout}>Checkout</button>
-        </div>
-    </main>
+    <>
+      <main className="cart-page">
+          <PageTitle title="Cart - Checkout" />
+          <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24 overflow-x-auto">
+              <table className="w-full">
+                  <thead>
+                      <tr className="text-center bg-gray-200 border-2 border-gray-200">
+                          <td>Remove</td>
+                          <td>Item</td>
+                          <td>About</td>
+                          <td>Price</td>
+                          <td>Quantity</td>
+                          <td>Total</td>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      {cart.map((item) => (
+                          <CartProductRow key={item.id} item={item} />
+                      ))}
+                      <tr>
+                          <td colSpan="4"></td>
+                          <td className="text-right">Subtotal:</td>
+                          <td className="text-center">${getSubtotal()}</td>
+                      </tr>
+                      <tr>
+                          <td colSpan="4"></td>
+                          <td className="text-right">Tax:</td>
+                          <td className="text-center">${getTaxTotal()}</td>
+                      </tr>
+                      <tr>
+                          <td colSpan="4"></td>
+                          <td className="text-right font-bold">Total:</td>
+                          <td className="text-center font-bold">${(+getSubtotal() + +getTaxTotal()).toFixed(2)}</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <div className="flex flex-col items-end">
+                <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]" onClick={handleCheckout}>Checkout</button>
+                <div className="g-recaptcha" data-sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm"></div>
+              </div>
+          </div>
+      </main>
+      <Script
+        src="https://www.google.com/recaptcha/api.js"
+      />
+    </>
   )
 }
 
