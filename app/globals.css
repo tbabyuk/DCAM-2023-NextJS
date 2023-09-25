@@ -37,3 +37,11 @@ input {
 button:disabled {
   @apply bg-gray-400 hover:bg-gray-400
 }
+
+.menu-item {
+  @apply h-10 px-3 lg:px-5 text-center flex justify-center items-center hover:bg-lightBlue
+}
+
+.submenu-item {
+  @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-lightBlue
+}

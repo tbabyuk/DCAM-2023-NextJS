@@ -5,13 +5,14 @@ import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 import { GiShoppingCart } from "react-icons/gi"
-import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react";
 import Slider from "./Slider";
 import { IoMdArrowDropdown } from "react-icons/io"
 import { MMSLoginButton } from "./MMSLoginButton";
 import { useShopContext } from "../hooks/useShopContext";
 import { usePathname } from "next/navigation";
+import Navigation from "./Navigation";
+
 
 
 
@@ -61,9 +62,17 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
+            <Navigation />
+
+
+
+
+            {/* <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link> */}
             {/* NAVIGATION */}
-            <nav className="bg-regBlue h-10 text-gray-100 relative">
+
+
+
+            {/* <nav className="bg-regBlue h-10 text-gray-100 relative">
                 <div className="pe-3 h-full flex items-center justify-end md:hidden"><RxHamburgerMenu size="2em" className="cursor-pointer" style={{rotate: dropdownMenuIsOpen && "90deg"}} onClick={handleDropdownMenu} /></div>
 
                 <ul className={`absolute ${dropdownMenuIsOpen ? 'block' : 'hidden'} w-full top-10 py-8 leading-10 text-center bg-regBlue opacity-90 md:bg-inherit md:py-0 md:top-0 md:flex md:justify-center lg:px-20 xl:px-40 z-20 md:z-10`}>
@@ -124,7 +133,9 @@ const Header = () => {
                         <Link href="/shop"className="block px-4 hover:bg-darkBlue cursor-pointer" onClick={() => setDropdownMenuIsOpen(false)}>Shop</Link>
                     </li>
                 </ul>
-            </nav>
+            </nav> */}
+
+
             {/* SLIDER */}
             <Slider />
         </header> 
