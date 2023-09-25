@@ -26,13 +26,13 @@ return (
             <motion.ul
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ ease: "easeOut", duration: 1 }}
+                transition={{ ease: "easeOut", duration: 0.5 }}
                 exit={{ opacity: 0 }}
                 className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:justify-center text-gray-50`}>
                 <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item">Home</li></Link>
                 <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnavIsOpen(true)} onMouseLeave={() => setSubnavIsOpen(false)} onClick={() => setSubnavIsOpen(!subnavIsOpen)}>Lessons<IoIosArrowDown className=" ms-1" />
                     {subnavIsOpen && (
-                        <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-black bg-opacity-[75%]">
+                        <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-black bg-opacity-[75%] text-[0.95rem]">
                             <li className="submenu-item">Piano Lessons</li>
                             <li className="submenu-item">Guitar Lessons</li>
                             <li className="submenu-item">Drum Lessons</li>
