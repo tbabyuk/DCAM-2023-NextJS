@@ -31,7 +31,7 @@ const PostBuildAChromaticScale = () => {
                 </figure>
                 <p className="mb-20">In music theory, we often write the chromatic scale in both ascending and descending form, separated by a bar line. The bar line makes it easier to write the descending part of the scale by cancelling out all preceding accidentals (see example below).</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_c.PNG?alt=media&token=39131d3f-8ac5-4245-8d5b-996a6585eaa0" alt="chromatic scale on music staff example" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_c.PNG?alt=media&token=39131d3f-8ac5-4245-8d5b-996a6585eaa0" alt="chromatic scale on music staff example" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale starting on C</small></figcaption>
                 </figure>                
                 <figure className="flex flex-col items-center mb-14">
@@ -64,14 +64,14 @@ const PostBuildAChromaticScale = () => {
                 <PostSubheadingRed subheading="1. Writing Chromatic Scales without a Key Signature" bottom="mb-12" />
                 <p className="mb-14">If our starting note is either a natural or a sharp note, use sharps for the ascending and flats for the descending part of the scale, as per <span className="font-bold">Rule #3</span> above. Here are some examples:</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_f.PNG?alt=media&token=84ebb295-23fe-4323-be7c-ed109ab9a143" alt="chromatic scale on music staff example" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_f.PNG?alt=media&token=84ebb295-23fe-4323-be7c-ed109ab9a143" alt="chromatic scale on music staff example" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale starting on F</small></figcaption>
                 </figure> 
                 <figure className="flex flex-col items-center mb-20">
                     <audio controls src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Ff_chromatic_audio.mp3?alt=media&token=0c10e41e-bc84-4c01-b1cc-6b6f768c0d69" />
                 </figure>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_f_sharp.PNG?alt=media&token=30e6651c-8b7f-46de-a274-bcd075d361d7" alt="chromatic scale starting on F♯" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_f_sharp.PNG?alt=media&token=30e6651c-8b7f-46de-a274-bcd075d361d7" alt="chromatic scale starting on F♯" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale starting on F♯</small></figcaption>
                 </figure> 
                 <figure className="flex flex-col items-center mb-14">
@@ -79,7 +79,7 @@ const PostBuildAChromaticScale = () => {
                 </figure>
                 <p className="mb-14">When the starting note is a flat note, we might need to use some flats and natural signs when going up in order not to break <span className="font-bold">Rule #2</span> above, but we should switch to sharps as soon as possible as per <span className="font-bold">Rule #3</span>. Here is an example:</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_d_flat.PNG?alt=media&token=ea9239b1-f1ea-40a0-ab61-5a7ee6fc4dad" alt="chromatic scale starting on D♭" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_d_flat.PNG?alt=media&token=ea9239b1-f1ea-40a0-ab61-5a7ee6fc4dad" alt="chromatic scale starting on D♭" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale starting on D♭</small></figcaption>
                 </figure>
                 <figure className="flex flex-col items-center mb-14">
@@ -88,13 +88,13 @@ const PostBuildAChromaticScale = () => {
                 <p className="mb-20">Notice that in the scale above, we switched to sharps as soon as we could, after the note “F”. Before that, we had no choice but to use flats and naturals.</p>
             </section>
             <section className="px-5 lg:px-36 xl:px-64 leading-8 mb-20">
-                <PostSubheadingRed subheading="Writing Chromatic Scales with a Key Signature" bottom="mb-12" />
+                <PostSubheadingRed subheading="2. Writing Chromatic Scales with a Key Signature" bottom="mb-12" />
                 <p className="mb-10">As mentioned earlier, there is more than one way to write a chromatic scale, and this also applies to chromatic scales with key signatures. The method I will be demonstrating here is one recommended by the ABRSM (Associated Board of the Royal Schools of Music), which I quite like. This method requires us to add one more rule to the four rules we saw earlier. And that rule is:</p>
                 <p className="mb-10">5.<span className="font-bold"> The 1st, 4th and 5th degrees of the scale should be represented unaltered.</span><br /> In other words, the notes representing the primary triads of our key should be written in the form in which they naturally occur in that particular key.</p>
                 <p className="mb-10">Let&apos;s see how this works in practice by writing a chromatic scale occuring in a key of "B♭ major".</p>
                 <p className="mb-14">We know that the key signature of "B♭ Major" is "B♭" and "E♭" and we also know that the 4th and 5th degrees of this scale will be "E♭" and "F", respectively. Let&apos;s keep these facts in mind as we write out our scale.</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_b_flat_major.PNG?alt=media&token=3b4e66cf-f258-45a9-915e-12bf23397bb7" alt="chromatic scale in B♭ major" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_b_flat_major.PNG?alt=media&token=3b4e66cf-f258-45a9-915e-12bf23397bb7" alt="chromatic scale in B♭ major" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale in the key of B♭ major</small></figcaption>
                 </figure>
                 <figure className="flex flex-col items-center mb-20">
@@ -102,19 +102,19 @@ const PostBuildAChromaticScale = () => {
                 </figure>
                 <p className="mb-14">Note that we did not use sharps at all in the ascending part, as recommended by <span className="font-bold">Rule #3</span>. Instead, we stuck to flats as per <span className="font-bold">Rule #4</span>, to keep things consistent throughout our scale. If we had used sharps, this is how our ascending part would look.</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-14">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_b_flat_major_ascending_wrong.png?alt=media&token=41b90147-bad5-4242-b0a6-2a1da58734e2" alt="chromatic scale in B♭ major, bad example" className="md:w-[70%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_b_flat_major_ascending_wrong.png?alt=media&token=41b90147-bad5-4242-b0a6-2a1da58734e2" alt="chromatic scale in B♭ major, bad example" className="md:w-[60%] rounded-md" />
                 </figure>
                 <p className="mb-10">While this version might also be considered fine, it&apos;s not preferred. Not only are we not being consistent with our accidentals, but we&apos;re also not following the rule of having our subdominant note unaltered here. Instead of having an "E♭" for the subdominant, we are writing it as "D♯" and therefore violating our rule.</p>
                 <p className="mb-14">Here are a few more correct examples, for variety.</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_e_major.PNG?alt=media&token=dce9620f-a90c-41df-9076-c78df0fcef07" alt="chromatic scale in E major" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_e_major.PNG?alt=media&token=dce9620f-a90c-41df-9076-c78df0fcef07" alt="chromatic scale in E major" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale in the key of E Major</small></figcaption>
                 </figure>
                 <figure className="flex flex-col items-center mb-20">
                     <audio controls src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_in_e_major_audio.mp3?alt=media&token=13cb307d-9d4f-4cc6-bb20-7fc2cacc7f7a" />
                 </figure>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_scale_in_d_flat_major.PNG?alt=media&token=0adf90c4-e90b-44b4-bc66-2faf74d978ab" alt="chromatic scale in D♭ major" className="w-[85%] rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_scale_in_d_flat_major.PNG?alt=media&token=0adf90c4-e90b-44b4-bc66-2faf74d978ab" alt="chromatic scale in D♭ major" className="xl:w-[85%] rounded-md" />
                     <figcaption className="text-gray-500"><small>Chromatic scale in the key of D♭ major</small></figcaption>
                 </figure>
                 <figure className="flex flex-col items-center">
