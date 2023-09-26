@@ -8,7 +8,7 @@ import MMSStudentLoginForm from "./MMSLoginForm"
 
 const Slider = () => {
 
-  const sliderImagesArray = ["/sliders/slide1.jpg", "/sliders/slide2.jpg", "/sliders/slide3.jpg"]
+  const sliderImagesArray = ["/sliders/slide-piano.jpg", "/sliders/slide-guitar.jpg", "/sliders/slide-voice.jpg", "/sliders/slide-drums.jpg"]
 
 
   const [sliderIndex, setSliderIndex] = useState(0)
