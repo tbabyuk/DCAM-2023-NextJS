@@ -24,7 +24,7 @@ export const articles = [
         id: 43,
         title: "How to Build a Chromatic Scale", 
         date: "November 28, 2022",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2022/11/chromatic_scale_cover_photo.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fbuild_a_chromatic_scale_cover.jpg?alt=media&token=9d8bc98d-b7fe-49e1-90de-b9396f40824c",
         description: "A chromatic scale is a scale made up of 12 different notes separated by half-steps (or semitones). The 13th note is a repetition of the 1st note, an octave apart. On the piano keyboard, if you start on any key …",
         blogLink: "/blog/build-a-chromatic-scale",
         category: "Music Theory" 
