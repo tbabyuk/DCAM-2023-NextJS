@@ -18,7 +18,7 @@ export const Navigation = () => {
 
 
 return (
-    <nav className="navigation w-full bg-regBlue z-[5]">
+    <nav className="navigation w-full bg-regBlue">
         <div className="h-10 flex justify-start bg-darkBlue md:hidden">
             {isOpen ? <RxCross1 size="1.8em" className="cursor-pointer h-10 text-gray-50 mx-3" onClick={() => setIsOpen(false)} /> : <RxHamburgerMenu size="2em" className="cursor-pointer h-10 text-gray-50 mx-3" onClick={() => setIsOpen(true)} />}
         </div>
@@ -28,11 +28,11 @@ return (
             whileInView={{ opacity: 1 }}
             transition={{ ease: "easeOut", duration: 0.5 }}
             exit={{ opacity: 0 }}
-            className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:justify-center text-gray-50`}>
+            className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:justify-center text-gray-50 z-[5]`}>
             <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item">Home</li></Link>
             <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnavIsOpen(true)} onMouseLeave={() => setSubnavIsOpen(false)} onClick={() => setSubnavIsOpen(!subnavIsOpen)}>Lessons<IoIosArrowDown className=" ms-1" />
                 {subnavIsOpen && (
-                    <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-darkBlue text-[0.95rem]">
+                    <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-darkBlue text-[0.95rem] z-[6]">
                         <Link href="/piano-lessons-etobicoke"><li className="submenu-item">Piano Lessons</li></Link>
                         <Link href="/guitar-lessons-etobicoke"><li className="submenu-item">Guitar Lessons</li></Link>
                         <Link href="/drum-lessons-etobicoke"><li className="submenu-item">Drum Lessons</li></Link>
@@ -54,6 +54,10 @@ return (
             </motion.ul>
         </AnimatePresence>
     </nav>  
+
+    // <nav className="navigation w-full bg-regBlue">
+    //     <p>blksjdf</p>
+    // </nav>
     )
 }
 

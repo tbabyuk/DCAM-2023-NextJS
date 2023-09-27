@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icon
 
 const Footer = () => {
     return ( 
-        <footer className="mt-40 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-4 px-5 py-8 bg-gradient-to-r from-regBlue via-darkBlue to-darkBlue min-h-50 text-gray-50 font-roboto">
+        <footer className="mt-40 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-4 px-5 py-8 bg-[url('/bg_top_header.jpg')] bg-cover min-h-50 text-gray-50 font-roboto">
             <div>
                 <h4 className="mb-6 inline-block border-b-2">FOLLOW US:</h4>
                     <div className="social-links flex">

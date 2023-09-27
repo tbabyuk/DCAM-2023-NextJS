@@ -258,7 +258,7 @@ export const articles = [
         id: 16,
         title: "What is a Pickup Measure in Music (and how it works)",
         date: "July 30, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/07/what_is_a_pickup_measure_featured_image.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpickup-measures-explained%2Fwhat_is_a_pickup_measure_cover.jpg?alt=media&token=92d3504f-0bfb-4a92-bfde-c6ed544a7e89",
         description: "If you've ever read sheet music, you've undoubtedly come across a pickup measure (aka anacrusis/upbeat/incomplete measure). And while you may have a general idea of what these are all about, perhaps …",
         blogLink: "/blog/pickup-measures-explained",
         category: "Music Theory"
