@@ -321,7 +321,7 @@ export const articles = [
         id: 9,
         title: "RCM Violin Exam Requirements (all grades)",
         date: "July 2, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/07/rcm_violin_exam_requirements_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Frcm_violin_exam_requirements_cover.jpg?alt=media&token=3d10b0fd-add2-4f0c-a474-5ae99ed7549e",
         description: "If you are a violin student planning to do your RCM practical exams and want to know precisely what you will be graded on - this is the page for you! This guide will tell you exactly what each …",
         blogLink: "/blog/rcm-violin-exam-mark-guide/",
         category: "RCM"
