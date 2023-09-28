@@ -123,7 +123,7 @@ export const articles = [
         id: 31,
         title: "RCM Guitar Exam Requirements (all grades)",
         date: "July 28, 2021",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/07/rcm_guitar_requirements_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-guitar-exam-mark-guide%2Frcm_guitar_requirements_cover.jpg?alt=media&token=fbc771be-a559-4d96-94fc-51041d4e8358",
         description: "Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You've come to the right place! This guide will tell you what each section of the exam is worth to …",
         blogLink: "/blog/rcm-guitar-exam-mark-guide/",
         category: "RCM, Guitar"
