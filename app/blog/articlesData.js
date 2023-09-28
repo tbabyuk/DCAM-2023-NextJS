@@ -159,7 +159,7 @@ export const articles = [
         id: 27,
         title: "Was Chopin a Good Pianist?",
         date: "March 14, 2021",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/04/easy_chopin_etudes_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42",
         description: "Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano and what were perhaps some peculiarities of his piano playing? Because …",
         blogLink: "/blog/was-chopin-a-good-pianist",
         category: "Composers"
