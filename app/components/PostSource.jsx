@@ -1,10 +1,10 @@
 
 
 
-export const PostSource = ({source}) => {
+export const PostSource = ({source, bottom}) => {
     return ( 
         <div className="text-center">
-            <p className="italic text-gray-500">Source: {source}</p>
+            <p className={`italic text-gray-500 ${bottom}`}>Source: {source}</p>
         </div>
      );
 }
