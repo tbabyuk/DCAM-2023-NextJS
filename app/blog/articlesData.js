@@ -303,8 +303,8 @@ export const articles = [
         id: 11,
         title: "6 Signs Your Child is Musically Gifted",
         date: "July 8, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/07/child_guitar_sizes_featured_image.jpg",
-        description: "If you are a parent wondering if your child is musically gifted, this is the article for you. We have put together six of the most important and reliable signs of innate musical talent in children. But keep in …",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fsigns-of-musical-talent%2Fsigns_of_musical_talent_cover.jpg?alt=media&token=a32e1e21-476e-49e8-89cb-7b9939a58137",
+        description: "If you are a parent wondering if your child is musically gifted, this is the article for you. We have put together six of the most important...",
         blogLink: "/blog/signs-of-musical-talent",
         category: "Music General"
       },
