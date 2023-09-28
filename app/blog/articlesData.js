@@ -330,7 +330,7 @@ export const articles = [
         id: 8,
         title: "RCM Piano Exam Requirements (all grades)",
         date: "June 22, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/06/rcm_piano_exam_requirements_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-piano-exam-mark-guide%2Frcm_piano_exam_requirements_cover.jpg?alt=media&token=985855d2-b649-4179-9a16-4d4e8a85dd58",
         description: "If you are a piano student planning to do your RCM practical exams and want to know precisely what you will be graded on - you've come to the right place! This …",
         blogLink: "/blog/rcm-piano-exam-mark-guide/",
         category: "RCM, Piano"
