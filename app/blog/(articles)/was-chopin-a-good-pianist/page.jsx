@@ -4,7 +4,6 @@ import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
 import { PostHeading } from "@/app/components/PostHeading"
-import { PostSubheading } from "@/app/components/PostSubheading"
 import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 
@@ -18,7 +17,7 @@ const PostWasChopinAGoodPianist = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Was Chopin a good pianist?" date="March 14, 2021" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42" alt="Why Take RCM Exams cover" />
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42" alt="Was Chopin a good pianist cover" />
 
             <PostSectionHeading heading="Introduction" />
             <section className="introduction leading-8 px-5 lg:px-36 xl:px-64 mb-28">
@@ -46,17 +45,17 @@ const PostWasChopinAGoodPianist = () => {
             <section className="leading-8 px-5 lg:px-36 xl:px-64 mb-20">
                 <div className="flex flex-col-reverse md:flex-row mb-16">
                     <div className="mt-8 md:mt-0 md:me-10">
-                        <p className="leading-8">Chopin&apos;s musical output is a great indication of his mastery at the piano. Anyone who has played Chopin&apos;s repertoire (especially his more advanced works) will not fail to appreciate the complexity and technical demands of many of his musical compositions.</p><br />
+                        <p className="leading-8">Chopin&apos;s musical output is a great indication of his mastery at the piano. Anyone who has played Chopin&apos;s repertoire (especially his more advanced works) will not fail to appreciate the complexity and technical demands of many of his works.</p><br />
                         <p className="leading-8">Take as an example this excerpt from his "Etude Op. 24, No. 6 in G# minor":</p>
                     </div>
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fcompositions.png?alt=media&token=bdfdb082-aff5-401e-b489-0a80b6ed7b19" alt="composing with a feather pen" style={{width: "140px"}} className="rounded-md" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fcompositions.png?alt=media&token=bdfdb082-aff5-401e-b489-0a80b6ed7b19" alt="composing with a quill" style={{width: "140px"}} className="rounded-md" />
                     </figure>
                 </div>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-16">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fetude_op_25_no_6_in_G_sharp_min.JPG?alt=media&token=e5082083-63ed-4ee0-95ff-7230f28d09e3" alt="Chopin's Etude in G Sharp Minor" className="rounded-md" />
+                    <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fetude_op_25_no_6_in_G_sharp_min.JPG?alt=media&token=e5082083-63ed-4ee0-95ff-7230f28d09e3" alt="excerpt from Chopin's Etude in G Sharp Minor" className="rounded-md" />
                 </figure>
-                <p>This is considered to be one of Chopin&apos;s hardest etudes to play, because of all the double thirds in the RH. But this speaks volumes to Chopin&apos;s prowess at the piano. We know that Chopin was able to play and played often his own compositions.</p>
+                <p>This is considered to be one of Chopin&apos;s hardest etudes to play because of all the double thirds in the RH. But this speaks volumes to Chopin&apos;s prowess at the piano. We know that Chopin was able to play and often played his own compositions.</p>
             </section>
 
             <PostDivider />
@@ -65,7 +64,7 @@ const PostWasChopinAGoodPianist = () => {
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <div className="flex flex-col md:flex-row mb-20">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
-                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Faudience.png?alt=media&token=70ff6569-8950-4fd3-ae60-6905de6fedf5" alt="child playing the piano" style={{width: "120px"}} className="rounded-md" />
+                        <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Faudience.png?alt=media&token=70ff6569-8950-4fd3-ae60-6905de6fedf5" alt="people applauding" style={{width: "120px"}} className="rounded-md" />
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8">
                         <p className="leading-8">Several recurring themes emerge when we look at the statements Chopin&apos;s contemporaries made about his playing. We get these statements mostly from letters that these people wrote to their friends or family members. Remember, these are people that actually saw and heard Chopin play in person!</p>
@@ -78,7 +77,7 @@ const PostWasChopinAGoodPianist = () => {
                             <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Ffelix_mendelssohn.png?alt=media&token=1ceff84f-a2a9-4aa8-8a71-d361488ae108" alt="image of Felix Mendelssohn" style={{width: "150px"}} className="rounded-md" />
                         </figure>
                         <div className="mt-8 md:mt-0 md:ms-10">
-                            <p><span className="font-bold">Felix Mendelssohn</span>, a Chopin contemporary and a composer/pianist in his own right, wrote to his sister after hearing Chopin perform several times: <span className="italic">“There is something entirely original in his piano playing and it is at the same time so masterly that he may be called a perfect virtuoso.”</span><br /> He is also quoted as saying that Chopin “produces new effects, like Paganini on his violin, and accomplishes things nobody could formerly have thought practicable”.</p>
+                            <p><span className="font-bold">Felix Mendelssohn</span>, a Chopin contemporary and a composer/pianist in his own right, wrote to his sister after hearing Chopin perform several times: <span className="italic">“There is something entirely original in his piano playing and it is at the same time so masterly that he may be called a perfect virtuoso.”</span><br /> He is also quoted as saying that Chopin <span className="italic">“produces new effects, like Paganini on his violin, and accomplishes things nobody could formerly have thought practicable”</span>.</p>
                         </div>
                     </div>
                     <p>Composer <span className="font-bold">Stephen Heller</span>, when describing Chopin&apos;s playing, said that his hands, though slim, would <span className="italic">“suddenly expand and cover a third of the keyboard. It was like the opening of the mouth of a serpent about to swallow a rabbit whole.”</span></p>
@@ -94,7 +93,7 @@ const PostWasChopinAGoodPianist = () => {
                             <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fexpression.png?alt=media&token=82c6ba47-93b5-4277-81b5-a6d07f817878" alt="theater masks" style={{width: "120px"}} className="rounded-md" />
                         </figure>
                     </div>
-                    <p><span className="font-bold">Charles Halle</span>, another pianist and temporary of Chopin, wrote after hearing Chopin play in 1836: <span className="italic">“You did not for a moment think of how perfect was his execution of this or that difficulty; you listened, as it were, to the improvisation of a poem.”</span></p>
+                    <p><span className="font-bold">Charles Halle</span>, another pianist and contemporary of Chopin, wrote after hearing Chopin play in 1836: <span className="italic">“You did not for a moment think of how perfect was his execution of this or that difficulty; you listened, as it were, to the improvisation of a poem.”</span></p>
                 </div>
 
                 <div className="leading-8 mb-20">
@@ -106,7 +105,7 @@ const PostWasChopinAGoodPianist = () => {
 
                 <div className="leading-8 mb-20">
                     <PostSubheadingRed subheading='4. His playing often lacked "sonority" or "resonance"' align="text-left" bottom="mb-10" />
-                    <p>One potential criticism of Chopin&apos;s playing was its lack of “sonority/resonance”. He was sometimes criticized for playing “too softly” or “too delicately” or so it seemed to audiences who were used to a more forceful way of playing. According to author Harold C. Schonberg, <span className="italic">“This lack of sonority was the single defect in Chopin&apos;s equipment - if it was a defect.”</span> Perhaps Chopin was aware of this and for this reason preferred to play in salons, where he was sure everybody would be able to hear him, rather than big concert halls.</p>
+                    <p>One potential criticism of Chopin&apos;s playing was its lack of “sonority/resonance”. He was sometimes criticized for playing “too softly” or “too delicately”, or so it seemed to audiences who were used to a more forceful way of playing. According to author Harold C. Schonberg, <span className="italic">“This lack of sonority was the single defect in Chopin&apos;s equipment - if it was a defect.”</span> Perhaps Chopin was aware of this and for this reason preferred to play in salons, where he was sure everybody would be able to hear him, rather than big concert halls.</p>
                 </div>
             </section>
 
