@@ -8,9 +8,9 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 
 export const metadata = {
-    title: "6 Reasons to Take RCM Exams (Royal Conservatory of Music) | Da Capo Academy of Music",
-    description: "Are RCM exams right for my child? Here are our top 6 reasons why it is beneficial to take RCM exams and why you should do it!",
-    keywords: ["why take rcm exams", "benefits of rcm exams"]
+    title: "Was Chopin a good pianist? | Da Capo Academy of Music",
+    description: "Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano?",
+    keywords: ["was chopin a good pianist", "chopin at the piano"]
 }
 
 const PostWasChopinAGoodPianist = () => {
@@ -22,7 +22,7 @@ const PostWasChopinAGoodPianist = () => {
             <PostSectionHeading heading="Introduction" />
             <section className="introduction leading-8 px-5 lg:px-36 xl:px-64 mb-28">
                 <p className="mb-6">Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano and what were perhaps some peculiarities of his piano playing?</p>
-                <p className="mb-6">Because there was no sound-recording technology in Chopin’s time, we cannot answer this question by just listening to him play. Instead, we are going to have to rely on three sources: his biography, his compositions, and statements of his contemporaries.</p>
+                <p className="mb-6">Because there was no sound-recording technology in Chopin&apos;s time, we cannot answer this question by just listening to him play. Instead, we are going to have to rely on three sources: his biography, his compositions, and statements of his contemporaries.</p>
             </section>
 
             <SectionDivider />

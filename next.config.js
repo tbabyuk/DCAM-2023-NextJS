@@ -127,7 +127,7 @@ module.exports = {
         },
         {
             source: "/how-to-write-a-tie-in-music",
-            destination: "/blog/writing-a-tie-music-notation", //big change
+            destination: "/blog/how-to-write-a-tie-music-notation", //big change
             permanent: true,
         },
         {

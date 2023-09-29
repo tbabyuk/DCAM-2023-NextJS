@@ -213,9 +213,9 @@ export const articles = [
         id: 21,
         title: "How to Write a Tie in Music (music notation)",
         date: "September 16, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/09/how_to_write_a_tie_featured_image.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-write-a-tie-music-notation%2Fhow_to_write_a_tie_cover.jpg?alt=media&token=8ac7c23b-b435-4918-97c7-2bfb82611a94&_gl=1*bm905l*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NTk1MzI5OC41OS4xLjE2OTU5NTM0NjguNjAuMC4w",
         description: "This article assumes that you are already familiar with what a tie is and its function in music. The focus here will be to highlight the rules surrounding the correct way to write ties in music notation. This might …",
-        blogLink: "/blog/writing-a-tie-music-notation",
+        blogLink: "/blog/how-to-write-a-tie-music-notation",
         category: "Music Theory"
       },
       {
