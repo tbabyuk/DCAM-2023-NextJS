@@ -4,15 +4,32 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
-import { PostSubheading } from "@/app/components/PostSubheading"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { SectionDivider } from "@/app/components/SectionDivider"
-import Link from "next/link"
+
 
 export const metadata = {
     title: "How to Build a Chromatic Scale | Da Capo Academy of Music",
     description: "Master building the chromatic scale starting from any note in this simple, step-by-step guide. Includes helpful graphics and audio!",
-    keywords: ["build a chromatic scale", "chromatic scale music theory"]
+    keywords: ["build a chromatic scale", "chromatic scale music theory"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "How to Build a Chromatic Scale | Da Capo Academy of Music",
+        description: "Master building the chromatic scale starting from any note in this simple, step-by-step guide. Includes helpful graphics and audio!",
+        url: "https://dacapomusic.ca/blog/build-a-chromatic-scale",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-11-28T06:32:03+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fbuild_a_chromatic_scale_cover.jpg?alt=media&token=9d8bc98d-b7fe-49e1-90de-b9396f40824c",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 
@@ -61,7 +78,7 @@ const PostBuildAChromaticScale = () => {
             <section className="px-5 lg:px-36 xl:px-64 leading-8 mb-20">
                 <p className="mb-20">Chromatic scales can be written with or without a key signature. Scales without a key signature are common in music theory exercises or in technical exercises for your particular instrument. In sheet music and musical scores, however, you will often find chromatic passages in a piece of music that is in a specific key. In such cases, the composer has to incorporate a chromatic scale into the key signature. Below, we will see examples of how to write chromatic scales in both situations.</p>
 
-                <PostSubheadingRed subheading="1. Writing Chromatic Scales without a Key Signature" bottom="mb-12" />
+                <PostSubheadingRed subheading="1. Writing a Chromatic Scale without a Key Signature" bottom="mb-12" />
                 <p className="mb-14">If our starting note is either a natural or a sharp note, use sharps for the ascending and flats for the descending part of the scale, as per <span className="font-bold">Rule #3</span> above. Here are some examples:</p>
                 <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-10">
                     <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-chromatic-scale%2Fchromatic_on_f.PNG?alt=media&token=84ebb295-23fe-4323-be7c-ed109ab9a143" alt="chromatic scale on music staff example" className="xl:w-[85%] rounded-md" />
@@ -88,7 +105,7 @@ const PostBuildAChromaticScale = () => {
                 <p className="mb-20">Notice that in the scale above, we switched to sharps as soon as we could, after the note “F”. Before that, we had no choice but to use flats and naturals.</p>
             </section>
             <section className="px-5 lg:px-36 xl:px-64 leading-8 mb-20">
-                <PostSubheadingRed subheading="2. Writing Chromatic Scales with a Key Signature" bottom="mb-12" />
+                <PostSubheadingRed subheading="2. Writing a Chromatic Scale with a Key Signature" bottom="mb-12" />
                 <p className="mb-10">As mentioned earlier, there is more than one way to write a chromatic scale, and this also applies to chromatic scales with key signatures. The method I will be demonstrating here is one recommended by the ABRSM (Associated Board of the Royal Schools of Music), which I quite like. This method requires us to add one more rule to the four rules we saw earlier. And that rule is:</p>
                 <p className="mb-10">5.<span className="font-bold"> The 1st, 4th and 5th degrees of the scale should be represented unaltered.</span><br /> In other words, the notes representing the primary triads of our key should be written in the form in which they naturally occur in that particular key.</p>
                 <p className="mb-10">Let&apos;s see how this works in practice by writing a chromatic scale occuring in a key of "B♭ major".</p>

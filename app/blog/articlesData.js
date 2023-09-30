@@ -42,7 +42,7 @@ export const articles = [
         id: 41,
         title: "How to Build a Melodic Minor Scale", 
         date: "November 17, 2022",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2022/11/melodic_min_scale_cover_photo.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-melodic-minor-scale%2Fbuild_a_melodic_minor_scale_cover.jpg?alt=media&token=50daa80a-fb74-4a3a-85a5-bf829cf853ef&_gl=1*1c8ugir*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjA0ODgxOC42Ny4xLjE2OTYwNDg4MjEuNTcuMC4w",
         description: "Master building the melodic minor scale in any key with this simple, step-by-step guide. Includes helpful graphics!",
         blogLink: "/blog/build-a-melodic-minor-scale",
         category: "Music Theory"
@@ -92,24 +92,24 @@ export const articles = [
         blogLink: "/blog/grace-notes-explained/",
         category: "Music General, Music Theory, Piano"
     },
-    {
-        id: 34,
-        title: "Placement of Accidentals in Chords",
-        date: "August 17, 2021",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/08/accidentals_cover_photo.jpg",
-        description: "Most of us are quite comfortable writing accidentals next to a single note - you just place it to the left of the note, right? But what happens when we have not one but two, three, or more notes …",
-        blogLink: "/blog/placement-of-accidentals-in-chords",
-        category: "Music General, Music Theory"
-      },
-      {
-        id: 33,
-        title: "How to Raise a Musical Child",
-        date: "August 8, 2021",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/08/accidentals_cover_photo.jpg",
-        description: "Having searched for this topic, you probably already know and appreciate the benefits that music education can offer, especially to young children with an actively-developing brain. Some examples of such benefits include …",
-        blogLink: "/blog/how-to-raise-a-musical-child",
-        category: "Music General"
-      },
+    // {
+    //     id: 34,
+    //     title: "Placement of Accidentals in Chords",
+    //     date: "August 17, 2021",
+    //     imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/08/accidentals_cover_photo.jpg",
+    //     description: "Most of us are quite comfortable writing accidentals next to a single note - you just place it to the left of the note, right? But what happens when we have not one but two, three, or more notes …",
+    //     blogLink: "/blog/placement-of-accidentals-in-chords",
+    //     category: "Music General, Music Theory"
+    //   },
+      // {
+      //   id: 33,
+      //   title: "How to Raise a Musical Child",
+      //   date: "August 8, 2021",
+      //   imageUrl: "https://dacapomusic.ca/wp-content/uploads/2021/08/accidentals_cover_photo.jpg",
+      //   description: "Having searched for this topic, you probably already know and appreciate the benefits that music education can offer, especially to young children with an actively-developing brain. Some examples of such benefits include …",
+      //   blogLink: "/blog/how-to-raise-a-musical-child",
+      //   category: "Music General"
+      // },
       {
         id: 32,
         title: "Easy Sonatinas for Piano Students",
@@ -191,24 +191,24 @@ export const articles = [
         blogLink: "/blog/can-you-skip-rcm-levels",
         category: "RCM"
       },
-      {
-        id: 23,
-        title: "Best Age to Start Music Lessons",
-        date: "November 9, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/best_age_to_start_music_lessons_featured_image.jpg",
-        description: "This is a question that all parents who want to get their little ones involved in music ask themselves at one point or another. Being a music school, you can imagine that we have come across this question on …",
-        blogLink: "/blog/best-age-to-start-music-lessons",
-        category: "Music General"
-      },
-      {
-        id: 22,
-        title: "Scale Fingering for Piano",
-        date: "September 20, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/best_age_to_start_music_lessons_featured_image.jpg",
-        description: "Scales and scale fingering can seem daunting to students starting out on the piano. But if we take a broad look at all piano scales, we discover that all scale fingering falls into one of only three patterns. Once …",
-        blogLink: "/blog/scale-fingering-piano",
-        category: "Music General, Piano"
-      },
+      // {
+      //   id: 23,
+      //   title: "Best Age to Start Music Lessons",
+      //   date: "November 9, 2020",
+      //   imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/best_age_to_start_music_lessons_featured_image.jpg",
+      //   description: "This is a question that all parents who want to get their little ones involved in music ask themselves at one point or another. Being a music school, you can imagine that we have come across this question on …",
+      //   blogLink: "/blog/best-age-to-start-music-lessons",
+      //   category: "Music General"
+      // },
+      // {
+      //   id: 22,
+      //   title: "Scale Fingering for Piano",
+      //   date: "September 20, 2020",
+      //   imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/11/best_age_to_start_music_lessons_featured_image.jpg",
+      //   description: "Scales and scale fingering can seem daunting to students starting out on the piano. But if we take a broad look at all piano scales, we discover that all scale fingering falls into one of only three patterns. Once …",
+      //   blogLink: "/blog/scale-fingering-piano",
+      //   category: "Music General, Piano"
+      // },
       {
         id: 21,
         title: "How to Write a Tie in Music (music notation)",
@@ -393,7 +393,7 @@ export const articles = [
         id: 1,
         title: "RCM Exams: Your Complete Guide",
         date: "April 8, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/04/rcm_exams_complete_guide_cover.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_exams_complete_guide_cover.jpg?alt=media&token=f1afe2cc-5aa9-4d9c-b8dc-5e25f3e0f165",
         description: "Exam fees, exam dates, types of exams, exam mark information, and more! Your complete resource for all you need to know about RCM Exams.",
         blogLink: "/blog/rcm-exams-complete-guide",
         category: "RCM"

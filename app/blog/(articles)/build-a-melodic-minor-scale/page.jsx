@@ -9,10 +9,29 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { SectionDivider } from "@/app/components/SectionDivider"
 import Link from "next/link"
 
+
 export const metadata = {
     title: "How to Build a Melodic Minor Scale | Da Capo Academy of Music",
     description: "Master building the melodic minor scale in any key with this simple, step-by-step guide. Includes helpful graphics!",
-    keywords: ["build a minor scale", "build a melodic minor scale", "minor scale music theory", "melodic minor scale music theory"]
+    keywords: ["build a minor scale", "build a melodic minor scale", "minor scale music theory", "melodic minor scale music theory"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "How to Build a Melodic Minor Scale | Da Capo Academy of Music",
+        description: "Master building the melodic minor scale in any key with this simple, step-by-step guide. Includes helpful graphics!",
+        url: "https://dacapomusic.ca/blog/build-a-melodic-minor-scale",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-11-17T18:49:52+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-melodic-minor-scale%2Fbuild_a_melodic_minor_scale_cover.jpg?alt=media&token=50daa80a-fb74-4a3a-85a5-bf829cf853ef&_gl=1*1c8ugir*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjA0ODgxOC42Ny4xLjE2OTYwNDg4MjEuNTcuMC4w",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 
@@ -21,7 +40,7 @@ const PostBuildAMelodicMinorScale = () => {
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="How to Build a Melodic Minor Scale" date="November 17, 2022" />
-            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-melodic-minor-scale%2Fbuild_a_melodic_minor_scale_cover.jpg?alt=media&token=50daa80a-fb74-4a3a-85a5-bf829cf853ef&_gl=1*1v50nkt*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NTk1MzI5OC41OS4xLjE2OTU5NTY1NzkuOC4wLjA." alt="build a melodic minor scale cover"/>
+            <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-melodic-minor-scale%2Fbuild_a_melodic_minor_scale_cover.jpg?alt=media&token=50daa80a-fb74-4a3a-85a5-bf829cf853ef&_gl=1*1c8ugir*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjA0ODgxOC42Ny4xLjE2OTYwNDg4MjEuNTcuMC4w" alt="build a melodic minor scale cover"/>
 
             <PostSectionHeading heading="Introduction" />
             <section className="leading-8 px-5 lg:px-36 xl:px-64">

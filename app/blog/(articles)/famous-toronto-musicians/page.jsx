@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Famous Musicians from Toronto | Da Capo Academy of Music",
     description: "You probably didn't know that these world-famous artists all call Toronto their home!",
-    keywords: ["toronto artists", "toronto musicians", "toronto singers", "artists from toronto", "musicians from toronto", "singers from toronto"]
+    keywords: ["toronto artists", "toronto musicians", "toronto singers", "artists from toronto", "musicians from toronto", "singers from toronto"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Famous Musicians from Toronto | Da Capo Academy of Music",
+        description: "You probably didn't know that these world-famous artists all call Toronto their home!",
+        url: "https://dacapomusic.ca/blog/famous-toronto-musicians",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-05-27T04:05:50+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-toronto-musicians%2Ffamous_toronto_musicians_cover.jpg?alt=media&token=4c94ba43-53ae-4eac-a29a-250e05b3b87b",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostFamousTorontoMusicians = () => {
   return (
@@ -17,12 +38,14 @@ const PostFamousTorontoMusicians = () => {
             <PostTitle title="Famous Musicians from Toronto" date="May 27, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-toronto-musicians%2Ffamous_toronto_musicians_cover.jpg?alt=media&token=4c94ba43-53ae-4eac-a29a-250e05b3b87b" alt="Famous Musicians from Toronto cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="mb-5 leading-8">Being the most populous city and metropolitan area in Canada, Toronto (and the GTA) is almost destined to produce all sorts of talented individuals. In this article we will take a look at some of this city's most valuable musical exports - past and present. And just so it doesn't look like we are playing favorites - we've organized our list from youngest to oldest. So let's dive in and find out just who these famous Toronto musicians are!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="Shawn Mendes" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -89,7 +112,7 @@ const PostFamousTorontoMusicians = () => {
             <PostDivider />
 
             <PostHeading heading="Glenn Gould" bottom="mb-14" />
-            <section className="px-5 lg:px-36 xl:px-64">
+            <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <div className="bio flex flex-col-reverse md:flex-row mb-12">
                     <div className="mt-8 md:mt-0 md:me-10 leading-8 self-start">
                         <p>Born in Toronto on September 25, 1932, Glenn Gould was one of the most-celebrated and respected classical pianists of the 20th century. A child prodigy at the piano, he passed his Royal Conservatory examinations at just 12 years old. Gould was especially known for his interpretations of the works of J. S. Bach, though his repertoire also included works by Beethoven, Mozart, Haydn, and Brahms. Aside from his musical genius, Gould was also known for his many eccentricities: he hummed while playing, hated being touched, hated the cold, was a hypochondriac, and disliked social functions, among others. Despite this, he remains one of Toronto's most impressive musical talents.</p>
@@ -101,18 +124,6 @@ const PostFamousTorontoMusicians = () => {
                 </div>
                 <p className="mb-10 w-fit">Glenn Gould <a href="https://glenngould.com/" target="_blank" className="dcam-link">official website</a></p>
             </section>
-
-
-
-
-
-
-
-
-
-
-
-
 
             <PageBottomTrialButton />
         </main>

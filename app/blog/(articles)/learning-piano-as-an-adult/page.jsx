@@ -135,9 +135,9 @@ const PostLearningPianoAsAnAdult = () => {
                 <div className="mb-20 flex flex-col justify-center items-center">
                     <p className="mb-6">You can find these books on Amazon from the following links:</p>
                     <ul className="leading-8">
-                        <a href="https://www.amazon.ca/gp/product/0882846167/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=0882846167&linkCode=as2&tag=dcam08-20&linkId=c32bb7a685da13fd5e5bda55b7b04e54" target="_blank"><li className="mb-4"><span className="dcam-link">Alfred's Basic Adult Piano Course - Book 1</span></li></a>
-                        <a href="https://www.amazon.ca/gp/product/B017OBN784/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B017OBN784&linkCode=as2&tag=dcam08-20&linkId=ebc17deebdb39f2890601fe02671d297" className="dcam-link"><li className="mb-4"><span className="dcam-link">Alfred's Basic Adult Piano Course - Book 2</span></li></a>
-                        <a href="https://www.amazon.ca/gp/product/B017OBN7QQ/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B017OBN7QQ&linkCode=as2&tag=dcam08-20&linkId=0b5b372bab4de73e81b8eec3581b5b3c"><li><span className="dcam-link">Alfred's Basic Adult Piano Course - Book 3</span></li></a>
+                        <li className="mb-4"><a href="https://www.amazon.ca/gp/product/0882846167/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=0882846167&linkCode=as2&tag=dcam08-20&linkId=c32bb7a685da13fd5e5bda55b7b04e54" target="_blank" className="dcam-link">Alfred's Basic Adult Piano Course - Book 1</a></li>
+                        <li className="mb-4"><a href="https://www.amazon.ca/gp/product/B017OBN784/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B017OBN784&linkCode=as2&tag=dcam08-20&linkId=ebc17deebdb39f2890601fe02671d297" target="_blank" className="dcam-link">Alfred's Basic Adult Piano Course - Book 2</a></li>
+                        <li><a href="https://www.amazon.ca/gp/product/B017OBN7QQ/ref=as_li_tl?ie=UTF8&camp=15121&creative=330641&creativeASIN=B017OBN7QQ&linkCode=as2&tag=dcam08-20&linkId=0b5b372bab4de73e81b8eec3581b5b3c" target="_blank" className="dcam-link">Alfred's Basic Adult Piano Course - Book 3</a></li>
                     </ul>
                 </div>
             </section>

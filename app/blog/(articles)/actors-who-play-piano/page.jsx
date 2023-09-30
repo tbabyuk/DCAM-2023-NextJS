@@ -5,12 +5,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Famous Actors Who Can Play the Piano | Da Capo Academy of Music",
-    description: "Find out which well-known actors can play the piano",
-    keywords: ["actors", "talented actors", "piano"]
+    description: "You know them for their acting skills, but did you know that these well-known actors can also play the piano?",
+    keywords: ["actors", "talented actors", "piano"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Famous Actors Who Can Play the Piano | Da Capo Academy of Music",
+        description: "You know them for their acting skills, but did you know that these well-known actors can also play the piano?",
+        url: "https://dacapomusic.ca/blog/actors-who-play-piano",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-06-18T23:01:41+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Factors-who-play-piano%2Factors_who_play_piano_cover.jpg?alt=media&token=c08d7994-a9c7-41b6-a30a-6b232edf2759",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostActorsWhoPlayPiano = () => {
   return (
@@ -18,12 +39,12 @@ const PostActorsWhoPlayPiano = () => {
             <PostTitle title="Famous Actors Who Can Play the Piano" date="June 18, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Factors-who-play-piano%2Factors_who_play_piano_cover.jpg?alt=media&token=c08d7994-a9c7-41b6-a30a-6b232edf2759" alt="Famous Actors Who Play Piano cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
-                <div>
-                    <p className="mb-5 leading-8">You know them for their acting skills, but you probably didn't know that these famous actors could also impress you on the piano! Here is our list of the top 5 actors who can play the piano! (ordered by age, not skill level)</p>
-                </div>
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
+                <p>You know them for their acting skills, but you probably didn't know that these famous actors could also impress you on the piano! Here is our list of the top 5 actors who can play the piano! (ordered by age, not skill level)</p>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="Sandra Bullock" />
             <section className="px-5 lg:px-36 xl:px-64 py-10">
@@ -87,7 +108,7 @@ const PostActorsWhoPlayPiano = () => {
             <PostDivider />
 
             <PostHeading heading="Clint Eastwood" />
-            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-24">
+            <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20">
                 <div className="bio flex flex-col md:flex-row mb-16">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Factors-who-play-piano%2Feastwood.jpg?alt=media&token=71973ed6-5865-4c4f-927a-4e95f92f29bc" alt="photo of Clint Eastwood" style={{width: "220px"}} className="rounded-md" />
@@ -109,8 +130,6 @@ const PostActorsWhoPlayPiano = () => {
                     />
                 </div>
             </section>
-
-
 
             <PageBottomTrialButton />
         </main>

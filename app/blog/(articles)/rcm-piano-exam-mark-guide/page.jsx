@@ -7,12 +7,33 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "RCM Piano Exam Requirements (all grades) | Da Capo Academy of Music",
     description: "Find out exactly what the RCM Piano exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
-    keywords: ["RCM", "RCM Exams", "RCM Piano Exams", "RCM Piano Exam Marks"]
+    keywords: ["RCM", "RCM Exams", "RCM Piano Exams", "RCM Piano Exam Marks"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Piano Exam Requirements (all grades) | Da Capo Academy of Music",
+        description: "Find out exactly what the RCM Piano exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
+        url: "https://dacapomusic.ca/blog/rcm-piano-exam-mark-guide",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-06-23T02:03:09+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-piano-exam-mark-guide%2Frcm_piano_exam_requirements_cover.jpg?alt=media&token=985855d2-b649-4179-9a16-4d4e8a85dd58",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostPianoExamMarkGuide = () => {
   return (
@@ -21,7 +42,7 @@ const PostPianoExamMarkGuide = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-piano-exam-mark-guide%2Frcm_piano_exam_requirements_cover.jpg?alt=media&token=985855d2-b649-4179-9a16-4d4e8a85dd58" alt="RCM Piano Exam requirements cover photo"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="mb-5">If you are a piano student planning to do your RCM practical exams and want to know precisely what you will be graded on - you've come to the right place! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created this RCM Piano Exam Mark Guide with you - the student - in mind!</p>
 
@@ -30,6 +51,8 @@ const PostPianoExamMarkGuide = () => {
                     <PostSource source="RCM Piano Syllabus, 2022" />
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="RCM PIANO EXAM REQUIREMENTS FOR: ELEMENTARY LEVELS (Preparatory A - Level 4)" bottom="mb-12" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20">

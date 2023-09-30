@@ -6,10 +6,29 @@ import PostImage from "@/app/components/PostImage"
 import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 
+
 export const metadata = {
     title: "Practice Tips for Music Students | Da Capo Academy of Music",
-    description: "Are you a music student wondering why your practicing is not getting you the results you want? Maybe you are doing it wrong! These 5 practice tips are garanteed to give you results!",
-    keywords: ["adult piano student advice", "piano tips for adults"]
+    description: "Are you a music student wondering why your practicing is not getting you the results you want? Maybe you are doing it wrong! These 5 practice tips are garanteed to get you results!",
+    keywords: ["practice tips for music students", "music practice tips"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Practice Tips for Music Students | Da Capo Academy of Music",
+        description: "Are you a music student wondering why your practicing is not getting you the results you want? Maybe you are doing it wrong! These 5 practice tips are garanteed to get you results!",
+        url: "https://dacapomusic.ca/blog/practice-tips-for-music-students",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-04-10T17:19:38+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpractice-tips-for-music-students%2Fpractice_tips_for_music_students_cover.jpg?alt=media&token=bffaba11-c9da-4700-8a03-db4436e4e483&_gl=1*1szjuyu*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjA0MzQwOC42Ni4xLjE2OTYwNDU2NTMuNTMuMC4w",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 

@@ -6,11 +6,31 @@ import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
 import { PostSubheading } from "@/app/components/PostSubheading"
 
+
 export const metadata = {
-    title: "Can you skip RCM levels? | Da Capo Academy of Music",
+    title: "Can You Skip RCM Levels? | Da Capo Academy of Music",
     description: "Can you skip RCM levels? When is it okay to skip and when is it better to do your level exams in order? Read on to find out!",
-    keywords: ["skipping rcm levels", "skipping rcm exams"]
+    keywords: ["skipping rcm levels", "skipping rcm exams"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Can You Skip RCM Levels? | Da Capo Academy of Music",
+        description: "Can you skip RCM levels? When is it okay to skip and when is it better to do your level exams in order? Read on to find out!",
+        url: "https://dacapomusic.ca/blog/can-you-skip-rcm-levels/",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-11-24T03:46:11+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fcan-you-skip-rcm-levels%2Fskip_rcm_levels_cover.jpg?alt=media&token=cfa33773-cfc5-4751-aae3-0c800d2b2c24",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostCanYouSkipRCMLevels = () => {
   return (

@@ -6,13 +6,33 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
 
 
 export const metadata = {
     title: "RCM Violin Exam Requirements (all grades) | Da Capo Academy of Music",
     description: "Find out exactly what the RCM Violin exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
-    keywords: ["RCM", "RCM Exams", "RCM Violin Exams", "RCM Violin Exam Marks"]
+    keywords: ["RCM", "RCM Exams", "RCM Violin Exams", "RCM Violin Exam Marks"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Violin Exam Requirements (all grades) | Da Capo Academy of Music",
+        description: "Find out exactly what the RCM Violin exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
+        url: "https://dacapomusic.ca/blog/rcm-violin-exam-mark-guide",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-03T01:09:21+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Frcm_violin_exam_requirements_cover.jpg?alt=media&token=3d10b0fd-add2-4f0c-a474-5ae99ed7549e",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostViolinExamMarkGuide = () => {
   return (
@@ -21,12 +41,14 @@ const PostViolinExamMarkGuide = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-violin-exam-mark-guide%2Frcm_violin_exam_requirements_cover.jpg?alt=media&token=3d10b0fd-add2-4f0c-a474-5ae99ed7549e" alt="RCM Violin Exam requirements cover photo"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="mb-5">If you are a violin student planning to do your RCM practical exams and want to know precisely what you will be graded on - this is the page for you! This guide will tell you exactly what each section of the exam is worth to help you decide how to allocate your prep time for optimal results! We created our “Ultimate RCM Violin Exam Mark Guide” with you - the student - in mind!</p>
                     <PostSource source="RCM Violin Syllabus, 2021" />
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="RCM VIOLIN EXAM REQUIREMENTS FOR: ELEMENTARY LEVELS (Preparatory - Level 4)" bottom="mb-12" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20">
