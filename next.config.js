@@ -222,7 +222,7 @@ module.exports = {
         },
         {
             source: "/5-best-practice-tips",
-            destination: "/blog/5-best-practice-tips",
+            destination: "/blog/practice-tips-for-music-students",  //big change
             permanent: true,
         },
         {

@@ -8,7 +8,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheading } from "@/app/components/PostSubheading"
 
 export const metadata = {
-    title: "Tips for Adult Piano Students | Da Capo Academy of Music",
+    title: "Learning Piano as an Adult | Da Capo Academy of Music",
     description: "The myth about adult piano learners, advantages of learning piano as an adult, five tips for success, recommended books for adult piano learners, and more!",
     keywords: ["adult piano student advice", "piano tips for adults"]
 }

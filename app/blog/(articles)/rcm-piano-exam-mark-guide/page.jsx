@@ -10,7 +10,7 @@ import PostImage from "@/app/components/PostImage"
 
 export const metadata = {
     title: "RCM Piano Exam Requirements (all grades) | Da Capo Academy of Music",
-    description: "Find out exactly what the rcm piano exam requirements are for all grades and how each exam will be marked in this quick-reference guide.",
+    description: "Find out exactly what the RCM Piano exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
     keywords: ["RCM", "RCM Exams", "RCM Piano Exams", "RCM Piano Exam Marks"]
 }
 

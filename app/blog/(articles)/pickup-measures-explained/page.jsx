@@ -11,15 +11,17 @@ import Link from "next/link"
 import { PostSource } from "@/app/components/PostSource"
 
 export const metadata = {
-    title: "How to Build a Harmonic Minor Scale | Da Capo Academy of Music",
-    description: "Master building the harmonic minor scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
-    keywords: ["build a minor scale", "build a harmonic minor scale", "minor scale music theory", "harmonic minor scale music theory"]
+    title: "Pickup Measures Explained | Da Capo Academy of Music",
+    description: "What is a pickup measure (anacrusis)? How does it work? Do we count it as a measure? Easy-to-understand explanations with plenty of examples!",
+    keywords: ["pickup measure", "anacrusis", "what is a pickup measure", "music theory"]
 }
 
+
 const PostPickupMeasuresExplained = () => {
+
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="What is a pickup measure in music (and how it works)" date="July 30, 2020" />
+            <PostTitle title="How Pickup Measure Work" date="July 30, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpickup-measures-explained%2Fwhat_is_a_pickup_measure_cover.jpg?alt=media&token=92d3504f-0bfb-4a92-bfde-c6ed544a7e89" alt="what is a pickup measure cover"/>
 
             <PostSectionHeading heading="Introduction" />
