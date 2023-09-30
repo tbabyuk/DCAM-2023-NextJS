@@ -172,7 +172,7 @@ module.exports = {
         },
         {
             source: "/adult-piano-student-tips",
-            destination: "/blog/adult-piano-student-tips",
+            destination: "/blog/learning-piano-as-an-adult", //big change
             permanent: true,
         },
         {

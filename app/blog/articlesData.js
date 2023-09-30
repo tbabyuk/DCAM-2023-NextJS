@@ -292,11 +292,11 @@ export const articles = [
       },
       {
         id: 12,
-        title: "Tips for Adult Piano Students",
+        title: "Learning piano as an adult",
         date: "July 9, 2020",
-        imageUrl: "https://dacapomusic.ca/wp-content/uploads/2020/07/child_guitar_sizes_featured_image.jpg",
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fadult-piano-student-tips%2Fadult_piano_student_tips_cover.jpg?alt=media&token=03b5ed4d-e655-469d-8329-c4e5eb44987c&_gl=1*q22h3e*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjAyODYwMy42NC4xLjE2OTYwMjkxOTYuMjguMC4w",
         description: "1. Introduction 2. The myth 3. Advantages to learning piano as an adult 4. Five success tips for adult piano learners 5. Recommended piano books for adult beginners …",
-        blogLink: "/blog/adult-piano-student-tips",
+        blogLink: "/blog/learning-piano-as-an-adult",
         category: "Music General, Tips for Musicians"
       },
       {

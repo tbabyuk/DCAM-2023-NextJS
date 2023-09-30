@@ -10,12 +10,14 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 import Link from "next/link"
 
 export const metadata = {
-    title: "How to Build a Harmonic Minor Scale | Da Capo Academy of Music",
-    description: "Master building the harmonic minor scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
-    keywords: ["build a minor scale", "build a harmonic minor scale", "minor scale music theory", "harmonic minor scale music theory"]
+    title: "How to Build a Melodic Minor Scale | Da Capo Academy of Music",
+    description: "Master building the melodic minor scale in any key with this simple, step-by-step guide. Includes helpful graphics!",
+    keywords: ["build a minor scale", "build a melodic minor scale", "minor scale music theory", "melodic minor scale music theory"]
 }
 
+
 const PostBuildAMelodicMinorScale = () => {
+    
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="How to Build a Melodic Minor Scale" date="November 17, 2022" />
