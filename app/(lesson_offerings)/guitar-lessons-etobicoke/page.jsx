@@ -1,5 +1,3 @@
-
-
 import { PageTitle } from "../../components/PageTitle";
 import { PageSubtitle } from "../../components/PageSubtitle";
 import { PageBottomTrialButton } from "../../components/PageBottomTrialButton";
@@ -7,11 +5,31 @@ import { LessonFormatSection } from "@/app/components/LessonFormatSection";
 import { LessonDurationSection } from "@/app/components/LessonDuration";
 import { LessonTeachersSection } from "@/app/components/LessonTeachersSection";
 
+
 export const metadata = {
     title: "Guitar Lessons in Etobicoke | Da Capo Academy of Music",
     description: "Looking for guitar lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
-    keywords: ["guitar lessons", "ukulele lessons", "guitar lessons etobicoke", "ukulele lessons etobicoke"]
+    keywords: ["guitar lessons etobicoke", "ukulele lessons etobicoke", "guitar teacher etobicoke", "music lessons etobicoke"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Guitar Lessons in Etobicoke | Da Capo Academy of Music",
+        description: "Looking for guitar lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+        url: "https://dacapomusic.ca/guitar-lessons-etobicoke",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        // publishedTime: "2020-07-27T22:12:00+00:00",
+        // images: [    
+        //     {
+        //         url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f",
+        //         width: 1200,
+        //         height: 628,
+        //         type: "image/jpeg"
+        //     }
+        // ],
+    },
 }
+
 
 const GuitarLessonsPage = () => {
 
