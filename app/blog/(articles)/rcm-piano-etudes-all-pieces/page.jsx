@@ -8,12 +8,33 @@ import { PostSource } from "@/app/components/PostSource"
 import Link from "next/link"
 import PostImage from "@/app/components/PostImage"
 import { PostNote } from "@/app/components/PostNote"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "RCM Piano Etudes - Full List of Pieces | Da Capo Academy of Music",
     description: "A complete, quick-reference list of all RCM Piano Etudes pieces, levels 1 to 10. Name of piece, composer, and page number.",
-    keywords: ["rcm piano etudes", "rcm piano etudes songs", "rcm piano etudes pieces", "rcm piano etudes list"]
+    keywords: ["rcm piano etudes", "rcm piano etudes pieces", "rcm piano etudes list"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Piano Etudes - Full List of Pieces | Da Capo Academy of Music",
+        description: "A complete, quick-reference list of all RCM Piano Etudes pieces, levels 1 to 10. Name of piece, composer, and page number.",
+        url: "https://dacapomusic.ca/blog/rcm-piano-etudes-all-pieces",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-08-29T23:23:18+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_piano_etudes_all_pieces%2Frcm_piano_etudes_all_pieces_cover.jpg?alt=media&token=91d114e3-b4d2-4682-8a83-8a90d477ad6a",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostRCMPianoEtudesAllPieces = () => {
   return (
@@ -22,13 +43,15 @@ const PostRCMPianoEtudesAllPieces = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_piano_etudes_all_pieces%2Frcm_piano_etudes_all_pieces_cover.jpg?alt=media&token=91d114e3-b4d2-4682-8a83-8a90d477ad6a" alt="RCM Piano Etudes All Pieces cover"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8 mb-5">The complete list of RCM Piano Etudes pieces students can choose from to prepare for their RCM examinations.</p>
                     <PostNote text="While the names of all the pieces in this article are from the newest, 2022 Edition of RCM Piano Repertoire books, the video recordings have not yet all been updated to this latest edition. We are, however, in the process of re-recording the videos, so they will all gradually be updated. Please stay tuned and thank you for your understanding!" />
                     <PostSource source="RCM Celebration Series books, 2022 Edition (latest edition)" />
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostSectionHeading heading="Table of Contents" />
             <section className="px-5 lg:px-36 xl:px-64 mb-32">

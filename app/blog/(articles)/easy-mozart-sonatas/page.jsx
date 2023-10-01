@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Mozart Sonatas (piano) | Da Capo Academy of Music",
     description: "Looking to learn a Mozart sonata that doesn't require a super advanced mastery of the piano? These three are a great place to start!",
-    keywords: ["mozart sonatas", "easy mozart sonatas", "easy mozart pieces"]
+    keywords: ["mozart sonatas", "easy mozart sonatas", "easy mozart pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Mozart Sonatas (piano) | Da Capo Academy of Music",
+        description: "Looking to learn a Mozart sonata that doesn't require a super advanced mastery of the piano? These three are a great place to start!",
+        url: "https://dacapomusic.ca/blog/easy-mozart-sonatas",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-09-09T04:24:43+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-mozart-sonatas%2Feasy_mozart_sonatas_featured_image.jpg?alt=media&token=08e9fc73-330c-4fbe-8911-1270cbf2be76",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyMozartSonatas = () => {
   return (
@@ -17,14 +38,16 @@ const PostEasyMozartSonatas = () => {
             <PostTitle title="The 3 Easiest Mozart Sonatas (piano)" date="September 9, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-mozart-sonatas%2Feasy_mozart_sonatas_featured_image.jpg?alt=media&token=08e9fc73-330c-4fbe-8911-1270cbf2be76" alt="Easy Mozart Sonatas cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Let's begin with a disclaimer - there is no such thing as an easy Mozart sonata, or even an easy sonata for that matter, which are by their nature complex, multi-movement works. That being said, it doesn't mean that we can't talk about relative easiness, as in easier compared to rest (the other 15) of his sonatas, of which he wrote a total of 18.</p><br />
 
                     <p className="leading-8">So if you are not yet a super advanced pianist but can't wait to impress your family or friends with a real Mozart piano sonata - I strongly suggest you begin with one of these three. Let's take a look at what they are.</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Sonata in C Major, K 545 ('Sonata Facile')" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

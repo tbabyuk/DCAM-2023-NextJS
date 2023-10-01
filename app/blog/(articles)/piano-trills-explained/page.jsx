@@ -4,11 +4,31 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
-    title: "What is a trill and how to play it (piano) | Da Capo Academy of Music",
+    title: "What Is a Trill and How to Play It (piano) | Da Capo Academy of Music",
     description: "What is a trill and how to to play it correctly on the piano. Find out all this and more in this article!",
-    keywords: ["trill", "piano trill", "how to play a trill"]
+    keywords: ["trill", "piano trill", "how to play a trill"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "What Is a Trill and How to Play It (piano) | Da Capo Academy of Music",
+        description: "What is a trill and how to to play it correctly on the piano. Find out all this and more in this article!",
+        url: "https://dacapomusic.ca/blog/piano-trills-explained",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-04-20T19:55:49+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-play-a-trill-correctly-piano%2Ftrill_cover_photo.jpg?alt=media&token=ae7afeb7-5e1f-47e1-9f78-d0e723455de3",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 
@@ -22,6 +42,8 @@ const PostPianoTrillsExplained = () => {
             <section className="introduction px-5 lg:px-36 xl:px-64 mb-24">
                 <p className="leading-8 mb-14">A trill is one of the most common musical ornaments and can sound beautiful when done well. If you are not confident about your understanding of what a trill is or how to play it correctly, look no further. This is the only article you will need to become an expert on trills (well, in theory at least. You still have to do the practicing!).</p>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="What is a trill?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -100,15 +122,15 @@ const PostPianoTrillsExplained = () => {
                 </div>
             </section>
 
+            <SectionDivider />
+
             <PostSectionHeading heading="Conclusion" />
             <section className="conclusion px-5 lg:px-36 xl:px-64 mb-20">
                 <p className="leading-8">If you are an active musician, you are sure to come across many trills in your playing. For this reason, we hope that this article helped you get a better grasp of this popular musical ornamentation. To make your trills sound nice a sharp, be sure to spend enough time practicing them. Tip: if possible, use your stronger fingers on the trills, as this will give you better dexterity and control over how they sound. Happy trilling!</p>
             </section>
 
-
             <PageBottomTrialButton />
         </main>
-
   )
 }
 

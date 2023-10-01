@@ -6,10 +6,29 @@ import PostImage from "@/app/components/PostImage"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { SectionDivider } from "@/app/components/SectionDivider"
 
+
 export const metadata = {
     title: "6 Signs Your Child is Musically Gifted | Da Capo Academy of Music",
     description: "Wondering if you child is musically gifted? These 6 reliable signs will give you an accurate idea of whether you might have the next Mozart on your hands!",
-    keywords: ["signs of musical talent", "musically gifted child"]
+    keywords: ["signs of musical talent", "musically gifted child"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "6 Signs Your Child is Musically Gifted | Da Capo Academy of Music",
+        description: "Wondering if you child is musically gifted? These 6 reliable signs will give you an accurate idea of whether you might have the next Mozart on your hands!",
+        url: "https://dacapomusic.ca/blog/signs-of-musical-talent",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-08T05:22:06+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fsigns-of-musical-talent%2Fsigns_of_musical_talent_cover.jpg?alt=media&token=a32e1e21-476e-49e8-89cb-7b9939a58137",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 

@@ -4,12 +4,33 @@ import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
 import { PostSubheading } from "@/app/components/PostSubheading"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "6 Reasons to Take RCM Exams (Royal Conservatory of Music) | Da Capo Academy of Music",
     description: "Are RCM exams right for my child? Here are our top 6 reasons why it is beneficial to take RCM exams and why you should do it!",
-    keywords: ["why take rcm exams", "benefits of rcm exams"]
+    keywords: ["why take rcm exams", "benefits of rcm exams"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "6 Reasons to Take RCM Exams (Royal Conservatory of Music) | Da Capo Academy of Music",
+        description: "Are RCM exams right for my child? Here are our top 6 reasons why it is beneficial to take RCM exams and why you should do it!",
+        url: "https://dacapomusic.ca/blog/why-take-rcm-exams",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-11-26T05:54:58+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwhy-take-rcm-exams%2Fwhy_take_rcm_exams_cover.jpg?alt=media&token=69927c65-1e36-4346-bd0d-d843bb717df8",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostWhyTakeRCMExams = () => {
   return (
@@ -29,6 +50,8 @@ const PostWhyTakeRCMExams = () => {
                     </figure>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <PostSubheading subheading="#1. Your child will get a solid, well-rounded music education" bottom="mb-10" />

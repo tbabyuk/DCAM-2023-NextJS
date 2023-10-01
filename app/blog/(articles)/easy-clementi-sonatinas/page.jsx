@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Clementi Sonatinas (piano) | Da Capo Academy of Music",
     description: "These three Clementi sonatinas are perfect for low-intermediate to intermediate piano students looking to start playing more serious pieces!",
-    keywords: ["clementi sonatinas", "easy clementi sonatinas", "easy clementi pieces"]
+    keywords: ["clementi sonatinas", "easy clementi sonatinas", "easy clementi pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Clementi Sonatinas (piano) | Da Capo Academy of Music",
+        description: "These three Clementi sonatinas are perfect for low-intermediate to intermediate piano students looking to start playing more serious pieces!",
+        url: "https://dacapomusic.ca/blog/easy-clementi-sonatinas",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-10-31T01:47:14+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-clementi-sonatinas%2Feasy_clementi_sonatinas_cover.jpg?alt=media&token=ef9c5aaa-360c-474d-bc25-c12a0a0790cd",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyClementiSonatinas = () => {
   return (
@@ -17,14 +38,16 @@ const PostEasyClementiSonatinas = () => {
             <PostTitle title="The 3 Easiest Clementi Sonatinas (piano)" date="October 30, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-clementi-sonatinas%2Feasy_clementi_sonatinas_cover.jpg?alt=media&token=ef9c5aaa-360c-474d-bc25-c12a0a0790cd" alt="Easy Clementi Sonatinas cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Muzio Clementi (1752-1832) was an influential Italian pianist, composer, teacher, editor, and music publisher. His musical output had an important influence on many future generations of musicians and composers, including Beethoven and Chopin.</p><br />
                     <p className="leading-8">The sonatinas presented here are a great choice for students who are at a low-intermediate to intermediate level at the piano and are looking to begin playing pieces from the classical repertoire. They also serve as a perfect introduction to the sonata, as the word sonatina literally means “little sonata”.</p><br />
                     <p className="leading-8">The three sonatinas presented here are all taken from Opus 26 of Clementi works, which contains six sonatinas in total. I have chosen these three as I find them to be the most beautiful and most liked amongst my own students. I have also arranged them in order of difficult from easier to harder. Enjoy!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Sonatina in C Major, Op. 36, No. 1" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

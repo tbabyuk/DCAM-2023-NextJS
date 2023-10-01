@@ -15,7 +15,7 @@ export const metadata = {
     openGraph: {
         title: "Can You Skip RCM Levels? | Da Capo Academy of Music",
         description: "Can you skip RCM levels? When is it okay to skip and when is it better to do your level exams in order? Read on to find out!",
-        url: "https://dacapomusic.ca/blog/can-you-skip-rcm-levels/",
+        url: "https://dacapomusic.ca/blog/can-you-skip-rcm-levels",
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
         type: "article",

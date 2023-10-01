@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Chopin Etudes (piano) | Da Capo Academy of Music",
     description: "Looking to learn a beautiful Chopin etude that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
-    keywords: ["chopin etudes", "easy chopin etudes", "easy chopin pieces"]
+    keywords: ["chopin etudes", "easy chopin etudes", "easy chopin pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Chopin Etudes (piano) | Da Capo Academy of Music",
+        description: "Looking to learn a beautiful Chopin etude that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
+        url: "https://dacapomusic.ca/blog/easy-chopin-etudes",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-04-14T02:17:19+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-etudes%2Feasy_chopin_etudes_cover.jpg?alt=media&token=041c33f1-835d-4b2e-bad3-414564570477",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyChopinEtudes = () => {
   return (
@@ -17,8 +38,8 @@ const PostEasyChopinEtudes = () => {
             <PostTitle title="The 3 Easiest Chopin Etudes (piano)" date="April 13, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-etudes%2Feasy_chopin_etudes_cover.jpg?alt=media&token=041c33f1-835d-4b2e-bad3-414564570477" alt="Easy Chopin Etudes cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Chopin is known to have written a total of 27 etudes, most of which are contained in Op. 25 and Op. 10 of his works. In this article, I chose 3 of these 27 that are generally considered the “easier” of the bunch. Remember though, that etudes are by their very nature technically demanding compositions, so even for the 3 etudes discussed here you will need to be an advanced student of the piano.</p><br />
 
@@ -27,6 +48,8 @@ const PostEasyChopinEtudes = () => {
                     <p className="leading-8">Note: Chopin also has much slower etudes that some people might consider easier than the ones presented here, simply because of their speed. However, for the purposes of this article I chose to go with the easy “fast” etudes, as these are much more popular and, in my opinion, more interesting to play. If you do want to take a look at the easier “slower” etudes of Chopin, feel free to take a look at Etude Op. 10, No. 3 (“Tristesse”), Etude Op. 25, No. 7 (“Cello”), or Etude Op. 10, No. 6.</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Etude in F Minor, op. 25 no. 2 ('The Bees')" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

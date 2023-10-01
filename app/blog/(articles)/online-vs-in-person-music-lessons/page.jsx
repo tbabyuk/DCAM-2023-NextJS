@@ -4,14 +4,36 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Online vs. In-Person Music Lessons | Da Capo Academy of Music",
-    description: "Online vs in-person music lessons - how do I decide? Find out how the two lesson formats compare and make an informed decision about what works for you!",
-    keywords: ["online or in-person music lessons", "online music lessons pros and cons"]
+    description: "Online or in-person music lessons - how do I decide? Find out how the two lesson formats compare and make an informed decision about what works for you!",
+    keywords: ["online or in-person music lessons", "online music lessons pros and cons"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Online vs. In-Person Music Lessons | Da Capo Academy of Music",
+        description: "Online or in-person music lessons - how do I decide? Find out how the two lesson formats compare and make an informed decision about what works for you!",
+        url: "https://dacapomusic.ca/blog/online-vs-in-person-music-lessons",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-14T04:08:07+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fonline-vs-in-person-music-lessons%2Fonline_vs_in_person_lessons_cover.jpg?alt=media&token=1c0ad664-6496-4e1f-b9ef-00a14a8fec4a",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
+
 const PostOnlineVsInPersonMusicLessons = () => {
+
   return (
             <main className="text-gray-700 text-[0.95rem]">
             <PostTitle title="Online vs. In-Person Music Lessons" date="July 14, 2020" />
@@ -29,6 +51,8 @@ const PostOnlineVsInPersonMusicLessons = () => {
                 </div>
                 <p className="leading-8">In this article, we discuss the benefits and drawbacks of online vs. in-person music lessons and give you our own take on how to best decide between the two options. Most importantly, we want to help parents and students make an informed decision as to what type of lessons work best for them!</p>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="Defining 'online lessons' as they relate to music" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -133,6 +157,8 @@ const PostOnlineVsInPersonMusicLessons = () => {
                 <p className="leading-8 font-bold">2. Students intending to pursue music professionally</p> 
                 <p className="leading-8">For children whose parents want them to pursue musical professionally, in-person lessons with a well-qualified instructor are their best option. At the end of the day, online lessons simply cannot provide the amount of detailed feedback necessary for absolute musical mastery as traditional, in-person lessons.</p>
             </section>
+
+            <SectionDivider />
 
             <PostSectionHeading heading="Conclusion" />
             <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-20">

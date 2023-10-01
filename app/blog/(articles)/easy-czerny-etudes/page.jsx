@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Easy Czerny Etudes (piano) | Da Capo Academy of Music",
     description: "Are you a beginning pianist looking to improve your piano technique? Here is a list of six of my favourite easy Czerny etudes for beginners!",
-    keywords: ["czerny etudes", "easy czerny etudes", "easy czerny pieces"]
+    keywords: ["czerny etudes", "easy czerny etudes", "easy czerny pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Easy Czerny Etudes (piano) | Da Capo Academy of Music",
+        description: "Are you a beginning pianist looking to improve your piano technique? Here is a list of six of my favourite easy Czerny etudes for beginners!",
+        url: "https://dacapomusic.ca/blog/easy-czerny-etudes",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-09-12T02:09:00+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-czerny-etudes%2Feasy_czerny_etudes_cover_photo.jpg?alt=media&token=4eb69890-69e2-485a-9fa1-fb5f557d5bfc",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyCzernyEtudes = () => {
   return (
@@ -17,14 +38,16 @@ const PostEasyCzernyEtudes = () => {
             <PostTitle title="Easy Czerny Etudes (piano)" date="September 11, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-czerny-etudes%2Feasy_czerny_etudes_cover_photo.jpg?alt=media&token=4eb69890-69e2-485a-9fa1-fb5f557d5bfc" alt="Easy Czerny Etudes cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Carl Czerny was an Austrian pianist, teacher, and composer of Czech origin who lived from 1791 to 1857. Over his lifetime, he wrote many works for the piano (over a 1000) and many of these are widely used today by students learning to play the piano. I myself played many of his compositions in the past and remember really enjoying them. Now as a teacher, I find teaching them to my students just as enjoyable, not to mention useful in developing their piano technique and helping them grow as pianists. In this article, I have gathered six of (what I think are) his best etudes for beginning piano students. All of these etudes are also featured in the RCM (Royal Conservatory) curriculum for piano students. Enjoy!</p><br />
 
                     <p className="leading-8">Let's look at each of these pieces in turn and get inspired to learn them!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Etude in C Major, op. 261, no. 3" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

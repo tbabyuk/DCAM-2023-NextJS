@@ -5,12 +5,33 @@ import { PostSubheading } from "@/app/components/PostSubheading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "How Music Intervals Work | Da Capo Academy of Music",
     description: "Learn about major, minor, perfect, diminished and augmented music intervals, how they work, and how to identify them both on the music staff and by ear!",
-    keywords: ["music theory", "music intervals", "identify music intervals"]
+    keywords: ["music theory", "music intervals", "identify music intervals"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "How Music Intervals Work | Da Capo Academy of Music",
+        description: "Learn about major, minor, perfect, diminished and augmented music intervals, how they work, and how to identify them both on the music staff and by ear!",
+        url: "https://dacapomusic.ca/blog/music-intervals-explained",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-04T18:11:29+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmusic_intervals_cover.jpg?alt=media&token=d7d4e709-2a3f-42df-8f1e-8ffa483d0868",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostMusicIntervalsExplained = () => {
   return (
@@ -19,13 +40,15 @@ const PostMusicIntervalsExplained = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmusic_intervals_cover.jpg?alt=media&token=d7d4e709-2a3f-42df-8f1e-8ffa483d0868" alt="Music Intervals cover"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8 mb-14">Music intervals are an essential part of music theory and simply one of those things that every musician should know. This article will give you a solid understanding of this topic with simple explanations and plenty of examples.</p>
 
                     <p className="leading-8 italic"><span className="font-semibold">Note:</span> To get the most out of this article, you should have a solid understanding of major scales. If you are not familiar with this topic, it is strongly advisable that you read our article titled <a className="dcam-link" href="https://dacapomusic.ca/build-a-major-scale/" target="_blank">"How to Build a Major Scale"</a> before proceeding.</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="What Is a Music Interval?" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -76,8 +99,8 @@ const PostMusicIntervalsExplained = () => {
                 <p className="leading-8">Let's look more carefully at what exactly "size" and "quality" mean and how they work.</p>
             </section>
 
-            <PostSubheading subheading="Interval Size" bottom="mb-10" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
+                <PostSubheading subheading="Interval Size" bottom="mb-10" />
                 <div className="mt-8 leading-8 mb-14">
                     <p><span className="font-bold">Interval size</span> is a number that tells us how far two notes are from each other. When calculating interval size, we count from the lower to the higher note in alphabetical order. Accidentals (sharps, flats, natural signs, etc.) have no effect on interval size.</p><br />
                     <p>Let's look at a few examples:</p>
@@ -104,8 +127,8 @@ const PostMusicIntervalsExplained = () => {
                 </div>
             </section>
 
-            <PostSubheading subheading="Interval Quality" bottom="mb-10" />
             <section className="px-5 lg:px-36 xl:px-64 mb-20">
+                <PostSubheading subheading="Interval Quality" bottom="mb-10" />
                 <p className="mb-10"><span className="font-bold">Interval quality</span> (or <span className="font-bold">type</span>) refers to the kind of sound that an interval produces. Here is a list of the types of intervals we can have:</p><br />
                 <table className="mx-auto bg-gray-100 w-full md:w-[50%] blog-table mb-14">
                     <thead>

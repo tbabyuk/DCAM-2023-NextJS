@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "An Illustrated Guide to Child Guitar Sizes | Da Capo Academy of Music",
-    description: "Ukulele? Guitalele? 1/2 size? 3/4 size? What does it all mean? Learn all about child guitar sizes to help you make the right purchase decision today!",
-    keywords: ["child guitar sizes", "guitars for children", "small guitars"]
+    description: "Ukulele? Guitalele? 1/2 size? 3/4 size? What does it all mean? Learn all about child guitar sizes to help you make the right purchase decision!",
+    keywords: ["child guitar sizes", "guitars for children", "small guitars"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "An Illustrated Guide to Child Guitar Sizes | Da Capo Academy of Music",
+        description: "Ukulele? Guitalele? 1/2 size? 3/4 size? What does it all mean? Learn all about child guitar sizes to help you make the right purchase decision!",
+        url: "https://dacapomusic.ca/blog/child-guitar-sizes",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-20T00:04:18+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fchild_guitar_sizes_cover.jpg?alt=media&token=1524c4ed-97f0-4891-bd12-de8f606278b7",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostChildGuitarSizes = () => {
   return (
@@ -18,7 +39,7 @@ const PostChildGuitarSizes = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Fchild_guitar_sizes_cover.jpg?alt=media&token=1524c4ed-97f0-4891-bd12-de8f606278b7" alt="Child Guitar Sizes cover"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="px-5 lg:px-36 xl:px-64 mb-32">
+            <section className="px-5 lg:px-36 xl:px-64">
                 <div className="bio flex flex-col-reverse md:flex-row mb-16">
                     <div className="mt-8 md:mt-0 md:me-10 leading-8">
                         <p>If your child is about to start guitar lessons, you might wonder what the right guitar size for them is, given all the available options. This guide is designed to help you answer this question, with lots of other useful information to help you make the right buying decision. Read on!</p>
@@ -28,6 +49,8 @@ const PostChildGuitarSizes = () => {
                     </figure>
                 </div>            
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="What to look for when choosing a guitar" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -211,7 +234,7 @@ const PostChildGuitarSizes = () => {
 
             <PostHeading heading="Full Size Guitar" bottom="mb-4" />
             <h3 className="text-lg text-center font-bold px-5 lg:px-36 xl:px-64 mb-20">Age group: ~ 12 +</h3>
-            <section className="px-5 lg:px-36 xl:px-64 mb-20">
+            <section className="px-5 lg:px-36 xl:px-64">
                 <div className="bio flex flex-col md:flex-row mb-8">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center mb-6">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fchild-guitar-sizes%2Ffull_size_200.jpg?alt=media&token=efb80f62-d667-481b-a0e8-833aeee3d790" alt="picture of a ukulele" style={{width: "200px"}} className="rounded-md" />
@@ -249,6 +272,8 @@ const PostChildGuitarSizes = () => {
                     </ul>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostSectionHeading heading="Conclusion" />
             <section className="conclusion px-5 lg:px-36 xl:px-64 mb-20">

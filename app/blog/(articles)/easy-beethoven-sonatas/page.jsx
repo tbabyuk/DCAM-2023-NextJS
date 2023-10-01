@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Beethoven Sonatas (piano) | Da Capo Academy of Music",
     description: "Looking to learn a Beethoven sonata that doesn't require a very advanced mastery of the piano? These three are a great place to start!",
-    keywords: ["beethoven sonatas", "easy beethoven sonatas", "easy beethoven pieces"]
+    keywords: ["beethoven sonatas", "easy beethoven sonatas", "easy beethoven pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Beethoven Sonatas (piano) | Da Capo Academy of Music",
+        description: "Looking to learn a Beethoven sonata that doesn't require a very advanced mastery of the piano? These three are a great place to start!",
+        url: "https://dacapomusic.ca/blog/easy-beethoven-sonatas",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-03-09T00:39:58+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-beethoven-sonatas%2Feasy_beethoven_sonatas_cover_photo.jpg?alt=media&token=d3359bf6-2880-4ad2-bcbe-e016809837ab",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyBeethovenSonatas = () => {
   return (
@@ -17,14 +38,15 @@ const PostEasyBeethovenSonatas = () => {
             <PostTitle title="The 3 Easiest Beethoven Sonatas (piano)" date="March 8, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-beethoven-sonatas%2Feasy_beethoven_sonatas_cover_photo.jpg?alt=media&token=d3359bf6-2880-4ad2-bcbe-e016809837ab" alt="Easy Beethoven Sonatas cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Let's get something straight - when we talk about “easy” Beethoven sonatas, we are of course talking about easy relative the rest of his sonatas, of which he is known to have written about 32. The first two sonatas you will see here are almost universally agreed to be his easiest, while the third one is not so obvious. There were definitely several contenders for the third place, so after the technical considerations, my choice in the end came down to my own personal taste, which I hope you will share and appreciate!</p><br />
-
                     <p className="leading-8">So if you can't wait to finally try your hand at a Beethoven sonata, here are some some great options for you to start with. Happy playing!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Sonata No.19 in G Minor, Op.49 No.1 ('Leichte Sonata')" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

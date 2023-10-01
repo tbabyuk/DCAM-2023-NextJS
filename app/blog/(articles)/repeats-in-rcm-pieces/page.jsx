@@ -6,11 +6,31 @@ import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
 import { PostSource } from "@/app/components/PostSource"
 
+
 export const metadata = {
-    title: "Should we observe repeats in RCM pieces? | Da Capo Academy of Music",
+    title: "Should We Observe Repeats in RCM Pieces? | Da Capo Academy of Music",
     description: "Do we observe repeat signs for RCM examinations? What about Da Capo and Dal Segno signs? Here is what the Royal Conservatory says about this.",
-    keywords: ["repeats in rcm pieces", "observing repeats in rcm"]
+    keywords: ["repeats in rcm pieces", "observing repeats in rcm"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Should We Observe Repeats in RCM Pieces? | Da Capo Academy of Music",
+        description: "Do we observe repeat signs for RCM examinations? What about Da Capo and Dal Segno signs? Here is what the Royal Conservatory says about this.",
+        url: "https://dacapomusic.ca/blog/repeats-in-rcm-pieces",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-10-22T03:10:28+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frepeats-in-rcm-pieces%2Frepeat_signs_cover.jpg?alt=media&token=c875bbad-a456-4ffd-80b4-5088f126ee6b",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostRepeatsInRCMPieces = () => {
   return (

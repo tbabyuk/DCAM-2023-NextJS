@@ -6,12 +6,33 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "RCM Guitar Exam Requirements (all grades) | Da Capo Academy of Music",
     description: "Planning to do your RCM guitar exams? Find out what you need to know and exactly how you will be graded in our RCM guitar exam mark guide!",
-    keywords: ["RCM", "RCM Exams", "RCM Guitar Exams", "RCM Guitar Exam Marks"]
+    keywords: ["RCM", "RCM Exams", "RCM Guitar Exams", "RCM Guitar Exam Marks"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Guitar Exam Requirements (all grades) | Da Capo Academy of Music",
+        description: "Planning to do your RCM guitar exams? Find out what you need to know and exactly how you will be graded in our RCM guitar exam mark guide!",
+        url: "https://dacapomusic.ca/blog/rcm-guitar-exam-mark-guide",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-07-28T22:34:01+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-guitar-exam-mark-guide%2Frcm_guitar_requirements_cover.jpg?alt=media&token=fbc771be-a559-4d96-94fc-51041d4e8358",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostGuitarExamMarkGuide = () => {
   return (
@@ -20,13 +41,14 @@ const PostGuitarExamMarkGuide = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-guitar-exam-mark-guide%2Frcm_guitar_requirements_cover.jpg?alt=media&token=fbc771be-a559-4d96-94fc-51041d4e8358" alt="RCM Guitar Exam requirements cover photo" />
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
-                    <p className="mb-5">Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You've come to the right place! This guide will tell you what each section of the exam is worth to help you decide how to better allocate your prep time for optimal results! We created this RCM Guitar Exam Mark Guide with you - the student - in mind!</p>
-
+                    <p className="mb-10">Planning to do your RCM guitar exam but not sure what exactly you will be graded on and how? You've come to the right place! This guide will tell you what each section of the exam is worth to help you decide how to better allocate your prep time for optimal results! We created this RCM Guitar Exam Mark Guide with you - the student - in mind!</p>
                     <PostSource source="RCM Classical Guitar Syllabus, 2018" />
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="RCM GUITAR EXAM REQUIREMENTS FOR: ELEMENTARY LEVELS (Preparatory - Level 4)" bottom="mb-12" />
             <section className="px-5 lg:px-36 xl:px-64 py-10 mb-20">

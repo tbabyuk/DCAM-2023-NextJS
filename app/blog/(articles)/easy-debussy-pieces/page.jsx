@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Debussy Piano Pieces | Da Capo Academy of Music",
     description: "Looking to learn a piece by Debussy that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
-    keywords: ["debussy pieces", "easy debussy pieces", "easy debussy piano pieces"]
+    keywords: ["debussy pieces", "easy debussy pieces", "easy debussy piano pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Debussy Piano Pieces | Da Capo Academy of Music",
+        description: "Looking to learn a piece by Debussy that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
+        url: "https://dacapomusic.ca/blog/easy-debussy-pieces",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2023-05-17T05:28:35+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-debussy-pieces%2Feasy_debussy_pieces_cover.jpg?alt=media&token=7fd595a7-7ffb-4b03-ad3e-c1258122b355",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyDebussyPianoPieces = () => {
   return (
@@ -17,8 +38,8 @@ const PostEasyDebussyPianoPieces = () => {
             <PostTitle title="The 3 Easiest Debussy Piano Pieces" date="May 17, 2023" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-debussy-pieces%2Feasy_debussy_pieces_cover.jpg?alt=media&token=7fd595a7-7ffb-4b03-ad3e-c1258122b355" alt="Easy Debussy Pieces cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">As is usually the case with my "easy" series, I try to put together a collection of pieces that are not just "easy" relative to the composer's other works, but also ones I consider to be the most beautiful. So perhaps a better title for this article would have been "The 3 Easiest and Most Beautiful Debussy Piano Pieces" - but that just sounds too long! Also, keep in mind that the "easiest" piece included here requires you to be at about a high-intermediate level on the piano.</p><br />
 
@@ -27,6 +48,8 @@ const PostEasyDebussyPianoPieces = () => {
                     <p className="leading-8">All three of the pieces chosen here are characterized by a flowing melody and dreamy atmosphere that are so integral to the impressionistic style that Debussy is known for. I hope you find them just as enjoyable as I do!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Page d'album​" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

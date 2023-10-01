@@ -7,10 +7,29 @@ import PostImage from "@/app/components/PostImage"
 import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheading } from "@/app/components/PostSubheading"
 
+
 export const metadata = {
     title: "Learning Piano as an Adult | Da Capo Academy of Music",
     description: "The myth about adult piano learners, advantages of learning piano as an adult, five tips for success, recommended books for adult piano learners, and more!",
-    keywords: ["adult piano student advice", "piano tips for adults"]
+    keywords: ["adult piano student advice", "piano tips for adults"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Learning Piano as an Adult | Da Capo Academy of Music",
+        description: "The myth about adult piano learners, advantages of learning piano as an adult, five tips for success, recommended books for adult piano learners, and more!",
+        url: "https://dacapomusic.ca/blog/learning-piano-as-an-adult",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-10T03:26:36+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fadult-piano-student-tips%2Fadult_piano_student_tips_cover.jpg?alt=media&token=03b5ed4d-e655-469d-8329-c4e5eb44987c&_gl=1*q22h3e*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjAyODYwMy42NC4xLjE2OTYwMjkxOTYuMjguMC4w",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 

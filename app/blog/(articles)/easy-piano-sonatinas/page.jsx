@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Easy Sonatinas for Piano Students | Da Capo Academy of Music",
     description: "Playing sonatinas is a great way to ease your way into more complex piano repertoire. Here are a few easy sonatinas to get started with!",
-    keywords: ["easy sonatinas", "beginner sonatinas", "easy sonatinas for piano students"]
+    keywords: ["easy sonatinas", "beginner sonatinas", "easy sonatinas for piano students"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Easy Sonatinas for Piano Students | Da Capo Academy of Music",
+        description: "Playing sonatinas is a great way to ease your way into more complex piano repertoire. Here are a few easy sonatinas to get started with!",
+        url: "https://dacapomusic.ca/blog/easy-piano-sonatinas",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-07-30T18:49:54+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-piano-sonatinas%2Feasy_sonatinas_cover.jpg?alt=media&token=640a7125-50e0-4de1-92cc-2d835fcf8cb1",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyPianoSonatinas = () => {
   return (
@@ -17,8 +38,8 @@ const PostEasyPianoSonatinas = () => {
             <PostTitle title="Easy Sonatinas for Piano Students" date="July 30, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-piano-sonatinas%2Feasy_sonatinas_cover.jpg?alt=media&token=640a7125-50e0-4de1-92cc-2d835fcf8cb1" alt="Easy Piano Sonatinas cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <h2 className="text-xl font-semibold mb-3">The Sonatina</h2>
                     <p className="leading-8 mb-5">A sonatina is a musical composition resembling a mini-sonata. Where a sonata is considered a sophisticated and relatively complex piece of music, a sonatina is a lot shorter, lighter in character, and less technically-demanding. In fact, composers generally wrote sonatinas precisely for this purpose - as teaching material for their students. For this reason, most piano teachers will have their students learn several sonatinas before jumping into actual sonatas. That way, students will be much more prepared to handle a sonata (and other more complicated musical works) both technically and intellectually.</p><br />
@@ -26,6 +47,8 @@ const PostEasyPianoSonatinas = () => {
                     <p className="leading-8">There are of course quite a few sonatinas to choose from. In this article, my purpose is to help you make this choice easier by introducing you to three sonatinas that are considered on the easier side and which I have enjoyed playing and teaching to my students over the years. It's important to keep in mind that sonatinas would not be appropriate for complete beginners. A student must be at least a high beginner/low intermediate level to begin to tackle a sonatina. Also, although sonatinas normally contain 3 (and sometimes 2) movements, it is rare for a student to actually learn all the movements. Most often, only one movement is learned. Music exams at the low intermediate level also generally specify that only one movement is to be performed.</p><br />
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Sonatina in C Major, Op. 36, No. 1 by Muzio Clementi" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

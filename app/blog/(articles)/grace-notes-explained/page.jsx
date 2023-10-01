@@ -5,12 +5,33 @@ import { PostSubheading } from "@/app/components/PostSubheading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
-    title: "What is a grace note and to play it | Da Capo Academy of Music",
+    title: "What Is a Grace Note and How to Play It | Da Capo Academy of Music",
     description: "Learn about the different types of grace notes such as the acciaccatura and appoggiatura and how to play them correctly!",
-    keywords: ["grace notes", "what is a grace note", "grace note piano"]
+    keywords: ["grace notes", "what is a grace note", "grace note piano"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "What Is a Grace Note and How to Play It | Da Capo Academy of Music",
+        description: "Learn about the different types of grace notes such as the acciaccatura and appoggiatura and how to play them correctly!",
+        url: "https://dacapomusic.ca/blog/grace-notes-explained",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-08-25T04:19:19+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fgrace_notes_cover.jpg?alt=media&token=7090278a-b646-4d30-a4d2-45f742301034",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostGraceNotesExplained = () => {
   return (
@@ -19,9 +40,11 @@ const PostGraceNotesExplained = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fgrace_notes_cover.jpg?alt=media&token=7090278a-b646-4d30-a4d2-45f742301034" alt="Grace Notes cover"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction px-5 lg:px-36 xl:px-64 mb-24">
+            <section className="introduction px-5 lg:px-36 xl:px-64">
                 <p className="leading-8 mb-14">Perhaps you've heard your teacher mention the term “grace note” during one of your lessons and even point one out to you in your sheet music, but you're still not quite sure what they are and how exactly they work. Well, one thing you should definitely know is that they are not notes that belong to a Grace! (bad joke, I know). But all joking aside, let us put on our music nerd hats and explore what these interesting-sounding notes are all about!</p>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="Grace Note Defined" bottom="mb-16" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -61,20 +84,18 @@ const PostGraceNotesExplained = () => {
             <PostDivider />
             
             <PostHeading heading="Acciaccatura vs. Appoggiatura" bottom="mb-16" />
-            <PostSubheading subheading="The Acciaccatura (or 'crushed note')" bottom="mb-10" />
-            <section className="px-5 lg:px-36 xl:px-64">
-                <div className="flex flex-col md:flex-row mb-16">
+            <section className="px-5 lg:px-36 xl:px-64 mb-20">
+                <PostSubheading subheading="The Acciaccatura (or 'crushed note')" bottom="mb-10" />
+                <div className="flex flex-col md:flex-row mb-20">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Facciaccatura.JPG?alt=media&token=1da6d5ab-eb31-4436-9d98-7133c20dea78" alt="example of a trill in music" style={{width: "90px"}} className="rounded-md" />
                     </figure>
                     <div className="mt-8 md:mt-0 md:ms-10 leading-8">
                         <p><span className="font-bold">Acciaccatura</span> is a grace note that is played before the strong beat. The strong beat therefore belongs to the main note, which makes the acciaccatura rhythmically and melodically unimportant. Acciaccaturas are most commonly written as eighths notes (quavers) with a diagonal line going through them and a little slur connecting them to the main note.</p>
                     </div>
-                </div>                      
-            </section>
-            <PostSubheading subheading="The Appoggiatura (or 'leaning note')" bottom="mb-10" />
-            <section className="px-5 lg:px-36 xl:px-64">
-                <div className="flex flex-col md:flex-row mb-16">
+                </div>              
+                <PostSubheading subheading="The Appoggiatura (or 'leaning note')" bottom="mb-10" />
+                <div className="flex flex-col md:flex-row">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fappoggiatura.JPG?alt=media&token=67f40b58-fbec-4fbd-ba52-242fd00e313d" alt="example of a trill in music" style={{width: "90px"}} className="rounded-md" />
                     </figure>
@@ -117,6 +138,8 @@ const PostGraceNotesExplained = () => {
                 <p className="mb-10 font-semibold text-[0.9rem]">* Although multiple grace notes do not have a diagonal line going through them, you should play them the same way you would play the acciaccatura. In other words, they should be unaccented and should come before the main beat.</p>
                 <p className="leading-8 mb-10">The two-note grace note is also known as a <span className="font-bold">double appoggiatura</span>, the three-note grace note as a <span className="font-bold">triple appoggiatura</span>, and so on. But this name can be misleading, since these are almost never played on the beat, like the regular appoggiatura is. Instead, they are played in a “crushed” manner, like the acciaccatura.</p>
             </section>
+
+            <SectionDivider />
 
             <PostSectionHeading heading="Conclusion" />
             <section className="conclusion px-5 lg:px-36 xl:px-64 mb-20">

@@ -7,12 +7,33 @@ import { PostDivider } from "@/app/components/PostDivider"
 import { PostSource } from "@/app/components/PostSource"
 import Link from "next/link"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "RCM Violin Repertoire - Full List of Pieces | Da Capo Academy of Music",
     description: "A complete, quick-reference list of all RCM Violin Repertoire pieces, levels 1 to 8. Name of piece, composer, and page number.",
-    keywords: ["rcm violin repertoire songs", "rcm violin repertoire pieces", "rcm violin repertoire songs list"]
+    keywords: ["rcm violin repertoire songs", "rcm violin repertoire pieces", "rcm violin repertoire songs list"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Violin Repertoire - Full List of Pieces | Da Capo Academy of Music",
+        description: "A complete, quick-reference list of all RCM Violin Repertoire pieces, levels 1 to 8. Name of piece, composer, and page number.",
+        url: "https://dacapomusic.ca/blog/rcm-violin-repertoire-all-pieces",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-10-25T05:38:08+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_violin_repertoire_all_pieces%2Frcm_violin_repertoire_cover.jpg?alt=media&token=a16fb064-f32c-4183-bd4c-77ebaa953e75",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostRCMViolinRepertoireAllPieces = () => {
   return (
@@ -21,13 +42,12 @@ const PostRCMViolinRepertoireAllPieces = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_violin_repertoire_all_pieces%2Frcm_violin_repertoire_cover.jpg?alt=media&token=a16fb064-f32c-4183-bd4c-77ebaa953e75" alt="RCM Violin Repertoire All Pieces cover"/>
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-20 pb-10">
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-20">
                 <div>
-                    <p className="leading-8 mb-5">The complete list of RCM Violin Repertoire pieces students can choose from to prepare for their RCM examinations.</p>
+                    <p className="leading-8 mb-10">The complete list of RCM Violin Repertoire pieces students can choose from to prepare for their RCM examinations.</p>
                     <PostSource source="RCM Celebration Series books, 2021 Edition (latest edition)" />
                 </div>
             </section>
-
 
             <PostSectionHeading heading="Table of Contents" />
             <section className="px-5 lg:px-36 xl:px-64 mb-32">
@@ -45,6 +65,8 @@ const PostRCMViolinRepertoireAllPieces = () => {
                     </ul>
                 </div>           
             </section>
+
+            <SectionDivider />
 
             <span id="prep" />
             <PostHeading heading="Preparatory Violin Repertoire" bottom="mb-6" />
@@ -354,6 +376,8 @@ const PostRCMViolinRepertoireAllPieces = () => {
                     </tbody>
                 </table>
             </section>
+
+            <PostDivider />
 
             <span id="level_2" />
             <PostHeading heading="Level 2 Violin Repertoire" bottom="mb-6" />

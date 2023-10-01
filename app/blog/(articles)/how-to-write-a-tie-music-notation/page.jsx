@@ -9,9 +9,27 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 
 
 export const metadata = {
-    title: "How to write a tie in music (music notation) | Da Capo Academy of Music",
+    title: "How to Write a Tie in Music (music notation) | Da Capo Academy of Music",
     description: "Ties are very common in music, but how do we write them correctly? Learn the most important rules about writing ties and see visual examples.",
-    keywords: ["how to write a tie", "tie music notation"]
+    keywords: ["how to write a tie", "tie music notation"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "How to Write a Tie in Music (music notation) | Da Capo Academy of Music",
+        description: "Ties are very common in music, but how do we write them correctly? Learn the most important rules about writing ties and see visual examples.",
+        url: "https://dacapomusic.ca/blog/how-to-write-a-tie-music-notation",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-09-16T13:56:28+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-write-a-tie-music-notation%2Fhow_to_write_a_tie_cover.jpg?alt=media&token=8ac7c23b-b435-4918-97c7-2bfb82611a94&_gl=1*bm905l*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NTk1MzI5OC41OS4xLjE2OTU5NTM0NjguNjAuMC4w",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 
@@ -23,7 +41,7 @@ const PostHowToWriteATie = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-write-a-tie-music-notation%2Fhow_to_write_a_tie_cover.jpg?alt=media&token=8ac7c23b-b435-4918-97c7-2bfb82611a94&_gl=1*bm905l*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NTk1MzI5OC41OS4xLjE2OTU5NTM0NjguNjAuMC4w" alt="How to Write a Tie cover" />
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction leading-8 px-5 lg:px-36 xl:px-64 mb-28">
+            <section className="introduction leading-8 px-5 lg:px-36 xl:px-64">
                 <p className="mb-6">This article assumes that you are already familiar with what a tie is and its function in music. The focus here will be to highlight the rules surrounding the correct way to write ties in music notation. This might be useful to those of you trying to write your own music or perhaps to teachers who want to be able to explain ties correctly to their students. So let&apos;s dive in!</p>
             </section>
 

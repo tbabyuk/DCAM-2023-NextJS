@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Chopin Waltzes (piano) | Da Capo Academy of Music",
     description: "These three waltzes are not too technically demanding and are a great starting point for those looking to starting playing Chopin waltzes!",
-    keywords: ["chopin waltzes", "easy chopin waltzes", "easy chopin pieces"]
+    keywords: ["chopin waltzes", "easy chopin waltzes", "easy chopin pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Chopin Waltzes (piano) | Da Capo Academy of Music",
+        description: "These three waltzes are not too technically demanding and are a great starting point for those looking to starting playing Chopin waltzes!",
+        url: "https://dacapomusic.ca/blog/easy-chopin-waltzes",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-27T22:12:00+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyChopinWaltzes = () => {
   return (
@@ -17,14 +38,16 @@ const PostEasyChopinWaltzes = () => {
             <PostTitle title="The 3 Easiest Chopin Waltzes (piano)" date="July 27, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-waltzes%2Feasy_chopin_waltzes_cover.jpg?alt=media&token=b08eb378-7fc7-440c-95ac-199b39f5f89f" alt="Easy Chopin Waltzes cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24">
                 <div>
                     <p className="leading-8">Although Chopin is known to have written a total of about 20 waltzes, most of them require a pre-advanced to advanced mastery of the piano to be able to perform comfortably. Luckily, there are 3 that are easier than the others in difficulty level, and should be very manageable for intermediate and high-intermediate level students (think at least 3 years of consistent piano playing). They are: “Waltz in A Minor, op. posth., B 150”, “Waltz in B minor, op. 69, no. 2”, and “Waltz in A flat Major, op. 69, no. 1 ("L'adieu')". Although less technically-demanding than his other waltzes, they are just as beautiful!</p><br />
 
                     <p className="leading-8">Let's look at each of these pieces in turn and get inspired to learn them!</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Waltz in A Minor, op. posth., B 150" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

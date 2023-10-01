@@ -4,12 +4,33 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "The 3 Easiest Chopin Nocturnes (piano) | Da Capo Academy of Music",
     description: "Looking to learn a beautiful Chopin nocturne that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
-    keywords: ["chopin nocturnes", "easy chopin nocturnes", "easy chopin pieces"]
+    keywords: ["chopin nocturnes", "easy chopin nocturnes", "easy chopin pieces"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "The 3 Easiest Chopin Nocturnes (piano) | Da Capo Academy of Music",
+        description: "Looking to learn a beautiful Chopin nocturne that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
+        url: "https://dacapomusic.ca/blog/easy-chopin-nocturnes",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-10-23T03:50:14+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-nocturnes%2Feasy_chopin_nocturnes_cover.jpg?alt=media&token=0a02a5af-6cc0-4b2f-b304-6fcf75de2454",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostEasyChopinNocturnes = () => {
   return (
@@ -17,8 +38,8 @@ const PostEasyChopinNocturnes = () => {
             <PostTitle title="The 3 Easiest Chopin Nocturnes (piano)" date="October 22, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-chopin-nocturnes%2Feasy_chopin_nocturnes_cover.jpg?alt=media&token=0a02a5af-6cc0-4b2f-b304-6fcf75de2454" alt="Easy Chopin Nocturnes cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="leading-8">Chopin is known to have written a total of 21 nocturnes, 18 of which were published during his lifetime and 3 posthumously. Today, his nocturnes are held in very high regard among musicians and continue to enjoy widespread popularity in contemporary concert repertoire.</p><br />
 
@@ -27,6 +48,8 @@ const PostEasyChopinNocturnes = () => {
                     <p className="leading-8">*The pieces are not ranked in any particular order.</p>
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="#1. Nocturne in C Minor, P. 2 No. 8" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">

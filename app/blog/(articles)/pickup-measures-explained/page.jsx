@@ -7,13 +7,31 @@ import PostImage from "@/app/components/PostImage"
 import { PostSubheading } from "@/app/components/PostSubheading"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 import { SectionDivider } from "@/app/components/SectionDivider"
-import Link from "next/link"
 import { PostSource } from "@/app/components/PostSource"
+
 
 export const metadata = {
     title: "Pickup Measures Explained | Da Capo Academy of Music",
     description: "What is a pickup measure (anacrusis)? How does it work? Do we count it as a measure? Easy-to-understand explanations with plenty of examples!",
-    keywords: ["pickup measure", "anacrusis", "what is a pickup measure", "music theory"]
+    keywords: ["pickup measure", "anacrusis", "what is a pickup measure", "music theory"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Pickup Measures Explained | Da Capo Academy of Music",
+        description: "What is a pickup measure (anacrusis)? How does it work? Do we count it as a measure? Easy-to-understand explanations with plenty of examples!",
+        url: "https://dacapomusic.ca/blog/pickup-measures-explained",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-07-30T05:06:57+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpickup-measures-explained%2Fwhat_is_a_pickup_measure_cover.jpg?alt=media&token=92d3504f-0bfb-4a92-bfde-c6ed544a7e89",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
 
 
@@ -21,7 +39,7 @@ const PostPickupMeasuresExplained = () => {
 
   return (
             <main className="text-gray-700 text-[0.95rem]">
-            <PostTitle title="How Pickup Measure Work" date="July 30, 2020" />
+            <PostTitle title="Pickup Measures Explained" date="July 30, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpickup-measures-explained%2Fwhat_is_a_pickup_measure_cover.jpg?alt=media&token=92d3504f-0bfb-4a92-bfde-c6ed544a7e89" alt="what is a pickup measure cover"/>
 
             <PostSectionHeading heading="Introduction" />

@@ -5,12 +5,33 @@ import { PageBottomTrialButton } from "@/app/components/PageBottomTrialButton"
 import { PostDivider } from "@/app/components/PostDivider"
 import PostImage from "@/app/components/PostImage"
 import Link from "next/link"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
     title: "Famous Bands from Toronto | Da Capo Academy of Music",
     description: "You probably didn't know that these world-famous bands all call Toronto their home!",
-    keywords: ["toronto bands", "bands from toronto", "toronto musicians"]
+    keywords: ["toronto bands", "bands from toronto", "toronto musicians"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Famous Bands from Toronto | Da Capo Academy of Music",
+        description: "You probably didn't know that these world-famous bands all call Toronto their home!",
+        url: "https://dacapomusic.ca/blog/famous-toronto-bands",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2022-11-21T04:52:24+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-bands-from-toronto%2Ffamous_bands_from_toronto_cover.jpg?alt=media&token=598d99c9-4fd5-4be1-80f4-ae7341e0a774",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostFamousBandsFromToronto = () => {
   return (
@@ -18,14 +39,15 @@ const PostFamousBandsFromToronto = () => {
             <PostTitle title="Famous Bands from Toronto" date="November 20, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-bands-from-toronto%2Ffamous_bands_from_toronto_cover.jpg?alt=media&token=598d99c9-4fd5-4be1-80f4-ae7341e0a774" alt="Famous Bands from Toronto cover"/>
 
-            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64 mb-24 pb-10">
-                <PostSectionHeading heading="Introduction" />
+            <PostSectionHeading heading="Introduction" />
+            <section className="introduction flex flex-col items-center sm:block px-5 lg:px-36 xl:px-64">
                 <div>
                     <p className="mb-5 leading-8">Toronto and the GTA (Greater Toronto Area) has produced a good number of bands that have managed to hit it big around the world. In this article, we will take a look at the most popular of these, and give you a bit of their story. To avoid playing favourites, we have organized our list based on the year the bands were formed, with the youngest bands at the top.</p>
                     <p className="mb-5 leading-8">Keep in mind that when we say “bands”, we use this word here in its strict sense, and do not include solo musicians such as Drake, The Weeknd, etc. For famous solo musicians from Toronto, you can see our article <Link href="/famous-toronto-musicians/" target="_blank" className="dcam-link">Famous Toronto Musicians.</Link></p>
-
                 </div>
             </section>
+
+            <SectionDivider />
 
             <PostHeading heading="Tokyo Police Club" bottom="mb-14" />
             <section className="px-5 lg:px-36 xl:px-64">
@@ -140,7 +162,7 @@ const PostFamousBandsFromToronto = () => {
             <PostDivider />
 
             <PostHeading heading="The Band" bottom="mb-14" />
-            <section className="px-5 lg:px-36 xl:px-64">
+            <section className="px-5 lg:px-36 xl:px-64 mb-20">
                 <div className="bio flex flex-col md:flex-row mb-12">
                     <figure className="flex-shrink-0 flex flex-col justify-center items-center">
                         <img src="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Ffamous-bands-from-toronto%2Fthe_band.jpg?alt=media&token=dae528ce-ac29-4874-b798-894e0e3a0f25" alt="The Band photo" style={{width: "220px"}} className="rounded-md" />
@@ -153,14 +175,8 @@ const PostFamousBandsFromToronto = () => {
                 <p className="mb-10 w-fit ms-auto">The Band's <a href="https://theband.hiof.no/" target="_blank" className="dcam-link">website</a></p>
             </section>
 
-
-
-
-
-
-
-
             <PageBottomTrialButton />
+            
         </main>
 
   )

@@ -13,6 +13,7 @@ const Teachers = () => {
     return ( 
         <main className="teachers-page">
             <PageTitle title="Teachers" />
+
             <section className="raul px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">            
                 <TeacherProfile 
                     photo="/teachers/raul.jpg"
@@ -40,16 +41,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="rachel px-5 lg:px-36 xl:px-52 py-20">            
-                <TeacherProfile 
-                    photo="/teachers/rachel.jpg"
-                    name="Rachel Stewart"
-                    instrument="VOICE"
-                    bio="Rachel is a classically trained Soprano with advanced degrees in Voice from both the University of British Columbia and the Manhattan School of Music. Notable roles she has performed include Elle (La Voix Humaine), Cenerentola (La Cenerentola), Dona Elvira (Don Giovanni), and Kate (Kiss me, Kate!). She premiered the role of Amy in Stephen Chatman's Choir Practice in 2015. In smaller roles, she has been involved with over 25 different operatic and musical theatre productions. Before her higher education, Rachel was heavily involved in the choral scene. She has apprenticed under Elaine Quilichini as an assistant Choral Conductor. As a teacher, she is dedicated to introducing students to diverse music from a variety of cultures, time periods and genders while having fun along the way." 
-                />
-            </section>
-
-            <section className="tiago px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="tiago px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/teachers/tiago.jpg"
                     name="Tiago Cardoso"
@@ -58,7 +50,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="senya px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="senya px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/senya.jpg"
                     name="Senya Wickramasinghe"
@@ -67,7 +59,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="terry px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="terry px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/teachers/terry.jpg"
                     name="Taras (Terry) Babyuk"
@@ -77,7 +69,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="oksana px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="oksana px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/oksana.jpg"
                     name="Oksana Skira"

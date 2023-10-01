@@ -7,12 +7,33 @@ import { PostDivider } from "@/app/components/PostDivider"
 import { PostSource } from "@/app/components/PostSource"
 import Link from "next/link"
 import PostImage from "@/app/components/PostImage"
+import { SectionDivider } from "@/app/components/SectionDivider"
+
 
 export const metadata = {
-    title: "RCM Exams: Your Complete Guide | Da Capo Academy of Music",
+    title: "RCM Exams - Your Complete Guide | Da Capo Academy of Music",
     description: "Exam fees, exam dates, types of exams, exam mark information, and more! Your complete resource for all you need to know about RCM Exams.",
-    keywords: ["rcm exams", "rcm exams explained", "about rcm exams", "royal conservatory of music exams"]
+    keywords: ["rcm exams", "rcm exams explained", "about rcm exams", "royal conservatory of music exams"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "RCM Exams - Your Complete Guide | Da Capo Academy of Music",
+        description: "Exam fees, exam dates, types of exams, exam mark information, and more! Your complete resource for all you need to know about RCM Exams.",
+        url: "https://dacapomusic.ca/blog/rcm-exams-complete-guide",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2020-04-08T21:58:27+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_exams_complete_guide_cover.jpg?alt=media&token=f1afe2cc-5aa9-4d9c-b8dc-5e25f3e0f165",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostRCMExamsGuide = () => {
   return (
@@ -21,7 +42,7 @@ const PostRCMExamsGuide = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_exams_complete_guide_cover.jpg?alt=media&token=f1afe2cc-5aa9-4d9c-b8dc-5e25f3e0f165" alt="RCM Exams Complete Guide cover"/>
 
             <PostSectionHeading heading="Table of Contents" />
-            <section className="px-5 lg:px-36 xl:px-64 mb-32">
+            <section className="px-5 lg:px-36 xl:px-64">
                 <div>
                     <ul className="list-disc list-inside leading-8 bg-gray-100 w-fit mx-auto p-5 rounded">
                         <li><Link href="#what_is_rcm" className="dcam-link">What is RCM?</Link></li>
@@ -38,6 +59,8 @@ const PostRCMExamsGuide = () => {
                     </ul>
                 </div>           
             </section>
+
+            <SectionDivider />
 
             <span id="what_is_rcm" />
             <PostHeading heading="What is RCM?" bottom="mb-16" />

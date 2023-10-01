@@ -7,11 +7,31 @@ import { PostHeading } from "@/app/components/PostHeading"
 import { SectionDivider } from "@/app/components/SectionDivider"
 import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 
+
 export const metadata = {
-    title: "Was Chopin a good pianist? | Da Capo Academy of Music",
+    title: "Was Chopin a Good Pianist? | Da Capo Academy of Music",
     description: "Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano?",
-    keywords: ["was chopin a good pianist", "chopin at the piano"]
+    keywords: ["was chopin a good pianist", "chopin at the piano"],
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Was Chopin a Good Pianist? | Da Capo Academy of Music",
+        description: "Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano?",
+        url: "https://dacapomusic.ca/blog/was-chopin-a-good-pianist",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article",
+        publishedTime: "2021-03-15T01:22:02+00:00",
+        images: [    
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42",
+                width: 1200,
+                height: 628,
+                type: "image/jpeg"
+            }
+        ],
+    },
 }
+
 
 const PostWasChopinAGoodPianist = () => {
   return (
@@ -20,7 +40,7 @@ const PostWasChopinAGoodPianist = () => {
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42" alt="Was Chopin a good pianist cover" />
 
             <PostSectionHeading heading="Introduction" />
-            <section className="introduction leading-8 px-5 lg:px-36 xl:px-64 mb-28">
+            <section className="introduction leading-8 px-5 lg:px-36 xl:px-64">
                 <p className="mb-6">Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano and what were perhaps some peculiarities of his piano playing?</p>
                 <p className="mb-6">Because there was no sound-recording technology in Chopin&apos;s time, we cannot answer this question by just listening to him play. Instead, we are going to have to rely on three sources: his biography, his compositions, and statements of his contemporaries.</p>
             </section>
