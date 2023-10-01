@@ -9,7 +9,7 @@ export const BlogCard = ({title, date, imageUrl, description, blogLink, category
             <small className=" text-gray-500">{date}</small>
             <img className="py-6" src={imageUrl} />
             <p className="mb-4">{description}</p>
-            <button className="block mb-4 dcam-button"><Link href={blogLink}>Read More</Link></button>
+            <Link href={blogLink}><button className="block mb-4 w-full dcam-button">Read More</button></Link>
             <small className=" text-gray-500">Category: {category}</small>
         </div>
      );
