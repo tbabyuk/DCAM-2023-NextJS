@@ -29,13 +29,17 @@ const Home = async () => {
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
-          <section className="intro flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-28">
-            <div className="md:flex md:items-center">
-                <img src="/lessons/piano_lessons.jpg" className="mx-auto md:me-5 mb-5 md:h-72 rounded-md" />
-                <p>Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson! <br /><br />
-                Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!
-                </p>
-            </div>
+          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-28">
+              <div className="flex flex-col md:flex-row">
+                  <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
+                        <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
+                  </figure>
+                  <div className="hyphens-auto">
+                        <p>Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson!</p><br />
+                        <p>Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
+                  </div>
+              </div>
+
           </section>
 
           <section className="offers px-5 lg:px-36 xl:px-52 py-28">
