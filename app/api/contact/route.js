@@ -9,7 +9,6 @@ export async function POST(request, response) {
 
     console.log("From API route", to, subject, message)
 
-
         const transporter = nodemailer.createTransport({
         service: "gmail",
         // host: "smtp.gmail.com",
