@@ -1,18 +1,10 @@
 "use client"
 
-
 import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
 import { CartProductRow } from "./CartProductRow"
-import { useEffect } from "react"
 import Script from "next/script"
 
-
-export const metadata = {
-  title: "How to Build a Harmonic Minor Scale | Da Capo Academy of Music",
-  description: "Master building the harmonic minor scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
-  keywords: ["build a minor scale", "build a harmonic minor scale", "minor scale music theory", "harmonic minor scale music theory"]
-}
 
 
 const Cart = () => {
