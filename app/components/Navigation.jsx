@@ -46,7 +46,7 @@ return (
             <Link href="/rates" className="hover:bg-purple-500" onClick={() => setIsOpen(false)}><li className="menu-item">Rates</li></Link>
             <Link href="/teachers" onClick={() => setIsOpen(false)}><li className="menu-item">Teachers</li></Link>
             <Link href="/reviews" onClick={() => setIsOpen(false)}><li className="menu-item">Reviews</li></Link>
-            <Link href="/gallery" onClick={() => setIsOpen(false)}><li className="menu-item">Gallery</li></Link>
+            {/* <Link href="/gallery" onClick={() => setIsOpen(false)}><li className="menu-item">Gallery</li></Link> */}
             <Link href="/about" onClick={() => setIsOpen(false)}><li className="menu-item">About</li></Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item">Contact</li></Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>   
