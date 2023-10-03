@@ -3,7 +3,6 @@
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
 import SliderOverlay from "./SliderOverlay"
-import MMSStudentLoginForm from "./MMSLoginForm"
 
 
 const Slider = () => {

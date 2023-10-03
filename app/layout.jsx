@@ -2,13 +2,28 @@
 import Footer from './components/Footer'
 import Header from './components/Header'
 import './globals.css'
-import { Inter } from 'next/font/google'
+// import { Inter } from 'next/font/google'
+import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 
+const ovo = Ovo({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-ovo",
+  display: "swap"
+})
 
-const inter = Inter({ subsets: ['latin'] })
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-roboto",
+  display: "swap"
+})
+
+
+// const ovo = Ovo({ weight: "400", subsets: ['latin'] })
 
 // export const metadata = {
 //   title: 'Create Next App',
@@ -31,9 +46,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" style={{scrollBehavior: "smooth"}}>
+    <html lang="en" style={{scrollBehavior: "smooth"}} className={`${ovo.variable} ${roboto.variable} text-gray-600`}>
       <ShopContextProvider>
-        <body className={inter.className}>
+        <body>
           <Header />
           {children}
           <Footer />
