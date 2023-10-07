@@ -1,13 +1,11 @@
 "use client"
 
-import { useState, useEffect, useRef } from "react";
-import { useRouter } from "next/navigation";
+import { useState, useRef } from "react";
 
 
 
 export const TrialButton = () => {
 
-const router = useRouter()
 const studentNameRef = useRef()
 const parentNameRef = useRef()
 const instrumentRef = useRef()
@@ -49,9 +47,9 @@ const [showResponse, setShowResponse] = useState(false)
             console.log(responseData)
             setSubmitting(false)
             setShowResponse(true)
-            // router.push("/success")
         } else {
             console.log(error)
+            setSubmitting(false)
         }
     }
 

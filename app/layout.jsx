@@ -3,7 +3,6 @@ import Footer from './components/Footer'
 import Header from './components/Header'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
 import './globals.css'
-// import { Inter } from 'next/font/google'
 import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'
@@ -28,14 +27,8 @@ export const metadata = {
     width: 'device-width',
     initialScale: 1,
     maximumScale: 1,
-  },
-  // PermissionsPolicy: {
-  //   interestCohort: "()"
-  // }
+  }
 }
-
-// trying to fix error in console with below code, no success thus far
-{/* <meta http-equiv="Permissions-Policy" content="interest-cohort=()"> */}
 
 
 

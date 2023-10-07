@@ -17,13 +17,6 @@ module.exports = {
         darkBlue: "#103756",
         regGreen: "#4AAD52"
       },
-      // fontFamily: {
-      //   ovo: ['Ovo', 'serif'],
-      //   roboto: ['Roboto', 'sans-serif'],
-      // },
-      zIndex: {
-        '100': '100'
-      },
     },
   },
   plugins: [],

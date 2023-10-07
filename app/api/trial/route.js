@@ -1,17 +1,12 @@
 import { NextResponse } from 'next/server'
 import nodemailer from "nodemailer"
 
-// THE BELOW CODE WORKED
-// export async function GET(request, response) {
-//     return NextResponse.json({greeting: "Hello"}, {status: 200})
-// }
 
 
-export async function POST(request, response) {
+export async function POST(request) {
 
     const {student, parent, instrument, phone, email, source} = await request.json()
     
-
         const transporter = nodemailer.createTransport({
         service: "gmail",
         // host: "smtp.gmail.com",
@@ -50,9 +45,9 @@ export async function POST(request, response) {
 
         try {
             await transporter.sendMail(mailOptions);
-            return NextResponse.json({message: "email sent successfully"})
+            return NextResponse.json({message: "trial notification email sent successfully"})
         } catch (error) {
-            return NextResponse.json({message: "email failed to send", details: error})
+            return NextResponse.json({message: "trial notification email failed to send", details: error})
         }
 
 }
