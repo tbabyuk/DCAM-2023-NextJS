@@ -9,7 +9,6 @@ export const metadata = {
 
 const BlogPage = () => {
 
-
     return ( 
         <main className="blog-page">
             <PageTitle title="Blog" />
