@@ -15,7 +15,8 @@ const sourceRef = useRef()
 
 const [modalIsOpen, setModalIsOpen] = useState(false)
 const [submitting, setSubmitting] = useState(false)
-const [showResponse, setShowResponse] = useState(false)
+const [showSuccessResponse, setShowSuccessResponse] = useState(false)
+const [showErrorResponse, setShowErrorResponse] = useState(false)
 
     const handleCloseModal = (e) => {
         if(e.target.classList.contains("backdrop") || (e.target.classList.contains("exit"))) {
@@ -26,6 +27,7 @@ const [showResponse, setShowResponse] = useState(false)
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+
         setSubmitting(true)
         const response = await fetch("/api/trial", {
             method: "POST",
@@ -33,23 +35,28 @@ const [showResponse, setShowResponse] = useState(false)
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                student: studentNameRef.current.value,
-                parent: parentNameRef.current.value,
+                student: studentNameRef.current.value.trim(),
+                parent: parentNameRef.current.value.trim(),
                 instrument: instrumentRef.current.value,
-                phone: phoneRef.current.value,
-                email: emailRef.current.value,
+                phone: phoneRef.current.value.trim(),
+                email: emailRef.current.value.trim(),
                 source: sourceRef.current.value
             })
         })
 
-        if(response.ok) {
+
+        if(response.status === 200) {
+            console.log("status is:", response.status)
             const responseData = await response.json()
-            console.log(responseData)
+            console.log("responseData from ok:", responseData.message)
             setSubmitting(false)
-            setShowResponse(true)
+            setShowSuccessResponse(true)
         } else {
-            console.log(error)
+            console.log("status is:", response.status)
+            const responseData = await response.json()
+            console.log("responseData from error:", responseData.error)
             setSubmitting(false)
+            setShowErrorResponse(true)
         }
     }
 
@@ -62,7 +69,7 @@ return (
             <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center" onClick={(e) => handleCloseModal(e)}>
             <span className="exit absolute top-0 right-6 md:right-10 text-white text-7xl cursor-pointer">&times;</span>
                 <div className="modal flex w-[85%] max-w-[380px] min-h-[300px] px-5 sm:px-10 py-7 mt-7 md:mt-2 bg-gray-100 text-black rounded">
-                    {!showResponse ? (
+                    {!showSuccessResponse && !showErrorResponse && (
                             <form className="flex flex-col w-full mx-auto" onSubmit={handleSubmit}>
                             <h2 className="text-center font-bold text-xl text-regGreen">FREE TRIAL LESSON</h2>
                             <p className="text-xs text-center mb-6">Get started with your free trial lesson today!</p>
@@ -132,14 +139,22 @@ return (
                             </label>
                             <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button>
                         </form>
-                    ) : ( 
+                    )}
+                    
+                    {showSuccessResponse && (
                         <div className="h-full text-green-600 px-5 self-center flex flex-col text-center">           
                              <p className="mb-6">Your form was successfully submitted - thank you!</p>
                              <p className="mb-6">Please expect to hear back from us within 1-2 business days!</p><br />
                              <button className="dcam-button" onClick={() => setModalIsOpen(false)}>Close Modal</button>
                         </div>
-                    )
-                }
+                    )}
+
+                    {showErrorResponse && (
+                        <div className="h-full text-red-600 px-5 self-center flex flex-col text-center">           
+                             <p className="mb-6">Sorry, there was a problem submitting your form. Please refresh and try again or send us a direct email at <span className="font-bold">info@dacapomusic.ca</span></p>
+                             <button className="dcam-button" onClick={() => setModalIsOpen(false)}>Close Modal</button>
+                        </div>
+                    )}
                 </div>
             </div>
             )
