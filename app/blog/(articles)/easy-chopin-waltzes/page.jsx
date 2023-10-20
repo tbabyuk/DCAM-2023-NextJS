@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "The 3 Easiest Chopin Waltzes (piano) | Da Capo Academy of Music",
     description: "These three waltzes are not too technically demanding and are a great starting point for those looking to starting playing Chopin waltzes!",
-    keywords: ["chopin waltzes", "easy chopin waltzes", "easy chopin pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "The 3 Easiest Chopin Waltzes (piano) | Da Capo Academy of Music",

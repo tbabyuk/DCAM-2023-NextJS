@@ -10,7 +10,7 @@ import { PostSource } from "@/app/components/PostSource"
 export const metadata = {
     title: "Should We Observe Repeats in RCM Pieces? | Da Capo Academy of Music",
     description: "Do we observe repeat signs for RCM examinations? What about Da Capo and Dal Segno signs? Here is what the Royal Conservatory says about this.",
-    keywords: ["repeats in rcm pieces", "observing repeats in rcm"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Should We Observe Repeats in RCM Pieces? | Da Capo Academy of Music",

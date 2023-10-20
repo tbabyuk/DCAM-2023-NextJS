@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "The 3 Easiest Chopin Nocturnes (piano) | Da Capo Academy of Music",
     description: "Looking to learn a beautiful Chopin nocturne that doesn't require advanced mastery of the piano? These 3 are a great place to start!",
-    keywords: ["chopin nocturnes", "easy chopin nocturnes", "easy chopin pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "The 3 Easiest Chopin Nocturnes (piano) | Da Capo Academy of Music",

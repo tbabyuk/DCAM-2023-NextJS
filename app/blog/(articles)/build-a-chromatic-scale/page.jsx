@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "How to Build a Chromatic Scale | Da Capo Academy of Music",
     description: "Master building the chromatic scale starting from any note in this simple, step-by-step guide. Includes helpful graphics and audio!",
-    keywords: ["build a chromatic scale", "chromatic scale music theory"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How to Build a Chromatic Scale | Da Capo Academy of Music",

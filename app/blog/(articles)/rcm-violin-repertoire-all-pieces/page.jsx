@@ -13,7 +13,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Violin Repertoire - Full List of Pieces | Da Capo Academy of Music",
     description: "A complete, quick-reference list of all RCM Violin Repertoire pieces, levels 1 to 8. Name of piece, composer, and page number.",
-    keywords: ["rcm violin repertoire songs", "rcm violin repertoire pieces", "rcm violin repertoire songs list"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Violin Repertoire - Full List of Pieces | Da Capo Academy of Music",

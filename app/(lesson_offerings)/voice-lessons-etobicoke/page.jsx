@@ -9,7 +9,7 @@ import { LessonTeachersSection } from "@/app/components/LessonTeachersSection";
 export const metadata = {
     title: "Voice Lessons in Etobicoke | Da Capo Academy of Music",
     description: "Looking for voice lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
-    keywords: ["voice lessons etobicoke", "singing lessons etobicoke", "vocal teacher etobicoke", "music lessons etobicoke"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Voice Lessons in Etobicoke | Da Capo Academy of Music",

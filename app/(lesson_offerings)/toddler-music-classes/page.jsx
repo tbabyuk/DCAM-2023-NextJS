@@ -5,12 +5,12 @@ import { LessonTeachersSection } from "@/app/components/LessonTeachersSection";
 
 
 export const metadata = {
-    title: "Toddler Music Classes Etobicoke | Da Capo Academy of Music",
+    title: "Toddler Music Classes in Etobicoke | Da Capo Academy of Music",
     description: "Group music classes aimed at toddlers and preschoolers (ages 2-5)",
-    keywords: ["toddler music lessons etobicoke", "music lessons etobicoke"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
-        title: "Toddler Music Classes Etobicoke | Da Capo Academy of Music",
+        title: "Toddler Music Classes in Etobicoke | Da Capo Academy of Music",
         description: "Group music classes aimed at toddlers and preschoolers (ages 2-5)",
         url: "https://dacapomusic.ca/toddler-music-classes",
         siteName: "Da Capo Academy of Music",

@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "What Is a Grace Note and How to Play It | Da Capo Academy of Music",
     description: "Learn about the different types of grace notes such as the acciaccatura and appoggiatura and how to play them correctly!",
-    keywords: ["grace notes", "what is a grace note", "grace note piano"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "What Is a Grace Note and How to Play It | Da Capo Academy of Music",

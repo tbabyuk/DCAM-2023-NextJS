@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "What Is a Trill and How to Play It (piano) | Da Capo Academy of Music",
     description: "What is a trill and how to to play it correctly on the piano. Find out all this and more in this article!",
-    keywords: ["trill", "piano trill", "how to play a trill"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "What Is a Trill and How to Play It (piano) | Da Capo Academy of Music",

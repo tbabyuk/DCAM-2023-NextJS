@@ -14,8 +14,18 @@ const fetchReviews = async () => {
 }
 
 export const metadata = {
-    title: "DCAM | Reviews",
-    description: "What our customers say"
+    title: "Reviews | Da Capo Academy of Music",
+    description: "What our students and families say",
+    robots: { index: true, follow: true},
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Reviews | Da Capo Academy of Music",
+        description: "What our students and families say",
+        url: "https://dacapomusic.ca/reviews",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article"
+    },
 }
 
 

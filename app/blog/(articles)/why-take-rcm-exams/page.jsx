@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "6 Reasons to Take RCM Exams (Royal Conservatory of Music) | Da Capo Academy of Music",
     description: "Are RCM exams right for my child? Here are our top 6 reasons why it is beneficial to take RCM exams and why you should do it!",
-    keywords: ["why take rcm exams", "benefits of rcm exams"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "6 Reasons to Take RCM Exams (Royal Conservatory of Music) | Da Capo Academy of Music",

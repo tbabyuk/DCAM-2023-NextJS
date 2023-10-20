@@ -13,7 +13,7 @@ import Link from "next/link"
 export const metadata = {
     title: "How to Build a Melodic Minor Scale | Da Capo Academy of Music",
     description: "Master building the melodic minor scale in any key with this simple, step-by-step guide. Includes helpful graphics!",
-    keywords: ["build a minor scale", "build a melodic minor scale", "minor scale music theory", "melodic minor scale music theory"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How to Build a Melodic Minor Scale | Da Capo Academy of Music",

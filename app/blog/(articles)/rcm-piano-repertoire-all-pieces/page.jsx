@@ -14,7 +14,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Piano Repertoire - Full List of Pieces | Da Capo Academy of Music",
     description: "A complete, quick-reference list of all RCM Piano Repertoire pieces, levels Prep A to 10, including name of piece, composer, and page number.",
-    keywords: ["rcm piano repertoire songs", "rcm piano repertoire pieces", "rcm piano repertoire songs list"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Piano Repertoire - Full List of Pieces | Da Capo Academy of Music",

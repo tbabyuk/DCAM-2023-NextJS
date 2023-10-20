@@ -1,8 +1,7 @@
-
+import './globals.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import './globals.css'
 import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'

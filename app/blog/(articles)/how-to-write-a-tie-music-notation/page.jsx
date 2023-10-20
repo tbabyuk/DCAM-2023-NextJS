@@ -11,7 +11,7 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 export const metadata = {
     title: "How to Write a Tie in Music (music notation) | Da Capo Academy of Music",
     description: "Ties are very common in music, but how do we write them correctly? Learn the most important rules about writing ties and see visual examples.",
-    keywords: ["how to write a tie", "tie music notation"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How to Write a Tie in Music (music notation) | Da Capo Academy of Music",

@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "An Illustrated Guide to Child Guitar Sizes | Da Capo Academy of Music",
     description: "Ukulele? Guitalele? 1/2 size? 3/4 size? What does it all mean? Learn all about child guitar sizes to help you make the right purchase decision!",
-    keywords: ["child guitar sizes", "guitars for children", "small guitars"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "An Illustrated Guide to Child Guitar Sizes | Da Capo Academy of Music",

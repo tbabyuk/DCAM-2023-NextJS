@@ -11,7 +11,7 @@ import { PostSubheading } from "@/app/components/PostSubheading"
 export const metadata = {
     title: "Learning Piano as an Adult | Da Capo Academy of Music",
     description: "The myth about adult piano learners, advantages of learning piano as an adult, five tips for success, recommended books for adult piano learners, and more!",
-    keywords: ["adult piano student advice", "piano tips for adults"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Learning Piano as an Adult | Da Capo Academy of Music",

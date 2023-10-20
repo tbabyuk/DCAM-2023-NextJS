@@ -3,12 +3,12 @@ import { ReviewCard } from "./components/ReviewCard";
 
 
 export const metadata = {
-  title: "Da Capo Academy of Music | Home",
+  title: "Home | Da Capo Academy of Music",
   description: "Music lessons in Etobicoke",
-  keywords: ["music school etobicoke", "music lessons etobicoke"],
+  robots: { index: true, follow: true},
   authors: [{name: "Taras (Terry) Babyuk"}],
   openGraph: {
-      title: "Da Capo Academy of Music | Home",
+      title: "Home | Da Capo Academy of Music",
       description: "Music lessons in Etobicoke",
       url: "https://dacapomusic.ca/",
       siteName: "Da Capo Academy of Music",

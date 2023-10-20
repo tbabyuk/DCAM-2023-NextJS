@@ -12,7 +12,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Violin Exam Requirements (all grades) | Da Capo Academy of Music",
     description: "Find out exactly what the RCM Violin exam requirements are for all grades and how each exam is graded in this quick-reference guide.",
-    keywords: ["RCM", "RCM Exams", "RCM Violin Exams", "RCM Violin Exam Marks"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Violin Exam Requirements (all grades) | Da Capo Academy of Music",

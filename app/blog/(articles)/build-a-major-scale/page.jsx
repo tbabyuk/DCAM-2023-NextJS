@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "How to Build a Major Scale | Da Capo Academy of Music",
     description: "Master building the major scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
-    keywords: ["build a major scale", "construct a major scale", "major scale music theory"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How to Build a Major Scale | Da Capo Academy of Music",

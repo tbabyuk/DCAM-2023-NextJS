@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "Famous Musicians from Toronto | Da Capo Academy of Music",
     description: "You probably didn't know that these world-famous artists all call Toronto their home!",
-    keywords: ["toronto artists", "toronto musicians", "toronto singers", "artists from toronto", "musicians from toronto", "singers from toronto"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Famous Musicians from Toronto | Da Capo Academy of Music",

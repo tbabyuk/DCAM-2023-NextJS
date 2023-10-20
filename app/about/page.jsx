@@ -1,18 +1,26 @@
 import { PageTitle } from "../components/PageTitle";
-import Head from "next/head";
+
 
 export const metadata = {
-    title: "DCAM | About",
-    description: "Our story"
+    title: "About Us | Da Capo Academy of Music",
+    description: "The story of how we got started",
+    robots: { index: true, follow: true},
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "About Us | Da Capo Academy of Music",
+        description: "The story of how we got started",
+        url: "https://dacapomusic.ca/about",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article"
+    },
 }
+
 
 const About = () => {
     
     return ( 
         <>
-            <Head>
-                <title>Da Capo Academy of Music | About</title>
-            </Head>
             <main className="about-page">
                 <PageTitle title="About Us" />
                     <section className="content leading-7 grid md:grid-cols-2 px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">

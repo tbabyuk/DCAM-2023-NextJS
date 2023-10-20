@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "The 3 Easiest Mozart Sonatas (piano) | Da Capo Academy of Music",
     description: "Looking to learn a Mozart sonata that doesn't require a super advanced mastery of the piano? These three are a great place to start!",
-    keywords: ["mozart sonatas", "easy mozart sonatas", "easy mozart pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "The 3 Easiest Mozart Sonatas (piano) | Da Capo Academy of Music",

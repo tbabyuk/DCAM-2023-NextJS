@@ -7,7 +7,7 @@ import { LessonTeachersSection } from "@/app/components/LessonTeachersSection";
 export const metadata = {
     title: "Intro to Music Program | Da Capo Academy of Music",
     description: "This program is designed to give students a chance to try out several different instruments to help them decide which one they like best.",
-    keywords: ["intro to music"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Intro to Music Program | Da Capo Academy of Music",

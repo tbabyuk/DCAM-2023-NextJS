@@ -9,7 +9,7 @@ import { LessonFormatSection } from "@/app/components/LessonFormatSection";
 export const metadata = {
     title: "Drum Lessons in Etobicoke | Da Capo Academy of Music",
     description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
-    keywords: ["drum lessons etobicoke", "drum teacher etobicoke", "music lessons etobicoke"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Drum Lessons in Etobicoke | Da Capo Academy of Music",

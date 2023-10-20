@@ -3,8 +3,18 @@ import TeacherProfile from "../components/TeacherProfile";
 
 
 export const metadata = {
-    title: "DCAM | Teachers",
-    description: "Our Teachers"
+    title: "Teachers | Da Capo Academy of Music",
+    description: "Our teachers",
+    robots: { index: true, follow: true},
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Teachers | Da Capo Academy of Music",
+        description: "Our teachers",
+        url: "https://dacapomusic.ca/teachers",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article"
+    },
 }
 
 

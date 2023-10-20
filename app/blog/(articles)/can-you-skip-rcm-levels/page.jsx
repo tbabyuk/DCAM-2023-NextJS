@@ -10,7 +10,7 @@ import { PostSubheading } from "@/app/components/PostSubheading"
 export const metadata = {
     title: "Can You Skip RCM Levels? | Da Capo Academy of Music",
     description: "Can you skip RCM levels? When is it okay to skip and when is it better to do your level exams in order? Read on to find out!",
-    keywords: ["skipping rcm levels", "skipping rcm exams"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Can You Skip RCM Levels? | Da Capo Academy of Music",

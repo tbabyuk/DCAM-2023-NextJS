@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "Famous Actors Who Can Play the Piano | Da Capo Academy of Music",
     description: "You know them for their acting skills, but did you know that these well-known actors can also play the piano?",
-    keywords: ["actors", "talented actors", "piano"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Famous Actors Who Can Play the Piano | Da Capo Academy of Music",

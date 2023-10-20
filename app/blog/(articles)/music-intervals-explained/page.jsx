@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "How Music Intervals Work | Da Capo Academy of Music",
     description: "Learn about major, minor, perfect, diminished and augmented music intervals, how they work, and how to identify them both on the music staff and by ear!",
-    keywords: ["music theory", "music intervals", "identify music intervals"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How Music Intervals Work | Da Capo Academy of Music",

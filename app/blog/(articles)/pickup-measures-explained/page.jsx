@@ -13,7 +13,7 @@ import { PostSource } from "@/app/components/PostSource"
 export const metadata = {
     title: "Pickup Measures Explained | Da Capo Academy of Music",
     description: "What is a pickup measure (anacrusis)? How does it work? Do we count it as a measure? Easy-to-understand explanations with plenty of examples!",
-    keywords: ["pickup measure", "anacrusis", "what is a pickup measure", "music theory"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Pickup Measures Explained | Da Capo Academy of Music",

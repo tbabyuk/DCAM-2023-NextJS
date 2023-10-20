@@ -12,7 +12,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Guitar Exam Requirements (all grades) | Da Capo Academy of Music",
     description: "Planning to do your RCM guitar exams? Find out what you need to know and exactly how you will be graded in our RCM guitar exam mark guide!",
-    keywords: ["RCM", "RCM Exams", "RCM Guitar Exams", "RCM Guitar Exam Marks"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Guitar Exam Requirements (all grades) | Da Capo Academy of Music",

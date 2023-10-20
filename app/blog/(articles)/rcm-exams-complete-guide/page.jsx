@@ -13,7 +13,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Exams - Your Complete Guide | Da Capo Academy of Music",
     description: "Exam fees, exam dates, types of exams, exam mark information, and more! Your complete resource for all you need to know about RCM Exams.",
-    keywords: ["rcm exams", "rcm exams explained", "about rcm exams", "royal conservatory of music exams"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Exams - Your Complete Guide | Da Capo Academy of Music",

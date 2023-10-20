@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "The 3 Easiest Beethoven Sonatas (piano) | Da Capo Academy of Music",
     description: "Looking to learn a Beethoven sonata that doesn't require a very advanced mastery of the piano? These three are a great place to start!",
-    keywords: ["beethoven sonatas", "easy beethoven sonatas", "easy beethoven pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "The 3 Easiest Beethoven Sonatas (piano) | Da Capo Academy of Music",

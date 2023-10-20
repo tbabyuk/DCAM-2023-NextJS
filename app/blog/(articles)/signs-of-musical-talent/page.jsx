@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "6 Signs Your Child is Musically Gifted | Da Capo Academy of Music",
     description: "Wondering if you child is musically gifted? These 6 reliable signs will give you an accurate idea of whether you might have the next Mozart on your hands!",
-    keywords: ["signs of musical talent", "musically gifted child"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "6 Signs Your Child is Musically Gifted | Da Capo Academy of Music",

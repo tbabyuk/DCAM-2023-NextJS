@@ -11,7 +11,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "Famous Canadian Pianists | Da Capo Academy of Music",
     description: "Learn about some of Canada's most well-known pianists, past and present",
-    keywords: ["Canadian pianists", "Canadian music"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Famous Canadian Pianists | Da Capo Academy of Music",

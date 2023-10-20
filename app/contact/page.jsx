@@ -1,13 +1,24 @@
 import { PageTitle } from "../components/PageTitle";
-import Head from "next/head";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 
+
 export const metadata = {
-    title: "DCAM | Contact",
-    description: "Contact information"
+    title: "Contact | Da Capo Academy of Music",
+    description: "Get in touch with us!",
+    robots: { index: true, follow: true},
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Contact | Da Capo Academy of Music",
+        description: "Get in touch with us!",
+        url: "https://dacapomusic.ca/contact",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article"
+    },
 }
+
 
 const Contact = () => {
     

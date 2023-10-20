@@ -9,7 +9,7 @@ import { LessonTeachersSection } from "@/app/components/LessonTeachersSection";
 export const metadata = {
     title: "Piano Lessons in Etobicoke | Da Capo Academy of Music",
     description: "Schedule your free, no-obligation trial lesson today and see why we are the best choice for piano lessons in Etobicoke and surrounding area!",
-    keywords: ["piano lessons etobicoke", "keyboard lessons etobicoke", "piano teacher etobicoke", "music lessons etobicoke"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Piano Lessons in Etobicoke | Da Capo Academy of Music",

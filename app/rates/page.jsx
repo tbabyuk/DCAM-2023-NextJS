@@ -4,9 +4,20 @@ import { PageTitle } from "../components/PageTitle";
 
 
 export const metadata = {
-    title: "DCAM | Rates",
-    description: "Our rates and term dates"
+    title: "Rates | Da Capo Academy of Music",
+    description: "Our term schedule and rates",
+    robots: { index: true, follow: true},
+    authors: [{name: "Taras (Terry) Babyuk"}],
+    openGraph: {
+        title: "Rates | Da Capo Academy of Music",
+        description: "Our term schedule and rates",
+        url: "https://dacapomusic.ca/rates",
+        siteName: "Da Capo Academy of Music",
+        locale: "en_US",
+        type: "article"
+    },
 }
+
 
 const Rates = () => {
     

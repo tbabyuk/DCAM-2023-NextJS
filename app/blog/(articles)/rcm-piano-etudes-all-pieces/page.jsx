@@ -14,7 +14,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "RCM Piano Etudes - Full List of Pieces | Da Capo Academy of Music",
     description: "A complete, quick-reference list of all RCM Piano Etudes pieces, levels 1 to 10. Name of piece, composer, and page number.",
-    keywords: ["rcm piano etudes", "rcm piano etudes pieces", "rcm piano etudes list"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "RCM Piano Etudes - Full List of Pieces | Da Capo Academy of Music",

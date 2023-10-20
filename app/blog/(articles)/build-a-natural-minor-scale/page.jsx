@@ -13,7 +13,7 @@ import Link from "next/link"
 export const metadata = {
     title: "How to Build a Natural Minor Scale | Da Capo Academy of Music",
     description: "Master building the natural minor scale in any key with this simple, step-by-step guide. Includes graphics and audio!",
-    keywords: ["build a minor scale", "build a natural minor scale", "minor scale music theory", "natural minor scale music theory"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "How to Build a Natural Minor Scale | Da Capo Academy of Music",

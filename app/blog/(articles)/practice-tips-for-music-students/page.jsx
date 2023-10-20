@@ -10,7 +10,7 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 export const metadata = {
     title: "Practice Tips for Music Students | Da Capo Academy of Music",
     description: "Are you a music student wondering why your practicing is not getting you the results you want? Maybe you are doing it wrong! These 5 practice tips are garanteed to get you results!",
-    keywords: ["practice tips for music students", "music practice tips"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Practice Tips for Music Students | Da Capo Academy of Music",

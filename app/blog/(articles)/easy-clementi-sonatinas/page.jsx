@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "The 3 Easiest Clementi Sonatinas (piano) | Da Capo Academy of Music",
     description: "These three Clementi sonatinas are perfect for low-intermediate to intermediate piano students looking to start playing more serious pieces!",
-    keywords: ["clementi sonatinas", "easy clementi sonatinas", "easy clementi pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "The 3 Easiest Clementi Sonatinas (piano) | Da Capo Academy of Music",

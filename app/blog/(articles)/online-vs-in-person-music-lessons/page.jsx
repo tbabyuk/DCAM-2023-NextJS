@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "Online vs. In-Person Music Lessons | Da Capo Academy of Music",
     description: "Online or in-person music lessons - how do I decide? Find out how the two lesson formats compare and make an informed decision about what works for you!",
-    keywords: ["online or in-person music lessons", "online music lessons pros and cons"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Online vs. In-Person Music Lessons | Da Capo Academy of Music",

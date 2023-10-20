@@ -11,7 +11,7 @@ import { PostSubheadingRed } from "@/app/components/PostSubheadingRed"
 export const metadata = {
     title: "Was Chopin a Good Pianist? | Da Capo Academy of Music",
     description: "Most people know of Chopin as the famous Romantic-era composer, but what about Chopin the pianist? Just how good was he at the piano?",
-    keywords: ["was chopin a good pianist", "chopin at the piano"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Was Chopin a Good Pianist? | Da Capo Academy of Music",

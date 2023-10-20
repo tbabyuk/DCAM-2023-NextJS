@@ -10,7 +10,7 @@ import { SectionDivider } from "@/app/components/SectionDivider"
 export const metadata = {
     title: "Easy Czerny Etudes (piano) | Da Capo Academy of Music",
     description: "Are you a beginning pianist looking to improve your piano technique? Here is a list of six of my favourite easy Czerny etudes for beginners!",
-    keywords: ["czerny etudes", "easy czerny etudes", "easy czerny pieces"],
+    robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Easy Czerny Etudes (piano) | Da Capo Academy of Music",
