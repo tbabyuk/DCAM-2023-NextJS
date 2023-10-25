@@ -1,5 +1,6 @@
 import { PageTitle } from "../components/PageTitle";
 import TeacherProfile from "../components/TeacherProfile";
+import Link from "next/link";
 
 
 export const metadata = {
@@ -51,7 +52,17 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="tiago px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="chloe px-5 lg:px-36 xl:px-52 py-20">            
+                <TeacherProfile 
+                    photo="/teachers/chloe.jpg"
+                    name="Chloe Dionne"
+                    instrument="VOICE"
+                    bio="Chloé is currently a vocal performance master's student at the University of Toronto. She is passionate about singing in many genres such as opera, pop, jazz,
+                    and musical theater. Chloe has performed around Nova Scotia in many events, independently, and at the Fountain School of Performing Arts where she received her Bachelors of Music degree. With the Fountain School, she was in several operas, was a prize winner in their 2023 Concerto Night, and a performer in their 2022 reopening gala performing in the same concert as artists such as Jeremy Dutcher and Kiefer Sutherland. She is also a songwriter and composer. She was recently selected to participate in a music production workshop with Nova Scotian artist and producer Erin Costelo. As a teacher, she strives to give students the confidence to expand their musical world while giving them a solid technical foundation." 
+                />
+            </section>
+
+            <section className="tiago px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/tiago.jpg"
                     name="Tiago Cardoso"
@@ -60,7 +71,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="senya px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="senya px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/teachers/senya.jpg"
                     name="Senya Wickramasinghe"
@@ -69,7 +80,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="terry px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="terry px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/terry.jpg"
                     name="Taras (Terry) Babyuk"
@@ -79,15 +90,19 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="oksana px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="oksana px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/teachers/oksana.jpg"
-                    name="Oksana Skira"
+                    name="Oksana Skira*"
                     title="Co-Founder"
-                    instrument="PIANO"
+                    instrument="PIANO (online only)"
                     bio="Oksana Skira is a professional pianist, accompanist, performer, teacher, and a recording artist. She began her music education at Barvinsky State Music College of Drohobych (Drohobych, Ukraine), going on to receive a Masters in Piano Performance from Mykola Lysenko Lviv National Music Academy (Lviv, Ukraine). While studying in Drohobych, she won 2nd place in the Western Ukraine Musical Competition. Oksana has recorded and released three independent CDs and continues to be active as a performer, accompanist, and teacher in Toronto and the GTA. At DCAM, Oksana teaches beginner to advanced piano." 
                 />
             </section>
+
+            <div className="px-5 lg:px-36 xl:px-52 py-20">
+                <p className="italic"><span className="font-bold">*</span> Lessons with these teachers are subject to our <Link href="/rates" target="_blank" className="dcam-link">premium rates</Link></p>
+            </div>        
         </main>
      );
 }
