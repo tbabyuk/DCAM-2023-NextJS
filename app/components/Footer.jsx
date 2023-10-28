@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icon
 
 const Footer = () => {
     return ( 
-        <footer className="mt-40 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-4 px-5 py-8 bg-gradient-to-r from-darkBlue to-regBlue min-h-50 text-gray-50 font-roboto">
+        <footer className="mt-40 grid grid-cols-1 gap-y-14 md:grid-cols-2 lg:grid-cols-4 px-5 lg:px-12 py-8 bg-gradient-to-r from-darkBlue to-regBlue min-h-50 text-gray-50 font-roboto">
             <div>
                 <h4 className="mb-6 inline-block border-b-2">FOLLOW US:</h4>
                     <div className="social-links flex">
@@ -25,7 +25,14 @@ const Footer = () => {
                             <FaYoutubeSquare size="2.5em" />
                         </Link>
                     </div>
+                    <div className="mt-12">
+                        <p className="mb-3">Educational Affiliates:</p>
+                        <a href="https://khrysmarmusic.ca/" target="_blank">
+                            <img src="khrysmar_logo_bw.png" width="70px" alt="Khrysmar Music Studio" />
+                        </a>
+                    </div>
             </div>
+
             <div>
                 <h4 className="mb-6 inline-block border-b-2">WHAT WE OFFER:</h4>
                 <ul className="text-sm leading-7 font-light">
