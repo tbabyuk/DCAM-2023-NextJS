@@ -89,14 +89,14 @@ const Home = async () => {
                 <div className="flex">
                     <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>store</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h4 className="text-xl font-ovo font-semibold text-regRed">GREAT VENUE</h4>
+                      <h4 className="text-xl font-ovo font-semibold text-regRed">NICE VENUE</h4>
                       <p>Individual music rooms, recital area and a lounge</p>
                     </div>
                 </div>
                 <div className="flex">
                     <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>pin_drop</span>
                     <div className="ps-6 flex flex-col justify-center">
-                        <h4 className="text-xl font-ovo font-semibold text-regRed">GOOD LOCATION</h4>
+                        <h4 className="text-xl font-ovo font-semibold text-regRed">GREAT LOCATION</h4>
                         <p>Humbertown Plaza: free parking, shops and cafés</p>
                     </div>        
                 </div>
