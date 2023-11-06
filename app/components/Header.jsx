@@ -56,16 +56,15 @@ const Header = () => {
                             <FaYoutubeSquare size="2em" />
                         </a>
                     </div>
-                    <div className="flex flex-col items-center md:items-start">
-                        <a href = "mailto: info@dacapomusic.ca" className="flex items-center pb-8 md:pb-2 hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
-                        <a href="tel:+4162379595"className="flex items-center hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
+                    <div className="flex md:flex-col xl:flex-row md:items-start">
+                        <a href = "mailto: info@dacapomusic.ca" className="flex items-center pe-8 md:pe-0 md:pb-3 xl:pb-0 xl:pe-6 hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><HiOutlineMail className="me-1" />EMAIL US</a>
+                        <a href="tel:+4162379595"className="flex items-center ps-8 md:ps-0 hover:text-lightRed text-[1.1rem] md:text-[0.95rem]"><BsTelephone className={"me-1"}/>CALL US</a>
                     </div>
                 </div>
             </div>
             <Navigation />
             <Slider />
         </header> 
-
      );
 }
 
