@@ -37,7 +37,7 @@ export const metadata = {
 
 const PostRCMViolinRepertoireAllPieces = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="RCM Violin Repertoire - Full List of Pieces" date="October 25, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_violin_repertoire_all_pieces%2Frcm_violin_repertoire_cover.jpg?alt=media&token=a16fb064-f32c-4183-bd4c-77ebaa953e75" alt="RCM Violin Repertoire All Pieces cover"/>
 

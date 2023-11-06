@@ -38,7 +38,7 @@ export const metadata = {
 const PostPickupMeasuresExplained = () => {
 
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Pickup Measures Explained" date="July 30, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpickup-measures-explained%2Fwhat_is_a_pickup_measure_cover.jpg?alt=media&token=92d3504f-0bfb-4a92-bfde-c6ed544a7e89" alt="what is a pickup measure cover"/>
 

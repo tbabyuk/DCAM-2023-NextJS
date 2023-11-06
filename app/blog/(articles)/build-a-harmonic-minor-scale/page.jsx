@@ -37,7 +37,7 @@ export const metadata = {
 
 const PostBuildAHarmonicMinorScale = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="How to Build a Harmonic Minor Scale" date="May 6, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-harmonic-minor-scale%2Fbuild_a_harmonic_minor_scale_cover.jpg?alt=media&token=e4afb2cc-b602-4369-8d96-9bfca54c76a7" alt="build a harmonic minor scale cover"/>
 

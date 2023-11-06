@@ -64,7 +64,7 @@ const Header = () => {
             </div>
             <Navigation />
             <Slider />
-        </header> 
+        </header>
      );
 }
 

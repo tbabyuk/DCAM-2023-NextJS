@@ -35,7 +35,7 @@ export const metadata = {
 
 const PostGraceNotesExplained = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Grace Notes Explained" date="August 25, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-grace-notes-work%2Fgrace_notes_cover.jpg?alt=media&token=7090278a-b646-4d30-a4d2-45f742301034" alt="Grace Notes cover"/>
 

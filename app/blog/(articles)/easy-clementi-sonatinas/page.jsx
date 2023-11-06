@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostEasyClementiSonatinas = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="The 3 Easiest Clementi Sonatinas (piano)" date="October 30, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-clementi-sonatinas%2Feasy_clementi_sonatinas_cover.jpg?alt=media&token=ef9c5aaa-360c-474d-bc25-c12a0a0790cd" alt="Easy Clementi Sonatinas cover"/>
 

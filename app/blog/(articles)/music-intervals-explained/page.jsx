@@ -35,7 +35,7 @@ export const metadata = {
 
 const PostMusicIntervalsExplained = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="How Music Intervals Work (with examples)" date="July 4, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-music-intervals-work%2Fmusic_intervals_cover.jpg?alt=media&token=d7d4e709-2a3f-42df-8f1e-8ffa483d0868" alt="Music Intervals cover"/>
 

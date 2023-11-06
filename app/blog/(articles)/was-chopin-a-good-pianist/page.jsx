@@ -35,7 +35,7 @@ export const metadata = {
 
 const PostWasChopinAGoodPianist = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Was Chopin a good pianist?" date="March 14, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwas-chopin-a-good-pianist%2Fwas_chopin_a_good_pianist_cover.jpg?alt=media&token=e2b8de2a-8898-4517-b10b-cccd53c9ea42" alt="Was Chopin a good pianist cover" />
 

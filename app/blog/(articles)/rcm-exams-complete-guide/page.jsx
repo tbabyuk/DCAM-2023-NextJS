@@ -37,7 +37,7 @@ export const metadata = {
 
 const PostRCMExamsGuide = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="RCM Exams: Your Complete Guide" date="April 8, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm-exams-complete-guide%2Frcm_exams_complete_guide_cover.jpg?alt=media&token=f1afe2cc-5aa9-4d9c-b8dc-5e25f3e0f165" alt="RCM Exams Complete Guide cover"/>
 

@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostSignsOfMusicalTalent = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="6 Signs Your Child is Musically Gifted" date="July 8, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fsigns-of-musical-talent%2Fsigns_of_musical_talent_cover.jpg?alt=media&token=a32e1e21-476e-49e8-89cb-7b9939a58137" alt="signs of musical talent cover"/>
 

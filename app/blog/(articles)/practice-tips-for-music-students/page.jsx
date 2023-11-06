@@ -35,7 +35,7 @@ export const metadata = {
 const PostPracticeTipsForMusicStudents = () => {
 
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="5 Practice Tips for Music Students" date="April 10, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fpractice-tips-for-music-students%2Fpractice_tips_for_music_students_cover.jpg?alt=media&token=bffaba11-c9da-4700-8a03-db4436e4e483&_gl=1*1szjuyu*_ga*NzE2ODk4MDA0LjE2OTMyNzY3MzA.*_ga_CW55HF8NVT*MTY5NjA0MzQwOC42Ni4xLjE2OTYwNDU2NTMuNTMuMC4w" alt="practice tips for music students cover"/>
 

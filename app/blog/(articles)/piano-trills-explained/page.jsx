@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostPianoTrillsExplained = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Piano Trills Explained" date="April 20, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fhow-to-play-a-trill-correctly-piano%2Ftrill_cover_photo.jpg?alt=media&token=ae7afeb7-5e1f-47e1-9f78-d0e723455de3" alt="Music Intervals cover"/>
 

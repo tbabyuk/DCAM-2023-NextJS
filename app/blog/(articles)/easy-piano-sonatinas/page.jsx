@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostEasyPianoSonatinas = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Easy Sonatinas for Piano Students" date="July 30, 2021" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Feasy-piano-sonatinas%2Feasy_sonatinas_cover.jpg?alt=media&token=640a7125-50e0-4de1-92cc-2d835fcf8cb1" alt="Easy Piano Sonatinas cover"/>
 

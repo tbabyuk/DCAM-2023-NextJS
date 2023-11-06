@@ -37,7 +37,7 @@ export const metadata = {
 
 const PostBuildANaturalMinorScale = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="How to Build a Natural Minor Scale" date="April 27, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fbuild-a-natural-minor-scale%2Fbuild_a_natural_minor_scale_cover.jpg?alt=media&token=acfa8f78-d054-4b3e-a3e1-bee7a642750f" alt="build a natural minor scale cover"/>
 

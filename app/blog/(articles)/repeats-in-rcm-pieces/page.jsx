@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostRepeatsInRCMPieces = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="Should we observe repeats in RCM pieces?" date="October 21, 2022" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frepeats-in-rcm-pieces%2Frepeat_signs_cover.jpg?alt=media&token=c875bbad-a456-4ffd-80b4-5088f126ee6b" alt="Repeats in RCM Pieces cover"/>
 

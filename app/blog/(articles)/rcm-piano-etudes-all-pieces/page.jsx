@@ -38,7 +38,7 @@ export const metadata = {
 
 const PostRCMPianoEtudesAllPieces = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="RCM Piano Etudes - Full List of Pieces" date="August 29, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Frcm_piano_etudes_all_pieces%2Frcm_piano_etudes_all_pieces_cover.jpg?alt=media&token=91d114e3-b4d2-4682-8a83-8a90d477ad6a" alt="RCM Piano Etudes All Pieces cover"/>
 

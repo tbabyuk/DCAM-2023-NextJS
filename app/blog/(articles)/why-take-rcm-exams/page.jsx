@@ -34,7 +34,7 @@ export const metadata = {
 
 const PostWhyTakeRCMExams = () => {
   return (
-            <main className="text-gray-700 text-[0.95rem]">
+            <main className="text-gray-700">
             <PostTitle title="6 Reasons to Take RCM Exams (Royal Conservatory of Music)" date="November 26, 2020" />
             <PostImage url="https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/blog_images%2Fwhy-take-rcm-exams%2Fwhy_take_rcm_exams_cover.jpg?alt=media&token=69927c65-1e36-4346-bd0d-d843bb717df8" alt="Why Take RCM Exams cover"/>
 
