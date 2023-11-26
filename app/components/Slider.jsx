@@ -24,7 +24,7 @@ const Slider = () => {
   }, [])
 
   return (
-    <div className="h-80 relative">
+    <div className="h-[40vh] md:h-[60vh] relative">
 
         {/* <MMSStudentLoginForm /> */}
 
@@ -34,7 +34,7 @@ const Slider = () => {
           <img
             key={index} 
             src={image} 
-            className={`${styles["slider-image"]} ${index === sliderIndex ? styles.active : ""} absolute h-full w-full object-cover`} 
+            className={`${styles["slider-image"]} ${index === sliderIndex ? styles.active : ""} absolute h-full object-cover`} 
             alt="slider image"
           />    
         ))}
