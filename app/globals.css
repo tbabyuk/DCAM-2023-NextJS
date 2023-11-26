@@ -54,3 +54,29 @@ button:disabled {
 .submenu-item {
   @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-lightBlue
 }
+
+
+
+/* home page slider styling */
+
+.slick-slider {
+  @apply px-10
+}
+
+.slick-arrow.slick-prev {
+  background: #FFF;
+  left: 10px;
+  top: 45%;
+  z-index: 10;
+}
+
+.slick-arrow.slick-next {
+  background: #FFF;
+  right: 40px;
+  top: 45%;
+}
+
+.slick-arrow.slick-next::before, .slick-arrow.slick-prev::before {
+  color: gray;
+  font-size: 50px;
+}

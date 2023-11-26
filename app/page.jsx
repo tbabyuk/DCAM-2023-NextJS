@@ -1,5 +1,6 @@
 import 'material-symbols';
 import { ReviewCard } from "./components/ReviewCard";
+import { InstrumentsSlider } from './components/InstrumentsSlider';
 
 
 export const metadata = {
@@ -62,7 +63,12 @@ const Home = async () => {
 
           </section>
 
-          <section className="offers px-5 lg:px-36 xl:px-52 py-28">
+          <section className="instruments xl:px-28 py-28">
+            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">Instruments</h2>
+            <InstrumentsSlider />
+          </section>
+
+          <section className="offers px-5 lg:px-36 xl:px-52 py-28 bg-gray-100">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">What We Offer</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -110,7 +116,7 @@ const Home = async () => {
             </div>
           </section>
 
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-28 bg-gray-100">
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-28">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 border-b font-ovo">What Our Customers Say</h2>
             {reviews && 
               reviews.map((review) => (
