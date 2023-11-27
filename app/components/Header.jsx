@@ -4,7 +4,7 @@ import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
-import { GiShoppingCart } from "react-icons/gi"
+// import { GiShoppingCart } from "react-icons/gi"
 import { useState } from "react";
 import Slider from "./Slider";
 import { IoMdArrowDropdown } from "react-icons/io"

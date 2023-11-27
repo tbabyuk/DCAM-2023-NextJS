@@ -2,10 +2,12 @@
 
 import { Fragment, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
+import { GiShoppingCart } from "react-icons/gi"
 import { IoIosArrowDown } from "react-icons/io"
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import { useShopContext } from "../hooks/useShopContext";
 
 
 export const Navigation = () => {
@@ -13,6 +15,8 @@ export const Navigation = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const [subnavIsOpen, setSubnavIsOpen] = useState(false)
+    
+    const {cartItemsTotal} = useShopContext()
 
     // <div className={`md:flex ${isOpen ? "block" : "hidden"}`}>
 
@@ -49,8 +53,9 @@ return (
             {/* <Link href="/gallery" onClick={() => setIsOpen(false)}><li className="menu-item">Gallery</li></Link> */}
             <Link href="/about" onClick={() => setIsOpen(false)}><li className="menu-item">About</li></Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item">Contact</li></Link>
-            <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>   
-        {/* <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link> */}
+            <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>
+             {/*reactivate the cart below to see current cart item count  */}
+            <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
             </motion.ul>
         </AnimatePresence>
     </nav>  

@@ -3,13 +3,16 @@
 import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
 import { CartProductRow } from "./CartProductRow"
+import { useState } from "react"
 import Script from "next/script"
+import ReCAPTCHA from "react-google-recaptcha"
 
 
 
 const Cart = () => {
 
   const {cart} = useShopContext()
+  const [recaptchaValue, setRecaptchaValue] = useState(null);
 
 
   // GET SUBTOTAL OF ALL CART ITEMS
@@ -49,25 +52,96 @@ const Cart = () => {
   //   })
   // }
 
+
+
+    function validateRecaptcha() {
+      var recaptchaResponse = grecaptcha.getResponse();
+
+      if (recaptchaResponse.length == 0) {
+          alert("Please complete the reCAPTCHA.");
+          return false; // Prevent form submission
+      }
+
+      return true; // Allow form submission
+    }
+
+
+
+    const handleRecaptchaChange = (value) => {
+      // This function is called when the user completes the reCAPTCHA challenge
+      setRecaptchaValue(value);
+    };
+
+
+    // const handleSubmit = (e) => {
+    //   e.preventDefault();
+  
+    //   // Check if reCAPTCHA is verified before submitting the form
+    //   if (isRecaptchaVerified) {
+    //     // Perform form submission logic here
+    //     console.log('Form submitted with data:', formData);
+    //   } else {
+    //     console.log('Please complete the reCAPTCHA challenge.');
+    //   }
+    // };
+
+
+    // WORKING CODE, IMPLEMENT AFTER RECATCHA VALIDATED BY GOOGLE
     const handleCheckout = async () => {
-    console.log("sending these items to backend...", cart)
-
-    const res = await fetch("http://localhost:3000/api/checkout", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      // body: JSON.stringify({items: cart})
-      body: JSON.stringify({
-        items: cart
+      
+      const res = await fetch("http://localhost:3000/api/checkout", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        // body: JSON.stringify({items: cart})
+        body: JSON.stringify({
+          items: cart
+        })
       })
-    })
+  
+      if(res.ok) {
+        const {url} = await res.json()
+        window.location.assign(url)
+      }
+    }
 
-    if(res.ok) {
-      const {url} = await res.json()
-      window.location.assign(url)
-  }
-  }
+
+    const handleSubmitAndValidate = async (e) => {
+
+      e.preventDefault()
+      console.log("sending these items to backend...", cart)
+
+    // Check if reCAPTCHA is verified before submitting the form
+    
+    if (recaptchaValue) {
+
+      try {
+        const res = await fetch("http://localhost:3000/api/recaptcha", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify({
+            response: recaptchaValue
+          })
+        })
+
+        const data = await res.json()
+
+        if(data.success) {
+          console.log("verification successful")
+          handleCheckout()
+        }
+
+      } catch(err) {
+         console.log("an arror has occured:", err)
+      }
+
+
+    }
+
+}
 
 
   return (
@@ -108,8 +182,11 @@ const Cart = () => {
                   </tbody>
               </table>
               <div className="flex flex-col items-end">
-                <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]" onClick={handleCheckout}>Checkout</button>
-                <div className="g-recaptcha" data-sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm"></div>
+                <form onSubmit={handleSubmitAndValidate}>
+                  {/* <div className="g-recaptcha" data-sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm"></div> */}
+                  <ReCAPTCHA sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm" onChange={handleRecaptchaChange} />
+                  <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]">Checkout</button>
+                </form>
               </div>
           </div>
       </main>
