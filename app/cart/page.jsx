@@ -11,8 +11,10 @@ import ReCAPTCHA from "react-google-recaptcha"
 
 const Cart = () => {
 
-  const {cart} = useShopContext()
+  const {cart} = useShopContext();
   const [recaptchaValue, setRecaptchaValue] = useState(null);
+  const [error, setError] = useState(null);
+  const [processing, setProcessing] = useState(null)
 
 
   // GET SUBTOTAL OF ALL CART ITEMS
@@ -51,7 +53,6 @@ const Cart = () => {
   //     }
   //   })
   // }
-
 
 
     function validateRecaptcha() {
@@ -109,8 +110,10 @@ const Cart = () => {
 
     const handleSubmitAndValidate = async (e) => {
 
-      e.preventDefault()
-      console.log("sending these items to backend...", cart)
+    e.preventDefault()
+    console.log("sending these items to backend...", cart)
+
+    setProcessing(true)
 
     // Check if reCAPTCHA is verified before submitting the form
     
@@ -136,9 +139,12 @@ const Cart = () => {
 
       } catch(err) {
          console.log("an arror has occured:", err)
+         setProcessing(false)
       }
 
-
+    } else {
+      setError("Please check the box above before proceeding")
+      setProcessing(false)
     }
 
 }
@@ -183,9 +189,9 @@ const Cart = () => {
               </table>
               <div className="flex flex-col items-end">
                 <form onSubmit={handleSubmitAndValidate}>
-                  {/* <div className="g-recaptcha" data-sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm"></div> */}
                   <ReCAPTCHA sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm" onChange={handleRecaptchaChange} />
-                  <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]">Checkout</button>
+                  <div className="text-red-500 mt-2 text-[0.9rem]">{error && error}</div>
+                  <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]" disabled={processing}>{processing ? "Processing..." : "Checkout"}</button>
                 </form>
               </div>
           </div>
