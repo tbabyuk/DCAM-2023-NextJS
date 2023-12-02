@@ -42,8 +42,9 @@ export default function RootLayout({ children }) {
           <Footer />
           <ToastContainer
             position="top-center"
-            autoClose={2000}
+            autoClose={2500}
             hideProgressBar={true}
+            closeOnClick={false}
           />
         </body>
       </ShopContextProvider>

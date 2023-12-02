@@ -11,7 +11,7 @@ export const ShopProductCard = ({book}) => {
             <small>Author: {book.author}</small>
             <small>Publisher: {book.author}</small>
             <small>${book.price}</small>
-            <AddToCartButton item={book} id={book.id} />
+            <AddToCartButton item={book} id={book.id} origin="shop" />
         </div>
     </div>  
   )

@@ -3,17 +3,20 @@
 
 export const booksList = [
     {
-        id: "price_1Nrw1DBzVRorr5QYQyAqbZkX",
+        // id: "price_1Nrw1DBzVRorr5QYQyAqbZkX",
+        id: "price_1OIdGcCO3Yh2jr9twp15zbhT",
         title: "ABC of Piano Playing - Book 1",
         publisher: "Publisher name",
         author: "Boris Berlin",
         price: 14.95,
-        tax: 0.05,
+        tax: "txcd_35010000",
+        // tax: 0.05,
         quantity: 1,
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc1.png?alt=media&token=ebdf0f8f-146f-4e62-b459-2c893de95fae"
     },
     {
-        id: "price_1NsFtGBzVRorr5QYNSNu9GUe",
+        // id: "price_1NsFtGBzVRorr5QYNSNu9GUe",
+        id: "price_1OIdtwCO3Yh2jr9t07ejlkpE",
         title: "ABC of Piano Playing - Book 2",
         author: "Boris Berlin",
         publisher: "Publisher name",
@@ -23,7 +26,8 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc2.png?alt=media&token=c37d1ee6-2b6d-47e9-b3ec-08ccbd7fab35"
     },
     {
-        id: "price_1NsItSBzVRorr5QYTnBxqg14",
+        // id: "price_1NsItSBzVRorr5QYTnBxqg14",
+        id: "price_1OIe8pCO3Yh2jr9tkjT9GvHr",
         title: "ABC of Piano Playing - Book 3",
         author: "Boris Berlin",
         publisher: "Publisher name",
@@ -33,7 +37,8 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc3.png?alt=media&token=7e7fa82d-fc89-44ac-9f07-a4a63f787a37"
     },
     {
-        id: "price_1Nrw3cBzVRorr5QYNy5udmbd",
+        // id: "price_1Nrw3cBzVRorr5QYNy5udmbd",
+        id: "price_1OIgMZCO3Yh2jr9t1Mnxluz2",
         title: "RCM Lvl 1 Piano - Technical Requirements",
         author: "The Royal Conservatory", 
         publisher: "Publisher name",
@@ -43,7 +48,8 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Flvl1tech.jpg?alt=media&token=a5af4fb9-af17-466d-af70-ed9bf1e2efdb"
     },
     {
-        id: "price_1NsIw6BzVRorr5QYYSsSUTFt",
+        // id: "price_1NsIw6BzVRorr5QYYSsSUTFt",
+        id: "price_1OIh3SCO3Yh2jr9twW2H6VuI",
         title: "RCM Level 1 Piano - Repertoire",
         author: "The Royal Conservatory",
         publisher: "Publisher name",
@@ -71,7 +77,8 @@ export const booksList = [
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Flvl1sight.jpg?alt=media&token=3e2d3bd7-d6ff-4282-bf2e-011bee1dedcc"
     },
     {
-        id: "price_1Ns51KBzVRorr5QYgXneEgEn",
+        // id: "price_1Ns51KBzVRorr5QYgXneEgEn",
+        id: "price_1OIiMXCO3Yh2jr9tbBBMdVxI",
         title: "RCM Level 1 Piano - Theory",
         author: "The Royal Conservatory",
         price: 19.95,

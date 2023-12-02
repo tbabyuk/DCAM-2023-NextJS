@@ -1,8 +1,11 @@
 import { NextResponse } from "next/server"
 
 // import stripe
-const stripe = require("stripe")("sk_test_51NrvqIBzVRorr5QYX7X3ILvIwrMespiDXDK14KgthaosgHtnh9guKBnzU9v8GWmWTvDAxoT0vWMXWB2tHbWYtWkc00aqvuzFNh")
+const stripe = require("stripe")("sk_test_jaXTSRs3nzKOnulrnBTzy23x00iyezyE4H")
 
+// old key
+// ("sk_test_51NrvqIBzVRorr5QYX7X3ILvIwrMespiDXDK14KgthaosgHtnh9guKBnzU9v8GWmWTvDAxoT0vWMXWB2tHbWYtWkc00aqvuzFNh")
+// ("sk_test_jaXTSRs3nzKOnulrnBTzy23x00iyezyE4H")
 
 export async function POST(request) {
     const {items} = await request.json()
@@ -14,7 +17,7 @@ export async function POST(request) {
         lineItems.push(
             {
                 price: item.id,
-                quantity: item.quantity
+                quantity: item.quantity,
             }
         )
     })
@@ -42,7 +45,7 @@ export async function POST(request) {
                     amount: 0,
                     currency: 'cad',
                   },
-                  display_name: 'Store pickup',
+                  display_name: 'Store pickup'
                 },
               },
               {

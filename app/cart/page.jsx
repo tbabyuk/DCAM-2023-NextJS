@@ -26,12 +26,13 @@ const Cart = () => {
   }
 
 
-  const getTaxTotal = () => {
-    const taxTotal = cart.reduce((accumulator, item) => {
-        return accumulator + item.price * item.quantity * item.tax;
-    }, 0)
-    return taxTotal.toFixed(2)
-  }
+  // REMOVED BECAUSE IT'S CALCULATED BY STRIPE AUTOMATICALLY AT CHECKOUT
+  // const getTaxTotal = () => {
+  //   const taxTotal = cart.reduce((accumulator, item) => {
+  //       return accumulator + item.price * item.quantity * item.tax;
+  //   }, 0)
+  //   return taxTotal.toFixed(2)
+  // }
 
 
 //   useEffect(() => {
@@ -55,39 +56,13 @@ const Cart = () => {
   // }
 
 
-    function validateRecaptcha() {
-      var recaptchaResponse = grecaptcha.getResponse();
-
-      if (recaptchaResponse.length == 0) {
-          alert("Please complete the reCAPTCHA.");
-          return false; // Prevent form submission
-      }
-
-      return true; // Allow form submission
-    }
-
-
-
     const handleRecaptchaChange = (value) => {
       // This function is called when the user completes the reCAPTCHA challenge
       setRecaptchaValue(value);
     };
 
 
-    // const handleSubmit = (e) => {
-    //   e.preventDefault();
-  
-    //   // Check if reCAPTCHA is verified before submitting the form
-    //   if (isRecaptchaVerified) {
-    //     // Perform form submission logic here
-    //     console.log('Form submitted with data:', formData);
-    //   } else {
-    //     console.log('Please complete the reCAPTCHA challenge.');
-    //   }
-    // };
-
-
-    // WORKING CODE, IMPLEMENT AFTER RECATCHA VALIDATED BY GOOGLE
+    // WORKING CODE, RUN AFTER SUCCESSFUL RECATCHA VALIDATION
     const handleCheckout = async () => {
       
       const res = await fetch("http://localhost:3000/api/checkout", {
@@ -104,6 +79,9 @@ const Cart = () => {
       if(res.ok) {
         const {url} = await res.json()
         window.location.assign(url)
+      } else {
+        setProcessing(false)
+        setError("Oops, something went wrong. Try again later.")
       }
     }
 
@@ -135,6 +113,7 @@ const Cart = () => {
         if(data.success) {
           console.log("verification successful")
           handleCheckout()
+          // console.log("logging cart contents:", cart)
         }
 
       } catch(err) {
@@ -172,10 +151,10 @@ const Cart = () => {
                       ))}
                       <tr>
                           <td colSpan="4"></td>
-                          <td className="text-right">Subtotal:</td>
-                          <td className="text-center">${getSubtotal()}</td>
+                          <td className="text-right font-semibold">Subtotal:</td>
+                          <td className="text-center font-semibold py-4">${getSubtotal()}</td>
                       </tr>
-                      <tr>
+                      {/* <tr>
                           <td colSpan="4"></td>
                           <td className="text-right">Tax:</td>
                           <td className="text-center">${getTaxTotal()}</td>
@@ -184,21 +163,23 @@ const Cart = () => {
                           <td colSpan="4"></td>
                           <td className="text-right font-bold">Total:</td>
                           <td className="text-center font-bold">${(+getSubtotal() + +getTaxTotal()).toFixed(2)}</td>
+                      </tr> */}
+                      <tr>
+                          <td colSpan="4"></td>
+                          {/* <td className="text-right font-bold"></td> */}
+                          <td colSpan="2" className="text-right text-sm italic">Tax and Shipping Rate calculated at Checkout</td>
                       </tr>
                   </tbody>
               </table>
               <div className="flex flex-col items-end">
                 <form onSubmit={handleSubmitAndValidate}>
-                  <ReCAPTCHA sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm" onChange={handleRecaptchaChange} />
-                  <div className="text-red-500 mt-2 text-[0.9rem]">{error && error}</div>
-                  <button className="bg-green-500 hover:bg-green-600 mt-6 text-gray-50 py-3 px-5 rounded me-[3px]" disabled={processing}>{processing ? "Processing..." : "Checkout"}</button>
+                  <ReCAPTCHA sitekey="6LdFCTwoAAAAAJz1TIkSuEFdE1AKYDoFa0S7Hcmm" onChange={handleRecaptchaChange} className="mt-4" />
+                  <div className="text-red-500 mt-2 text-[0.9rem] h-[1rem]">{error && error}</div>
+                  <button className="bg-green-500 hover:bg-green-600 mt-4 text-gray-50 py-3 px-5 rounded me-[3px]" disabled={processing}>{processing ? "Processing..." : "Checkout"}</button>
                 </form>
               </div>
           </div>
       </main>
-      <Script
-        src="https://www.google.com/recaptcha/api.js"
-      />
     </>
   )
 }

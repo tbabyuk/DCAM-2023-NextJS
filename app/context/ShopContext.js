@@ -2,14 +2,30 @@
 
 import { createContext, useState } from "react"
 import { toast } from "react-toastify"
+import Link from "next/link"
 
 export const ShopContext = createContext()
 
 
 export const ShopContextProvider = ({children}) => {
 
-    const notifyAdd = (item) => toast.success(`"${item}" \n was added to your cart!`)
+
+    // const notifyAdd = (item) => toast.success(`"${item}" \n was added to your cart!`)
+    const notifyAdd = (item, origin) => {
+        if(origin) {
+            toast.success(
+                <div>
+                    <p className="text-center">{item} was added to your cart!</p>
+                    <p className="text-center mt-4"><Link href="/cart" className="underline font-semibold">View Cart</Link></p>
+                </div>
+            )
+        } else {
+                toast.success(`"${item}" \n was added to your cart!`)
+        }
+    }
+    
     const notifySubtract = (item) => toast.success(`"${item}" \n was removed from your cart!`)
+
     const notifyItemRemoved = () => toast.success("Item removed!")
     const [cartItemsTotal, setCartItemsTotal] = useState(0)
 
@@ -21,7 +37,7 @@ export const ShopContextProvider = ({children}) => {
 
 
     // ADD ITEM TO CART BY EITHER CLICKING 'ADD TO CART' BUTTON OR INCREASING ITEM QUANTITY
-    const addToCart = (item, id) => {
+    const addToCart = (item, id, origin) => {
         // check if this item is already in the cart
         const itemIndex = cart.findIndex((item) => item.id === id)
         if(itemIndex === -1) {
@@ -33,7 +49,7 @@ export const ShopContextProvider = ({children}) => {
             setCart(updatedCart)
             setCartItemsTotal((prev) => prev + 1)
         }
-        notifyAdd(item.title)
+        notifyAdd(item.title, origin)
     }
 
     const subtractFromCart = (item, id) => {
