@@ -4,7 +4,6 @@ import { PageTitle } from "../components/PageTitle"
 import { useShopContext } from "../hooks/useShopContext"
 import { CartProductRow } from "./CartProductRow"
 import { useState } from "react"
-import Script from "next/script"
 import ReCAPTCHA from "react-google-recaptcha"
 
 
@@ -132,7 +131,7 @@ const Cart = () => {
   return (
     <>
       <main className="cart-page">
-          <PageTitle title="Cart - Checkout" />
+          <PageTitle title="Cart" />
           <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24 overflow-x-auto">
               <table className="w-full">
                   <thead>

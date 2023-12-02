@@ -54,9 +54,9 @@ return (
             <Link href="/about" onClick={() => setIsOpen(false)}><li className="menu-item">About</li></Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item">Contact</li></Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>
-            <Link href="/shop" onClick={() => setIsOpen(false)}><li className="menu-item">Shop</li></Link>
+            {/* <Link href="/shop" onClick={() => setIsOpen(false)}><li className="menu-item">Shop</li></Link> */}
              {/*reactivate the cart below to see current cart item count  */}
-            <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
+            {/* <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link> */}
             </motion.ul>
         </AnimatePresence>
     </nav>  
