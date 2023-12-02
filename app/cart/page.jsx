@@ -167,7 +167,7 @@ const Cart = () => {
                       <tr>
                           <td colSpan="4"></td>
                           {/* <td className="text-right font-bold"></td> */}
-                          <td colSpan="2" className="text-right text-sm italic">Tax and Shipping Rate calculated at Checkout</td>
+                          <td colSpan="2" className="text-right text-sm italic">Tax and Shipping calculated at Checkout</td>
                       </tr>
                   </tbody>
               </table>

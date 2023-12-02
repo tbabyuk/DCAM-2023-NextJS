@@ -55,7 +55,7 @@ export async function POST(request) {
                     amount: 1000,
                     currency: 'cad',
                   },
-                  display_name: 'Ground shipping',
+                  display_name: 'Ground shipping (1-3 business days in GTA)',
                   delivery_estimate: {
                     minimum: {
                       unit: 'business_day',
