@@ -97,7 +97,7 @@ const Cart = () => {
     if (recaptchaValue) {
 
       try {
-        const res = await fetch("http://localhost:3000/api/recaptcha", {
+        const res = await fetch("/api/recaptcha", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
