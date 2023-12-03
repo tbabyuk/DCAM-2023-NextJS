@@ -69,8 +69,8 @@ export async function POST(request) {
                 },
               },
         ],
-        success_url: "http://localhost:3000/checkout/success",
-        cancel_url: "http://localhost:3000/checkout/cancel"
+        success_url: "/checkout/success",
+        cancel_url: "/checkout/cancel"
     })
 
     if(session) {
