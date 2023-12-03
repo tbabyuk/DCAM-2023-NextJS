@@ -4,7 +4,7 @@
 export const booksList = [
     {
         // id: "price_1Nrw1DBzVRorr5QYQyAqbZkX",
-        id: "price_1OIdGcCO3Yh2jr9twp15zbhT",
+        id: "price_1OJ2aMCO3Yh2jr9tnwBljEzZ",
         title: "ABC of Piano Playing - Book 1",
         publisher: "Publisher name",
         author: "Boris Berlin",
@@ -16,7 +16,7 @@ export const booksList = [
     },
     {
         // id: "price_1NsFtGBzVRorr5QYNSNu9GUe",
-        id: "price_1OIdtwCO3Yh2jr9t07ejlkpE",
+        id: "price_1OJ2cjCO3Yh2jr9tVeGH8Pji",
         title: "ABC of Piano Playing - Book 2",
         author: "Boris Berlin",
         publisher: "Publisher name",
@@ -27,7 +27,7 @@ export const booksList = [
     },
     {
         // id: "price_1NsItSBzVRorr5QYTnBxqg14",
-        id: "price_1OIe8pCO3Yh2jr9tkjT9GvHr",
+        id: "price_1OJ2dZCO3Yh2jr9tTZYE6Eu9",
         title: "ABC of Piano Playing - Book 3",
         author: "Boris Berlin",
         publisher: "Publisher name",

@@ -63,8 +63,10 @@ const Cart = () => {
 
     // WORKING CODE, RUN AFTER SUCCESSFUL RECATCHA VALIDATION
     const handleCheckout = async () => {
+
+      console.log("handleCheckout fired")
       
-      const res = await fetch("../api/checkout", {
+      const res = await fetch("/api/checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
