@@ -15,7 +15,7 @@ export const ShopContextProvider = ({children}) => {
         if(origin) {
             toast.success(
                 <div>
-                    <p className="text-center">{item} was added to your cart!</p>
+                    <p>{item} was added to your cart!</p>
                     <p className="text-center mt-4"><Link href="/cart" className="underline font-semibold">View Cart</Link></p>
                 </div>
             )

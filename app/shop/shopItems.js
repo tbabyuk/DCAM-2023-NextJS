@@ -179,5 +179,14 @@ export const booksList = [
         tax: 0.05,
         quantity: 1,
         imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Flvl3theory.jpg?alt=media&token=dfb0994f-7490-4ec8-86ee-078a846839ca"
+    },
+    {
+        id: "price_1OJ2vACO3Yh2jr9tLYbWkhqx",
+        title: "Chopin's 'Waltz in A Minor' score",
+        author: "DCAM",
+        price: 1.25,
+        tax: 0.05,
+        quantity: 1,
+        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fnotes2.png?alt=media&token=40160cf9-c3c0-4b5d-99a8-21f3db247ddd"
     }
 ]

@@ -1,10 +1,9 @@
 import { NextResponse } from "next/server"
 
 // import stripe
-const stripe = require("stripe")("sk_test_jaXTSRs3nzKOnulrnBTzy23x00iyezyE4H")
+const stripe = require("stripe")("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")
 
-// old key
-// ("sk_test_51NrvqIBzVRorr5QYX7X3ILvIwrMespiDXDK14KgthaosgHtnh9guKBnzU9v8GWmWTvDAxoT0vWMXWB2tHbWYtWkc00aqvuzFNh")
+// test key
 // ("sk_test_jaXTSRs3nzKOnulrnBTzy23x00iyezyE4H")
 
 export async function POST(request) {
