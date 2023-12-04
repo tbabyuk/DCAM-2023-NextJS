@@ -12,23 +12,28 @@ import { InstrumentCard } from "./InstrumentCard";
 const instrumentsList = [
     {
         name: "piano",
-        imageSrc: "/images/instruments/piano.jpg"
+        imageSrc: "/images/instruments/piano.jpg",
+        url: "/piano-lessons-etobicoke"
     },
     {
         name: "guitar",
-        imageSrc: "/images/instruments/guitar.jpg"
+        imageSrc: "/images/instruments/guitar.jpg",
+        url: "/guitar-lessons-etobicoke"
     },
     {
         name: "drums",
-        imageSrc: "/images/instruments/drums.jpg"
+        imageSrc: "/images/instruments/drums.jpg",
+        url: "/drum-lessons-etobicoke"
     },
     {
         name: "voice",
-        imageSrc: "/images/instruments/voice.jpg"
+        imageSrc: "/images/instruments/voice.jpg",
+        url: "/voice-lessons-etobicoke"
     },
     {
         name: "music theory",
-        imageSrc: "/images/instruments/theory.jpg"
+        imageSrc: "/images/instruments/theory.jpg",
+        url: "/music-theory-lessons-etobicoke"
     },
 ]
 
@@ -103,7 +108,7 @@ export const InstrumentsSlider = () => {
       return (
           <Slider {...settings} className="px-20">
             {instrumentsList.map((instrument, index) => {
-            return <InstrumentCard key={index} instrument={instrument.name} imageSrc={instrument.imageSrc} />
+            return <InstrumentCard key={index} instrument={instrument.name} imageSrc={instrument.imageSrc} url={instrument.url} />
           })}          
           </Slider>
     );
