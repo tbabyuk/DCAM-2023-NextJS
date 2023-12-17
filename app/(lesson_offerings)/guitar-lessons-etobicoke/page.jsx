@@ -37,7 +37,7 @@ const GuitarLessonsPage = () => {
         <main className="guitar-page">
             <PageTitle title="Guitar Lessons in Etobicoke" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col-reverse md:flex-row mb-6">
                     <p>Whether you want to be in a band, impress your friends at a party, or just play for yourself - the possibilities are endless when it comes to the  guitar! No wonder it's one of the most popular instruments today!<br /><br />

@@ -1,4 +1,4 @@
-import { PageTitle } from "../components/PageTitle";
+import { PageTitle } from "../../components/PageTitle";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
@@ -25,7 +25,7 @@ const Contact = () => {
     return ( 
         <main className="contact-page">
             <PageTitle title="Contact Us" />
-                <div className="grid md:grid-cols-2 lg:px-36 xl:px-52 py-20 mt-24 bg-gray-100">
+                <div className="grid md:grid-cols-2 lg:px-36 xl:px-52 py-20 bg-gray-100">
                     <section className="contact mb-10 md:mb-0 md:pe-5 lg:pe-10 px-5 lg:px-0">
                         <div className="mb-10">
                             <h2 className="text-lg font-semibold">Telephone:</h2><Link href="tel:+4162379595" className="flex items-center hover:text-lightRed"><BsTelephone className={"me-1"}/>(416) 237-9595</Link>

@@ -1,6 +1,6 @@
 import 'material-symbols';
-import { ReviewCard } from "./components/ReviewCard";
-import { InstrumentsSlider } from './components/InstrumentsSlider';
+import { ReviewCard } from "../components/ReviewCard";
+import { InstrumentsSlider } from '../components/InstrumentsSlider';
 
 
 export const metadata = {
@@ -44,7 +44,7 @@ const Home = async () => {
 
   return (
     <main>
-          <div className="px-5 pb-28">
+          <div className="px-5 py-20">
             <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
             <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>

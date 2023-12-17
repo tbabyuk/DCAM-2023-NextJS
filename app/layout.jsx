@@ -6,6 +6,8 @@ import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { TopHeader } from './components/TopHeader'
+import Navigation from './components/Navigation'
 
 const ovo = Ovo({
   subsets: ["latin"],
@@ -37,7 +39,8 @@ export default function RootLayout({ children }) {
       <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
       <ShopContextProvider>
         <body>
-          <Header />
+          <TopHeader />
+          <Navigation />
           {children}
           <Footer />
           <ToastContainer

@@ -25,7 +25,7 @@ const BlogPage = () => {
         <main className="blog-page">
             <PageTitle title="Blog" />
 
-            <div className="blog-list grid gap-y-8 md:grid-cols-2 xl:grid-cols-3 px-5 lg:px-36 bg-gray-100 py-20 mt-24">
+            <div className="blog-list grid gap-y-8 md:grid-cols-2 xl:grid-cols-3 px-5 lg:px-36 bg-gray-100 py-20">
 
                 {articles.map((article) => (
                     <BlogCard

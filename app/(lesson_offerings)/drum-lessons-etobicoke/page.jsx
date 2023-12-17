@@ -36,7 +36,7 @@ const DrumLessonsPage = () => {
         <main className="drums-page">
             <PageTitle title="Drum Lessons in Etobicoke" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col-reverse md:flex-row mb-6">
                     <p>Whether you want to play in a band, improve your sense of rhythm, or just let out some steam - there is no denying that drums are just an all-round fun instrument to play!<br /><br /> In our studio, we incorporate real song tracks into our lessons so that you get a genuine playing experience. Students can also choose to play either an acoustic or electric drum set, or alternate between both!</p>

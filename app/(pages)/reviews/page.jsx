@@ -1,5 +1,5 @@
-import { ReviewCard } from "../components/ReviewCard";
-import { PageTitle } from "../components/PageTitle";
+import { ReviewCard } from "../../components/ReviewCard";
+import { PageTitle } from "../../components/PageTitle";
 
 
 const fetchReviews = async () => {
@@ -36,7 +36,7 @@ const Reviews = async () => {
         <main className="reviews-page">
             <PageTitle title="Reviews" />
 
-            <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 {reviews && 
                     reviews.map((review) => <ReviewCard review={review} />
                 )}

@@ -134,7 +134,7 @@ const Cart = () => {
     <>
       <main className="cart-page">
           <PageTitle title="Cart" />
-          <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 mt-24 overflow-x-auto">
+          <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 overflow-x-auto">
               <table className="w-full">
                   <thead>
                       <tr className="text-center bg-gray-200 border-2 border-gray-200">

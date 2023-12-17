@@ -1,5 +1,4 @@
 
-import { TrialButton } from "./TrialButton"
 import Typewriter from "typewriter-effect"
 
 
@@ -15,8 +14,7 @@ const SliderOverlay = () => {
                         autoStart: true,
                         loop: true,
                       }}
-                      />
-            <TrialButton />
+            />
         </div>  
     )
 }

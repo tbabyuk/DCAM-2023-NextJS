@@ -37,7 +37,7 @@ const VoiceLessonsPage = () => {
         <main className="voice-page">
             <PageTitle title="Voice Lessons in Etobicoke" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col-reverse md:flex-row mb-6 md:mb-0">
                     <p>Do you or your child like to sing? Are you looking for voice lessons that are fun but also individualized to your or your child's level and interest? Our voice lessons are designed to be educational and fun at the same time. Bring in a song that you want to learn or use one of our method books to take your singing to the next level - it's up to you!<br /><br /> With proper technique and training, you will be surprized at what your voice can do! Call to book your free trial today!</p>

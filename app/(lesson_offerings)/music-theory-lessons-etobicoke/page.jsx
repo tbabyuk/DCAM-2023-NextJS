@@ -37,7 +37,7 @@ const TheoryLessonsPage = () => {
         <main className="theory-page">
             <PageTitle title="Music Theory Lessons in Etobicoke" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col-reverse md:flex-row mb-6 md:mb-0">
                     <p>Quoting from the RCM Theory Syllabus (2016), <span className="italic">“The study of theory is an essential component of well-rounded musical training and is intended to support the practical studies to enhance and enrich the musical experience.”</span> We absolutely agree with this statement!<br /><br />At DCAM, you can take Music Theory as a separate lesson or in combination with the study of your favourite instrument.</p>

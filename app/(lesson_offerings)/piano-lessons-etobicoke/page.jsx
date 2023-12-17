@@ -36,7 +36,7 @@ const PianoLessonsPage = () => {
         <main className="piano-page">
             <PageTitle title="Piano Lessons in Etobicoke" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col md:flex-row mb-6">
                     <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0">

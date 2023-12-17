@@ -63,10 +63,10 @@ const [showErrorResponse, setShowErrorResponse] = useState(false)
 
 return ( 
     <>
-        <button className="dcam-button text-lg" onClick={() => setModalIsOpen(true)}>Free Trial Lesson</button>
+        <button className="dcam-button" onClick={() => setModalIsOpen(true)}>Free Trial Lesson</button>
 
         {modalIsOpen && (
-            <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center" onClick={(e) => handleCloseModal(e)}>
+            <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center z-40" onClick={(e) => handleCloseModal(e)}>
             <span className="exit absolute top-0 right-6 md:right-10 text-white text-7xl cursor-pointer">&times;</span>
                 <div className="modal flex w-[85%] max-w-[380px] min-h-[300px] px-5 sm:px-10 py-7 mt-7 md:mt-2 bg-gray-100 text-black rounded">
                     {!showSuccessResponse && !showErrorResponse && (

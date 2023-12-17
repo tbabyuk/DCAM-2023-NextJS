@@ -1,6 +1,6 @@
-import { DownloadButton } from "../components/DownloadButton";
-import { PageDivider } from "../components/PageDivider";
-import { PageTitle } from "../components/PageTitle";
+import { DownloadButton } from "../../components/DownloadButton";
+import { PageDivider } from "../../components/PageDivider";
+import { PageTitle } from "../../components/PageTitle";
 
 
 export const metadata = {
@@ -27,7 +27,7 @@ const Rates = () => {
 
                 <PageTitle title="Rates" />
 
-                <section className="rates-intro px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24 mb-24">
+                <section className="rates-intro px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mb-24">
                     <p>
                         Lessons at Da Capo Academy of Music are based on the school system and are divided into Fall, Winter, Spring, and an optional Summer term. Your exact rates for each term will depend on which day of the week your lesson falls on, as some days are affected by statutory holidays or there are simply less of them in a given term.<br /><br />Please review below our policies surrounding lessons/payments and click the download button to view payment schedules for each term.<br /><br />*Students not wishing to follow the term system may opt to study on a Pay-As-You-Go basis. Rates for Pay-As-You-Go lessons are separate and can be viewed <a href="/downloads/PAYG_lessons_2023-2024.pdf" download className="text-lightBlue underline">here</a>.<br /><br />*Lessons with our highest-qualified and most-experienced teachers are subject to our PREMIUM RATES, which you can find <a href="/downloads/premium_lessons_2023-2024.pdf" download className="text-lightBlue underline">here</a>.
                     </p>

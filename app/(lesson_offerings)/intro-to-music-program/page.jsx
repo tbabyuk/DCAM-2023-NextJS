@@ -34,7 +34,7 @@ const IntroToMusicPage = () => {
         <main className="intro-to-music-page">
             <PageTitle title="Intro To Music Program" />
 
-            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">
+            <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                 <PageSubtitle subtitle="Overview" />
                 <div className="flex flex-col-reverse md:flex-row mb-6 md:mb-0">
                     <p>This class is designed to give students a chance to try out several different instruments to help them decide which one they like best. It is aimed at students who have not yet picked an instrument to specialize in. At the end of this class, students can choose to sign up for regular lessons on the instrument they have chosen.</p>

@@ -1,5 +1,5 @@
-import { PageTitle } from "../components/PageTitle";
-import TeacherProfile from "../components/TeacherProfile";
+import { PageTitle } from "../../components/PageTitle";
+import TeacherProfile from "../../components/TeacherProfile";
 import Link from "next/link";
 
 
@@ -25,7 +25,7 @@ const Teachers = () => {
         <main className="teachers-page">
             <PageTitle title="Teachers" />
 
-            <section className="raul px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mt-24">            
+            <section className="raul px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/raul.jpg"
                     name="Raul Pineda"
