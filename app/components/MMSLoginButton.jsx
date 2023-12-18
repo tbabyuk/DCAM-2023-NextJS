@@ -17,7 +17,7 @@ export const MMSLoginButton = () => {
 
   return (
     <>
-        <button className="mt-10 md:mt-0 py-2 px-4 rounded flex items-center border-2 border-gray-100 hover:bg-[#2FA6DF]" onClick={() => setModalIsOpen(true)}><img src="/mms_logo.png" className="w-6 me-1" />Student Portal</button>
+        <button className="mms-button" onClick={() => setModalIsOpen(true)}><img src="/mms_logo.png" className="w-6 me-1" />Student Portal</button>
 
         {modalIsOpen && (
                 <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center z-30" onClick={(e) => handleCloseModal(e)}>

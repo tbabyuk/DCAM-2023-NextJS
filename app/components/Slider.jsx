@@ -3,6 +3,7 @@
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
 import SliderOverlay from "./SliderOverlay"
+import { TrialButton } from "./TrialButton"
 
 
 const Slider = () => {
@@ -36,7 +37,7 @@ const Slider = () => {
             src={image} 
             className={`${styles["slider-image"]} ${index === sliderIndex ? styles.active : ""} absolute h-full object-cover`} 
             alt="slider image"
-          />    
+          />
         ))}
 
     </div>  
