@@ -91,11 +91,11 @@ button:disabled {
 }
 
 .trial-button-hero {
-  @apply  w-fit h-[60px] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
+  @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
 }
 
 .register-button-hero {
-  @apply  w-fit h-[60px] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regBlue hover:bg-[#1d629a]
+  @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regBlue hover:bg-[#1d629a]
 }
 
 .trial-button {
