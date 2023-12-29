@@ -3,12 +3,11 @@
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
 import SliderOverlay from "./SliderOverlay"
-import { TrialButton } from "./TrialButton"
 
 
 const Slider = () => {
 
-  const sliderImagesArray = ["/sliders/slide-piano.jpg", "/sliders/slide-guitar.jpg", "/sliders/slide-voice.jpg", "/sliders/slide-drums.jpg"]
+  const sliderImagesArray = ["/sliders/piano-1200.jpg", "/sliders/guitar-1200.jpg", "/sliders/voice-1200.jpg", "/sliders/drums-1200.jpg"]
 
 
   const [sliderIndex, setSliderIndex] = useState(0)
@@ -25,9 +24,7 @@ const Slider = () => {
   }, [])
 
   return (
-    <div className="h-[40vh] md:h-[60vh] relative">
-
-        {/* <MMSStudentLoginForm /> */}
+    <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-112px)] relative">
 
         <SliderOverlay />
 
