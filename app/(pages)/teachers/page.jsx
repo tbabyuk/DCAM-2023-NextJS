@@ -45,10 +45,10 @@ const Teachers = () => {
 
             <section className="jonathan px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
-                    photo="/teachers/jonathan.jpg"
-                    name="Jonathan Stuchbery"
-                    instrument="GUITAR, LUTE, MUSIC THEORY" 
-                    bio="Jonathan Stuchbery is a classical guitarist and a specialist in lutes and historical guitars. As an educator, he encourages students to explore their musical interests while laying strong technical foundations and helping students approach their instruments and music with ease. Jonathan is experienced as a guitar (all styles) and lute teacher, as well as a repertoire coach for vocalists and instrumentalists working on baroque and renaissance music. He is busy as a performer at home and abroad where he is active with multiple ensembles and festivals. Jonathan holds a Master's in Historical Performance from the Escola Superior de Música de Catalunya in Barcelona. He was also recognized for outstanding achievement in lute at McGill's Schulich School of Music, receiving his B.Mus. in guitar and lute under teachers Jérôme Ducharme and Sylvain Bergeron." 
+                    photo="/teachers/giancarlo.jpg"
+                    name="Giancarlo Gianneo"
+                    instrument="GUITAR" 
+                    bio="Giancarlo is a guitarist who recently graduated from the 'Music Industry Arts and Performance Program' at Centennial College. His primary focus lies in playing the guitar, which has led to his performing at multiple venues across Toronto. He started his musical journey at the age of 12 by learning classical guitar and immersing himself in a wide range of musical genres such as blues, rock, bluegrass and improvising. Following his high-school graduation, he finished a pre-university program at the Barranquilla School of Fine Arts and then continued his studies at Centennial College in Toronto. Giancarlo has practical experience in recording techniques and studio recording utilizing digital audio workstations, and providing his expertise as a session musician to others. He is filled with enthusiasm for music and is committed to sharing it with his students as he helps them to develop as musicians." 
                 />
             </section>
 
@@ -80,7 +80,16 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="terry px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="jonathan px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+                <TeacherProfile 
+                    photo="/teachers/jonathan.jpg"
+                    name="Jonathan Stuchbery*"
+                    instrument="GUITAR, LUTE, MUSIC THEORY (online only)" 
+                    bio="Jonathan Stuchbery is a classical guitarist and a specialist in lutes and historical guitars. As an educator, he encourages students to explore their musical interests while laying strong technical foundations and helping students approach their instruments and music with ease. Jonathan is experienced as a guitar (all styles) and lute teacher, as well as a repertoire coach for vocalists and instrumentalists working on baroque and renaissance music. He is busy as a performer at home and abroad where he is active with multiple ensembles and festivals. Jonathan holds a Master's in Historical Performance from the Escola Superior de Música de Catalunya in Barcelona. He was also recognized for outstanding achievement in lute at McGill's Schulich School of Music, receiving his B.Mus. in guitar and lute under teachers Jérôme Ducharme and Sylvain Bergeron." 
+                />
+            </section>
+
+            <section className="terry px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/teachers/terry.jpg"
                     name="Taras (Terry) Babyuk"
@@ -90,7 +99,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="oksana px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="oksana px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/teachers/oksana.jpg"
                     name="Oksana Skira*"
