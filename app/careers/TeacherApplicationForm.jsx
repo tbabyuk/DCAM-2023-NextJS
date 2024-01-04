@@ -74,17 +74,34 @@ export const TeacherApplicationForm = () => {
   }
 
 
-  const validateFields = () => {
 
+  const handleFullName = (input) => {
+
+    // update state with user entry
+    setFullName(input)
 
     // validate full name
     const fullNameRegex = /^[a-zA-Z ]{6,40}$/
-    const fullNamePass = fullNameRegex.test(fullName)
+    const fullNamePass = fullNameRegex.test(input)
     if(!fullNamePass) {
         setFullNameError("Please enter a valid full name")
     } else {
         setFullNameError(null)
     }
+}
+
+
+  const validateFields = () => {
+
+
+    // validate full name
+    // const fullNameRegex = /^[a-zA-Z ]{6,40}$/
+    // const fullNamePass = fullNameRegex.test(fullName)
+    // if(!fullNamePass) {
+    //     setFullNameError("Please enter a valid full name")
+    // } else {
+    //     setFullNameError(null)
+    // }
 
     // validate phone number
     const phoneRegex = /^[\d\s()-]{10,20}$/
@@ -255,8 +272,9 @@ export const TeacherApplicationForm = () => {
                     <span className="block text-sm">Full Name:</span>
                     <input 
                         type="text" 
-                        className={`w-full h-8 border-2 ${fullNameError ? "border-red-500" : "border-gray-300"} ps-2 text-sm`} 
-                        onChange={(e) => setFullName(e.target.value)}
+                        className={`w-full h-8 border-2 ${fullNameError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm focus:border-orange-505 focus:border-2`} 
+                        // className="border-none focus:outline-none"
+                        onChange={(e) => handleFullName(e.target.value)}
                         value={fullName}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{fullNameError && fullNameError}</span>
