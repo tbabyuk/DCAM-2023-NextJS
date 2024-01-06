@@ -11,8 +11,11 @@ import { v4 as uuidv4 } from 'uuid';
 export const TeacherApplicationForm = () => {
 
   const [fullName, setFullName] = useState("")
+  const [fullNameValid, setFullNameValid] = useState(false)
   const [phone, setPhone] = useState("")
+  const [phoneValid, setPhoneValid] = useState(false)
   const [email, setEmail] = useState("")
+  const [emailValid, setEmailValid] = useState(false)
   const [instruments, setInstruments] = useState({
     "piano": false,
     "guitar": false,
@@ -74,54 +77,54 @@ export const TeacherApplicationForm = () => {
   }
 
 
-
-  const handleFullName = (input) => {
-
+const handleFullName = (input) => {
     // update state with user entry
     setFullName(input)
-
     // validate full name
     const fullNameRegex = /^[a-zA-Z ]{6,40}$/
     const fullNamePass = fullNameRegex.test(input)
     if(!fullNamePass) {
         setFullNameError("Please enter a valid full name")
+        setFullNameValid(false)
     } else {
         setFullNameError(null)
+        setFullNameValid(true)
+    }
+}
+
+const handlePhone = (input) => {
+    // update state with user entry
+    setPhone(input)
+    // validate phone
+    const phoneRegex = /^[\d\s()-]{10,20}$/
+    const phonePass = phoneRegex.test(input)
+    if(!phonePass) {
+        setPhoneError("Please enter a valid phone number")
+        setPhoneValid(false)
+    } else {
+        setPhoneError(null)
+        setPhoneValid(true)
+    }
+}
+
+const handleEmail = (input) => {
+    // update state with user entry
+    setEmail(input)
+    // validate phone
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+    const emailPass = emailRegex.test(input)    
+    if(!emailPass) {
+        setEmailError("Please enter a valid email")
+        setEmailValid(false)
+    } else {
+        setEmailError(null)
+        setEmailValid(true)
     }
 }
 
 
+
   const validateFields = () => {
-
-
-    // validate full name
-    // const fullNameRegex = /^[a-zA-Z ]{6,40}$/
-    // const fullNamePass = fullNameRegex.test(fullName)
-    // if(!fullNamePass) {
-    //     setFullNameError("Please enter a valid full name")
-    // } else {
-    //     setFullNameError(null)
-    // }
-
-    // validate phone number
-    const phoneRegex = /^[\d\s()-]{10,20}$/
-    const phonePass = phoneRegex.test(phone)
-    if(!phonePass) {
-        setPhoneError("Please enter a valid phone number")
-    } else {
-        setPhoneError(null)
-    }
-
-    // validate email
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    const emailPass = emailRegex.test(email)
-    if(!emailPass) {
-        setEmailError("Please enter a valid email")
-    } else {
-        setEmailError(null)
-    }
-
-
 
 
     // const instrumentsValues = Object.values(instruments)
@@ -165,7 +168,11 @@ export const TeacherApplicationForm = () => {
 
     e.preventDefault()
 
-    validateFields()
+    if(fullNameValid && emailValid && phoneValid) {
+        console.log("submission successful")
+    } else {
+        console.log("oops, unable to submit")
+    }
 
 
 
@@ -272,7 +279,7 @@ export const TeacherApplicationForm = () => {
                     <span className="block text-sm">Full Name:</span>
                     <input 
                         type="text" 
-                        className={`w-full h-8 border-2 ${fullNameError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm focus:border-orange-505 focus:border-2`} 
+                        className={`w-full h-8 border-2 ${fullNameValid && "border-green-500"} ${!fullName ? "outline-gray-500" : fullNameError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm focus:border-orange-505 focus:border-2`} 
                         // className="border-none focus:outline-none"
                         onChange={(e) => handleFullName(e.target.value)}
                         value={fullName}
@@ -284,8 +291,8 @@ export const TeacherApplicationForm = () => {
                     <span className="block text-sm">Phone:</span>
                     <input 
                         type="tel"
-                        className={`w-full h-8 border-2 ${phoneError ? "border-red-500" : "border-gray-300"} ps-2 text-sm`}
-                        onChange={(e) => setPhone(e.target.value)}
+                        className={`w-full h-8 border-2 ${phoneValid && "border-green-500"} ${!phone ? "outline-gray-500" : phoneError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm`}
+                        onChange={(e) => handlePhone(e.target.value)}
                         value={phone}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{phoneError && phoneError}</span>
@@ -294,8 +301,8 @@ export const TeacherApplicationForm = () => {
                     <span className="block text-sm">Email:</span>
                     <input 
                         type="email"
-                        className={`w-full h-8 border-2 ${emailError ? "border-red-500" : "border-gray-300"} ps-2 text-sm`}
-                        onChange={(e) => setEmail(e.target.value)}
+                        className={`w-full h-8 border-2 ${emailValid ? "border-green-500" : "border-red-500"} ${!email ? "outline-gray-500" : emailError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm`}
+                        onChange={(e) => handleEmail(e.target.value)}
                         value={email}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{emailError && emailError}</span>
