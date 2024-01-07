@@ -1,8 +1,6 @@
-
 "use client"
 
-
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { storage } from "../firebase/config"
 import { ref, uploadBytes } from "firebase/storage"
 import { v4 as uuidv4 } from 'uuid';
@@ -10,11 +8,15 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const TeacherApplicationForm = () => {
 
+  const [firstPageLoad, setFirstPageLoad] = useState(false)
   const [fullName, setFullName] = useState("")
+  const [fullNameError, setFullNameError] = useState(null)
   const [fullNameValid, setFullNameValid] = useState(false)
   const [phone, setPhone] = useState("")
+  const [phoneError, setPhoneError] = useState(null)
   const [phoneValid, setPhoneValid] = useState(false)
   const [email, setEmail] = useState("")
+  const [emailError, setEmailError] = useState(null)
   const [emailValid, setEmailValid] = useState(false)
   const [instruments, setInstruments] = useState({
     "piano": false,
@@ -23,37 +25,31 @@ export const TeacherApplicationForm = () => {
     "vocals": false,
     "toddlers": false
   })
+  const [instrumentsError, setInstrumentsError] = useState(null)
+  const [instrumentsValid, setInstrumentsValid] = useState(false)
   const [typeOfWork, setTypeOfWork] = useState({
     "permanent": false,
     "substitute": false
-  })
+})
+  const [typeOfWorkError, setTypeOfWorkError] = useState(null)
+  const [typeOfWorkValid, setTypeOfWorkValid] = useState(false)
   const [teachingExperience, setTeachingExperience] = useState("choose option")
+  const [teachingExperienceError, setTeachingExperienceError] = useState(null)
+  const [teachingExperienceValid, setTeachingExperienceValid] = useState(false)
   const [source, setSource] = useState("choose option")
+  const [sourceError, setSourceError] = useState(null)
+  const [sourceValid, setSourceValid] = useState(false)
   const [comments, setComments] = useState("")
   const [resume, setResume] = useState(null)
-  const [success, setSuccess] = useState(null)
-  const [fullNameError, setFullNameError] = useState(null)
-  const [phoneError, setPhoneError] = useState(null)
-  const [emailError, setEmailError] = useState(null)
-  const [instrumentsError, setInstrumentsError] = useState(null)
-  const [typeOfWorkError, setTypeOfWorkError] = useState(null)
-  const [teachingExperienceError, setTeachingExperienceError] = useState(null)
-  const [sourceError, setSourceError] = useState(null)
   const [resumeError, setResumeError] = useState(null)
-  const [error, setError] = useState(null)
+//   const [success, setSuccess] = useState(null)
+//   const [error, setError] = useState(null)
   const [uploadError, setUploadError] = useState(null)
 
 
   console.log("storage:", storage)
 
 
-  const handleInstruments = (instrument) => {
-    setInstruments({...instruments, [instrument]: !instruments[instrument]})
-  }
-
-  const handleTypeOfWork = (type) => {
-    setTypeOfWork({...typeOfWork, [type]: !typeOfWork[type]})
-  }
 
 
 //   const [submitting, setSubmitting] = useState(false)
@@ -69,6 +65,7 @@ export const TeacherApplicationForm = () => {
     if(file && allowedTypes.includes(file.type)) {
         setResume(file)
         setUploadError(null)
+        setResumeError(null)
     } else {
         setResume(null)
         console.log("that file type is not allowed")
@@ -84,7 +81,7 @@ const handleFullName = (input) => {
     const fullNameRegex = /^[a-zA-Z ]{6,40}$/
     const fullNamePass = fullNameRegex.test(input)
     if(!fullNamePass) {
-        setFullNameError("Please enter a valid full name")
+        setFullNameError("Full name must be at least 6 characters long")
         setFullNameValid(false)
     } else {
         setFullNameError(null)
@@ -99,7 +96,7 @@ const handlePhone = (input) => {
     const phoneRegex = /^[\d\s()-]{10,20}$/
     const phonePass = phoneRegex.test(input)
     if(!phonePass) {
-        setPhoneError("Please enter a valid phone number")
+        setPhoneError("Phone number must be at least 10 characters long")
         setPhoneValid(false)
     } else {
         setPhoneError(null)
@@ -122,57 +119,93 @@ const handleEmail = (input) => {
     }
 }
 
+const handleInstruments = (instrument) => {
+    setInstruments((prevInstruments) => ({
+        ...prevInstruments,
+        [instrument]: !prevInstruments[instrument],
+    }));
+    // setInstrumentsStarted(true)
+}
 
 
-  const validateFields = () => {
+const handleTypeOfWork = (type) => {
+    setTypeOfWork((prevType) => ({
+        ...prevType, 
+        [type]: !prevType[type]
+    }));
+}
 
+const handleTeachingExperience = (experience) => {
+    setTeachingExperience(experience)
+    setTeachingExperienceError(null)
+    setTeachingExperienceValid(true)
+}
 
-    // const instrumentsValues = Object.values(instruments)
-    // if(!instrumentsValues.includes(true)) {
-    //     setInstrumentsError("You must select at least one instrument that you can teach")
-    // } else {
-    //     setInstrumentsError(null)
-    // }
+const handleSource = (source) => {
+    setSource(source)
+    setSourceError(null)
+    setSourceValid(true)
+}
 
-    // const typeOfWorkValues = Object.values(typeOfWork)
-    // if(!typeOfWorkValues.includes(true)) {
-    //     setTypeOfWorkError("You must select at least one type of work you are interested in")
-    // } else {
-    //     setTypeOfWorkError(null)
-    // }
+const handleComments = (comments) => {
+    setComments(comments)
 
-    // if(teachingExperience === "choose option") {
-    //     setTeachingExperienceError("Please indicate how much teaching experience you have")
-    // } else {
-    //     setTeachingExperienceError(null)
-    // }
+}
 
-    // if(source === "choose option") {
-    //     setSourceError("Please indicate how you heard about our school")
-    // } else {
-    //     setSourceError(null)
-    // }
-
-    // if(!resume) {
-    //     setResumeError("You must upload your resume in order to complete the application")
-    // } else {
-    //     setResumeError(null)
-    // }
-
-
-  }
-  
-
-
-  const handleSubmit = async (e) => {
+const handleSubmit = async (e) => {
 
     e.preventDefault()
 
-    if(fullNameValid && emailValid && phoneValid) {
-        console.log("submission successful")
-    } else {
-        console.log("oops, unable to submit")
+
+
+    if(!fullName) {
+        setFullNameError("Please enter your full name")
     }
+
+    if(!phone) {
+        setPhoneError("Please enter your phone number")
+        setPhoneValid(false)
+    }
+
+    if(!email) {
+        setEmailError("Please enter your email address")
+    }
+
+    const instrumentsValues = Object.values(instruments)
+    if(!instrumentsValues.includes(true)) {
+        setInstrumentsError("Please indicate what instrument(s) you can teach")
+        setInstrumentsValid(false)
+    } else {
+        setInstrumentsError(null)
+        setInstrumentsValid(true)
+    }
+
+    const typeOfWorkValues = Object.values(typeOfWork)
+    if(!typeOfWorkValues.includes(true)) {
+        setTypeOfWorkError("Please indicate what type of work you are interested in")
+        setTypeOfWorkValid(false)
+    } else {
+        setTypeOfWorkError(null)
+        setTypeOfWorkValid(true)
+    }
+
+    if(!teachingExperienceValid) {
+        setTeachingExperienceError("Please indicate how much teaching experience you have")
+    }
+
+    if(!sourceValid) {
+        setSourceError("Please indicate how you heard about us")
+    }
+
+    if(!resume) {
+        setResumeError("Please attach your resume")
+    }
+
+
+    if(fullNameValid && phoneValid && emailValid && instrumentsValid && typeOfWorkValid && teachingExperienceValid && sourceValid && resume ) {
+        console.log("wohoo! everything is valid!")
+    }
+
 
 
 
@@ -189,12 +222,6 @@ const handleEmail = (input) => {
 
 
     // console.log(name, phone, email, instruments, typeOfWork, teachingExperience, source, comments)
-
-
-
-
-
-
 
 
 
@@ -238,15 +265,6 @@ const handleEmail = (input) => {
 
 
 
-
-
-
-
-
-
-
-
-
     // console.log(
     //     "student name:", studentName, 
     //     "parent name:", parentName, 
@@ -260,7 +278,43 @@ const handleEmail = (input) => {
     //     "source:", source,
     //     "comments:", comments
     // )
-  }
+}
+
+
+  useEffect(() => {
+    setFirstPageLoad(true)
+  }, [])
+
+  useEffect(() => {
+    if(!firstPageLoad) {
+        return
+    }
+    const instrumentsValues = Object.values(instruments)
+    if(!instrumentsValues.includes(true)) {
+        setInstrumentsError("You must select at least one instrument that you can teach")
+        setInstrumentsValid(false)
+    } else {
+        setInstrumentsError(null)
+        setInstrumentsValid(true)
+    }
+  }, [instruments])
+
+  useEffect(() => {
+    if(!firstPageLoad) {
+        return
+    }
+    const typeOfWorkValues = Object.values(typeOfWork)
+    if(!typeOfWorkValues.includes(true)) {
+        setTypeOfWorkError("You must select at least one type of work")
+        setTypeOfWorkValid(false)
+    } else {
+        setTypeOfWorkError(null)
+        setTypeOfWorkValid(true)
+    }
+  }, [typeOfWork])
+
+
+
 
   return (
         <>
@@ -279,7 +333,7 @@ const handleEmail = (input) => {
                     <span className="block text-sm">Full Name:</span>
                     <input 
                         type="text" 
-                        className={`w-full h-8 border-2 ${fullNameValid && "border-green-500"} ${!fullName ? "outline-gray-500" : fullNameError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm focus:border-orange-505 focus:border-2`} 
+                        className={`w-full h-8 border-2 ${fullNameValid && "border-green-500"} ${fullNameError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`} 
                         // className="border-none focus:outline-none"
                         onChange={(e) => handleFullName(e.target.value)}
                         value={fullName}
@@ -291,25 +345,24 @@ const handleEmail = (input) => {
                     <span className="block text-sm">Phone:</span>
                     <input 
                         type="tel"
-                        className={`w-full h-8 border-2 ${phoneValid && "border-green-500"} ${!phone ? "outline-gray-500" : phoneError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm`}
+                        className={`w-full h-8 border-2 ${phoneValid && "border-green-500"} ${phoneError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`}
                         onChange={(e) => handlePhone(e.target.value)}
                         value={phone}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{phoneError && phoneError}</span>
                 </label>
-                <label className="mb-1">
+                <label className="mb-4">
                     <span className="block text-sm">Email:</span>
                     <input 
                         type="email"
-                        className={`w-full h-8 border-2 ${emailValid ? "border-green-500" : "border-red-500"} ${!email ? "outline-gray-500" : emailError ? "outline-red-500" : "outline-green-500"} ps-2 text-sm`}
+                        className={`w-full h-8 border-2 ${emailValid && "border-green-500"} ${emailError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`}
                         onChange={(e) => handleEmail(e.target.value)}
                         value={email}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{emailError && emailError}</span>
-
                 </label>
 
-                <div className={`mb-6 border-2 ${instrumentsError ? "border-red-600" : "border-gray-300"}  p-4`}>
+                <div className={`mb-1 border-2 ${instrumentsValid && "border-green-500"} ${instrumentsError ? "border-red-500" : "border-gray-200"} p-4`}>
                     <span className="block text-sm">INSTRUMENT:</span>
                     <span className="text-[0.8rem] font-semibold block mb-4">What instrument(s) do you specialize in that you would like to teach?</span>
                     <label className="flex items-center text-[0.9rem] mb-4">
@@ -328,8 +381,9 @@ const handleEmail = (input) => {
                         <input type="checkbox" id="toddlers" value="toddlers" checked={instruments.toddlers} onChange={(e) => handleInstruments(e.target.value)} className="me-1" />Music for Toddlers
                     </label>
                 </div>
+                <span className={`mb-4 text-[0.8rem] text-right text-red-500 h-[20px] block`}>{instrumentsError && instrumentsError}</span>
 
-                <div className={`mb-6 border-2 ${typeOfWorkError ? "border-red-600" : "border-gray-300" } p-4`}>
+                <div className={`mb-1 border-2 ${typeOfWorkValid && "border-green-500"} ${typeOfWorkError ? "border-red-600" : "border-gray-300"} p-4`}>
                     <span className="block text-sm">TYPE OF WORK:</span>
                     <span className="text-[0.8rem] font-semibold block mb-4">What kind of teaching position are you interested in at the moment?</span>
 
@@ -340,21 +394,23 @@ const handleEmail = (input) => {
                         <input type="checkbox" id="substitute" value="substitute" checked={typeOfWork.substitute} onChange={(e) => handleTypeOfWork(e.target.value)} className="me-1" />Substitute (we call you when we need you)
                     </label>
                 </div>
+                <span className={`mb-4 text-[0.8rem] text-right text-red-500 h-[20px] block`}>{typeOfWorkError && typeOfWorkError}</span>
 
-                <label className="mb-6">
+                <label className="mb-1">
                     <span className="block text-sm">How many years of teaching experience do you have:</span>
-                    <select className={`w-full h-8 border-2 ${teachingExperienceError ? "border-red-600" : "border-gray-300"} text-sm`} value={teachingExperience} onChange={(e) => {setTeachingExperience(e.target.value)}} required>
+                    <select className={`w-full h-8 border-2 ${teachingExperienceValid && "border-green-500 outline-green-500"} ${teachingExperienceError ? "border-red-500" : "border-gray-300"} text-sm`} value={teachingExperience} onChange={(e) => {handleTeachingExperience(e.target.value)}} required>
                         <option value="choose option" disabled>choose option</option>
                         <option value="less than 1 year">&lt; 1 year</option>
                         <option value="1 to 2 years">1 - 2 years</option>
                         <option value="2 to 3 years">2 - 3 years</option>
                         <option value="more than 3 years">&gt; 3 years</option>
                     </select>
+                    <span className={`mb-4 text-[0.8rem] text-right text-red-500 h-[20px] block`}>{teachingExperienceError && teachingExperienceError}</span>
                 </label>
 
-                <label className="mb-4">
+                <label className="mb-1">
                     <span className="block text-sm">How did you hear about us?</span>
-                    <select className={`w-full h-8 border-2 ${sourceError ? "border-red-600" : "border-gray-300"} text-sm`} value={source} onChange={e => setSource(e.target.value)} required>
+                    <select className={`w-full h-8 border-2 ${sourceValid && "border-green-500 outline-green-500"} ${sourceError ? "border-red-500" : "border-gray-300"} text-sm`} value={source} onChange={e => handleSource(e.target.value)} required>
                         <option value="choose option" disabled>choose option</option>
                         <option value="google">google search</option>
                         <option value="humbertown">humbertown sign</option>
@@ -365,30 +421,26 @@ const handleEmail = (input) => {
                         <option value="blog">indeed.com</option>
                         <option value="other">other</option>
                     </select>
+                    <span className={`mb-4 text-[0.8rem] text-right text-red-500 h-[20px] block`}>{sourceError && sourceError}</span>
                 </label>
 
                 <label className="mb-4">
-                    <span className="block text-sm">Additional Information/Comments:</span>
-                    <textarea className="w-full h-20 p-2 bg-gray-100" value={comments} onChange={e => setComments(e.target.value)} />
+                    <span className="block text-sm">Additional Information/Comments (optional):</span>
+                    <textarea className={`w-full h-20 border-2 p-2 bg-gray-100 ${comments ? "border-green-500 outline-green-500" : "border-gray-300"}`} value={comments} onChange={e => handleComments(e.target.value)} />
                 </label>
 
                 <label className="mb-4">
                     <span className="block text-sm mb-4">Upload your resume:</span>
-                        <input type="file" id="myFile" name="filename" className={`${resumeError ? "border-2 border-red-600" : ""}`} onChange={handleResumeUpload} />
-                    {uploadError && <p className="text-red-600 text-sm">{uploadError}</p>}
+                        <input type="file" id="myFile" name="filename" className={`${resumeError ? "border-2 border-red-500" : ""} w-full`} onChange={handleResumeUpload} />
+                    {/* {uploadError && <p className="text-red-600 text-sm">{uploadError}</p>} */}
+                    <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{resumeError && resumeError}{uploadError && uploadError}</span>
                 </label>
 
                 {/* <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button> */}
                 <button className="dcam-button w-full mt-3 h-10">Submit</button>
-                {success && <p className="text-green-600">{success}</p>}
-                {error && <p className="text-red-600">{error}</p>}
-                {instrumentsError && <p className="text-red-600">{instrumentsError}</p>}
-                {typeOfWorkError && <p className="text-red-600">{typeOfWorkError}</p>}
-                {teachingExperienceError && <p className="text-red-600">{teachingExperienceError}</p>}
-                {sourceError && <p className="text-red-600">{sourceError}</p>}
-                {resumeError && <p className="text-red-600">{resumeError}</p>}
+                {/* {success && <p className="text-green-600">{success}</p>}
+                {error && <p className="text-red-600">{error}</p>} */}
             </form>
-
             ) 
         }
 
