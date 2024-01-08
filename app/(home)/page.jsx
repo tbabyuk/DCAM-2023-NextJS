@@ -126,7 +126,8 @@ const Home = async () => {
             )}
             <div className="text-center mt-10"><a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</a></div>
           </section>
-          <TopPopup />
+          {/* TOGGLE POPUP BELOW */}
+          {/* <TopPopup /> */}
     </main>
   )
 }
