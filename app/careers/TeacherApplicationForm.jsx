@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { storage } from "../firebase/config"
-import { ref, uploadBytes } from "firebase/storage"
+import { ref, uploadBytes, getDownloadURL } from "firebase/storage"
 import { v4 as uuidv4 } from 'uuid';
 
 
@@ -30,7 +30,7 @@ export const TeacherApplicationForm = () => {
   const [typeOfWork, setTypeOfWork] = useState({
     "permanent": false,
     "substitute": false
-})
+  })
   const [typeOfWorkError, setTypeOfWorkError] = useState(null)
   const [typeOfWorkValid, setTypeOfWorkValid] = useState(false)
   const [teachingExperience, setTeachingExperience] = useState("choose option")
@@ -42,42 +42,17 @@ export const TeacherApplicationForm = () => {
   const [comments, setComments] = useState("")
   const [resume, setResume] = useState(null)
   const [resumeError, setResumeError] = useState(null)
-//   const [success, setSuccess] = useState(null)
-//   const [error, setError] = useState(null)
   const [uploadError, setUploadError] = useState(null)
-
-
-  console.log("storage:", storage)
-
-
-
-
-//   const [submitting, setSubmitting] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
   const [showSuccessResponse, setShowSuccessResponse] = useState(false)
-//   const [showErrorResponse, setShowErrorResponse] = useState(false)
+  const [showErrorResponse, setShowErrorResponse] = useState(false)
 
-
-
-  const handleResumeUpload = (e) => {
-    const allowedTypes = ["application/msword", "application/pdf"]
-    const file = e.target.files[0]
-    
-    if(file && allowedTypes.includes(file.type)) {
-        setResume(file)
-        setUploadError(null)
-        setResumeError(null)
-    } else {
-        setResume(null)
-        console.log("that file type is not allowed")
-        setUploadError("You can only upload Microsoft Word or PDF files")
-    }
-  }
 
 
 const handleFullName = (input) => {
-    // update state with user entry
+    // update state with full name input
     setFullName(input)
-    // validate full name
+    // validate full name input
     const fullNameRegex = /^[a-zA-Z ]{6,40}$/
     const fullNamePass = fullNameRegex.test(input)
     if(!fullNamePass) {
@@ -90,9 +65,9 @@ const handleFullName = (input) => {
 }
 
 const handlePhone = (input) => {
-    // update state with user entry
+    // update state with phone input
     setPhone(input)
-    // validate phone
+    // validate phone input
     const phoneRegex = /^[\d\s()-]{10,20}$/
     const phonePass = phoneRegex.test(input)
     if(!phonePass) {
@@ -105,9 +80,9 @@ const handlePhone = (input) => {
 }
 
 const handleEmail = (input) => {
-    // update state with user entry
+    // update state with email input
     setEmail(input)
-    // validate phone
+    // validate email input
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
     const emailPass = emailRegex.test(input)    
     if(!emailPass) {
@@ -124,9 +99,7 @@ const handleInstruments = (instrument) => {
         ...prevInstruments,
         [instrument]: !prevInstruments[instrument],
     }));
-    // setInstrumentsStarted(true)
 }
-
 
 const handleTypeOfWork = (type) => {
     setTypeOfWork((prevType) => ({
@@ -149,28 +122,37 @@ const handleSource = (source) => {
 
 const handleComments = (comments) => {
     setComments(comments)
-
 }
+
+const handleResumeUpload = (e) => {
+    const allowedTypes = ["application/msword", "application/pdf"]
+    const file = e.target.files[0]
+    
+    if(file && allowedTypes.includes(file.type)) {
+        setResume(file)
+        setUploadError(null)
+        setResumeError(null)
+    } else {
+        setResumeError(null)
+        setResume(null)
+        console.log("that file type is not allowed")
+        setUploadError("You can only upload Microsoft Word or PDF files")
+    }
+  }
 
 const handleSubmit = async (e) => {
 
     e.preventDefault()
 
-
-
     if(!fullName) {
         setFullNameError("Please enter your full name")
     }
-
     if(!phone) {
         setPhoneError("Please enter your phone number")
-        setPhoneValid(false)
     }
-
     if(!email) {
         setEmailError("Please enter your email address")
     }
-
     const instrumentsValues = Object.values(instruments)
     if(!instrumentsValues.includes(true)) {
         setInstrumentsError("Please indicate what instrument(s) you can teach")
@@ -179,7 +161,6 @@ const handleSubmit = async (e) => {
         setInstrumentsError(null)
         setInstrumentsValid(true)
     }
-
     const typeOfWorkValues = Object.values(typeOfWork)
     if(!typeOfWorkValues.includes(true)) {
         setTypeOfWorkError("Please indicate what type of work you are interested in")
@@ -188,131 +169,106 @@ const handleSubmit = async (e) => {
         setTypeOfWorkError(null)
         setTypeOfWorkValid(true)
     }
-
     if(!teachingExperienceValid) {
         setTeachingExperienceError("Please indicate how much teaching experience you have")
     }
-
     if(!sourceValid) {
         setSourceError("Please indicate how you heard about us")
     }
-
     if(!resume) {
+        setUploadError(null)
         setResumeError("Please attach your resume")
     }
 
+    if(fullNameValid && phoneValid && emailValid && instrumentsValid && typeOfWorkValid && teachingExperienceValid && sourceValid && resume) {
 
-    if(fullNameValid && phoneValid && emailValid && instrumentsValid && typeOfWorkValid && teachingExperienceValid && sourceValid && resume ) {
-        console.log("wohoo! everything is valid!")
+        const prepareServerContent = async (resumeName, resumeURL) => {
+
+            setSubmitting(true)
+            const response = 
+            
+            await fetch("/api/application", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    fullName,
+                    phone,
+                    email,
+                    instruments,
+                    typeOfWork,
+                    teachingExperience,
+                    source,
+                    comments,
+                    resumeName,
+                    resumeURL
+                })        
+        })
+
+        if(response.status === 200) {
+            console.log("status is:", response.status)
+            const responseData = await response.json()
+            console.log("responseData from ok:", responseData.message)
+            setSubmitting(false)
+            setShowSuccessResponse(true)
+        } else {
+            console.log("status is:", response.status)
+            const responseData = await response.json()
+            console.log("responseData from error:", responseData.error)
+            setSubmitting(false)
+            setShowErrorResponse(true)
+        }
     }
 
 
+        // upload resume to firebase storage
+        const resumeRef = ref(storage, `resumes/${uuidv4()}___${resume.name}`);
 
+        try {
+            const reference = await uploadBytes(resumeRef, resume)
+            const resumeName = reference.metadata.name;            
+            const resumeURL = await getDownloadURL(resumeRef)
+            prepareServerContent(resumeName, resumeURL)
+        } catch {
+            console.log("oops, resume failed to upload")
+        }
+    }
 
-    // upload resume to storage
-
-    // const resumeRef = ref(storage, `resumes/${uuidv4()}___${resume.name}`);
-
-    // try {
-    //     uploadBytes(resumeRef, resume)
-    //     setSuccess("Image uploaded successfully!")
-    // } catch {
-    //     setError("Oops, something went wrong with the upload!")
-    // }
-
-
-    // console.log(name, phone, email, instruments, typeOfWork, teachingExperience, source, comments)
-
-
-
-
-
-    // setSubmitting(true)
-    // const response = await fetch("/api/register", {
-    //     method: "POST",
-    //     headers: {
-    //         "Content-Type": "application/json"
-    //     },
-    //     body: JSON.stringify({
-    //         student: studentName.trim(),
-    //         parent: parentName.trim(),
-    //         phone: phone.trim(),
-    //         email: email.trim(),
-    //         instrument,
-    //         lessonType,
-    //         lessonDuration,
-    //         lessonFrequency,
-    //         lessonDays,
-    //         source,
-    //         comments: comments.trim()
-    //     })
-    // })
-
-
-    // if(response.status === 200) {
-    //     console.log("status is:", response.status)
-    //     const responseData = await response.json()
-    //     console.log("responseData from ok:", responseData.message)
-    //     setSubmitting(false)
-    //     setShowSuccessResponse(true)
-    // } else {
-    //     console.log("status is:", response.status)
-    //     const responseData = await response.json()
-    //     console.log("responseData from error:", responseData.error)
-    //     setSubmitting(false)
-    //     setShowErrorResponse(true)
-    // }
-
-
-
-    // console.log(
-    //     "student name:", studentName, 
-    //     "parent name:", parentName, 
-    //     "phone:", phone, 
-    //     "email:", email,
-    //     "instrument", instrument,
-    //     "lesson type", lessonType,
-    //     "lesson duration", lessonDuration,
-    //     "lesson frequency:", lessonFrequency,
-    //     "preferred days:", lessonDays,
-    //     "source:", source,
-    //     "comments:", comments
-    // )
 }
 
 
-  useEffect(() => {
-    setFirstPageLoad(true)
-  }, [])
+    useEffect(() => {
+        setFirstPageLoad(true)
+    }, [])
 
-  useEffect(() => {
-    if(!firstPageLoad) {
-        return
-    }
-    const instrumentsValues = Object.values(instruments)
-    if(!instrumentsValues.includes(true)) {
-        setInstrumentsError("You must select at least one instrument that you can teach")
-        setInstrumentsValid(false)
-    } else {
-        setInstrumentsError(null)
-        setInstrumentsValid(true)
-    }
-  }, [instruments])
+    useEffect(() => {
+        if(!firstPageLoad) {
+            return
+        }
+        const instrumentsValues = Object.values(instruments)
+        if(!instrumentsValues.includes(true)) {
+            setInstrumentsError("You must select at least one instrument that you can teach")
+            setInstrumentsValid(false)
+        } else {
+            setInstrumentsError(null)
+            setInstrumentsValid(true)
+        }
+    }, [instruments])
 
-  useEffect(() => {
-    if(!firstPageLoad) {
-        return
-    }
-    const typeOfWorkValues = Object.values(typeOfWork)
-    if(!typeOfWorkValues.includes(true)) {
-        setTypeOfWorkError("You must select at least one type of work")
-        setTypeOfWorkValid(false)
-    } else {
-        setTypeOfWorkError(null)
-        setTypeOfWorkValid(true)
-    }
-  }, [typeOfWork])
-
+    useEffect(() => {
+        if(!firstPageLoad) {
+            return
+        }
+        const typeOfWorkValues = Object.values(typeOfWork)
+        if(!typeOfWorkValues.includes(true)) {
+            setTypeOfWorkError("You must select at least one type of work")
+            setTypeOfWorkValid(false)
+        } else {
+            setTypeOfWorkError(null)
+            setTypeOfWorkValid(true)
+        }
+    }, [typeOfWork])
 
 
 
@@ -321,7 +277,7 @@ const handleSubmit = async (e) => {
 
             {showSuccessResponse ? (
                         <div className="h-full text-green-600 px-5 self-center flex flex-col text-center">           
-                                <p className="mb-6">Your form was successfully submitted and will be in our records - thank you!</p>
+                                <p className="mb-6">Your application was successfully submitted and will be in our records - thank you!</p>
                         </div>
             ) : (
 
@@ -334,7 +290,6 @@ const handleSubmit = async (e) => {
                     <input 
                         type="text" 
                         className={`w-full h-8 border-2 ${fullNameValid && "border-green-500"} ${fullNameError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`} 
-                        // className="border-none focus:outline-none"
                         onChange={(e) => handleFullName(e.target.value)}
                         value={fullName}
                     />
@@ -431,24 +386,20 @@ const handleSubmit = async (e) => {
 
                 <label className="mb-4">
                     <span className="block text-sm mb-4">Upload your resume:</span>
-                        <input type="file" id="myFile" name="filename" className={`${resumeError ? "border-2 border-red-500" : ""} w-full`} onChange={handleResumeUpload} />
-                    {/* {uploadError && <p className="text-red-600 text-sm">{uploadError}</p>} */}
+                    <input type="file" id="myFile" name="filename" className={`${resume && "border-2 border-green-500"} ${resumeError || uploadError ? "border-2 border-red-500" : ""} w-full`} onChange={handleResumeUpload} />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{resumeError && resumeError}{uploadError && uploadError}</span>
                 </label>
 
-                {/* <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button> */}
-                <button className="dcam-button w-full mt-3 h-10">Submit</button>
-                {/* {success && <p className="text-green-600">{success}</p>}
-                {error && <p className="text-red-600">{error}</p>} */}
+                <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button>
             </form>
             ) 
         }
 
-            {/* {showErrorResponse && (
+            {showErrorResponse && (
                 <div className="h-full text-red-600 px-5 self-center flex flex-col text-center">           
                         <p className="mb-6">Sorry, there was a problem submitting your form. Please refresh and try again or send us a direct email at <span className="font-bold">info@dacapomusic.ca</span></p>
                 </div>
-            )} */}
+            )}
 
         </>
     )
