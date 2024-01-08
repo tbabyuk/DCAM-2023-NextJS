@@ -6,22 +6,20 @@ export async function POST(request) {
 
     const {student, parent, phone, email, instrument, lessonType, lessonDuration, lessonFrequency, lessonDays, source, comments} = await request.json()
 
-
-    // console.log("from server, info:", student, parent, phone, email, instrument, lessonType, lessonDuration, lessonFrequency, lessonDays, source, comments)
     
         const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "info@dacapomusic.ca",
-            pass: "kwrmhfzqejjsnmry"
+            user: "terry@dacapomusic.ca",
+            pass: "fbcaqouhkghjywtd"
         }
         })
 
 
-        const emailOptions1 =
+        const emailOptions =
             {
-                from: "info@dacapomusic.ca",
-                to: "terry@dacapomusic.ca",
+                from: "terry@dacapomusic.ca",
+                to: "info@dacapomusic.ca",
                 subject: "New Lesson Registration",
                 html: `
                         <strong>Student Name</strong><br />
@@ -65,8 +63,7 @@ export async function POST(request) {
             }
 
         try {
-            await transporter.sendMail(emailOptions1);
-            // await transporter.sendMail(emailOptions2);
+            await transporter.sendMail(emailOptions);
             console.log("try block fired in Node.js")
             return NextResponse.json({message: "trial notification email sent successfully"}, {status: 200})
         } catch (error) {
