@@ -23,8 +23,7 @@ const Teachers = () => {
 
     return ( 
         <main className="teachers-page">
-            <PageTitle title="Teachers" />
-
+            <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/teachers-page.jpg')] bg-center bg-cover">Teachers</h1>
             <section className="raul px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/images/teachers/raul.jpg"

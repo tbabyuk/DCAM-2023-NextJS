@@ -23,8 +23,7 @@ const BlogPage = () => {
 
     return ( 
         <main className="blog-page">
-            <PageTitle title="Blog" />
-
+            <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/blog-page.jpg')] bg-center bg-cover">Blog</h1>
             <div className="blog-list grid gap-y-8 md:grid-cols-2 xl:grid-cols-3 px-5 lg:px-36 bg-gray-100 py-20">
 
                 {articles.map((article) => (

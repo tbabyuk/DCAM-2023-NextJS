@@ -23,7 +23,9 @@ const Careers = () => {
     return ( 
         <>
             <main className="careers-page">
-                <PageTitle title="Careers" />
+
+            <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/careers-page.jpg')] bg-center bg-cover">Careers</h1>
+
                     <section className="content leading-7 px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
                         <div className="md:pe-10 mb-10 md:mb-0">
                             <p className="mb-6">We are regularly looking for new talented and passionate musicians/teachers to join our team. Feel free to fill out the application below and we will keep your resume on file for when we are hiring. You can choose to apply for a permanent weekly position or as a substitute teacher. Some teachers start out with us as subs and later transition to a more permanent role, so this might be a good way to get your foot in the door.</p>
