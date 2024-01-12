@@ -29,7 +29,7 @@ const About = () => {
                         </div>
 
                         <div>
-                            <img src="/school_1.jpg" alt="Da Capo Academy of Music first recital" className="rounded-xl shadow-lg" />
+                            <img src="/images/winter_2023.jpg" alt="Da Capo Academy of Music first recital" className="rounded-xl shadow-lg" />
                         </div>
                     </section>
             </main>
