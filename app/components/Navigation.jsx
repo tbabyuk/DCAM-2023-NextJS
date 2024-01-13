@@ -14,7 +14,8 @@ export const Navigation = () => {
 
 
     const [isOpen, setIsOpen] = useState(false);
-    const [subnavIsOpen, setSubnavIsOpen] = useState(false)
+    const [subnav1IsOpen, setSubnav1IsOpen] = useState(false)
+    const [subnav2IsOpen, setSubnav2IsOpen] = useState(false)
     
     const {cartItemsTotal} = useShopContext()
 
@@ -34,8 +35,8 @@ return (
             exit={{ opacity: 0 }}
             className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:justify-center text-gray-50 z-[5]`}>
             <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item">Home</li></Link>
-            <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnavIsOpen(true)} onMouseLeave={() => setSubnavIsOpen(false)} onClick={() => setSubnavIsOpen(!subnavIsOpen)}>Lessons<IoIosArrowDown className=" ms-1" />
-                {subnavIsOpen && (
+            <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnav1IsOpen(true)} onMouseLeave={() => setSubnav1IsOpen(false)} onClick={() => setSubnav1IsOpen(!subnav1IsOpen)}>Lessons<IoIosArrowDown className=" ms-1" />
+                {subnav1IsOpen && (
                     <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-darkBlue text-[0.95rem] z-[6]">
                         <Link href="/piano-lessons-etobicoke" onClick={() => setIsOpen(false)}><li className="submenu-item">Piano Lessons</li></Link>
                         <Link href="/guitar-lessons-etobicoke" onClick={() => setIsOpen(false)}><li className="submenu-item">Guitar Lessons</li></Link>
@@ -55,6 +56,13 @@ return (
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item">Contact</li></Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>
             <Link href="/careers" onClick={() => setIsOpen(false)}><li className="menu-item">Careers</li></Link>
+            <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnav2IsOpen(true)} onMouseLeave={() => setSubnav2IsOpen(false)} onClick={() => setSubnav2IsOpen(!subnav2IsOpen)}>RCM Resources<IoIosArrowDown className=" ms-1" />
+                {subnav2IsOpen && (
+                    <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-darkBlue text-[0.95rem] z-[6]">
+                        <Link href="https://rcm-wizard.dacapomusic.ca/" onClick={() => setIsOpen(false)}><li className="submenu-item">RCM Wizard</li></Link>
+                    </ul>
+                )}
+            </li>
             {/* <Link href="/shop" onClick={() => setIsOpen(false)}><li className="menu-item">Shop</li></Link> */}
              {/*reactivate the cart below to see current cart item count  */}
             {/* <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link> */}
