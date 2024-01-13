@@ -24,7 +24,7 @@ const Slider = () => {
   }, [])
 
   return (
-    <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-112px)] relative">
+    <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-124px)] relative">
 
         <SliderOverlay />
 
