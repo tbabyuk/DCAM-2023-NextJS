@@ -88,7 +88,16 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="jonathan px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="matthew px-5 lg:px-36 xl:px-52 py-20">            
+                <TeacherProfile 
+                    photo="/images/teachers/matthew.jpeg"
+                    name="Matthew Leombruni"
+                    instrument="BASS GUITAR, UPRIGHT BASS"
+                    bio="Matthew is a Jazz Bassist who has performed both the electric and upright bass for 12 and 10 years, respectively. He began his musical journey at the age of 4, studying in the Community Music Program at Humber College for 14 years. Matthew then graduated with a Bachelor&apos;s Degree in Jazz Performance at the University of Toronto in 2022, studying with noteworthy Jazz musicians, such as Dave Young and others. Matthew has had the privilege of performing at festivals such as the 2021 Toronto Undergrad Jazz Festival, the 2020 & 2021 World of Jazz Festival in Brampton, as well as the 2023 TD Niagara Jazz Festival. He looks forward to the ample amount of opportunities that lie ahead in his musical journey." 
+                />
+            </section>
+
+            <section className="jonathan px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/images/teachers/jonathan.jpg"
                     name="Jonathan Stuchbery*"
@@ -97,7 +106,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="oksana px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="oksana px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
                     photo="/images/teachers/oksana.jpg"
                     name="Oksana Skira*"
@@ -107,7 +116,7 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="terry px-5 lg:px-36 xl:px-52 py-20">            
+            <section className="terry px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
                     photo="/images/teachers/terry.jpg"
                     name="Taras (Terry) Babyuk"
@@ -116,7 +125,6 @@ const Teachers = () => {
                     bio="Taras (Terry) Babyuk started his musical journey with accordion lessons at the age of seven. In his teens, he began piano lessons and soon decided to dedicate himself fully to this instrument. Terry holds Level 9 RCM Certificate in piano and has taught beginner to intermediate piano and beginner to advanced music theory for many years (a self-described music theory nerd!). In addition to his fondness for Classical and Romantic-era music, he also loves film music and enjoys composing original piano music in his spare time. Aside from his teaching duties at DCAM, he is also its co-founder and Managing Director." 
                 />
             </section>
-
 
 
             <div className="px-5 lg:px-36 xl:px-52 py-20">
