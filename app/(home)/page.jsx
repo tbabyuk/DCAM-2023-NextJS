@@ -46,12 +46,12 @@ const Home = async () => {
   return (
     <main>
           <div className="px-5 py-20">
-            <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
+            <h1 className="text-5xl font-ovo text-regBlue mb-4 block text-center">Music Lessons in Etobicoke</h1>
             <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
-          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-28">
+          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-gray-100 bg-lightBlue py-20">
               <div className="flex flex-col md:flex-row">
                   <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
                         <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
@@ -64,61 +64,61 @@ const Home = async () => {
 
           </section>
 
-          <section className="instruments xl:px-28 py-28">
-            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">INSTRUMENTS</h2>
+          <section className="instruments xl:px-28 py-20">
+            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">INSTRUMENTS</h2>
             <InstrumentsSlider />
           </section>
 
-          <section className="offers px-5 lg:px-36 xl:px-52 py-28 bg-gray-100">
-            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">WHAT WE OFFER</h2>
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-[#F3F4F6] bg-lightBlue">
+            <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>group</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>group</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h2 className="text-xl font-ovo font-semibold text-regRed">ALL AGES & LEVELS</h2>
+                      <h2 className="text-xl font-ovo font-semibold">ALL AGES & LEVELS</h2>
                       <p>Lessons for children, adults and even toddlers!</p>
                     </div>
                 </div>
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>school</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>school</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h4 className="text-xl font-ovo font-semibold text-regRed">EXAM PREP</h4>
+                      <h4 className="text-xl font-ovo font-semibold">EXAM PREP</h4>
                       <p>We prepare students for RCM and other music exams</p>
                     </div>
                 </div>
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>calendar_month</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>calendar_month</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h4 className="text-xl font-ovo font-semibold text-regRed">FLEXIBILITY</h4>
+                      <h4 className="text-xl font-ovo font-semibold">FLEXIBILITY</h4>
                       <p>Choose 30-minute, 45-minute, or 1-hour lessons</p>
                     </div>
                 </div>
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>store</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>store</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h4 className="text-xl font-ovo font-semibold text-regRed">NICE VENUE</h4>
+                      <h4 className="text-xl font-ovo font-semibold">NICE VENUE</h4>
                       <p>Individual music rooms, recital area and a lounge</p>
                     </div>
                 </div>
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>pin_drop</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>pin_drop</span>
                     <div className="ps-6 flex flex-col justify-center">
-                        <h4 className="text-xl font-ovo font-semibold text-regRed">GREAT LOCATION</h4>
+                        <h4 className="text-xl font-ovo font-semibold">GREAT LOCATION</h4>
                         <p>Humbertown Plaza: free parking, shops and cafés</p>
                     </div>        
                 </div>
                 <div className="flex">
-                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#5BC0EB", border: "4px solid #5BC0EB", borderRadius: "50%", padding: "15px"}}>account_balance_wallet</span>
+                    <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>account_balance_wallet</span>
                     <div className="ps-6 flex flex-col justify-center">
-                        <h4 className="text-xl font-ovo font-semibold text-regRed">AWESOME DEALS</h4>
+                        <h4 className="text-xl font-ovo font-semibold">AWESOME DEALS</h4>
                         <p>Referral incentives and family member discounts!</p>
                     </div> 
                 </div>
             </div>
           </section>
 
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-28">
-            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
+            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
             {reviews && 
               reviews.map((review) => (
                 <ReviewCard review={review} />
