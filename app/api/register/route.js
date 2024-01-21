@@ -10,15 +10,15 @@ export async function POST(request) {
         const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
-            user: "terry@dacapomusic.ca",
-            pass: "fbcaqouhkghjywtd"
+            user: "info@dacapomusic.ca",
+            pass: "kwrmhfzqejjsnmry"
         }
         })
 
 
         const emailOptions =
             {
-                from: "terry@dacapomusic.ca",
+                from: "info@dacapomusic.ca",
                 to: "info@dacapomusic.ca",
                 subject: "New Lesson Registration",
                 html: `

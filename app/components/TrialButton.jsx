@@ -26,9 +26,8 @@ const [showErrorResponse, setShowErrorResponse] = useState(false)
     }
 
     const handleSubmit = async (e) => {
+
         e.preventDefault()
-
-
         setSubmitting(true)
         const response = await fetch("/api/trial", {
             method: "POST",
@@ -99,12 +98,13 @@ return (
                                     <option value="choose instrument" disabled>choose instrument</option>
                                     <option value="piano">piano</option>
                                     <option value="guitar">guitar</option>
+                                    <option value="bass guitar">bass guitar</option>
                                     <option value="ukulele">ukulele</option>
                                     <option value="drums">drums</option>
                                     <option value="voice">voice</option>
                                     <option value="theory">music theory</option>
                                     <option value="theory">music for toddlers</option>
-                                    <option value="theory">intro to music</option>
+                                    {/* <option value="theory">intro to music</option> */}
                                 </select>
                             </label>
                             <label className="mb-4">

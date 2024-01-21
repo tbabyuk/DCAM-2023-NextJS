@@ -21,6 +21,7 @@ export const TeacherApplicationForm = () => {
   const [instruments, setInstruments] = useState({
     "piano": false,
     "guitar": false,
+    "bass": false,
     "drums": false,
     "vocals": false,
     "toddlers": false
@@ -143,7 +144,7 @@ const handleResumeUpload = (e) => {
 const handleSubmit = async (e) => {
 
     e.preventDefault()
-
+    setSubmitting(true)
     if(!fullName) {
         setFullNameError("Please enter your full name")
     }
@@ -324,7 +325,10 @@ const handleSubmit = async (e) => {
                         <input type="checkbox" id="piano" value="piano" checked={instruments.piano} onChange={(e) => handleInstruments(e.target.value)} className="me-1" />Piano
                     </label>
                     <label className="flex items-center text-[0.9rem] mb-4">
-                        <input type="checkbox" id="guitar" value="guitar" checked={instruments.guitar} onChange={(e) => handleInstruments(e.target.value)}className="me-1" />Guitar
+                        <input type="checkbox" id="guitar" value="guitar" checked={instruments.guitar} onChange={(e) => handleInstruments(e.target.value)} className="me-1" />Guitar
+                    </label>
+                    <label className="flex items-center text-[0.9rem] mb-4">
+                        <input type="checkbox" id="bass" value="bass" checked={instruments.bass} onChange={(e) => handleInstruments(e.target.value)} className="me-1" />Bass Guitar
                     </label>
                     <label className="flex items-center text-[0.9rem] mb-4">
                         <input type="checkbox" id="drums" value="drums" checked={instruments.drums} onChange={(e) => handleInstruments(e.target.value)} className="me-1" />Drums
@@ -390,7 +394,8 @@ const handleSubmit = async (e) => {
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{resumeError && resumeError}{uploadError && uploadError}</span>
                 </label>
 
-                <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button>
+                <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...This may take up to a minute, please wait..." : "Submit"}</button>
+
             </form>
             ) 
         }
