@@ -2,6 +2,8 @@ import 'material-symbols';
 import { ReviewCard } from "../components/ReviewCard";
 import { InstrumentsSlider } from '../components/InstrumentsSlider';
 import { TopPopup } from '../components/TopPopup';
+import { TeacherCard } from '../components/TeacherCard';
+import Link from 'next/link';
 
 
 export const metadata = {
@@ -27,6 +29,55 @@ export const metadata = {
       // ],
   },
 }
+
+
+const teachersPhotosArray = [
+  {
+    name: "Raul",
+    photo: "/images/teachers/raul.jpg",
+    instrument: "drums"
+  },
+  {
+    name: "Taisiya",
+    photo: "/images/teachers/taisiya.jpg",
+    instrument: "vocals, piano"
+  },
+  {
+    name: "Tiago",
+    photo: "/images/teachers/tiago.jpg",
+    instrument: "guitar, ukulele"
+  },
+  {
+    name: "Chloe",
+    photo: "/images/teachers/chloe.jpg",
+    instrument: "vocals"
+  },
+  {
+    name: "Giancarlo",
+    photo: "/images/teachers/giancarlo.jpg",
+    instrument: "guitar"
+  },
+  {
+    name: "Senya",
+    photo: "/images/teachers/senya.jpg",
+    instrument: "piano"
+  },
+  {
+    name: "Aaron",
+    photo: "/images/teachers/aaron.jpg",
+    instrument: "piano"
+  },
+  {
+    name: "Matthew",
+    photo: "/images/teachers/matthew.jpg",
+    instrument: "bass guitar, upright bass"
+  },
+  // {
+  //   name: "Jonathan",
+  //   photo: "/images/teachers/jonathan.jpg",
+  //   instrument: "guitar, classical guitar"
+  // }
+]
 
 
 const fetchReviews = async () => {
@@ -69,7 +120,7 @@ const Home = async () => {
             <InstrumentsSlider />
           </section>
 
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-[#F3F4F6] bg-lightBlue">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-gray-100 bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -117,8 +168,19 @@ const Home = async () => {
             </div>
           </section>
 
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
-            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20">
+
+            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
+            <div className="teachers-container flex flex-wrap gap-5 justify-center">
+              {teachersPhotosArray.map((teacher, index) => (
+                <TeacherCard key={index} teacher={teacher} />
+              ))}
+            </div>
+            <div className="text-center mt-16"><Link href="/teachers" className="hover:text-lightRed">Go To Teachers&apos; Page...</Link></div>
+          </section>
+
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-20 bg-lightBlue">
+            <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
             {reviews && 
               reviews.map((review) => (
                 <ReviewCard review={review} />

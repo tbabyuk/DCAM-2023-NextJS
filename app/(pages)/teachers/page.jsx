@@ -42,12 +42,12 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="jonathan px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="tiago px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
-                    photo="/images/teachers/giancarlo.jpg"
-                    name="Giancarlo Gianneo"
+                    photo="/images/teachers/tiago.jpg"
+                    name="Tiago Cardoso"
                     instrument="GUITAR" 
-                    bio="Giancarlo is a guitarist who recently graduated from the 'Music Industry Arts and Performance Program' at Centennial College. His primary focus lies in playing the guitar, which has led to his performing at multiple venues across Toronto. He started his musical journey at the age of 12 by learning classical guitar and immersing himself in a wide range of musical genres such as blues, rock, bluegrass and improvising. Following his high-school graduation, he finished a pre-university program at the Barranquilla School of Fine Arts and then continued his studies at Centennial College in Toronto. Giancarlo has practical experience in recording techniques and studio recording utilizing digital audio workstations, and providing his expertise as a session musician to others. He is filled with enthusiasm for music and is committed to sharing it with his students as he helps them to develop as musicians." 
+                    bio="A recent graduate from the music program at York University, Tiago has spent the last four years refining his playing through extensive jazz studies. He has studied with Canadian jazz legends such as Lorne Lofsky, Sundar Viswanathan, Roy Patterson, Anthony Michelli, and many others. It was during his studies that Tiago, alongside performing, had also discovered a love for teaching. He enjoys all kinds of music and feels as though the ultimate way to express himself is through improvisation. Tiago's passion for music has led him to play in various venues around Toronto such as The Jazz Bistro, The Emmet Ray, Hirut Café, The Royal Botanical Gardens, and Tail of the Junction." 
                 />
             </section>
 
@@ -61,12 +61,12 @@ const Teachers = () => {
                 />
             </section>
 
-            <section className="tiago px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
+            <section className="giancarlo px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">            
                 <TeacherProfile 
-                    photo="/images/teachers/tiago.jpg"
-                    name="Tiago Cardoso"
+                    photo="/images/teachers/giancarlo.jpg"
+                    name="Giancarlo Gianneo"
                     instrument="GUITAR" 
-                    bio="A recent graduate from the music program at York University, Tiago has spent the last four years refining his playing through extensive jazz studies. He has studied with Canadian jazz legends such as Lorne Lofsky, Sundar Viswanathan, Roy Patterson, Anthony Michelli, and many others. It was during his studies that Tiago, alongside performing, had also discovered a love for teaching. He enjoys all kinds of music and feels as though the ultimate way to express himself is through improvisation. Tiago's passion for music has led him to play in various venues around Toronto such as The Jazz Bistro, The Emmet Ray, Hirut Café, The Royal Botanical Gardens, and Tail of the Junction." 
+                    bio="Giancarlo is a guitarist who recently graduated from the 'Music Industry Arts and Performance Program' at Centennial College. His primary focus lies in playing the guitar, which has led to his performing at multiple venues across Toronto. He started his musical journey at the age of 12 by learning classical guitar and immersing himself in a wide range of musical genres such as blues, rock, bluegrass and improvising. Following his high-school graduation, he finished a pre-university program at the Barranquilla School of Fine Arts and then continued his studies at Centennial College in Toronto. Giancarlo has practical experience in recording techniques and studio recording utilizing digital audio workstations, and providing his expertise as a session musician to others. He is filled with enthusiasm for music and is committed to sharing it with his students as he helps them to develop as musicians." 
                 />
             </section>
 
@@ -90,10 +90,10 @@ const Teachers = () => {
 
             <section className="matthew px-5 lg:px-36 xl:px-52 py-20">            
                 <TeacherProfile 
-                    photo="/images/teachers/matthew.jpeg"
+                    photo="/images/teachers/matthew.jpg"
                     name="Matthew Leombruni"
                     instrument="BASS GUITAR, UPRIGHT BASS"
-                    bio="Matthew is a Jazz Bassist who has performed both the electric and upright bass for 12 and 10 years, respectively. He began his musical journey at the age of 4, studying in the Community Music Program at Humber College for 14 years. Matthew then graduated with a Bachelor&apos;s Degree in Jazz Performance at the University of Toronto in 2022, studying with noteworthy Jazz musicians, such as Dave Young and others. Matthew has had the privilege of performing at festivals such as the 2021 Toronto Undergrad Jazz Festival, the 2020 & 2021 World of Jazz Festival in Brampton, as well as the 2023 TD Niagara Jazz Festival. He looks forward to the ample amount of opportunities that lie ahead in his musical journey." 
+                    bio="Matthew is a Jazz Bassist who has performed both the electric and upright bass for 12 and 10 years, respectively. He began his musical journey at the age of 4, studying in the Community Music Program at Humber College for 14 years. Matthew then graduated with a Bachelor&apos;s Degree in Jazz Performance at the University of Toronto in 2022, studying with noteworthy Jazz musicians, such as Dave Young and others. Matthew has had the privilege of performing at festivals such as the 2021 Toronto Undergrad Jazz Festival, the 2020 & 2021 World of Jazz Festival in Brampton, as well as the 2023 TD Niagara Jazz Festival. He looks forward to seeing his students succeed by sharing his own passion for music."
                 />
             </section>
 
@@ -129,7 +129,7 @@ const Teachers = () => {
 
             <div className="px-5 lg:px-36 xl:px-52 py-20">
                 <p className="italic"><span className="font-bold">*</span> Lessons with these teachers are subject to our <Link href="/rates" target="_blank" className="dcam-link">premium rates</Link></p>
-            </div>        
+            </div>
         </main>
      );
 }
