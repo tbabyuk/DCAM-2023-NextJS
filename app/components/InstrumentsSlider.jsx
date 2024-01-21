@@ -21,6 +21,11 @@ const instrumentsList = [
         url: "/guitar-lessons-etobicoke"
     },
     {
+        name: "bass",
+        imageSrc: "/images/instruments/bass.jpg",
+        url: "/guitar-lessons-etobicoke"
+    },
+    {
         name: "drums",
         imageSrc: "/images/instruments/drums.jpg",
         url: "/drum-lessons-etobicoke"

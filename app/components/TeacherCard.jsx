@@ -14,7 +14,7 @@ export const TeacherCard = ({teacher}) => {
                 className="h-full w-full object-cover"
             />
         </div>
-        <div className="bg-gray-100 text-center p-3">
+        <div className="bg-gray-200 text-center p-3">
             <h4 className="font-bold text-[1.2rem] pb-2">{teacher.name}</h4>
             <p className="text-[0.9rem]">{teacher.instrument}</p>
         </div>
