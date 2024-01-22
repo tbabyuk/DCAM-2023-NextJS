@@ -25,7 +25,7 @@ const Register = () => {
     return (
         <>
             <main className="rates-page">
-                <PageTitle title="Register" />
+                <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/register-page.jpg')] bg-center bg-cover">Register</h1>
                 <section className="register-page px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mb-24">
                     <RegisterForm />
                 </section>
