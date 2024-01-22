@@ -578,14 +578,14 @@ export const booksList = [
 
 
         // OTHER
-    {
-        // live id
-        id: "price_1OJ2vACO3Yh2jr9tLYbWkhqx",
-        title: "Chopin's 'Waltz in A Minor' score",
-        author: "DCAM",
-        publisher: "RCM Publishing",
-        price: 1.25,
-        quantity: 1,
-        imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fnotes2.png?alt=media&token=40160cf9-c3c0-4b5d-99a8-21f3db247ddd"
-    }
+    // {
+    //     // live id
+    //     id: "price_1OJ2vACO3Yh2jr9tLYbWkhqx",
+    //     title: "Chopin's 'Waltz in A Minor' score",
+    //     author: "DCAM",
+    //     publisher: "RCM Publishing",
+    //     price: 1.25,
+    //     quantity: 1,
+    //     imageUrl: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fnotes2.png?alt=media&token=40160cf9-c3c0-4b5d-99a8-21f3db247ddd"
+    // }
 ]

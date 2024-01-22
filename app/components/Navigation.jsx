@@ -2,12 +2,10 @@
 
 import { Fragment, useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
-import { GiShoppingCart } from "react-icons/gi"
 import { IoIosArrowDown } from "react-icons/io"
 import { motion } from "framer-motion";
 import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import { useShopContext } from "../hooks/useShopContext";
 
 
 export const Navigation = () => {
@@ -17,7 +15,6 @@ export const Navigation = () => {
     const [subnav1IsOpen, setSubnav1IsOpen] = useState(false)
     const [subnav2IsOpen, setSubnav2IsOpen] = useState(false)
     
-    const {cartItemsTotal} = useShopContext()
 
     // <div className={`md:flex ${isOpen ? "block" : "hidden"}`}>
 
@@ -28,7 +25,7 @@ return (
             {isOpen ? <RxCross1 size="1.8em" className="cursor-pointer h-full text-gray-50 mx-3" onClick={() => setIsOpen(false)} /> : <RxHamburgerMenu size="2em" className="cursor-pointer text-gray-50 mx-3" onClick={() => setIsOpen(true)} />}
         </div>
         <ul
-        className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:justify-center text-gray-50 z-[5] text-[0.95rem]`}>
+        className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:flex-wrap md:justify-center text-gray-50 z-[5] text-[0.95rem]`}>
             <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item">Home</li></Link>
             <li className="menu-item hover:bg-regBlue relative cursor-pointer" onMouseEnter={() => setSubnav1IsOpen(true)} onMouseLeave={() => setSubnav1IsOpen(false)} onClick={() => setSubnav1IsOpen(!subnav1IsOpen)}>Lessons<IoIosArrowDown className="ms-1" />
                 {subnav1IsOpen && (
@@ -58,9 +55,7 @@ return (
                     </ul>
                 )}
             </li>
-            {/* <Link href="/shop" onClick={() => setIsOpen(false)}><li className="menu-item">Shop</li></Link> */}
-                {/*reactivate the cart below to see current cart item count  */}
-            {/* <Link href="/cart"><button className={`z-20 cart absolute right-0 bg-green-500 text-white h-10 px-4 flex items-center`}><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link> */}
+            <Link href="/shop" onClick={() => setIsOpen(false)}><li className="menu-item">Shop</li></Link>
         </ul>
     </nav>  
 
