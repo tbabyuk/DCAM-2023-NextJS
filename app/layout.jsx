@@ -8,6 +8,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import { TopHeader } from './components/TopHeader'
 import Navigation from './components/Navigation'
+import { Analytics } from '@vercel/analytics/react';
+
 
 const ovo = Ovo({
   subsets: ["latin"],
@@ -49,6 +51,7 @@ export default function RootLayout({ children }) {
             hideProgressBar={true}
             closeOnClick={false}
           />
+          <Analytics />
         </body>
       </ShopContextProvider>
     </html>
