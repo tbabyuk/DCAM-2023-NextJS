@@ -55,8 +55,12 @@ button:disabled {
   @apply h-11 px-3 lg:px-4 text-center flex justify-center items-center hover:bg-darkBlue
 }
 
+.dropdown-menu-item {
+  @apply h-11 px-3 lg:px-4 text-center flex justify-center items-center
+}
+
 .submenu-item {
-  @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-regBlue
+  @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-darkBlue
 }
 
 .slick-slider {

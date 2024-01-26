@@ -32,7 +32,7 @@ const Slider = () => {
           <img
             key={index} 
             src={image} 
-            className={`${styles["slider-image"]} ${index === sliderIndex ? styles.active : ""} absolute h-full object-cover`} 
+            className={`${styles["slider-image"]} ${index === sliderIndex ? styles.active : ""} absolute h-full w-full object-cover`} 
             alt="slider image"
           />
         ))}
