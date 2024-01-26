@@ -28,8 +28,8 @@ export const TopHeader = () => {
                 <Link href="/cart"><button className="cart-button"><GiShoppingCart className="me-1" />Cart ({cartItemsTotal})</button></Link>
 
                 <div className="flex flex-col sm:flex-row md:flex-col xl:flex-row md:items-start">
-                    <a href = "mailto: info@dacapomusic.ca" className="flex items-center mb-5 sm:mb-0 md:pe-0 md:pb-2 xl:pb-0 xl:pe-6 hover:text-lightRed text-[1.1rem] md:text-[1rem]"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
-                    <a href="tel:+4162379595"className="flex items-center ps-8 md:ps-0 hover:text-lightRed text-[1.1rem] md:text-[1rem]"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
+                    <a href = "mailto: info@dacapomusic.ca" className="flex items-center mb-5 sm:mb-0 md:pe-0 md:pb-2 xl:pb-0 xl:pe-6 hover:text-regRed text-[1.1rem] md:text-[1rem]"><HiOutlineMail className="me-1" />info@dacapomusic.ca</a>
+                    <a href="tel:+4162379595" className="flex items-center ps-8 md:ps-0 hover:text-regRed text-[1.1rem] md:text-[1rem]"><BsTelephone className={"me-1"}/>(416) 237-9595</a>
                 </div>
             </div>
     )
