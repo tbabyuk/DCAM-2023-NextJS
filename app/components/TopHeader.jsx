@@ -18,7 +18,7 @@ export const TopHeader = () => {
 
 
     return (
-            <div className="header-top relative px-5 py-8 md:py-4 bg-[url('/bg_top_header_5.jpg')] bg-cover text-gray-100 flex flex-col md:flex-row justify-between items-center">
+            <div className="header-top relative px-5 py-8 md:py-4 bg-darkBlue bg-cover text-gray-100 flex flex-col md:flex-row justify-between items-center">
                 <Link href="/"><img src="/dcam_logo_white.png" className="pb-8 md:pb-0" style={{maxWidth: "180px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
 
                 <div className="hidden md:block">

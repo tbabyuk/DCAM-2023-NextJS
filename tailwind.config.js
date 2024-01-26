@@ -9,13 +9,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        lightRed: "#D97047",
-        regRed: "#C45429",
-        darkRed: "#6d3017",
-        lightBlue: "#68ACE3",
-        regBlue: "#216DAB",
-        darkBlue: "#103756",
-        regGreen: "#4AAD52"
+        lightRed: "#D97047", // old palette
+        regRed: "#F98764", // new palette
+        darkRed: "#6d3017", // old palette
+        lightBlue: "#88BDE9", // new palette
+        regBlue: "#567FA3", // new palette
+        darkBlue: "#375681", // new palette
+        regGreen: "#4AAD52", // old palette
+        regYellow: "#F2F5CD" // new palette
       },
     },
   },
