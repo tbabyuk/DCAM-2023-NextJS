@@ -144,7 +144,7 @@ const handleResumeUpload = (e) => {
 const handleSubmit = async (e) => {
 
     e.preventDefault()
-    setSubmitting(true)
+
     if(!fullName) {
         setFullNameError("Please enter your full name")
     }
@@ -181,7 +181,10 @@ const handleSubmit = async (e) => {
         setResumeError("Please attach your resume")
     }
 
+
     if(fullNameValid && phoneValid && emailValid && instrumentsValid && typeOfWorkValid && teachingExperienceValid && sourceValid && resume) {
+
+        setSubmitting(true)
 
         const prepareServerContent = async (resumeName, resumeURL) => {
 
@@ -235,7 +238,6 @@ const handleSubmit = async (e) => {
             console.log("oops, resume failed to upload")
         }
     }
-
 }
 
 
