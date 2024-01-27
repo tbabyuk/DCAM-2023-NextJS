@@ -4,7 +4,7 @@ import nodemailer from "nodemailer"
 
 export async function POST(request) {
 
-    const {student, parent, phone, email, instrument, lessonType, lessonDuration, lessonFrequency, lessonDays, source, comments} = await request.json()
+    const {student, parent, phone, email, instrument, lessonType, lessonDuration, lessonFrequency, preferredDays, source, comments} = await request.json()
 
     
         const transporter = nodemailer.createTransport({
@@ -47,11 +47,11 @@ export async function POST(request) {
                         <small>${lessonFrequency}</small>
                         <hr>
                         <strong>Lesson Days</strong><br />
-                        <small>Mondays: ${lessonDays.monday}</small><br />
-                        <small>Tuesdays: ${lessonDays.tuesday}</small><br />
-                        <small>Wednesdays: ${lessonDays.wednesday}</small><br />
-                        <small>Thursdays: ${lessonDays.thursday}</small><br />
-                        <small>Saturdays: ${lessonDays.saturday}</small>
+                        <small>Mondays: ${preferredDays.monday}</small><br />
+                        <small>Tuesdays: ${preferredDays.tuesday}</small><br />
+                        <small>Wednesdays: ${preferredDays.wednesday}</small><br />
+                        <small>Thursdays: ${preferredDays.thursday}</small><br />
+                        <small>Saturdays: ${preferredDays.saturday}</small>
                         <hr>
                         <strong>Source</strong><br />
                         <small>${source}</small>

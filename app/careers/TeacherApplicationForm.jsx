@@ -72,7 +72,7 @@ const handlePhone = (input) => {
     const phoneRegex = /^[\d\s()-]{10,20}$/
     const phonePass = phoneRegex.test(input)
     if(!phonePass) {
-        setPhoneError("Phone number must be at least 10 characters long")
+        setPhoneError("Phone number can only contain numbers, '()' or '-' and be at least 10 characters long")
         setPhoneValid(false)
     } else {
         setPhoneError(null)
