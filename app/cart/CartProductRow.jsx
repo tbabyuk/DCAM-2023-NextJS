@@ -8,32 +8,32 @@ import { toast } from "react-toastify"
 
 
 
-export const CartProductRow = ({item}) => {
+export const CartProductRow = ({product}) => {
 
 
   const {addToCart, subtractFromCart, removeFromCart, setCartItemsTotal} = useShopContext()
 
 
   const handleAdd = () => {
-    if(item.quantity < 10) {
-        addToCart(item, item.id)
+    if(product.quantity < 10) {
+        addToCart(product, product.id)
     } else {
-        toast.error("Oops, you've reached the maximum number of items available in stock!")
+        toast.error("Oops, you've reached the maximum number of products available in stock!")
     }
   }
 
   const handleSubtract = () => {
-    if(item.quantity > 1) {
-        subtractFromCart(item, item.id)
+    if(product.quantity > 1) {
+        subtractFromCart(product, product.id)
     } else {
-        removeFromCart(item.id)
+        removeFromCart(product.id)
         setCartItemsTotal((prev) => prev - 1)
     }
   }
 
   const handleRemove = () => {
-      removeFromCart(item.id)
-      setCartItemsTotal((prev) => prev - item.quantity)
+      removeFromCart(product.id)
+      setCartItemsTotal((prev) => prev - product.quantity)
   }
 
 
@@ -46,13 +46,13 @@ export const CartProductRow = ({item}) => {
       </td>
       <td className="w-[25%] min-w-[150px] py-6 border-2 border-gray-200">
           <div className="h-[120px] flex flex-shrink-0 justify-center"> 
-              <img src={item.source} alt={item.title} style={{maxHeight: "100%"}} />
+              <img src={product.source} alt={product.title} style={{maxHeight: "100%"}} />
           </div>
       </td>
-      <td className="w-[30%] min-w-[180px] border-2 border-gray-200 px-5">{item.title}</td>
-      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${item.price}</td>
-      <td className="w-[20%] min-w-[180px] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{item.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
-      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${(item.price * item.quantity).toFixed(2)}</td>
+      <td className="w-[30%] min-w-[180px] border-2 border-gray-200 px-5">{product.title}</td>
+      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${product.price}</td>
+      <td className="w-[20%] min-w-[180px] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{product.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
+      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${(product.price * product.quantity).toFixed(2)}</td>
     </tr>
   )
 }

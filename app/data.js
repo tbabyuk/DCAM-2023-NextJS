@@ -1,6 +1,6 @@
 
 
-export const shopProductsArray = [
+export const shopProductsCategoriesArray = [
     {
         category: "RCM BOOKS",
         source: "/images/shop/shop_rcm_books.png",

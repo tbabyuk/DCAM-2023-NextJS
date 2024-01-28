@@ -599,6 +599,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "30 minutes",
         price: 134,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_piano_30.jpg?alt=media&token=bf25b913-bb6d-46ee-9933-3e4e1df59c4c"
     },
     {
@@ -608,6 +609,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "45 minutes",
         price: 172,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_piano_45.jpg?alt=media&token=db054d87-c9ee-4ce7-8f09-6555562f1b02"
     },
     {
@@ -617,6 +619,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "60 minutes",
         price: 230,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_piano_60.jpg?alt=media&token=39affd2d-6682-40d5-bac5-724724926916"
     },
 
@@ -627,6 +630,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "30 minutes",
         price: 134,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_guitar_30.jpg?alt=media&token=267d4752-3804-4fa0-a1dc-0d7cb380082c"
     },
     {
@@ -636,6 +640,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "45 minutes",
         price: 172,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_guitar_45.jpg?alt=media&token=39c89d44-fb25-4d31-897b-060b1daec009"
     },
     {
@@ -645,6 +650,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "60 minutes",
         price: 230,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_guitar_60.jpg?alt=media&token=a9b057dd-1a26-4699-970c-24883c863604"
     },
 
@@ -655,6 +661,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "30 minutes",
         price: 134,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_drums_30.jpg?alt=media&token=2a202a50-5db5-4ba0-8958-948e7fe8711f"
     },
     {
@@ -664,6 +671,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "45 minutes",
         price: 172,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_drums_45.jpg?alt=media&token=546e2996-c087-4844-9be1-420947fadf08"
     },
     {
@@ -673,6 +681,7 @@ export const giftCertificatesList = [
         numOfLessons: 4,
         lessonDuration: "60 minutes",
         price: 230,
+        quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_drums_60.jpg?alt=media&token=1d0eb9f0-f20b-4e0c-8679-ed76d960ef04"
     }
 ]

@@ -148,8 +148,8 @@ const Cart = () => {
                       </tr>
                   </thead>
                   <tbody>
-                      {cart.map((item) => (
-                          <CartProductRow key={item.id} item={item} />
+                      {cart.map((product) => (
+                          <CartProductRow key={product.id} product={product} />
                       ))}
                       <tr>
                           <td colSpan="4"></td>
