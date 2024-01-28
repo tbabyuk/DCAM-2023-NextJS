@@ -5,6 +5,7 @@ import { useShopContext } from "../hooks/useShopContext"
 import { CartProductRow } from "./CartProductRow"
 import { useState } from "react"
 import ReCAPTCHA from "react-google-recaptcha"
+import { FixedQuantityProductRow } from "./FixedQuantityProductRow"
 
 
 
@@ -153,7 +154,7 @@ const Cart = () => {
                       <tr>
                           <td colSpan="4"></td>
                           <td className="text-right font-semibold">Subtotal:</td>
-                          <td className="text-center font-semibold py-4">${getSubtotal()}</td>
+                          <td className="text-center font-semibold py-4">{getSubtotal()}</td>
                       </tr>
                       {/* <tr>
                           <td colSpan="4"></td>

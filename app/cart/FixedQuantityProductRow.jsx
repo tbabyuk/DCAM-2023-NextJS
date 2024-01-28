@@ -8,28 +8,11 @@ import { toast } from "react-toastify"
 
 
 
-export const CartProductRow = ({item}) => {
+export const FixedQuantityProductRow = ({item}) => {
 
 
-  const {addToCart, subtractFromCart, removeFromCart, setCartItemsTotal} = useShopContext()
+  const {removeFromCart} = useShopContext()
 
-
-  const handleAdd = () => {
-    if(item.quantity < 10) {
-        addToCart(item, item.id)
-    } else {
-        toast.error("Oops, you've reached the maximum number of items available in stock!")
-    }
-  }
-
-  const handleSubtract = () => {
-    if(item.quantity > 1) {
-        subtractFromCart(item, item.id)
-    } else {
-        removeFromCart(item.id)
-        setCartItemsTotal((prev) => prev - 1)
-    }
-  }
 
   const handleRemove = () => {
       removeFromCart(item.id)
@@ -51,8 +34,8 @@ export const CartProductRow = ({item}) => {
       </td>
       <td className="w-[30%] min-w-[180px] border-2 border-gray-200 px-5">{item.title}</td>
       <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${item.price}</td>
-      <td className="w-[20%] min-w-[180px] border-2 border-gray-200 px-5 text-center"><BiLeftArrow className="me-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleSubtract} />{item.quantity}<BiRightArrow className="ms-2 inline-block text-[1.2rem] cursor-pointer" onClick={handleAdd} /></td>
-      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${(item.price * item.quantity).toFixed(2)}</td>
+      <td className="w-[20%] min-w-[180px] border-2 border-gray-200 px-5 text-center">1</td>
+      <td className="w-[10%] min-w-[80px] border-2 border-gray-200 px-5 text-center">${item.price}</td>
     </tr>
   )
 }

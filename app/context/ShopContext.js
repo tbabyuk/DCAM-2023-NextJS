@@ -13,6 +13,8 @@ export const ShopContextProvider = ({children}) => {
     // const notifyAdd = (item) => toast.success(`"${item}" \n was added to your cart!`)
     const notifyAdd = (item, origin) => {
         if(origin) {
+
+            // console.log("logging item from shop context:", item)
             toast.success(
                 <div>
                     <p>{item} was added to your cart!</p>
@@ -38,6 +40,8 @@ export const ShopContextProvider = ({children}) => {
 
     // ADD ITEM TO CART BY EITHER CLICKING 'ADD TO CART' BUTTON OR INCREASING ITEM QUANTITY
     const addToCart = (item, id, origin) => {
+
+        console.log("logging item being added to cart:", item, id, origin)
         // check if this item is already in the cart
         const itemIndex = cart.findIndex((item) => item.id === id)
         if(itemIndex === -1) {
