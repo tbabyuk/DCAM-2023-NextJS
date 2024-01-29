@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         lightRed: "#D97047", // old palette
         regRed: "#F98764", // new palette
-        darkRed: "#6d3017", // old palette
+        darkRed: "#F85F30", // new, 10% darker than regRed
         lightBlue: "#88BDE9", // new palette
         regBlue: "#567FA3", // new palette
         darkBlue: "#375681", // new palette

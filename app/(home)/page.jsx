@@ -6,6 +6,7 @@ import { TeacherCard } from '../components/TeacherCard';
 import Link from 'next/link';
 import { ShopProductCategoryCard } from '../components/ShopProductCategoryCard';
 import { shopProductCategoriesArray } from '../data';
+import { VisitPageButton } from '../components/VisitPageButton';
 
 
 export const metadata = {
@@ -98,13 +99,13 @@ const Home = async () => {
 
   return (
     <main>
-          <div className="px-5 py-20">
-            <h1 className="text-5xl font-ovo text-regBlue mb-4 block text-center">Music Lessons in Etobicoke</h1>
+          <div className="px-5 py-16">
+            <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
             <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
-          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-gray-100 bg-lightBlue py-20">
+          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-gray-100 bg-lightBlue py-16">
               <div className="flex flex-col md:flex-row">
                   <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
                         <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
@@ -118,13 +119,13 @@ const Home = async () => {
           </section>
 
           {/* INSTRUMENTS SECTION */}
-          <section className="instruments xl:px-28 py-20">
+          <section className="instruments xl:px-28 py-16">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">INSTRUMENTS</h2>
             <InstrumentsSlider />
           </section>
 
           {/* OFFERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-gray-100 bg-lightBlue">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-16 text-gray-100 bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -173,37 +174,39 @@ const Home = async () => {
           </section>
 
           {/* SHOP SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20">
-            <h2 className="mb-14 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">SHOP</h2>
-            <p className="mb-14">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
-              <div className="teachers-container flex flex-wrap gap-10 justify-center">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-16">
+            <h2 className="mb-10 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">SHOP</h2>
+            <p className="mb-16">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
+              <div className="teachers-container flex flex-wrap gap-10 justify-center mb-20">
                 {shopProductCategoriesArray.map((product, index) => (
                   <ShopProductCategoryCard key={index} product={product} />
                 ))}
               </div>
-            <div className="text-center mt-16"><Link href="/shop" className="hover:text-lightRed">Visit our SHOP</Link></div>
+            <VisitPageButton text="Visit Shop" link="/shop" />
           </section>
 
           {/* TEACHERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-lightBlue">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-16 bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
-            <div className="teachers-container flex flex-wrap gap-5 justify-center">
+            <div className="teachers-container flex flex-wrap gap-7 justify-center">
               {teachersPhotosArray.map((teacher, index) => (
                 <TeacherCard key={index} teacher={teacher} />
               ))}
             </div>
-            <div className="text-center mt-16"><Link href="/teachers" className="hover:text-lightRed">Go To Teachers&apos; Page...</Link></div>
+            <VisitPageButton text="Visit Teachers Page" link="/teachers" />
           </section>
 
           {/* REVIEWS SECTION */}
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-16">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
             {reviews && 
               reviews.map((review) => (
                 <ReviewCard review={review} />
               )
             )}
-            <div className="text-center mt-10"><a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank" className="hover:text-lightRed">See All Reviews...</a></div>
+            <a href="https://search.google.com/local/reviews?placeid=ChIJxzCGYLs3K4gR0hG4dhYU8mk" target="_blank">
+              <button className="visit-page-button block mx-auto">See All Reviews</button>
+            </a>
           </section>
           {/* TOGGLE POPUP BELOW */}
           {/* <TopPopup /> */}

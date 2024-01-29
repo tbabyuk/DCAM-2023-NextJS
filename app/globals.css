@@ -107,6 +107,11 @@ button:disabled {
   @apply bg-regGreen py-4 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] hover:bg-[hsl(125,40%,44%)] flex justify-center items-center
 }
 
+.visit-page-button {
+  @apply  bg-regRed hover:bg-darkRed mt-16 py-3 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] flex justify-center items-center
+}
+
+
 /* .blah {
   background: hsl(126, 40%, 48%);
   color: hsl(125, 40%, 44%);
