@@ -1,9 +1,9 @@
-
+import Link from "next/link"
 
 export const ShopProductCategoryCard = ({product}) => {
   return (
     
-    <a className="w-[250px] h-auto rounded-lg shadow-md overflow-hidden cursor-pointer hover:rotate-2" href={product.productPage}>
+    <Link className="w-[250px] h-auto rounded-lg border-2 border-gray-200 overflow-hidden cursor-pointer hover:border-regRed" href={product.productPage}>
         <div className="text-gray-100 text-center font-semibold bg-regRed py-2">{product.category}</div>
         <div className="w-full h-auto">
             <img
@@ -12,6 +12,6 @@ export const ShopProductCategoryCard = ({product}) => {
                 className="h-full w-full object-cover"
             />
         </div>
-    </a>
+    </Link>
   )
 }

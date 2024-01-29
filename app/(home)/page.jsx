@@ -5,7 +5,7 @@ import { TopPopup } from '../components/TopPopup';
 import { TeacherCard } from '../components/TeacherCard';
 import Link from 'next/link';
 import { ShopProductCategoryCard } from '../components/ShopProductCategoryCard';
-import { shopProductsArray } from '../data';
+import { shopProductCategoriesArray } from '../data';
 
 
 export const metadata = {
@@ -174,11 +174,11 @@ const Home = async () => {
             <h2 className="mb-14 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">SHOP</h2>
             <p className="mb-14">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
               <div className="teachers-container flex flex-wrap gap-10 justify-center">
-                {shopProductsArray.map((product, index) => (
+                {shopProductCategoriesArray.map((product, index) => (
                   <ShopProductCategoryCard key={index} product={product} />
                 ))}
               </div>
-            <div className="text-center mt-16"><Link href="/teachers" className="hover:text-lightRed">Visit our SHOP</Link></div>
+            <div className="text-center mt-16"><Link href="/shop" className="hover:text-lightRed">Visit our SHOP</Link></div>
           </section>
 
           <section className="offers px-5 lg:px-36 xl:px-52 py-20">

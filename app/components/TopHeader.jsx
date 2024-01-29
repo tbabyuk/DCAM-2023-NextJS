@@ -4,8 +4,6 @@ import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi"
 import { MMSLoginButton } from "./MMSLoginButton";
-import { TrialButton } from "./TrialButton";
-import { RegisterButton } from "./RegisterButton";
 import { GiShoppingCart } from "react-icons/gi";
 import { useShopContext } from "../hooks/useShopContext";
 

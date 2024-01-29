@@ -10,6 +10,8 @@ const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY)
 export async function POST(request) {
     const {items} = await request.json()
 
+    console.log("logging items from checkout API:", items)
+
 
     let lineItems = [];
 

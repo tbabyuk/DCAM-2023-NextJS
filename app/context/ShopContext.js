@@ -10,6 +10,9 @@ export const ShopContext = createContext()
 export const ShopContextProvider = ({children}) => {
 
 
+    console.log("shopContextProvider fired")
+
+
     // const notifyAdd = (item) => toast.success(`"${item}" \n was added to your cart!`)
     const notifyAdd = (item, origin) => {
         if(origin) {
