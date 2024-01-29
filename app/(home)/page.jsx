@@ -117,11 +117,13 @@ const Home = async () => {
 
           </section>
 
+          {/* INSTRUMENTS SECTION */}
           <section className="instruments xl:px-28 py-20">
-            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">INSTRUMENTS</h2>
+            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">INSTRUMENTS</h2>
             <InstrumentsSlider />
           </section>
 
+          {/* OFFERS SECTION */}
           <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-gray-100 bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
@@ -170,8 +172,9 @@ const Home = async () => {
             </div>
           </section>
 
+          {/* SHOP SECTION */}
           <section className="offers px-5 lg:px-36 xl:px-52 py-20">
-            <h2 className="mb-14 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">SHOP</h2>
+            <h2 className="mb-14 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">SHOP</h2>
             <p className="mb-14">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
               <div className="teachers-container flex flex-wrap gap-10 justify-center">
                 {shopProductCategoriesArray.map((product, index) => (
@@ -181,8 +184,9 @@ const Home = async () => {
             <div className="text-center mt-16"><Link href="/shop" className="hover:text-lightRed">Visit our SHOP</Link></div>
           </section>
 
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20">
-            <h2 className="mb-20 text-center text-3xl text-regBlue font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
+          {/* TEACHERS SECTION */}
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-lightBlue">
+            <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
             <div className="teachers-container flex flex-wrap gap-5 justify-center">
               {teachersPhotosArray.map((teacher, index) => (
                 <TeacherCard key={index} teacher={teacher} />
@@ -191,8 +195,9 @@ const Home = async () => {
             <div className="text-center mt-16"><Link href="/teachers" className="hover:text-lightRed">Go To Teachers&apos; Page...</Link></div>
           </section>
 
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-20 bg-lightBlue">
-            <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
+          {/* REVIEWS SECTION */}
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
+            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
             {reviews && 
               reviews.map((review) => (
                 <ReviewCard review={review} />
