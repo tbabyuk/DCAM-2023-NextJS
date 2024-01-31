@@ -48,10 +48,10 @@ return (
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item">Contact</li></Link>
             <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item">Blog</li></Link>
             <Link href="/careers" onClick={() => setIsOpen(false)}><li className="menu-item">Careers</li></Link>
-            <li className="dropdown-menu-item relative cursor-pointer" onMouseEnter={() => setSubnav2IsOpen(true)} onMouseLeave={() => setSubnav2IsOpen(false)} onClick={() => setSubnav2IsOpen(!subnav2IsOpen)}>Resources<IoIosArrowDown className=" ms-1" />
+            <li className="dropdown-menu-item relative cursor-pointer" onMouseEnter={() => setSubnav2IsOpen(true)} onMouseLeave={() => setSubnav2IsOpen(false)} onClick={() => setSubnav2IsOpen(!subnav2IsOpen)}>Tools<IoIosArrowDown className=" ms-1" />
                 {subnav2IsOpen && (
                     <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-regBlue text-[0.95rem] z-[6]">
-                        <Link href="https://rcm-wizard.dacapomusic.ca/" onClick={() => setIsOpen(false)}><li className="submenu-item">RCM Wizard</li></Link>
+                        <Link href="/tools/rcm-wizard" onClick={() => setIsOpen(false)}><li className="submenu-item">RCM Wizard</li></Link>
                     </ul>
                 )}
             </li>
