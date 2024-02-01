@@ -30,7 +30,7 @@ input:not([type="checkbox"]) input:not([type="radio"]) {
 }
 
 .dcam-link {
-  @apply border-b border-b-gray-400 hover:text-lightRed hover:border-b-lightRed
+  @apply border-b border-b-gray-400 hover:text-regRed hover:border-b-regRed
 }
 
 .blog-table table, 

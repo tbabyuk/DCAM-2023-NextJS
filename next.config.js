@@ -230,7 +230,12 @@ module.exports = {
             source: "/rcm-exams-complete-guide",
             destination: "/blog/rcm-exams-complete-guide",
             permanent: true,
-        }
+        },
+        // {
+        //     source: "https://rcm-wizard.dacapomusic.ca/",
+        //     destination: "/tools/rcm-wizard",
+        //     permanent: true,
+        // }
         ]
     },
 }
