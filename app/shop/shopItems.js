@@ -9,6 +9,7 @@ export const booksList = [
         publisher: "RCM Publishing",
         author: "Boris Berlin",
         price: 14.95,
+        category: ["piano", "beginner", "abc"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc1.png?alt=media&token=ebdf0f8f-146f-4e62-b459-2c893de95fae"
     },
@@ -19,6 +20,7 @@ export const booksList = [
         author: "Boris Berlin",
         publisher: "RCM Publishing",
         price: 14.95,
+        category: ["piano", "beginner", "abc"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc2.png?alt=media&token=c37d1ee6-2b6d-47e9-b3ec-08ccbd7fab35"
     },
@@ -29,6 +31,7 @@ export const booksList = [
         author: "Boris Berlin",
         publisher: "RCM Publishing",
         price: 14.95,
+        category: ["piano", "beginner", "abc"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc3.png?alt=media&token=7e7fa82d-fc89-44ac-9f07-a4a63f787a37"
     },
@@ -42,6 +45,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 12.95,
+        category: ["piano", "beginner", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_technical.jpg?alt=media&token=b8ee9656-8855-457e-8861-f6941375cc75"
     },
@@ -52,6 +56,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_a_rep.jpg?alt=media&token=f6ea60bb-9930-4d90-bd5e-3570675c8eeb"
     },
@@ -62,6 +67,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_b_rep.jpg?alt=media&token=ae544ae0-4971-43dd-8108-d0242195f2fa"
     },
@@ -72,6 +78,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["beginner", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Fpreptheory.jpg?alt=media&token=9d42896c-1e98-455f-ba28-22e88190e698"
     },
@@ -85,6 +92,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 13.95,
+        category: ["piano", "beginner", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1tech.jpg?alt=media&token=f969c293-3457-47ab-a91e-477c19947ae4"
     },
@@ -95,6 +103,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1rep2022.jpg?alt=media&token=10fe4a36-c502-45e2-ae69-f7fbd6d088fb"
     },
@@ -105,6 +114,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "beginner", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1etu2022.jpg?alt=media&token=4d9fdd4e-1601-44bf-8cc5-82818aa82c92"
     },
@@ -115,6 +125,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
+        category: ["piano", "beginner", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1sight.jpg?alt=media&token=b674641d-b559-4b6d-a70c-a2cf2b558956"
     },
@@ -125,6 +136,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["beginner", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl1theory.jpg?alt=media&token=83bbd90e-48c9-4a3c-951d-fb9ccd9dd575"
     },
@@ -138,6 +150,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
+        category: ["piano", "beginner", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2tech.jpg?alt=media&token=b3bc6695-d05f-442b-8d19-5f7db37a1be0"
     },
@@ -148,6 +161,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2rep2022.jpg?alt=media&token=35c1a83b-4e28-4142-bb1d-bc644f550d47"
     },
@@ -158,6 +172,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "beginner", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2etu2022.jpg?alt=media&token=0f264e01-4c64-4bd3-93ba-2c55c215b469"
     },
@@ -168,6 +183,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
+        category: ["piano", "beginner", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2sight.jpg?alt=media&token=049d8d39-0885-4e20-ac6b-fd9ce5571e9a"
     },
@@ -178,6 +194,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["beginner", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl2theory.jpg?alt=media&token=ba8daac6-4c44-46e7-91c4-0a99ff72c6f3"
     },
@@ -191,6 +208,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
+        category: ["piano", "beginner", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3tech.jpg?alt=media&token=6003069f-f08f-4aed-9ec6-9a6282939da5"
     },
@@ -201,6 +219,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3rep2022.jpg?alt=media&token=ba2630e5-199d-484c-a62f-e76e71a4285d"
     },
@@ -211,6 +230,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "beginner", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3etu2022.jpg?alt=media&token=45ab3bb7-1c61-4b60-8f74-23b87b7291a0"
     },
@@ -221,6 +241,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3sight.jpg?alt=media&token=9152e739-a906-4159-9dc0-ab9a8f3e6f44"
     },
@@ -231,6 +252,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["beginner", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl3theory.jpg?alt=media&token=9fa4675d-be4b-45f0-a003-5ab2801bbde7"
     },
@@ -244,6 +266,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
+        category: ["piano", "beginner", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4tech.jpg?alt=media&token=9a6c8c7a-dc36-4856-bbe2-06f7cb0f038b"
     },
@@ -254,6 +277,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
+        category: ["piano", "beginner", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4rep2022.jpg?alt=media&token=b77c7ffb-97ef-4d4e-9f9c-41d2be6f61c9"
     },
@@ -264,6 +288,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "beginner", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4etu2022.jpg?alt=media&token=38f97ca6-94ed-4874-8940-d861a04a82df"
     },
@@ -274,6 +299,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4sight.jpg?alt=media&token=f35df6ec-08e1-4ddc-8984-a7c6e79912c4"
     },
@@ -284,6 +310,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["beginner", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl4theory.jpg?alt=media&token=b1159e85-9359-40f3-8507-a3719aa42900"
     },
@@ -297,6 +324,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "intermediate", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5tech.jpg?alt=media&token=bbc0c84b-50f6-4897-af3b-118da51a42ef"
     },
@@ -307,6 +335,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["piano", "intermediate", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5rep2022.jpg?alt=media&token=564dfcad-a3ca-4bb6-bacc-8bf0850636a9"
     },
@@ -317,6 +346,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
+        category: ["piano", "intermediate", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5etu2022.jpg?alt=media&token=c587d197-0c24-4b13-b9b7-b9fbfa86f98b"
     },
@@ -327,6 +357,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5sight.jpg?alt=media&token=39db4275-b8a0-4ad4-b901-81376246e7b9"
     },
@@ -337,6 +368,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["intermediate", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl5theory.jpg?alt=media&token=1f560f46-7741-4b32-a50f-bd8c10a7d823"
     },
@@ -350,6 +382,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 16.95,
+        category: ["piano", "intermediate", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_6_piano%2Flvl6tech.jpg?alt=media&token=1c6247d4-d082-4c9b-b4bb-725c63b5713f"
     },
@@ -360,6 +393,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 23.95,
+        category: ["piano", "intermediate", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_6_piano%2Flvl6rep2022.jpg?alt=media&token=b46dbd0a-e56a-423f-a318-34e5f64ee8fa"
     },
@@ -370,6 +404,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 16.95,
+        category: ["piano", "intermediate", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_6_piano%2Flvl6etu2022.jpg?alt=media&token=36d9d725-05ec-41e8-95cc-f1aa9e58ece3"
     },
@@ -380,6 +415,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_6_piano%2Flvl6sight.jpg?alt=media&token=e2efbb06-9773-4333-866e-c84b4685bc46"
     },
@@ -390,6 +426,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["intermediate", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl6theory.jpg?alt=media&token=6625f42d-1733-4718-a5ca-cc89555d7d07"
     },
@@ -403,6 +440,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 17.95,
+        category: ["piano", "intermediate", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_7_piano%2Flvl7tech.jpg?alt=media&token=9a512180-f152-4244-836f-f158dfab7154"
     },
@@ -413,6 +451,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 23.95,
+        category: ["piano", "intermediate", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_7_piano%2Flvl7rep2022.jpg?alt=media&token=d50f601b-84d7-409a-a659-49dc171b0044"
     },
@@ -423,6 +462,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 16.95,
+        category: ["piano", "intermediate", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_7_piano%2Flvl7etu2022.jpg?alt=media&token=5df70ce4-2f89-477f-b84d-e4203c911fcd"
     },
@@ -433,6 +473,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_7_piano%2Flvl7sight.jpg?alt=media&token=3e504c4b-4458-45d5-82b4-db7e58a10267"
     },
@@ -443,6 +484,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["intermediate", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl7theory.jpg?alt=media&token=75bb4be0-f9df-46d2-91ad-9a935c25907e"
     },
@@ -456,6 +498,7 @@ export const booksList = [
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 18.95,
+        category: ["piano", "advanced", "technical", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_8_piano%2Flvl8tech.jpg?alt=media&token=4938cc7b-3e0c-4dc6-853b-9658c2b5cd1a"
     },
@@ -466,6 +509,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 26.95,
+        category: ["piano", "intermediate", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_8_piano%2Flvl8rep2022.jpg?alt=media&token=b70025dd-235f-465b-8a88-7c1ec67fad00"
     },
@@ -476,6 +520,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
+        category: ["piano", "intermediate", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_8_piano%2Flvl8etu2022.jpg?alt=media&token=c2987603-7708-4ab4-b97d-7da0781f3f09"
     },
@@ -486,6 +531,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_8_piano%2Flvl8sight.jpg?alt=media&token=8342a9eb-4fbe-4179-9480-45bd006ec6d8"
     },
@@ -496,6 +542,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 28.95,
+        category: ["intermediate", "theory", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl8theory.jpg?alt=media&token=32a01b50-8a7f-4224-bedf-12d83411ea33"
     },
@@ -509,6 +556,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 39.95,
+        category: ["piano", "advanced", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_9_piano%2Flvl9rep.jpg?alt=media&token=99b2a41b-1bba-43c4-8abc-3409d4e39939"
     },
@@ -519,6 +567,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
+        category: ["piano", "advanced", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_9_piano%2Flvl9etu.jpg?alt=media&token=241ee716-b0cc-42e5-b454-1589180f360e"
     },
@@ -529,6 +578,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 24.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_9_piano%2Flvl9sight.jpg?alt=media&token=0d2124e7-72ea-4887-be40-9b89fcb66e4d"
     },
@@ -539,6 +589,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 48.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl9harmony.jpg?alt=media&token=20648ec6-e149-45cc-91e5-72c52616d391"
     },
@@ -549,6 +600,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 51.95,
+        category: ["placeholder"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl9history.jpg?alt=media&token=40218278-dbc2-4000-bc14-7423df042877"
     },
@@ -562,6 +614,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 43.95,
+        category: ["piano", "advanced", "repertoire", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_10_piano%2Flvl10rep.jpg?alt=media&token=30556d7d-8b58-4381-a900-55bf67ac2a44"
     },
@@ -572,6 +625,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
+        category: ["piano", "advanced", "etudes", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_10_piano%2Flvl10etu.jpg?alt=media&token=9bd7fc0e-29e1-4a74-b5b9-7ceafe666260"
     },

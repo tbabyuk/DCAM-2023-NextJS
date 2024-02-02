@@ -26,7 +26,7 @@ return (
         </div>
         <ul
         className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:flex-wrap md:justify-center text-gray-50 z-[5] text-[0.95rem]`}>
-            <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">Home</li></Link>
+            <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item border-t-2 border-b-2 border-gray-200 md:border-none">Home</li></Link>
             <li className="dropdown-menu-item relative cursor-pointer border-b-2 border-gray-200 md:border-none" onMouseEnter={() => setSubnav1IsOpen(true)} onMouseLeave={() => setSubnav1IsOpen(false)} onClick={() => setSubnav1IsOpen(!subnav1IsOpen)}>Lessons<IoIosArrowDown className="ms-1" />
                 {subnav1IsOpen && (
                     <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-regBlue text-[0.95rem] z-[6]">
