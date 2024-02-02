@@ -52,7 +52,7 @@ button:disabled {
 }
 
 .menu-item {
-  @apply h-11 px-3 lg:px-4 text-center flex justify-center items-center hover:bg-darkBlue
+  @apply h-12 md:h-11 px-3 lg:px-4 text-center flex justify-center items-center hover:bg-darkBlue
 }
 
 .dropdown-menu-item {
