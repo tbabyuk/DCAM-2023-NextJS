@@ -2,11 +2,11 @@
 
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
-import SliderOverlay from "./SliderOverlay"
-import { ShopOverlay } from "./ShopOverlay"
+import { MainSliderOverlay } from "./MainSliderOverlay"
+import { ShopSliderOverlay } from "./ShopSliderOverlay"
 
 
-const Slider = () => {
+export const Slider = () => {
 
   const sliderImagesArray = ["/sliders/piano-1200.jpg", "/sliders/guitar-1200.jpg", "/sliders/voice-1200.jpg", "/sliders/drums-1200.jpg"]
 
@@ -26,8 +26,8 @@ const Slider = () => {
 
   return (
     <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-124px)] relative">
-        <ShopOverlay />
-        <SliderOverlay />
+        <ShopSliderOverlay />
+        <MainSliderOverlay />
 
         {sliderImagesArray.map((image, index) => (
           <img
@@ -39,7 +39,5 @@ const Slider = () => {
         ))}
 
     </div>  
-)
+  )
 }
-
-export default Slider

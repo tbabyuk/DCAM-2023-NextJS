@@ -1,10 +1,9 @@
-
 import Typewriter from "typewriter-effect"
 import { TrialButton } from "./TrialButton"
 import { RegisterButtonHero } from "./RegisterButtonHero"
 
 
-const SliderOverlay = () => {
+export const MainSliderOverlay = () => {
 
   return (
 
@@ -24,5 +23,3 @@ const SliderOverlay = () => {
         </div>  
     )
 }
-
-export default SliderOverlay

@@ -1,22 +1,16 @@
 "use client"
 
-import { Fragment, useState } from "react";
+import { useState } from "react";
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx"
 import { IoIosArrowDown } from "react-icons/io"
-import { motion } from "framer-motion";
-import { AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 
 export const Navigation = () => {
 
-
     const [isOpen, setIsOpen] = useState(false);
     const [subnav1IsOpen, setSubnav1IsOpen] = useState(false)
     const [subnav2IsOpen, setSubnav2IsOpen] = useState(false)
-    
-
-    // <div className={`md:flex ${isOpen ? "block" : "hidden"}`}>
 
 
 return (

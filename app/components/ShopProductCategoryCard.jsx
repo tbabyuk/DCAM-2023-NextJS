@@ -1,6 +1,7 @@
 import Link from "next/link"
 
 export const ShopProductCategoryCard = ({product}) => {
+  
   return (
     
     <Link className="w-[250px] h-auto rounded-lg border-2 border-gray-200 overflow-hidden cursor-pointer hover:border-regRed" href={product.productPage}>

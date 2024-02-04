@@ -1,5 +1,4 @@
-import { PageTitle } from "../../components/PageTitle";
-import TeacherProfile from "../../components/TeacherProfile";
+import { TeacherProfile } from "../../components/TeacherProfile";
 import Link from "next/link";
 
 

@@ -67,7 +67,6 @@ function SampleNextArrow(props) {
 
 export const InstrumentsSlider = () => {
 
-
     var settings = {
         dots: false,
         infinite: false,
@@ -108,7 +107,6 @@ export const InstrumentsSlider = () => {
           }
         ]
       };
-
 
       return (
           <Slider {...settings} className="px-20">

@@ -1,6 +1,3 @@
-import { DownloadButton } from "../../components/DownloadButton";
-import { PageDivider } from "../../components/PageDivider";
-import { PageTitle } from "../../components/PageTitle";
 import { RegisterForm } from "./RegisterForm";
 
 

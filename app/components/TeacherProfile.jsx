@@ -1,7 +1,8 @@
 
 
 
-const TeacherProfile = ({photo, name, title, instrument, bio}) => {
+export const TeacherProfile = ({photo, name, title, instrument, bio}) => {
+    
     return ( 
         <div className="flex-col leading-10">
             <div className="mb-5">
@@ -20,5 +21,3 @@ const TeacherProfile = ({photo, name, title, instrument, bio}) => {
         </div>
     );
 }
- 
-export default TeacherProfile;
