@@ -3,6 +3,7 @@
 import styles from "./Slider.module.css"
 import { useState, useEffect } from "react"
 import SliderOverlay from "./SliderOverlay"
+import { ShopOverlay } from "./ShopOverlay"
 
 
 const Slider = () => {
@@ -25,7 +26,7 @@ const Slider = () => {
 
   return (
     <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-124px)] relative">
-
+        <ShopOverlay />
         <SliderOverlay />
 
         {sliderImagesArray.map((image, index) => (
