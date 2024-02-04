@@ -5,7 +5,7 @@ import { TopPopup } from '../components/TopPopup';
 import { TeacherCard } from '../components/TeacherCard';
 import Link from 'next/link';
 import { ShopProductCategoryCard } from '../components/ShopProductCategoryCard';
-import { shopProductCategoriesArray } from '../data';
+import { shopProductCategoriesArray } from '../shop/shopData';
 import { VisitPageButton } from '../components/VisitPageButton';
 
 

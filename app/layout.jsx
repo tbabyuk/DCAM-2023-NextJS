@@ -1,13 +1,13 @@
 import './globals.css'
-import Footer from './components/Footer'
+import { Footer } from './components/Footer'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
 import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 import { TopHeader } from './components/TopHeader'
 import Navigation from './components/Navigation'
 import { Analytics } from '@vercel/analytics/react'
+import 'react-toastify/dist/ReactToastify.css'
 import Script from 'next/script'
 
 

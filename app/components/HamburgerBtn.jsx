@@ -3,7 +3,7 @@
 import { RxHamburgerMenu } from "react-icons/rx"
 import { useState } from "react"
 
-const HamburgerBtn = ({children}) => {
+export const HamburgerBtn = ({children}) => {
 
     const [dropdownIsOpen, setDropdownIsOpen] = useState(false)
 
@@ -27,5 +27,3 @@ const HamburgerBtn = ({children}) => {
 
      );
 }
- 
-export default HamburgerBtn;

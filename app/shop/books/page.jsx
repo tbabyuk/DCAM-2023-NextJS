@@ -1,6 +1,6 @@
 "use client"
 
-import { booksList } from "../shopItems"
+import { booksList } from "../shopData"
 import { ShopProductCard } from "../ShopProductCard"
 import { BooksFilter } from "../BooksFilter"
 import { useState } from "react"
@@ -20,11 +20,6 @@ const ShopBooksPage = () => {
   }
 
   console.log("instrument:", instrumentValue, "scope:", scopeValue)
-
-
-  // useEffect(() => {
-
-  // }, [instrumentValue, scopeValue])
 
     
   return (

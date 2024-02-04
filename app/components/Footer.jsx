@@ -4,7 +4,7 @@ import { HiOutlineMail, HiOutlineOfficeBuilding } from "react-icons/hi"
 import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icons/fa"
 
 
-const Footer = () => {
+export const Footer = () => {
     return ( 
         <footer className="mt-40 px-5 lg:px-10 py-8 flex flex-col-reverse gap-y-14 md:flex-row bg-darkBlue min-h-50 text-gray-50 font-roboto">
             <div className="flex-1">
@@ -75,5 +75,3 @@ const Footer = () => {
         </footer>
      );
 }
- 
-export default Footer;

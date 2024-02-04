@@ -731,3 +731,18 @@ export const giftCertificatesList = [
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fgift_certificates%2Fgift_certificate_drums_60.jpg?alt=media&token=1d0eb9f0-f20b-4e0c-8679-ed76d960ef04"
     }
 ]
+
+
+
+export const shopProductCategoriesArray = [
+    {
+        category: "MUSIC BOOKS",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Frcm_books_category.jpg?alt=media&token=ae63b788-5431-4344-a789-92245b852284",
+        productPage: "/shop/books"
+    },
+    {
+        category: "GIFT CERTIFICATES",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fgift_certificates_category.jpg?alt=media&token=dc251ece-8f9c-438f-9980-01edd7d91374",
+        productPage: "/shop/gift-certificates"
+    }
+]
