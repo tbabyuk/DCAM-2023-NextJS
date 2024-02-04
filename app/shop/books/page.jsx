@@ -8,8 +8,8 @@ import { useState } from "react"
 
 const ShopBooksPage = () => {
 
-  const [instrumentValue, setInstrumentValue] = useState("")
-  const [scopeValue, setScopeValue] = useState("")
+  const [instrumentValue, setInstrumentValue] = useState("piano")
+  const [scopeValue, setScopeValue] = useState("all")
 
   const handleInstrumentValue = (value) => {
     setInstrumentValue(value)
@@ -21,6 +21,11 @@ const ShopBooksPage = () => {
 
   console.log("instrument:", instrumentValue, "scope:", scopeValue)
 
+
+  // useEffect(() => {
+
+  // }, [instrumentValue, scopeValue])
+
     
   return (
     <main>
@@ -28,11 +33,19 @@ const ShopBooksPage = () => {
           <BooksFilter handleInstrumentValue={handleInstrumentValue} handleScopeValue={handleScopeValue} />
         </div>
         <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 bg-gray-100 py-20">
-            {booksList
+        {scopeValue === "all" ? (
+            booksList
               .filter((book) => book.category.includes(instrumentValue))
               .map((product) => (
                 <ShopProductCard key={product.id} product={product} productType="book" />
-            ))}
+              ))
+          ) : (
+            booksList
+              .filter((book) => book.category.includes(instrumentValue) && book.category.includes(scopeValue))
+              .map((product) => (
+                <ShopProductCard key={product.id} product={product} productType="book" />
+              ))
+          )}
         </div>
     </main>  
   )
