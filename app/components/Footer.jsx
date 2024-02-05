@@ -6,7 +6,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaYoutubeSquare } from "react-icon
 
 export const Footer = () => {
     return ( 
-        <footer className="mt-40 px-5 lg:px-10 py-8 flex flex-col-reverse gap-y-14 md:flex-row bg-darkBlue min-h-50 text-gray-50 font-roboto">
+        <footer className="px-5 lg:px-10 py-8 flex flex-col-reverse gap-y-14 md:flex-row bg-darkBlue min-h-50 text-gray-50 font-roboto">
             <div className="flex-1">
                 <h4 className="mb-6 inline-block border-b-2">FOLLOW US:</h4>
                     <div className="social-links flex">

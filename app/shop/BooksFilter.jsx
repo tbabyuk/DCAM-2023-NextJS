@@ -24,8 +24,8 @@ export const BooksFilter = ({handleInstrumentValue, handleScopeValue}) => {
 
 
     return (
-        <div className="flex flex-col md:flex-row py-8 border-b-2 border-gray-300">
-            <div className="w-full md:w-[250px] mb-6 md:mb-0 mr-10">
+        <div className="flex flex-col md:flex-row pt-12 pb-8 border-b-2 border-gray-300">
+            <div className="w-full sm:w-[250px] mb-6 md:mb-0 mr-10">
                 <p className="mb-1">Choose instrument/subject:</p>
                 <select 
                     className="w-full h-8 cursor-pointer border-2 border-gray-400" 

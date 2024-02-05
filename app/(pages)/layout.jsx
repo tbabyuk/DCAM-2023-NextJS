@@ -1,11 +1,11 @@
 
 
-
 const PagesLayout = ({ children }) => {
+    
     return (
-        <>
+        <div>
             {children}
-        </>
+        </div>
     )
   }
 

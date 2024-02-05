@@ -33,9 +33,9 @@ const Reviews = async () => {
     const reviews = await fetchReviews()
 
     return ( 
-        <main className="reviews-page">
+        <main className="reviews-page bg-gray-100 pb-36">
             <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/reviews-page.jpg')] bg-center bg-cover">Reviews</h1>
-            <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
+            <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 py-20">
                 {reviews && 
                     reviews.map((review) => <ReviewCard review={review} />
                 )}

@@ -33,7 +33,7 @@ export const metadata = {
 
 const PianoLessonsPage = () => {
     return ( 
-        <main className="piano-page">
+        <main className="piano-page pb-36">
             <PageTitle title="Piano Lessons in Etobicoke" />
 
             <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">

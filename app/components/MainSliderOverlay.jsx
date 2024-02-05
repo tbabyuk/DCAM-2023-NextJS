@@ -12,6 +12,7 @@ export const MainSliderOverlay = () => {
               <TrialButton />
               <RegisterButtonHero />
             </div>
+            <h1 className="text-5xl xl:text-6xl text-center lg:px-22 xl:px-32">Discover the joy of Music!</h1>
             <Typewriter 
                         options={{
                           strings: ["PIANO", "GUITAR", "VOICE", "DRUMS", "UKULELE", "MUSIC THEORY"],
@@ -19,7 +20,6 @@ export const MainSliderOverlay = () => {
                           loop: true,
                         }}
             />
-            <h1 className="text-5xl xl:text-6xl text-center lg:px-22 xl:px-32">Discover the joy of Music!</h1>
         </div>  
     )
 }
