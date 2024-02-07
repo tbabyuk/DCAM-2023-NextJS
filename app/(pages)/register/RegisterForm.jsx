@@ -1,64 +1,66 @@
 "use client"
 
-
 import { useState, useEffect } from "react"
+
 
 
 export const RegisterForm = () => {
 
   const [firstPageLoad, setFirstPageLoad] = useState(false)
-  const [studentName, setStudentName] = useState("")
+
   const [studentNameError, setStudentNameError] = useState(null)
   const [studentNameValid, setStudentNameValid] = useState(false)
 
-  const [parentName, setParentName] = useState("")
   const [parentNameError, setParentNameError] = useState(null)
   const [parentNameValid, setParentNameValid] = useState(false)
 
-  const [phone, setPhone] = useState("")
   const [phoneError, setPhoneError] = useState(null)
   const [phoneValid, setPhoneValid] = useState(false)
 
-  const [email, setEmail] = useState("")
   const [emailError, setEmailError] = useState(null)
   const [emailValid, setEmailValid] = useState(false)
 
-  const [instrument, setInstrument] = useState("choose instrument")
   const [instrumentError, setInstrumentError] = useState(null)
   const [instrumentValid, setInstrumentValid] = useState(false)
 
-  const [lessonType, setLessonType] = useState("private")
-
-  const [lessonDuration, setLessonDuration] = useState("30")
-  const [lessonFrequency, setLessonFrequency] = useState("once-a-week")
-
-  const [preferredDays, setPreferredDays] = useState({
-    "monday": false,
-    "tuesday": false,
-    "wednesday": false,
-    "thursday": false,
-    "saturday": false
-  })
   const [preferredDaysError, setPreferredDaysError] = useState(null)
   const [preferredDaysValid, setPreferredDaysValid] = useState(false)
 
-  const [source, setSource] = useState("choose option")
   const [sourceError, setSourceError] = useState(null)
   const [sourceValid, setSourceValid] = useState(false)
-
-  const [comments, setComments] = useState("")
 
   const [submitting, setSubmitting] = useState(false)
   const [showSuccessResponse, setShowSuccessResponse] = useState(false)
   const [showErrorResponse, setShowErrorResponse] = useState(false)
 
   
+  const initialFormState = {
+    student_name: "",
+    parent_name: "",
+    phone: "",
+    email: "",
+    instrument: "choose instrument",
+    lesson_type: "private",
+    lesson_duration: "30",
+    lesson_frequency: "once-a-week",
+    preferred_days: {
+        "monday": false,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "saturday": false
+    },
+    source: "choose option",
+    comments: ""
+  }
 
-  const handleStudentName = (input) => {
+  const [registerFormState, setRegisterFormState] = useState(initialFormState)
 
-    setStudentName(input)
+
+  const validateStudentName = (value) => {
+    console.log("validateStudentName ran:", value)
     const studentNameRegex = /^[a-zA-Z ]{3,40}$/
-    const studentNamePass = studentNameRegex.test(input)
+    const studentNamePass = studentNameRegex.test(value)
     if(!studentNamePass) {
         setStudentNameError("Student name must be at least 3 characters long")
         setStudentNameValid(false)
@@ -68,11 +70,10 @@ export const RegisterForm = () => {
     }
   }
 
-  const handleParentName = (input) => {
-
-    setParentName(input)
+  const validateParentName = (value) => {
+    console.log("validateParentName ran:", value)
     const parentNameRegex = /^[a-zA-Z ]{3,40}$/
-    const parentNamePass = parentNameRegex.test(input)
+    const parentNamePass = parentNameRegex.test(value)
     if(!parentNamePass) {
         setParentNameError("Parent name must be at least 3 characters long")
         setParentNameValid(false)
@@ -82,12 +83,11 @@ export const RegisterForm = () => {
     }
   }
 
-  const handlePhone = (input) => {
-    // update state with phone input
-    setPhone(input)
-    // validate phone input
+
+  const validatePhone = (value) => {
+    console.log("validatePhone ran:", value)
     const phoneRegex = /^[\d\s()-]{10,20}$/
-    const phonePass = phoneRegex.test(input)
+    const phonePass = phoneRegex.test(value)
     if(!phonePass) {
         setPhoneError("Phone number can only contain numbers, '()' or '-' and be at least 10 characters long")
         setPhoneValid(false)
@@ -97,12 +97,10 @@ export const RegisterForm = () => {
     }
   }
 
-  const handleEmail = (input) => {
-    // update state with email input
-    setEmail(input)
-    // validate email input
+  const validateEmail = (value) => {
+    console.log("validate Email ran:", value)
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-    const emailPass = emailRegex.test(input)   
+    const emailPass = emailRegex.test(value)   
     if(!emailPass) {
         setEmailError("Please enter a valid email")
         setEmailValid(false)
@@ -112,51 +110,83 @@ export const RegisterForm = () => {
     }
   }
 
-  const handleInstrument = (instrument) => {
-    setInstrument(instrument)
+  const validateInstrument = () => {
+    console.log("validate instrument ran")
     setInstrumentError(null)
     setInstrumentValid(true)
   }
 
-  const handlePreferredDays = (day) => {
-      setPreferredDays((prevDays) => ({
-          ...prevDays,
-          [day]: !prevDays[day]
-      }))
-  }
-
-  const handleSource = (source) => {
-    setSource(source)
+  const validateSource = () => {
+    console.log("validate source ran")
     setSourceError(null)
     setSourceValid(true)
   }
 
-  const handleComments = (comments) => {
-    setComments(comments)
-}
+  console.log("logging current state:", registerFormState)
+
+  const handleFormInputs = (e) => {
+        const key = e.target.name
+        const value = e.target.value
+
+        if(key === "preferred_days") {
+            setRegisterFormState((prevState) => ({
+                ...prevState,
+                preferred_days: {
+                    ...prevState.preferred_days,
+                    [value]: !prevState.preferred_days[value]
+                }
+            }))
+        } else {
+            setRegisterFormState((prevState) => ({
+                ...prevState,
+                [key]: value
+            }))
+        }
+
+
+        switch(key) {
+            case "student_name":
+                validateStudentName(value)
+                break;
+            case "parent_name":
+                validateParentName(value)
+                break;
+            case "phone":
+                validatePhone(value)
+                break;
+            case "email":
+                validateEmail(value)
+            case "instrument":
+                validateInstrument(value)
+            case "source":
+                validateSource(value)
+        }
+
+        console.log("key:", key, "value:", value)
+  }
 
 
   const handleSubmit = async (e) => {
 
     e.preventDefault()
 
-    if(!studentName) {
+    if(!registerFormState.student_name) {
         setStudentNameError("Please enter student name")
     }
-    if(!parentName) {
+    if(!registerFormState.parent_name) {
         setParentNameError("Please enter parent name")
     }
-    if(!phone) {
+    if(!registerFormState.phone) {
         setPhoneError("Please enter your phone number")
     }
-    if(!email) {
+    if(!registerFormState.email) {
         setEmailError("Please enter your email address")
     }
     if(!instrumentValid) {
         setInstrumentError("Please indicate what instrument you would like to learn")
     }
 
-    const preferredDaysValues = Object.values(preferredDays)
+    const preferredDaysValues = Object.values(registerFormState.preferred_days)
     if(!preferredDaysValues.includes(true)) {
         setPreferredDaysError("Please indicate day(s) you would prefer for your lessons")
         setPreferredDaysValid(false)
@@ -178,19 +208,7 @@ export const RegisterForm = () => {
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({
-            student: studentName.trim(),
-            parent: parentName.trim(),
-            phone: phone.trim(),
-            email: email.trim(),
-            instrument,
-            lessonType,
-            lessonDuration,
-            lessonFrequency,
-            preferredDays,
-            source,
-            comments: comments.trim()
-        })
+        body: JSON.stringify(registerFormState)
     })
 
     if(response.status === 200) {
@@ -207,21 +225,6 @@ export const RegisterForm = () => {
         setShowErrorResponse(true)
     }
 
-        // FOR TESTING
-        
-        // console.log(
-        //     "student name:", studentName,
-        //     "parent name:", parentName,
-        //     "phone:", phone,
-        //     "email:", email,
-        //     "instrument:", instrument,
-        //     "lesson type:", lessonType,
-        //     "lesson duration:", lessonDuration,
-        //     "lesson frequency:", lessonFrequency,
-        //     "preferred day(s):", preferredDays,
-        //     "source:", source,
-        //     "comments:", comments
-        // )
     }
   }
 
@@ -234,7 +237,7 @@ export const RegisterForm = () => {
     if(!firstPageLoad) {
         return
     }
-    const preferredDaysValues = Object.values(preferredDays)
+    const preferredDaysValues = Object.values(registerFormState.preferred_days)
     if(!preferredDaysValues.includes(true)) {
         setPreferredDaysError("Please indicate day(s) you would prefer for your lessons")
         setPreferredDaysValid(false)
@@ -242,7 +245,7 @@ export const RegisterForm = () => {
         setPreferredDaysError(null)
         setPreferredDaysValid(true)
     }
-  }, [preferredDays])
+  }, [registerFormState.preferred_days])
 
   return (
         <>
@@ -264,8 +267,9 @@ export const RegisterForm = () => {
                     <input 
                         type="text" 
                         className={`w-full h-8 border-2 ${studentNameValid && "border-green-500"} ${studentNameError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`} 
-                        onChange={(e) => handleStudentName(e.target.value)}
-                        value={studentName}
+                        onChange={(e) => handleFormInputs(e)}
+                        name="student_name"
+                        value={registerFormState.student_name}
                         autoFocus
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{studentNameError && studentNameError}</span>
@@ -275,8 +279,9 @@ export const RegisterForm = () => {
                     <input 
                         type="text"
                         className={`w-full h-8 border-2 ${parentNameValid && "border-green-500"} ${parentNameError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`} 
-                        onChange={(e) => handleParentName(e.target.value)}
-                        value={parentName}
+                        onChange={(e) => handleFormInputs(e)}
+                        name="parent_name"
+                        value={registerFormState.parent_name}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{parentNameError && parentNameError}</span>
                 </label>
@@ -285,8 +290,9 @@ export const RegisterForm = () => {
                     <input 
                         type="tel"
                         className={`w-full h-8 border-2 ${phoneValid && "border-green-500"} ${phoneError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`}
-                        onChange={(e) => handlePhone(e.target.value)}
-                        value={phone}
+                        onChange={(e) => handleFormInputs(e)}
+                        name="phone"
+                        value={registerFormState.phone}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{phoneError && phoneError}</span>
                 </label>
@@ -295,14 +301,21 @@ export const RegisterForm = () => {
                     <input 
                         type="email"
                         className={`w-full h-8 border-2 ${emailValid && "border-green-500"} ${emailError ? "border-red-500 outline-red-500" : "outline-green-500"} ps-2 text-sm`}
-                        onChange={(e) => handleEmail(e.target.value)}
-                        value={email}
+                        onChange={(e) => handleFormInputs(e)}
+                        name="email"
+                        value={registerFormState.email}
                     />
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{emailError && emailError}</span>
                 </label>
                 <label className="mb-1">
                     <span className="block text-sm">Desired Instrument:</span>
-                    <select className={`w-full h-8 border-2 ${instrumentValid && "border-green-500 outline-green-500"} ${instrumentError ? "border-red-500" : "border-gray-300"} text-sm`} value={instrument} onChange={(e) => {handleInstrument(e.target.value)}} required>
+                    <select 
+                    
+                        className={`w-full h-8 border-2 ${instrumentValid && "border-green-500 outline-green-500"} ${instrumentError ? "border-red-500" : "border-gray-300"} text-sm`}
+                        name="instrument"
+                        value={registerFormState.instrument} 
+                        onChange={(e) => {handleFormInputs(e)}} 
+                        required>
                         <option value="choose instrument" disabled>choose instrument</option>
                         <option value="piano">piano</option>
                         <option value="guitar">guitar</option>
@@ -321,10 +334,22 @@ export const RegisterForm = () => {
                     <span className="block text-sm mb-4">LESSON TYPE:</span>
                     <div className="flex mb-4 text-[0.9rem]">
                         <label className="flex items-center me-10">
-                            <input type="radio" name="type" value="private" checked={lessonType === "private"} onChange={e => setLessonType(e.target.value)} className="me-1" />private
+                            <input 
+                                type="radio" 
+                                name="lesson_type" 
+                                value="private" 
+                                checked={registerFormState.lesson_type === "private"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />private
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="type" value="semi-private" checked={lessonType === "semi-private"} onChange={e => setLessonType(e.target.value)} className="me-1" />semi-private
+                            <input 
+                                type="radio" 
+                                name="lesson_type" 
+                                value="semi-private" 
+                                checked={registerFormState.lesson_type === "semi-private"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />semi-private
                         </label>
                     </div>
                     <span className="text-[0.8rem] font-semibold">*Note that semi-private lessons require two students to register</span>
@@ -334,13 +359,31 @@ export const RegisterForm = () => {
                     <span className="block text-sm mb-4">LESSON DURATION:</span>
                     <div className="flex mb-4 text-[0.9rem]">
                         <label className="flex items-center me-10">
-                            <input type="radio" name="duration" value="30" checked={lessonDuration === "30"} onChange={e => setLessonDuration(e.target.value)} className="me-1" />30 mins
+                            <input 
+                                type="radio" 
+                                name="lesson_duration" 
+                                value="30" 
+                                checked={registerFormState.lesson_duration === "30"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />30 mins
                         </label>
                         <label className="flex items-center me-10">
-                            <input type="radio" name="duration" value="45" checked={lessonDuration === "45"} onChange={e => setLessonDuration(e.target.value)} className="me-1" />45 mins
+                            <input 
+                                type="radio" 
+                                name="lesson_duration" 
+                                value="45" 
+                                checked={registerFormState.lesson_duration === "45"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />45 mins
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="duration" value="60" checked={lessonDuration === "60"} onChange={e => setLessonDuration(e.target.value)} className="me-1" />60 mins
+                            <input 
+                                type="radio" 
+                                name="lesson_duration" 
+                                value="60" 
+                                checked={registerFormState.lesson_duration === "60"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />60 mins
                         </label>
                     </div>
                     <span className="text-[0.8rem] font-semibold">*Minimum duration of 45 mins is recommended for students 12+ or students working on Royal Conservatory Level 1 and above</span>
@@ -350,10 +393,22 @@ export const RegisterForm = () => {
                     <span className="block text-sm mb-4">LESSON FREQUENCY:</span>
                     <div className="flex text-[0.9rem]">
                         <label className="flex items-center me-10">
-                            <input type="radio" name="frequency" value="once-a-week" checked={lessonFrequency === "once-a-week"} onChange={e => setLessonFrequency(e.target.value)} className="me-1" />once a week
+                            <input 
+                                type="radio" 
+                                name="lesson_frequency" 
+                                value="once-a-week" 
+                                checked={registerFormState.lesson_frequency === "once-a-week"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />once a week
                         </label>
                         <label className="flex items-center">
-                            <input type="radio" name="frequency" value="twice-a-week" checked={lessonFrequency === "twice-a-week"} onChange={e => setLessonFrequency(e.target.value)} className="me-1" />twice a week
+                            <input 
+                                type="radio" 
+                                name="lesson_frequency" 
+                                value="twice-a-week" 
+                                checked={registerFormState.lesson_frequency === "twice-a-week"} 
+                                onChange={e => handleFormInputs(e)} 
+                                className="me-1" />twice a week
                         </label>
                     </div>
                 </div>
@@ -362,40 +417,83 @@ export const RegisterForm = () => {
                     <span className="block text-sm">PREFERRED DAY(S):</span>
                     <span className="text-[0.8rem] font-semibold block mb-4">Please choose as many options as possible</span>
                     <label className="flex items-center text-[0.9rem] mb-4">
-                        <input type="checkbox" id="monday" value="monday" checked={preferredDays.monday} onChange={(e) => handlePreferredDays(e.target.value)} className="me-1" />Monday
+                        <input 
+                            type="checkbox" 
+                            id="monday"
+                            name="preferred_days"
+                            value="monday" 
+                            checked={registerFormState.preferred_days.monday} 
+                            onChange={(e) => handleFormInputs(e)} 
+                            className="me-1" />Monday
                     </label>
                     <label className="flex items-center text-[0.9rem] mb-4">
-                        <input type="checkbox" id="tuesday" value="tuesday" checked={preferredDays.tuesday} onChange={(e) => handlePreferredDays(e.target.value)} className="me-1" />Tuesday
+                        <input 
+                            type="checkbox" 
+                            id="tuesday"
+                            name="preferred_days"
+                            value="tuesday" 
+                            checked={registerFormState.preferred_days.tuesday} 
+                            onChange={(e) => handleFormInputs(e)} 
+                            className="me-1" />Tuesday
                     </label>
                     <label className="flex items-center text-[0.9rem] mb-4">
-                        <input type="checkbox" id="wednesday" value="wednesday" checked={preferredDays.wednesday} onChange={(e) => handlePreferredDays(e.target.value)} className="me-1" />Wednesday
+                        <input 
+                            type="checkbox" 
+                            id="wednesday"
+                            name="preferred_days" 
+                            value="wednesday" 
+                            checked={registerFormState.preferred_days.wednesday} 
+                            onChange={(e) => handleFormInputs(e)} 
+                            className="me-1" />Wednesday
                     </label>
                     <label className="flex items-center text-[0.9rem] mb-4">
-                        <input type="checkbox" id="thursday" value="thursday" checked={preferredDays.thursday} onChange={(e) => handlePreferredDays(e.target.value)} className="me-1" />Thursday
+                        <input 
+                            type="checkbox" 
+                            id="thursday"
+                            name="preferred_days" 
+                            value="thursday" 
+                            checked={registerFormState.preferred_days.thursday}
+                            onChange={(e) => handleFormInputs(e)} 
+                            className="me-1" />Thursday
                     </label>
                     <label className="flex items-center text-[0.9rem]">
-                        <input type="checkbox" id="saturday" value="saturday" checked={preferredDays.saturday} onChange={(e) => handlePreferredDays(e.target.value)} className="me-1" />Saturday
+                        <input 
+                            type="checkbox" 
+                            id="saturday"
+                            name="preferred_days" 
+                            value="saturday" 
+                            checked={registerFormState.preferred_days.saturday} 
+                            onChange={(e) => handleFormInputs(e)} 
+                            className="me-1" />Saturday
                     </label>
                 </div>
                 <label className="mb-1">
                     <span className="block text-sm">How did you hear about us?</span>
-                    {/* <select className="w-full h-8 border-2 border-gray-300 text-sm" value={source} onChange={e => setSource(e.target.value)} required> */}
-                    <select className={`w-full h-8 border-2 ${sourceValid && "border-green-500 outline-green-500"} ${sourceError ? "border-red-500" : "border-gray-300"} text-sm`} value={source} onChange={e => handleSource(e.target.value)} required>
-                        <option value="choose option" disabled>choose option</option>
-                        <option value="google">google search</option>
-                        <option value="humbertown">humbertown sign</option>
-                        <option value="friend/relative">friend/relative</option>
-                        <option value="social">social media (FB/IG)</option>
-                        <option value="flyer">print flyer</option>
-                        <option value="blog">blog article</option>
-                        <option value="other">other</option>
+                    <select 
+                        className={`w-full h-8 border-2 ${sourceValid && "border-green-500 outline-green-500"} ${sourceError ? "border-red-500" : "border-gray-300"} text-sm`} 
+                        name="source"
+                        value={registerFormState.source}
+                        onChange={e => handleFormInputs(e)} 
+                        required>
+                            <option value="choose option" disabled>choose option</option>
+                            <option value="google">google search</option>
+                            <option value="humbertown">humbertown sign</option>
+                            <option value="friend/relative">friend/relative</option>
+                            <option value="social">social media (FB/IG)</option>
+                            <option value="flyer">print flyer</option>
+                            <option value="blog">blog article</option>
+                            <option value="other">other</option>
                     </select>
                     <span className={`mb-4 text-[0.8rem] text-right text-red-500 h-[20px] block`}>{sourceError && sourceError}</span>
                 </label>
                 <label className="mb-4">
                     <span className="block text-sm">Additional Information/Comments (optional):</span>
-                    {/* <textarea className="w-full h-20 p-2" value={comments} onChange={e => setComments(e.target.value)} /> */}
-                    <textarea className={`w-full h-20 border-2 p-2 bg-gray-100 ${comments ? "border-green-500 outline-green-500" : "border-gray-300"}`} value={comments} onChange={e => handleComments(e.target.value)} />
+                    <textarea 
+                        className={`w-full h-20 border-2 p-2 bg-gray-100 ${registerFormState.comments ? "border-green-500 outline-green-500" : "border-gray-300"}`}
+                        name="comments"
+                        value={registerFormState.comments} 
+                        onChange={e => handleFormInputs(e)}
+                    />
                 </label>
                 <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...Please wait..." : "Submit"}</button>
             </form>

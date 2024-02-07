@@ -4,9 +4,13 @@ import nodemailer from "nodemailer"
 
 export async function POST(request) {
 
-    const {student, parent, phone, email, instrument, lessonType, lessonDuration, lessonFrequency, preferredDays, source, comments} = await request.json()
+    const {student_name, parent_name, phone, email, instrument, lesson_type, lesson_duration, lesson_frequency, preferred_days, source, comments} = await request.json()
 
-    
+
+    // console.log("from API:", student_name, parent_name, phone, email, instrument, lesson_type, lesson_duration, lesson_frequency, preferred_days, source, comments)
+
+
+
         const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -19,14 +23,14 @@ export async function POST(request) {
         const emailOptions =
             {
                 from: "info@dacapomusic.ca",
-                to: "info@dacapomusic.ca",
+                to: "terry@dacapomusic.ca",
                 subject: "New Lesson Registration",
                 html: `
                         <strong>Student Name</strong><br />
-                        <small>${student}</small>
+                        <small>${student_name}</small>
                         <hr>
                         <strong>Parent/Guardian Name</strong><br />
-                        <small>${parent}</small>
+                        <small>${parent_name}</small>
                         <hr>
                         <strong>Phone</strong><br />
                         <small>${phone}</small>
@@ -38,20 +42,20 @@ export async function POST(request) {
                         <small>${instrument}</small>
                         <hr>
                         <strong>Lesson Type</strong><br />
-                        <small>${lessonType}</small>
+                        <small>${lesson_type}</small>
                         <hr>
                         <strong>Lesson Duration</strong><br />
-                        <small>${lessonDuration}</small>
+                        <small>${lesson_duration}</small>
                         <hr>
                         <strong>Lesson Frequency</strong><br />
-                        <small>${lessonFrequency}</small>
+                        <small>${lesson_frequency}</small>
                         <hr>
                         <strong>Lesson Days</strong><br />
-                        <small>Mondays: ${preferredDays.monday}</small><br />
-                        <small>Tuesdays: ${preferredDays.tuesday}</small><br />
-                        <small>Wednesdays: ${preferredDays.wednesday}</small><br />
-                        <small>Thursdays: ${preferredDays.thursday}</small><br />
-                        <small>Saturdays: ${preferredDays.saturday}</small>
+                        <small>Mondays: ${preferred_days.monday}</small><br />
+                        <small>Tuesdays: ${preferred_days.tuesday}</small><br />
+                        <small>Wednesdays: ${preferred_days.wednesday}</small><br />
+                        <small>Thursdays: ${preferred_days.thursday}</small><br />
+                        <small>Saturdays: ${preferred_days.saturday}</small>
                         <hr>
                         <strong>Source</strong><br />
                         <small>${source}</small>
