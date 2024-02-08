@@ -23,7 +23,7 @@ export async function POST(request) {
         const emailOptions =
             {
                 from: "info@dacapomusic.ca",
-                to: "terry@dacapomusic.ca",
+                to: "info@dacapomusic.ca",
                 subject: "New Lesson Registration",
                 html: `
                         <strong>Student Name</strong><br />
