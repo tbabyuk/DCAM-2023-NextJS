@@ -1,7 +1,8 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useValidateFormInputs } from "./useValidateFormInputs"
+import { useValidateFormInputs } from "../../useValidateFormInputs"
+import { useValidateFormInputs } from "../../useValidateFormInputs"
 
 
 export const RegisterForm = () => {
@@ -45,7 +46,7 @@ export const RegisterForm = () => {
   const handleStudentName = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "student_name": value
+        student_name: value
     }))
     if(!studentNameIsValid(value)) {
         setStudentNameError("Student name must be between 3 and 40 characters long")
@@ -57,7 +58,7 @@ export const RegisterForm = () => {
   const handleParentName = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "parent_name": value
+        parent_name: value
     }))
     if(!parentNameIsValid(value)) {
         setParentNameError("Parent name must be between 3 and 40 characters long")
@@ -69,7 +70,7 @@ export const RegisterForm = () => {
   const handlePhone = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "phone": value
+        phone: value
     }))
     if(!phoneIsValid(value)) {
         setPhoneError("Phone number can only contain numbers, '()' or '-' and be between 10 and 20 characters")
@@ -81,7 +82,7 @@ export const RegisterForm = () => {
   const handleEmail = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "email": value
+        email: value
     }))
     if(!emailIsValid(value)) {
         setEmailError("Please enter a valid email address")
@@ -93,7 +94,7 @@ export const RegisterForm = () => {
   const handleInstrument = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "instrument": value
+        instrument: value
     }))
     setInstrumentError("")
   }
@@ -101,21 +102,21 @@ export const RegisterForm = () => {
   const handleLessonType = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "lesson_type": value
+        lesson_type: value
     }))
   }
 
   const handleLessonDuration = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "lesson_duration": value
+        lesson_duration: value
     }))
   }
 
   const handleLessonFrequency = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "lesson_frequency": value
+        lesson_frequency: value
     }))
   }
 
@@ -132,7 +133,7 @@ export const RegisterForm = () => {
   const handleSource = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "source": value
+        source: value
     }))
     setSourceError("")
   }
@@ -140,7 +141,7 @@ export const RegisterForm = () => {
   const handleComments = (value) => {
     setRegisterFormState((prev) => ({
         ...prev,
-        "comments": value
+        comments: value
     }))
   }
 
@@ -185,7 +186,6 @@ export const RegisterForm = () => {
     if (hasError) {
         return
     }
-
 
     setSubmitting(true)
     const response = await fetch("/api/register", {
