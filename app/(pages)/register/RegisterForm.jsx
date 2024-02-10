@@ -189,11 +189,11 @@ export const RegisterForm = () => {
 
     setSubmitting(true)
     const response = await fetch("/api/register", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(registerFormState)
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(registerFormState)
     })
 
     if(response.status === 200) {
