@@ -3,127 +3,119 @@
 @tailwind utilities;
 
 
+
+
 html {
   font-family: var(--font-roboto)
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-ovo)
-}
 
-/* .tester {
-  color: hsl(207, 69%, 72%);
-  background-color: #308dd9;
-} */
+@layer base {
 
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-ovo)
+  }
 
-input {
-  border-radius: 0;
-}
+  input {
+    border-radius: 0;
+  }
 
-.roboto {
-  font-family: var(--font-roboto)
-}
+  input:not([type="checkbox"]) input:not([type="radio"]) {
+    -webkit-appearance: none;
+  }
 
-/* input {
-  -webkit-appearance: none;
-} */
-
-input:not([type="checkbox"]) input:not([type="radio"]) {
-  -webkit-appearance: none;
 }
 
 
-.dcam-button {
-  @apply bg-regGreen p-2 px-6 border-2 border-gray-100 rounded text-gray-100 hover:bg-[#439d4b] flex justify-center items-center
+@layer components {
+  .dcam-button {
+    @apply bg-regGreen p-2 px-6 border-2 border-gray-100 rounded text-gray-100 hover:bg-[#439d4b] flex justify-center items-center
+  }
+
+  .dcam-link {
+    @apply border-b border-b-gray-400 hover:text-regRed hover:border-b-regRed
+  }
+
+  .blog-table table, 
+  .blog-table th,
+  .blog-table td {
+    @apply border-2 border-gray-200 py-2
+  }
+
+  .blog-table thead {
+    @apply bg-gray-200
+  }
+
+  .blog-table tbody {
+    @apply bg-gray-100
+  }
+
+  button:disabled {
+    @apply bg-gray-400 hover:bg-gray-400
+  }
+
+  .menu-item {
+    @apply h-12 md:h-11 px-3 lg:px-4 text-center flex justify-center items-center hover:bg-darkBlue
+  }
+
+  .dropdown-menu-item {
+    @apply h-11 px-3 lg:px-4 text-center flex justify-center items-center
+  }
+
+  .submenu-item {
+    @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-darkBlue
+  }
+
+  .slick-slider {
+    @apply px-10
+  }
+
+  .slick-arrow.slick-prev {
+    background: #FFF;
+    left: 10px;
+    top: 45%;
+    z-index: 10;
+  }
+
+  .slick-arrow.slick-next {
+    background: #FFF;
+    right: 40px;
+    top: 45%;
+  }
+
+  .slick-arrow.slick-next::before, .slick-arrow.slick-prev::before {
+    color: gray;
+    font-size: 50px;
+  }
+
+  .mms-button {
+    @apply mt-10 md:mt-0 py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
+
+  .cart-button {
+    @apply py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
+
+  .register-button {
+    @apply py-2 px-3 rounded flex items-center border-2 border-gray-100 hover:bg-[#216DAB]
+  }
+
+  .trial-button-hero {
+    @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
+  }
+
+  .register-button-hero {
+    @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
+  }
+
+  .trial-button {
+    @apply bg-regGreen py-4 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] hover:bg-[hsl(125,40%,44%)] flex justify-center items-center
+  }
+
+  .visit-page-button {
+    @apply  bg-regRed hover:bg-darkRed mt-16 py-3 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] flex justify-center items-center
+  }
+
+  .roboto {
+    font-family: var(--font-roboto)
+  }
+
 }
-
-.dcam-link {
-  @apply border-b border-b-gray-400 hover:text-regRed hover:border-b-regRed
-}
-
-.blog-table table, 
-.blog-table th,
-.blog-table td {
-  @apply border-2 border-gray-200 py-2
-}
-
-.blog-table thead {
-  @apply bg-gray-200
-}
-
-.blog-table tbody {
-  @apply bg-gray-100
-}
-
-button:disabled {
-  @apply bg-gray-400 hover:bg-gray-400
-}
-
-.menu-item {
-  @apply h-12 md:h-11 px-3 lg:px-4 text-center flex justify-center items-center hover:bg-darkBlue
-}
-
-.dropdown-menu-item {
-  @apply h-11 px-3 lg:px-4 text-center flex justify-center items-center
-}
-
-.submenu-item {
-  @apply h-10 ps-3 lg:ps-5 w-full flex items-center justify-center md:justify-start hover:bg-darkBlue
-}
-
-.slick-slider {
-  @apply px-10
-}
-
-.slick-arrow.slick-prev {
-  background: #FFF;
-  left: 10px;
-  top: 45%;
-  z-index: 10;
-}
-
-.slick-arrow.slick-next {
-  background: #FFF;
-  right: 40px;
-  top: 45%;
-}
-
-.slick-arrow.slick-next::before, .slick-arrow.slick-prev::before {
-  color: gray;
-  font-size: 50px;
-}
-
-.mms-button {
-  @apply mt-10 md:mt-0 py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
-
-.cart-button {
-  @apply py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
-
-.register-button {
-  @apply py-2 px-3 rounded flex items-center border-2 border-gray-100 hover:bg-[#216DAB]
-}
-
-.trial-button-hero {
-  @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
-}
-
-.register-button-hero {
-  @apply  w-fit h-[56px] text-[0.9rem] sm:text-[1rem] px-2 sm:px-5 rounded flex items-center border-2 border-gray-100 bg-regGreen hover:bg-[#439d4b]
-}
-
-.trial-button {
-  @apply bg-regGreen py-4 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] hover:bg-[hsl(125,40%,44%)] flex justify-center items-center
-}
-
-.visit-page-button {
-  @apply  bg-regRed hover:bg-darkRed mt-16 py-3 px-5 border-2 border-gray-100 rounded text-gray-100 text-[1.2rem] flex justify-center items-center
-}
-
-
-/* .blah {
-  background: hsl(126, 40%, 48%);
-  color: hsl(125, 40%, 44%);
-  background: hsl(207, 68%, 40%);
-  color: hsl(207, 68%, 36%)
-} */
