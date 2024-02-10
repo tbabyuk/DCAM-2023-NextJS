@@ -32,11 +32,8 @@ export const TeacherApplicationForm = () => {
     teaching_experience: "choose option",
     source: "choose option",
     comments: "",
-    resume: null,
-    resume_name: "",
-    resume_url: ""
+    resume: null
   })
-
 
   const [fullNameError, setFullNameError] = useState("")
   const [phoneError, setPhoneError] = useState(null)
@@ -50,10 +47,6 @@ export const TeacherApplicationForm = () => {
   const [submitting, setSubmitting] = useState(false)
   const [showSuccessResponse, setShowSuccessResponse] = useState(false)
   const [showErrorResponse, setShowErrorResponse] = useState(false)
-//   const [resume, setResume] = useState(null)
-
-
-  console.log("logging state:", applicationFormData)
 
 
   // FORM INPUT HANDLERS
@@ -136,7 +129,8 @@ export const TeacherApplicationForm = () => {
     }))
   }
 
-const handleResumeUpload = (e) => {
+
+  const handleResumeUpload = (e) => {
     const allowedTypes = ["application/msword", "application/pdf"]
     const file = e.target.files[0]
     
@@ -155,7 +149,7 @@ const handleResumeUpload = (e) => {
     }
   }
 
-const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
 
     e.preventDefault()
 
@@ -206,7 +200,7 @@ const handleSubmit = async (e) => {
     setSubmitting(true)
 
 
-    const prepareServerContent = async () => {
+    const prepareServerContent = async (resumeName, resumeURL) => {
 
         // setSubmitting(true)
         const response = 
@@ -216,57 +210,37 @@ const handleSubmit = async (e) => {
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(
-                
-                applicationFormData
-                
-            //     {
-            //     full_name: applicationFormData.full_name,
-            //     phone: applicationFormData.phone,
-            //     email: applicationFormData.email,
-            //     // instruments,
-            //     // typeOfWork,
-            //     // teachingExperience,
-            //     // source,
-            //     // comments,
-            //     // resumeName,
-            //     // resumeURL
-            // }
-            
-            )
-            // body: JSON.stringify({
-            //     applicationFormData,
-            
-            
-            // })    
-    })
+            body: JSON.stringify({
+                applicationFormData,
+                resume_name: resumeName,
+                resume_URL: resumeURL
+            })
+        })
 
-    if(response.status === 200) {
-        console.log("status is:", response.status)
-        const responseData = await response.json()
-        console.log("responseData from ok:", responseData.message)
-        setSubmitting(false)
-        setShowSuccessResponse(true)
-    } else {
-        console.log("status is:", response.status)
-        const responseData = await response.json()
-        console.log("responseData from error:", responseData.error)
-        setSubmitting(false)
-        setShowErrorResponse(true)
-    }
-  }  
+        if(response.status === 200) {
+            console.log("status is:", response.status)
+            const responseData = await response.json()
+            console.log("responseData from ok:", responseData.message)
+            setSubmitting(false)
+            setShowSuccessResponse(true)
+        } else {
+            console.log("status is:", response.status)
+            const responseData = await response.json()
+            console.log("responseData from error:", responseData.error)
+            setSubmitting(false)
+            setShowErrorResponse(true)
+        }
+    }  
 
  
-    // upload resume to firebase storage
+    // upload resume to firebase storage and retrieve its meta data
     const resumeRef = ref(storage, `resumes/${uuidv4()}___${applicationFormData.resume.name}`)
 
     try {
         const reference = await uploadBytes(resumeRef, applicationFormData.resume)
         const resumeName = reference.metadata.name;
-        console.log("resumeName=====================:", resumeName)          
         const resumeURL = await getDownloadURL(resumeRef)
-        console.log("resumeURL======================:", resumeURL)
-        prepareServerContent()
+        prepareServerContent(resumeName, resumeURL)
     } catch (error) {
         console.log("oops, resume failed to upload", error)
     }
@@ -304,7 +278,6 @@ const handleSubmit = async (e) => {
 
   return (
         <>
-
             {showSuccessResponse ? (
                         <div className="h-full text-green-600 px-5 self-center flex flex-col text-center">           
                                 <p className="mb-6">Your application was successfully submitted and will be in our records - thank you!</p>
@@ -467,7 +440,7 @@ const handleSubmit = async (e) => {
                     <span className={`text-[0.8rem] text-right text-red-500 h-[20px] block`}>{resumeError && resumeError}{uploadError && uploadError}</span>
                 </label>
 
-                <button className="dcam-button w-full mt-3 h-10" /*disabled={submitting}*/>{submitting ? "Submitting...This may take up to a minute, please wait..." : "Submit"}</button>
+                <button className="dcam-button w-full mt-3 h-10" disabled={submitting}>{submitting ? "Submitting...This may take up to a minute, please wait..." : "Submit"}</button>
 
             </form>
             ) 
