@@ -10,8 +10,6 @@ html {
 }
 
 
-@layer base {
-
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-ovo)
   }
@@ -24,10 +22,8 @@ html {
     -webkit-appearance: none;
   }
 
-}
 
 
-@layer components {
   .dcam-button {
     @apply bg-regGreen p-2 px-6 border-2 border-gray-100 rounded text-gray-100 hover:bg-[#439d4b] flex justify-center items-center
   }
@@ -117,5 +113,3 @@ html {
   .roboto {
     font-family: var(--font-roboto)
   }
-
-}

@@ -102,8 +102,8 @@ const Home = async () => {
           <div className="px-5 py-20 relative">
             {/* <img src="/images/decorative/spiral-dark-blue.png" className="absolute h-[100px]" /> */}
             <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
-            <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
-            <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
+            <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600 roboto">Humbertown Shopping Centre</h2>
+            <h3 className="text-xl font-ovo font-semibold text-center text-gray-600 roboto">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
           <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-white bg-dcam-blue-400 py-20">
@@ -116,7 +116,6 @@ const Home = async () => {
                         <p>Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
                   </div>
               </div>
-
           </section>
 
           {/* INSTRUMENTS SECTION */}
