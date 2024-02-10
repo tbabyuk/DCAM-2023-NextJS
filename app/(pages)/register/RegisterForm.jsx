@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react"
 import { useValidateFormInputs } from "../../useValidateFormInputs"
-import { useValidateFormInputs } from "../../useValidateFormInputs"
 
 
 export const RegisterForm = () => {

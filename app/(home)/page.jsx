@@ -99,13 +99,14 @@ const Home = async () => {
 
   return (
     <main className="mb-36">
-          <div className="px-5 py-16">
+          <div className="px-5 py-20 relative">
+            {/* <img src="/images/decorative/spiral-dark-blue.png" className="absolute h-[100px]" /> */}
             <h1 className="text-5xl font-ovo text-regRed mb-4 block text-center">Music Lessons in Etobicoke</h1>
             <h2 className="text-3xl font-ovo font-semibold mb-4 text-center text-gray-600">Humbertown Shopping Centre</h2>
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
-          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-gray-100 bg-lightBlue py-16">
+          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-white bg-lightBlue py-20">
               <div className="flex flex-col md:flex-row">
                   <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
                         <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
@@ -119,13 +120,13 @@ const Home = async () => {
           </section>
 
           {/* INSTRUMENTS SECTION */}
-          <section className="instruments xl:px-28 py-16">
+          <section className="instruments xl:px-28 py-20">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">INSTRUMENTS</h2>
             <InstrumentsSlider />
           </section>
 
           {/* OFFERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-16 text-gray-100 bg-lightBlue">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-white bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -174,7 +175,7 @@ const Home = async () => {
           </section>
 
           {/* SHOP SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-16">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20">
             <h2 className="mb-10 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">SHOP</h2>
             <p className="mb-16">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
               <div className="teachers-container flex flex-wrap gap-10 justify-center mb-20">
@@ -186,7 +187,7 @@ const Home = async () => {
           </section>
 
           {/* TEACHERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-16 bg-lightBlue">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-lightBlue">
             <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
             <div className="teachers-container flex flex-wrap gap-7 justify-center">
               {teachersPhotosArray.map((teacher, index) => (
@@ -197,7 +198,7 @@ const Home = async () => {
           </section>
 
           {/* REVIEWS SECTION */}
-          <section className="reviews px-5 lg:px-36 xl:px-52 py-16">
+          <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-4 font-ovo">WHAT OUR CUSTOMERS SAY</h2>
             {reviews && 
               reviews.map((review) => (

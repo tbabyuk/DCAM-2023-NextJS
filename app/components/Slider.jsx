@@ -8,7 +8,7 @@ import { ShopSliderOverlay } from "./ShopSliderOverlay"
 
 export const Slider = () => {
 
-  const sliderImagesArray = ["/sliders/piano-1200.jpg", "/sliders/guitar-1200.jpg", "/sliders/voice-1200.jpg", "/sliders/drums-1200.jpg"]
+  const sliderImagesArray = ["/sliders/piano-1200.jpg", "/sliders/guitar-1200.jpg", "/sliders/voice-1200-2.jpg", "/sliders/drums-1200.jpg"]
 
 
   const [sliderIndex, setSliderIndex] = useState(0)

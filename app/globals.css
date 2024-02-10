@@ -11,9 +11,18 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-ovo)
 }
 
+/* .tester {
+  color: hsl(207, 69%, 72%);
+  background-color: #308dd9;
+} */
+
 
 input {
   border-radius: 0;
+}
+
+.roboto {
+  font-family: var(--font-roboto)
 }
 
 /* input {
