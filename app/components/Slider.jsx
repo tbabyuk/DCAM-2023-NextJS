@@ -25,7 +25,7 @@ export const Slider = () => {
   }, [])
 
   return (
-    <div className="h-[calc(100vh-255px)] md:h-[calc(100vh-124px)] relative">
+    <div className="h-[calc(100vh-260px)] md:h-[calc(100vh-124px)] max-h-[600px] relative">
         <ShopSliderOverlay />
         <MainSliderOverlay />
 
