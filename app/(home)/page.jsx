@@ -107,17 +107,15 @@ const Home = async () => {
           </div>
              
           <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-white bg-dcam-blue-400 py-20 relative">
-              <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
-              <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
+              <img src="/notes-light.svg" className="absolute left-6 top-6 w-[110px]" />
+              <img src="/notes-light.svg" className="absolute right-8 bottom-8 w-[110px]" />
               <div className="flex flex-col md:flex-row">
-                  <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
-                        <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
-                  </figure>
-                  <div className="hyphens-auto">
-                        <p>Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson!</p><br />
-                        <p>Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
-                  </div>
-              </div>
+                      <figure className="flex-shrink-0 mb-8 sm:me-8 float-left">
+                            <img src="/lessons/piano_lesson.png" className="mx-auto" style={{width: "230px"}} alt="lesson in progress" />
+                      </figure>
+                      <p>Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson!<br /><br />
+                      Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
+                </div>
           </section>
 
           {/* INSTRUMENTS SECTION */}
@@ -128,7 +126,7 @@ const Home = async () => {
 
           {/* OFFERS SECTION */}
           <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-white bg-dcam-blue-400 relative">
-            <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute left-3 top-3 w-[110px]" />
             <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
@@ -191,8 +189,8 @@ const Home = async () => {
 
           {/* TEACHERS SECTION */}
           <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
-            <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
-            <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute left-2 top-4 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute right-2 bottom-4 w-[110px]" />
             <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
             <div className="teachers-container flex flex-wrap gap-7 justify-center">
               {teachersPhotosArray.map((teacher, index) => (
