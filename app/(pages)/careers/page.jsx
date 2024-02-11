@@ -25,8 +25,20 @@ const Careers = () => {
 
                 <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/careers-page.jpg')] bg-center bg-cover">Careers</h1>
 
+                <section className="content leading-7 px-5 lg:px-36 xl:px-52 py-20">
+                    <div className="bg-gray-100 p-8 rounded-xl border-2 border-gray-300 shadow-lg">
+                        <h3 className="text-regRed roboto text-2xl mb-2">Current Openings:</h3>
+                        <ul className="list-disc list-inside mb-6">
+                            <li>piano teacher (substitute)</li>
+                        </ul>
+                        <div className="border-b-2 border-gray-300 my-7"></div>
+                        <h3 className="text-regRed roboto text-xl mb-2">Description:</h3>
+                        <p>We are currently looking for a talented and motivated substitute teacher for piano, to be on call when needed. This position has potential to become permanent part-time in September 2024. If this is something you are interested in, please fill out the application below and we will be in touch if we feel you might be the right fit!</p>
+                    </div>
+                </section>
+
                 <section className="content leading-7 px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
-                    <div className="md:pe-10 mb-10 md:mb-0">
+                    <div className="mb-10 md:mb-0">
                         <p className="mb-6">We are regularly looking for new talented and passionate musicians/teachers to join our team. Feel free to fill out the application below and we will keep your resume on file for when we are hiring. You can choose to apply for a permanent weekly position or as a substitute teacher. Some teachers start out with us as subs and later transition to a more permanent role, so this might be a good way to get your foot in the door.</p>
 
                         <p className="mb-6">Please keep in mind that we mostly look for teachers who live close or within a reasonable commuting distance to our school. Applicants outside of the GTA (Greater Toronto Area) will not be considered.</p>
@@ -35,7 +47,9 @@ const Careers = () => {
 
                         <p>Thank you!</p>
                     </div>
+
                 </section>
+
                 <section className="register-page px-5 lg:px-36 xl:px-52 py-20">
                     <TeacherApplicationForm />
                 </section>
