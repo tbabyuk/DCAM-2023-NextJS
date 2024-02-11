@@ -16,12 +16,12 @@ export const TopHeader = () => {
 
 
     return (
-            <div className="header-top relative px-5 py-6 md:py-4 bg-darkBlue bg-cover text-gray-100 flex flex-col md:flex-row justify-between md:items-center">
+            <div className="header-top relative px-5 py-6 md:py-4 bg-[url('/artsy-blue.png')] bg-cover text-gray-100 flex flex-col md:flex-row justify-between md:items-center">
 
                 <div className="flex justify-between items-center md:w-[70%] md:justify-between lg:w-[60%]">
                     <Link href="/"><img src="/dcam_logo_white.png" className="md:pb-0" style={{maxWidth: "180px", height: "auto"}} alt="Da Capo Academy of Music logo" /></Link>
 
-                    <div className="hidden md:block">
+                    <div className="hidden sm:block">
                         <MMSLoginButton  />
                     </div>
 

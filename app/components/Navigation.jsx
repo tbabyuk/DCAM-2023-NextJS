@@ -14,7 +14,7 @@ export const Navigation = () => {
 
 
 return (
-    <nav className="navigation w-full bg-regBlue">
+    <nav className="navigation w-full bg-dcam-blue-950">
         <div className="h-11 flex justify-start items-center bg-regBlue md:hidden">
             {isOpen ? <RxCross1 size="1.8em" className="cursor-pointer h-full text-gray-50 mx-3" onClick={() => setIsOpen(false)} /> : <RxHamburgerMenu size="2em" className="cursor-pointer text-gray-50 mx-3" onClick={() => setIsOpen(true)} />}
         </div>
@@ -40,7 +40,7 @@ return (
             {/* <Link href="/gallery" onClick={() => setIsOpen(false)}><li className="menu-item">Gallery</li></Link> */}
             <Link href="/about" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">About</li></Link>
             <Link href="/contact" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">Contact</li></Link>
-            <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">Blog</li></Link>
+            {/* <Link href="/blog" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">Blog</li></Link> */}
             <Link href="/careers" onClick={() => setIsOpen(false)}><li className="menu-item border-b-2 border-gray-200 md:border-none">Careers</li></Link>
             <li className="dropdown-menu-item relative cursor-pointer border-b-2 border-gray-200 md:border-none" onMouseEnter={() => setSubnav2IsOpen(true)} onMouseLeave={() => setSubnav2IsOpen(false)} onClick={() => setSubnav2IsOpen(!subnav2IsOpen)}>Tools<IoIosArrowDown className=" ms-1" />
                 {subnav2IsOpen && (

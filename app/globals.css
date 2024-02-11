@@ -85,7 +85,7 @@ html {
   }
 
   .mms-button {
-    @apply mt-10 md:mt-0 py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
+    @apply md:mt-0 py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}
 
   .cart-button {
     @apply py-2 px-3 rounded flex items-center border-2 bg-regBlue border-gray-100 hover:bg-darkBlue}

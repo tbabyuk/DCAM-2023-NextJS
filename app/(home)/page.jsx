@@ -106,7 +106,9 @@ const Home = async () => {
             <h3 className="text-xl font-ovo font-semibold text-center text-gray-600 roboto">270 The Kingsway, Etobicoke, ON M9A 3T7</h3>
           </div>
              
-          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-white bg-dcam-blue-400 py-20">
+          <section className="intro leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 text-white bg-dcam-blue-400 py-20 relative">
+              <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
+              <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
               <div className="flex flex-col md:flex-row">
                   <figure className="flex-shrink-0 md:me-10 mb-10 md:mb-0 mx-auto">
                         <img src="/lessons/piano_lessons.jpg" className="rounded-xl shadow-lg" style={{width: "220px"}} alt="lesson in progress" />
@@ -125,7 +127,9 @@ const Home = async () => {
           </section>
 
           {/* OFFERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-white bg-dcam-blue-400">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 text-white bg-dcam-blue-400 relative">
+            <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
             <h2 className="mb-20 text-center text-3xl font-semibold pb-2 font-ovo">WHAT WE OFFER</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-y-10 gap-x-10">
                 <div className="flex">
@@ -186,7 +190,9 @@ const Home = async () => {
           </section>
 
           {/* TEACHERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400">
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
+            <img src="/notes-light.svg" className="absolute left-2 top-2 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute right-2 bottom-2 w-[110px]" />
             <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
             <div className="teachers-container flex flex-wrap gap-7 justify-center">
               {teachersPhotosArray.map((teacher, index) => (
