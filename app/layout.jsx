@@ -1,7 +1,7 @@
 import './globals.css'
+import { Ovo, Roboto } from 'next/font/google'
 import { Footer } from './components/Footer'
 import { GoogleAnalytics } from './components/GoogleAnalytics'
-import { Ovo, Roboto } from 'next/font/google'
 import { ShopContextProvider } from './context/ShopContext'
 import { ToastContainer } from 'react-toastify'
 import { TopHeader } from './components/TopHeader'
@@ -20,7 +20,7 @@ const ovo = Ovo({
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["100", "300", "400", "500", "700", "900"],
   variable: "--font-roboto",
   display: "swap"
 })
@@ -37,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" style={{scrollBehavior: "smooth"}} className={`${ovo.variable} ${roboto.variable} text-gray-600`}>
+    <html lang="en" style={{scrollBehavior: "smooth"}} className={`${ovo.className} ${roboto.className} text-gray-600`}>
       <head>
           <Script src="//www.ezojs.com/basicads.js?d=dacapomusic.ca" />
       </head>
