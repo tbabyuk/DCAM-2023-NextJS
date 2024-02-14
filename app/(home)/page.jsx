@@ -149,7 +149,7 @@ const Home = async () => {
                 <div className="flex">
                     <span className="material-symbols-outlined flex-shrink-0" style={{fontSize: "45px", color: "#F3F4F6", border: "4px solid #F3F4F6", borderRadius: "50%", padding: "15px"}}>store</span>
                     <div className="ps-6 flex flex-col justify-center">
-                      <h4 className="text-xl font-ovo font-semibold">NICE VENUE</h4>
+                      <h4 className="text-xl font-ovo font-semibold">WONDERFUL VENUE</h4>
                       <p>Individual music rooms, recital area and a lounge</p>
                     </div>
                 </div>

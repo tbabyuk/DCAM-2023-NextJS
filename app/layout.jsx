@@ -38,9 +38,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" style={{scrollBehavior: "smooth"}} className={`${roboto.variable} ${ovo.variable} text-gray-600`}>
-      <head>
+      {/* <head>
           <Script src="//www.ezojs.com/basicads.js?d=dacapomusic.ca" />
-      </head>
+      </head> */}
       <GoogleAnalytics GA_MEASUREMENT_ID={process.env.GA_MEASUREMENT_ID} />
       <ShopContextProvider>
         <body>
