@@ -3,7 +3,6 @@ import { ReviewCard } from "../components/ReviewCard";
 import { InstrumentsSlider } from '../components/InstrumentsSlider';
 import { TopPopup } from '../components/TopPopup';
 import { TeacherCard } from '../components/TeacherCard';
-import Link from 'next/link';
 import { ShopProductCategoryCard } from '../components/ShopProductCategoryCard';
 import { shopProductCategoriesArray } from '../shop/shopData';
 import { VisitPageButton } from '../components/VisitPageButton';
@@ -75,12 +74,7 @@ const teachersPhotosArray = [
     name: "Matthew",
     photo: "/images/teachers/matthew.jpg",
     instrument: "bass guitar, upright bass"
-  },
-  // {
-  //   name: "Jonathan",
-  //   photo: "/images/teachers/jonathan.jpg",
-  //   instrument: "guitar, classical guitar"
-  // }
+  }
 ]
 
 
