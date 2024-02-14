@@ -37,7 +37,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" style={{scrollBehavior: "smooth"}} className={`${ovo.className} ${roboto.className} text-gray-600`}>
+    <html lang="en" style={{scrollBehavior: "smooth"}} className={`${roboto.variable} ${ovo.variable} text-gray-600`}>
       <head>
           <Script src="//www.ezojs.com/basicads.js?d=dacapomusic.ca" />
       </head>
