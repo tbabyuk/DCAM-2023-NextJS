@@ -1,6 +1,6 @@
 "use client"
 
-import { useShopContext } from "../hooks/useShopContext"
+import { useShopContext } from "@/app/hooks/useShopContext"
 
 
 export const AddToCartButton = ({item, id, origin}) => {

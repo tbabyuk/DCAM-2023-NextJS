@@ -1,6 +1,6 @@
 "use client"
 
-import { ShopProductCard } from "../ShopProductCard"
+import { ShopProductCard } from "../components/ShopProductCard"
 import { giftCertificatesList } from "../shopData"
 
 const ShopGiftCertificatesPage = () => {

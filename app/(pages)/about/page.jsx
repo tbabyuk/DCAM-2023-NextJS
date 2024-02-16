@@ -1,5 +1,4 @@
-import { PageTitle } from "../../components/PageTitle";
-
+import { PageTitle } from "../components/PageTitle";
 
 export const metadata = {
     title: "About Us | Da Capo Academy of Music",
@@ -21,7 +20,7 @@ const About = () => {
     
     return (
             <main className="about-page bg-gray-100 pb-36">
-                    <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/about-page.jpg')] bg-center bg-cover">About Us</h1>
+                    <PageTitle title="About Us" image="/images/page-headers/about-page.jpg" />
 
                     <section className="content flex flex-col leading-7 px-5 lg:px-36 xl:px-52 py-20">
                         <div className="mb-12">

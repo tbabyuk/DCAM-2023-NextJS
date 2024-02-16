@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { TeacherProfile } from "@/app/components/TeacherProfile";
 import { teachersPageTeachersArray } from "@/app/data/teachers";
+import { PageTitle } from "../components/PageTitle";
 
 
 export const metadata = {
@@ -23,7 +24,7 @@ const Teachers = () => {
 
     return ( 
         <main className="teachers-page pb-36">
-            <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/teachers-page.jpg')] bg-center bg-cover">Teachers</h1>
+            <PageTitle title="Teachers" image="/images/page-headers/teachers-page.jpg" />
 
             <div className="teachers">
                 {teachersPageTeachersArray.map((teacher, index) => (

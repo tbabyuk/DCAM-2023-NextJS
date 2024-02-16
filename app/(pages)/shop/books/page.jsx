@@ -1,7 +1,7 @@
 "use client"
 
 import { booksList } from "../shopData"
-import { ShopProductCard } from "../ShopProductCard"
+import { ShopProductCard } from "../components/ShopProductCard"
 import { BooksFilter } from "../BooksFilter"
 import { useState } from "react"
 
@@ -23,7 +23,7 @@ const ShopBooksPage = () => {
 
     
   return (
-      <div>
+      <>
           <div className="px-5 lg:px-36">
             <BooksFilter handleInstrumentValue={handleInstrumentValue} handleScopeValue={handleScopeValue} />
           </div>
@@ -42,7 +42,7 @@ const ShopBooksPage = () => {
                 ))
             )}
           </div>
-      </div>  
+      </>  
     )
 }
 

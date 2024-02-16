@@ -1,16 +1,16 @@
-import { PageTitle } from "../../components/PageTitle";
+import { PageTitle } from "../components/PageTitle";
 import { TeacherApplicationForm } from "./TeacherApplicationForm";
 
 
 export const metadata = {
-    title: "About Us | Da Capo Academy of Music",
-    description: "The story of how we got started",
+    title: "Careers | Da Capo Academy of Music",
+    description: "Work opportunities at Da Capo Academy of Music",
     robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "About Us | Da Capo Academy of Music",
         description: "The story of how we got started",
-        url: "https://dacapomusic.ca/about",
+        url: "https://dacapomusic.ca/careers",
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
         type: "article"
@@ -22,8 +22,7 @@ const Careers = () => {
     
     return ( 
             <main className="careers-page pb-36">
-
-                <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/careers-page.jpg')] bg-center bg-cover">Careers</h1>
+                <PageTitle title="Careers" image="/images/page-headers/careers-page.jpg" />
 
                 <section className="content leading-7 px-5 lg:px-36 xl:px-52 py-20">
                     <div className="bg-gray-100 p-8 rounded-xl border-2 border-gray-300 shadow-lg">

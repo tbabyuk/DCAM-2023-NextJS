@@ -1,4 +1,4 @@
-import { PageTitle } from "../../components/PageTitle";
+import { PageTitle } from "../components/PageTitle";
 import Link from "next/link";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
@@ -23,8 +23,9 @@ export const metadata = {
 const Contact = () => {
     
     return ( 
-        <main className="contact-page bg-gray-100 pb-36">
-                <h1 className="font-ovo text-white text-4xl px-5 py-14 lg:px-36 xl:px-52 bg-[url('/images/page-headers/contact-page.jpg')] bg-center bg-cover">Contact</h1>
+            <main className="contact-page bg-gray-100 pb-36">
+                <PageTitle title="Contact" image="/images/page-headers/contact-page.jpg" />
+
                 <div className="grid md:grid-cols-2 lg:px-36 xl:px-52 py-20 bg-gray-100">
                     <section className="contact mb-10 md:mb-0 md:pe-5 lg:pe-10 px-5 lg:px-0">
                         <div className="mb-10">
@@ -91,7 +92,7 @@ const Contact = () => {
                         </tbody>
                     </table>
                 </section>
-        </main>
+            </main>
      );
 }
  
