@@ -111,3 +111,7 @@ button:disabled {
 .roboto {
   font-family: var(--font-roboto)
 }
+
+.teachers section:nth-child(even) {
+  @apply bg-gray-100
+}

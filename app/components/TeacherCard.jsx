@@ -10,7 +10,7 @@ export const TeacherCard = ({teacher}) => {
                 src={teacher.photo}
                 width={200}
                 height={300}
-                alt="Photo of teacher Matthew"
+                alt={teacher.alt}
                 className="h-full w-full object-cover"
             />
         </div>

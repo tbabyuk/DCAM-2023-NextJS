@@ -7,6 +7,7 @@ import { ShopProductCategoryCard } from '../components/ShopProductCategoryCard';
 import { shopProductCategoriesArray } from '../shop/shopData';
 import { VisitPageButton } from '../components/VisitPageButton';
 import Image from 'next/image';
+import { homePageTeachersArray } from '../data/teachers';
 
 
 export const metadata = {
@@ -34,49 +35,6 @@ export const metadata = {
 }
 
 
-const teachersPhotosArray = [
-  {
-    name: "Raul",
-    photo: "/images/teachers/raul.jpg",
-    instrument: "drums"
-  },
-  {
-    name: "Taisiya",
-    photo: "/images/teachers/taisiya.jpg",
-    instrument: "vocals, piano"
-  },
-  {
-    name: "Tiago",
-    photo: "/images/teachers/tiago.jpg",
-    instrument: "guitar, ukulele"
-  },
-  {
-    name: "Chloe",
-    photo: "/images/teachers/chloe.jpg",
-    instrument: "vocals"
-  },
-  {
-    name: "Giancarlo",
-    photo: "/images/teachers/giancarlo.jpg",
-    instrument: "guitar"
-  },
-  {
-    name: "Senya",
-    photo: "/images/teachers/senya.jpg",
-    instrument: "piano"
-  },
-  {
-    name: "Aaron",
-    photo: "/images/teachers/aaron.jpg",
-    instrument: "piano"
-  },
-  {
-    name: "Matthew",
-    photo: "/images/teachers/matthew.jpg",
-    instrument: "bass guitar, upright bass"
-  }
-]
-
 
 const fetchReviews = async () => {
     const res = await fetch(`https://maps.googleapis.com/maps/api/place/details/json?place_id=ChIJxzCGYLs3K4gR0hG4dhYU8mk&key=${process.env.API_KEY}&fields=reviews&maxheight=10`, {
@@ -84,8 +42,8 @@ const fetchReviews = async () => {
           revalidate: 604800
       }
     })
-  const data = await res.json()
-  return data.result.reviews
+    const data = await res.json()
+    return data.result.reviews
 }
 
 
@@ -105,12 +63,12 @@ const Home = async () => {
               <img src="/notes-light.svg" className="absolute left-6 top-6 w-[110px]" />
               <img src="/notes-light.svg" className="absolute right-8 bottom-8 w-[110px]" />
               <div className="flex flex-col md:flex-row">
-                      <figure className="flex-shrink-0 mb-8 sm:me-8 float-left">
-                            <Image src="/lessons/piano_lesson.png" className="mx-auto" width="230" height="230" alt="lesson in progress" unoptimized />
-                      </figure>
-                      <p className="hyphens-auto">Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson!<br /><br />
-                      Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
-                </div>
+                  <figure className="flex-shrink-0 mb-8 sm:me-8 float-left">
+                      <Image src="/lessons/piano_lesson.png" className="mx-auto" width="230" height="230" alt="lesson in progress" unoptimized />
+                  </figure>
+                  <p className="hyphens-auto">Located in the beautiful Etobicoke neighbourhood of Humber Valley Village since 2018, Da Capo Academy of Music (DCAM) offers music lessons to students of all ages and skill levels. Our amazing team of teachers are passionate musicians who love to share their passion with their students. Have an instrument you are keen on learning? Great! Fill out our "Free Trial Lesson" form and come in for a free, no-obligation trial lesson!<br /><br />
+                  Please explore our website to learn more about us. If you have a question, call us during our business hours or send us an email at <a href = "mailto: info@dacapomusic.ca" className="dcam-link">info@dacapomusic.ca</a> and we will get back to you as possible!</p>
+              </div>
           </section>
 
           {/* INSTRUMENTS SECTION */}
@@ -170,10 +128,24 @@ const Home = async () => {
             </div>
           </section>
 
-          {/* SHOP SECTION */}
+          {/* TEACHERS SECTION */}
           <section className="offers px-5 lg:px-36 xl:px-52 py-20">
-            <h2 className="mb-10 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">SHOP</h2>
-            <p className="mb-16">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We ship to Canadian residents only.</p>
+            <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
+            <div className="teachers-container flex flex-wrap gap-7 justify-center">
+              {homePageTeachersArray.map((teacher, index) => (
+                <TeacherCard key={index} teacher={teacher} />
+              ))}
+            </div>
+            <VisitPageButton text="Visit Teachers Page" link="/teachers" />
+          </section>
+
+
+          {/* SHOP SECTION */}
+          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
+            <img src="/notes-light.svg" className="absolute left-2 top-4 w-[110px]" />
+            <img src="/notes-light.svg" className="absolute right-2 bottom-4 w-[110px]" />
+            <h2 className="mb-10 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">SHOP</h2>
+            <p className="mb-16 text-gray-100">Shop local! Visit our online shop for your music book needs! Pick up your order either in person at our school or have it shipped to your address! We currently ship to Canadian residents only.</p>
               <div className="teachers-container flex flex-wrap gap-10 justify-center mb-20">
                 {shopProductCategoriesArray.map((product, index) => (
                   <ShopProductCategoryCard key={index} product={product} />
@@ -182,18 +154,6 @@ const Home = async () => {
             <VisitPageButton text="Visit Shop" link="/shop" />
           </section>
 
-          {/* TEACHERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
-            <img src="/notes-light.svg" className="absolute left-2 top-4 w-[110px]" />
-            <img src="/notes-light.svg" className="absolute right-2 bottom-4 w-[110px]" />
-            <h2 className="mb-20 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
-            <div className="teachers-container flex flex-wrap gap-7 justify-center">
-              {teachersPhotosArray.map((teacher, index) => (
-                <TeacherCard key={index} teacher={teacher} />
-              ))}
-            </div>
-            <VisitPageButton text="Visit Teachers Page" link="/teachers" />
-          </section>
 
           {/* REVIEWS SECTION */}
           <section className="reviews px-5 lg:px-36 xl:px-52 py-20">
