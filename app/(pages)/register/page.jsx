@@ -18,13 +18,13 @@ export const metadata = {
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
         type: "article",
-        images: [
-            {
-                url: "https://i.postimg.cc/26ZMQ4Q0/Untitled-design-3.jpg",
-                width: 1200,
-                height: 630
-            }
-        ]
+        // images: [
+        //     {
+        //         url: "https://i.postimg.cc/26ZMQ4Q0/Untitled-design-3.jpg",
+        //         width: 1200,
+        //         height: 630
+        //     }
+        // ]
     },
 }
 
