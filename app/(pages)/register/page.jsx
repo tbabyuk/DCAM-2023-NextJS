@@ -16,9 +16,9 @@ export const metadata = {
         type: "article",
         images: [
             {
-                url: "https://i.postimg.cc/90mqjBQM/register-page.jpg",
+                url: "https://i.postimg.cc/6QFDSHzr/rates-big.jpg",
                 width: 1200,
-                height: 152
+                height: 650
             }
         ]
     },
