@@ -3,12 +3,12 @@ import { PageTitle } from "../components/PageTitle";
 
 
 export const metadata = {
-    title: "Register | Da Capo Academy of Music",
+    title: "Register | Da Capo Academy of Music...",
     description: "Register for regular lessons today!",
     robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
-        title: "Register | Da Capo Academy of Music",
+        title: "Register | Da Capo Academy of Music...",
         description: "Register for regular lessons today!",
         url: "https://dacapomusic.ca/register",
         siteName: "Da Capo Academy of Music",
@@ -16,9 +16,9 @@ export const metadata = {
         type: "article",
         images: [
             {
-                url: "https://i.postimg.cc/6QFDSHzr/rates-big.jpg",
+                url: "https://i.postimg.cc/26ZMQ4Q0/Untitled-design-3.jpg",
                 width: 1200,
-                height: 650
+                height: 630
             }
         ]
     },
