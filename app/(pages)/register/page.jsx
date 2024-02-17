@@ -8,6 +8,10 @@ export const metadata = {
     robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
+        twitter: {
+            card: "summary_large_image",
+            images: ["https://i.postimg.cc/26ZMQ4Q0/Untitled-design-3.jpg"]
+        },
         title: "Register | Da Capo Academy of Music...",
         description: "Register for regular lessons today!",
         url: "https://dacapomusic.ca/register",
