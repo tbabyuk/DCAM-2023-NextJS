@@ -15,7 +15,13 @@ export const metadata = {
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
         type: "article",
-        images: "/images/page-headers/rates-page.jpg"
+        images: [
+            {
+                url: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/page_images%2Frates-page.jpg?alt=media&token=1d31f193-d4c6-4a3c-9d8c-4e069583c859",
+                width: 1200,
+                height: 152
+            }
+        ]
     },
 }
 
