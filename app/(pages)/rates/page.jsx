@@ -14,7 +14,8 @@ export const metadata = {
         url: "https://dacapomusic.ca/rates",
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
-        type: "article"
+        type: "article",
+        images: "/images/page-headers/rates-page.jpg"
     },
 }
 
