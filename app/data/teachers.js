@@ -140,9 +140,9 @@ export const teachersPageTeachersArray = [
     },
     {
         name: "Taras (Terry) Babyuk",
-        title: "Co-Founder, Managing Director",
+        title: "Managing Director",
         photo: "/images/teachers/terry.jpg",
-        alt: "piano and theory teacher Terry",
+        alt: "managing director and piano teacher Terry",
         instrument: "PIANO, MUSIC THEORY",
         bio: "Taras (Terry) Babyuk started his musical journey with accordion lessons at the age of seven. In his teens, he began piano lessons and soon decided to dedicate himself fully to this instrument. Terry holds Level 9 RCM Certificate in piano and has taught beginner to intermediate piano and beginner to advanced music theory for many years (a self-described music theory nerd!). In addition to his fondness for Classical and Romantic-era music, he also loves film music and enjoys composing original piano music in his spare time. Aside from his teaching duties at DCAM, he is also its co-founder and Managing Director."
     }
