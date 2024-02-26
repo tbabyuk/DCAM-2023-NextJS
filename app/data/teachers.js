@@ -51,7 +51,7 @@ export const homePageTeachersArray = [
     },
     {
       name: "Linda",
-      photo: "/images/teachers/linda2.jpg",
+      photo: "/images/teachers/linda.jpg",
       alt: "piano teacher Linda",
       instrument: "piano, vocals"
     },
