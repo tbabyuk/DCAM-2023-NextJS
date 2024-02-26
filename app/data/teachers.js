@@ -48,7 +48,13 @@ export const homePageTeachersArray = [
       photo: "/images/teachers/matthew.jpg",
       alt: "bass teacher Matthew",
       instrument: "bass guitar, upright bass"
-    }
+    },
+    {
+      name: "Linda",
+      photo: "/images/teachers/linda2.jpg",
+      alt: "piano teacher Linda",
+      instrument: "piano, vocals"
+    },
 ]
 
 
@@ -109,6 +115,13 @@ export const teachersPageTeachersArray = [
         alt: "bass teacher Matthew",
         instrument: "BASS GUITAR, UPRIGHT BASS",
         bio: "Matthew is a Jazz Bassist who has performed both the electric and upright bass for 12 and 10 years, respectively. He began his musical journey at the age of 4, studying in the Community Music Program at Humber College for 14 years. Matthew then graduated with a Bachelor&apos;s Degree in Jazz Performance at the University of Toronto in 2022, studying with noteworthy Jazz musicians, such as Dave Young and others. Matthew has had the privilege of performing at festivals such as the 2021 Toronto Undergrad Jazz Festival, the 2020 & 2021 World of Jazz Festival in Brampton, as well as the 2023 TD Niagara Jazz Festival. He looks forward to seeing his students succeed by sharing his own passion for music."
+    },
+    {
+        name: "Linda Wang",
+        photo: "/images/teachers/linda.jpg",
+        alt: "piano and vocals teacher Linda",
+        instrument: "PIANO, VOCALS",
+        bio: "Linda Wang is currently studying jazz vocals at Humber College in her Bachelor Degree program. She also enjoys playing and teaching piano and believes in the fulfillment and joy that music can bring to people. Linda has performed as a member of numerous ensembles, most notably Humber&apos;s Gospel Choir and World Drumming Ensemble, which has helped her grow as a musician and a person. She aspires to work in music production and composition in the future. However, her goal in the classroom is to ensure that each student can learn while having fun!"
     },
     {
         name: "Jonathan Stuchbery*",

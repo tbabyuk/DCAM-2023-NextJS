@@ -129,7 +129,7 @@ const Home = async () => {
           </section>
 
           {/* TEACHERS SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20">
+          <section className="teachers px-5 lg:px-36 py-20">
             <h2 className="mb-20 text-center text-3xl text-regRed font-semibold pb-2 font-ovo">OUR TEACHERS</h2>
             <div className="teachers-container flex flex-wrap gap-7 justify-center">
               {homePageTeachersArray.map((teacher, index) => (
@@ -141,7 +141,7 @@ const Home = async () => {
 
 
           {/* SHOP SECTION */}
-          <section className="offers px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
+          <section className="shop px-5 lg:px-36 xl:px-52 py-20 bg-dcam-blue-400 relative">
             <img src="/notes-light.svg" className="absolute left-2 top-4 w-[110px]" />
             <img src="/notes-light.svg" className="absolute right-2 bottom-4 w-[110px]" />
             <h2 className="mb-10 text-center text-3xl text-gray-100 font-semibold pb-2 font-ovo">SHOP</h2>

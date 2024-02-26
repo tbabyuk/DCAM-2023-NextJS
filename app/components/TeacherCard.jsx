@@ -6,7 +6,7 @@ export const TeacherCard = ({teacher}) => {
   return (
     <div className="w-[230px] h-auto rounded-lg shadow-md overflow-hidden">
         <div className="w-[230px] h-[270px]">
-            <Image 
+            <img 
                 src={teacher.photo}
                 width={200}
                 height={300}
