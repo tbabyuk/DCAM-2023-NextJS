@@ -24,7 +24,10 @@ const Teachers = () => {
 
     return ( 
         <main className="teachers-page pb-36">
-            <PageTitle title="Teachers" image="/images/page-headers/teachers-page.jpg" />
+            <div className="h-[150px] bg-[url('/images/page-headers/teachers-page.jpg')] bg-cover bg-center flex items-center justify-between px-5 lg:px-36 xl:px-52 relative">
+                <h1 className="font-ovo text-gray-500 font-bold text-4xl z-10 py-2 px-4 bg-gray-100 -skew-x-6 rounded">Teachers Page</h1>
+                <img src="/images/illustrations/teachers-page-illustration.png" title="original artwork by the one and only - Heather Alison Rose" className="max-h-[100%] absolute right-5 lg:right-36 xl:right-52" />
+            </div>
 
             <div className="teachers">
                 {teachersPageTeachersArray.map((teacher, index) => (

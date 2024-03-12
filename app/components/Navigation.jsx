@@ -14,12 +14,12 @@ export const Navigation = () => {
 
 
 return (
-    <nav className="navigation w-full bg-dcam-blue-950">
+    <nav className="navigation w-full bg-regBlue">
         <div className="h-11 flex justify-start items-center bg-regBlue md:hidden">
             {isOpen ? <RxCross1 size="1.8em" className="cursor-pointer h-full text-gray-50 mx-3" onClick={() => setIsOpen(false)} /> : <RxHamburgerMenu size="2em" className="cursor-pointer text-gray-50 mx-3" onClick={() => setIsOpen(true)} />}
         </div>
         <ul
-        className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:flex-wrap md:justify-center text-gray-50 z-[5] text-[0.95rem]`}>
+        className={`${isOpen ? "block absolute bg-regBlue w-full" : "hidden"} md:static md:flex md:flex-wrap md:justify-center text-gray-50 z-20 text-[0.95rem]`}>
             <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item border-t-2 border-b-2 border-gray-200 md:border-none">Home</li></Link>
             <li className="dropdown-menu-item relative cursor-pointer border-b-2 border-gray-200 md:border-none" onMouseEnter={() => setSubnav1IsOpen(true)} onMouseLeave={() => setSubnav1IsOpen(false)} onClick={() => setSubnav1IsOpen(!subnav1IsOpen)}>Lessons<IoIosArrowDown className="ms-1" />
                 {subnav1IsOpen && (
