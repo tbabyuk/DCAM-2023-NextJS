@@ -20,7 +20,7 @@ const ShopLayout = ({children}) => {
 
     return (
         <main className="shop-page pb-36">
-            <PageTitle title="Shop" image="/images/page-headers/shop-page.jpg" />
+            <PageTitle title="Shop" image="/images/illustrations/shop-page-illustration.png" />
             {children}
         </main>
     )

@@ -34,7 +34,7 @@ const Reviews = async () => {
 
     return ( 
         <main className="reviews-page bg-gray-100 pb-36">
-            <PageTitle title="Reviews" image="/images/page-headers/reviews-page.jpg" />
+            <PageTitle title="Reviews" image="/images/illustrations/reviews-page-illustration.png" />
             <section className="overview flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 py-20">
                 {reviews && 
                     reviews.map((review) => <ReviewCard review={review} />

@@ -22,7 +22,7 @@ const Careers = () => {
     
     return ( 
             <main className="careers-page pb-36">
-                <PageTitle title="Careers" image="/images/page-headers/careers-page.jpg" />
+                <PageTitle title="Careers" image="/images/illustrations/careers-page-illustration.png" />
 
                 <section className="content leading-7 px-5 lg:px-36 xl:px-52 py-20">
                     <div className="bg-gray-100 p-8 rounded-xl border-2 border-gray-300 shadow-lg">

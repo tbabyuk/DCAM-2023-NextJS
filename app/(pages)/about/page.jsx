@@ -20,7 +20,7 @@ const About = () => {
     
     return (
             <main className="about-page bg-gray-100 pb-36">
-                    <PageTitle title="About Us" image="/images/page-headers/about-page.jpg" />
+                    <PageTitle title="About Us" image="/images/illustrations/about-page-illustration.png" />
 
                     <section className="content flex flex-col leading-7 px-5 lg:px-36 xl:px-52 py-20">
                         <div className="mb-12">
