@@ -1,4 +1,4 @@
-import { PageTitle } from "../components/PageTitle"
+import { PageTitle } from "@/app/components/PageTitle"
 
 
 export const metadata = {
@@ -20,7 +20,7 @@ const ShopLayout = ({children}) => {
 
     return (
         <main className="shop-page pb-36">
-            <PageTitle title="Shop" image="/images/illustrations/shop-page-illustration.png" />
+            <PageTitle title="Shop" image="/images/illustrations/shop-page-illustration.png" alt="sho page illustration" />
             {children}
         </main>
     )

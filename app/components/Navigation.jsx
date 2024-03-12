@@ -23,7 +23,7 @@ return (
             <Link href="/" onClick={() => setIsOpen(false)}><li className="menu-item border-t-2 border-b-2 border-gray-200 md:border-none">Home</li></Link>
             <li className="dropdown-menu-item relative cursor-pointer border-b-2 border-gray-200 md:border-none" onMouseEnter={() => setSubnav1IsOpen(true)} onMouseLeave={() => setSubnav1IsOpen(false)} onClick={() => setSubnav1IsOpen(!subnav1IsOpen)}>Lessons<IoIosArrowDown className="ms-1" />
                 {subnav1IsOpen && (
-                    <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-regBlue text-[0.95rem] z-[6]">
+                    <ul className="absolute bottom-0 left-0 translate-y-[100%] w-full md:w-[220px] flex flex-col bg-regBlue text-[0.95rem] z-20">
                         <Link href="/piano-lessons-etobicoke" onClick={() => setIsOpen(false)}><li className="submenu-item">Piano Lessons</li></Link>
                         <Link href="/guitar-lessons-etobicoke" onClick={() => setIsOpen(false)}><li className="submenu-item">Guitar Lessons</li></Link>
                         <Link href="/drum-lessons-etobicoke" onClick={() => setIsOpen(false)}><li className="submenu-item">Drum Lessons</li></Link>

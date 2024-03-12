@@ -1,5 +1,5 @@
-import { PageTitle } from "../components/PageTitle";
 import Link from "next/link";
+import { PageTitle } from "@/app/components/PageTitle";
 import { BsTelephone } from "react-icons/bs";
 import { HiOutlineMail } from "react-icons/hi";
 

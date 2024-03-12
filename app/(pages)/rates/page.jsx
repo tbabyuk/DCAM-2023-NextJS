@@ -1,6 +1,6 @@
 import { DownloadButton } from "../../components/DownloadButton";
 import { PageDivider } from "../../components/PageDivider";
-import { PageTitle } from "../components/PageTitle";
+import { PageTitle } from "@/app/components/PageTitle";
 
 
 export const metadata = {

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { TeacherProfile } from "@/app/components/TeacherProfile";
 import { teachersPageTeachersArray } from "@/app/data/teachers";
-import { PageTitle } from "../components/PageTitle";
+import { PageTitle } from "@/app/components/PageTitle";
 
 
 export const metadata = {

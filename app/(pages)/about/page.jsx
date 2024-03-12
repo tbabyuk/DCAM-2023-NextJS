@@ -1,4 +1,5 @@
-import { PageTitle } from "../components/PageTitle";
+import { PageTitle } from "@/app/components/PageTitle";
+
 
 export const metadata = {
     title: "About Us | Da Capo Academy of Music",
