@@ -140,7 +140,7 @@ export const teachersPageTeachersArray = [
     },
     {
         name: "Taras (Terry) Babyuk",
-        title: "Managing Director, Web Developer",
+        title: "Managing Director",
         photo: "/images/teachers/terry.jpg",
         alt: "managing director and piano teacher Terry",
         instrument: "PIANO, MUSIC THEORY",
