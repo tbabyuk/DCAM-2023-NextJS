@@ -8,12 +8,12 @@ import { LessonFormatSection } from "@/app/components/LessonFormatSection";
 
 export const metadata = {
     title: "Drum Lessons in Etobicoke | Da Capo Academy of Music",
-    description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+    description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY! (416) 237-9595",
     robots: { index: true, follow: true},
     authors: [{name: "Taras (Terry) Babyuk"}],
     openGraph: {
         title: "Drum Lessons in Etobicoke | Da Capo Academy of Music",
-        description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY!",
+        description: "Looking for drum lessons in Etobicoke? We are here for you! Call or visit our website to register for your free, no-obligation trial lesson TODAY! (416) 237-9595",
         url: "https://dacapomusic.ca/drum-lessons-etobicoke",
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
