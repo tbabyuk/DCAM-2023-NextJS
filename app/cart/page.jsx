@@ -134,7 +134,7 @@ const Cart = () => {
   return (
     <>
       <main className="cart-page">
-          <PageTitle title="Cart" />
+          <PageTitle title="Cart" image="/images/illustrations/shop-page-illustration.png" alt="cart page illustration" />
           <div className="books-list px-5 lg:px-36 bg-gray-100 py-20 overflow-x-auto">
               <table className="w-full">
                   <thead>
