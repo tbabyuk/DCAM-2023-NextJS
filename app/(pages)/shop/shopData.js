@@ -241,7 +241,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3sight.jpg?alt=media&token=9152e739-a906-4159-9dc0-ab9a8f3e6f44"
     },
@@ -299,7 +299,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4sight.jpg?alt=media&token=f35df6ec-08e1-4ddc-8984-a7c6e79912c4"
     },
@@ -357,7 +357,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5sight.jpg?alt=media&token=39db4275-b8a0-4ad4-b901-81376246e7b9"
     },
@@ -415,7 +415,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_6_piano%2Flvl6sight.jpg?alt=media&token=e2efbb06-9773-4333-866e-c84b4685bc46"
     },
@@ -473,7 +473,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_7_piano%2Flvl7sight.jpg?alt=media&token=3e504c4b-4458-45d5-82b4-db7e58a10267"
     },
@@ -531,7 +531,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_8_piano%2Flvl8sight.jpg?alt=media&token=8342a9eb-4fbe-4179-9480-45bd006ec6d8"
     },
@@ -578,7 +578,7 @@ export const booksList = [
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 24.95,
-        category: ["placeholder"],
+        category: ["piano", "ear tests", "four star", "rcm"],
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_9_piano%2Flvl9sight.jpg?alt=media&token=0d2124e7-72ea-4887-be40-9b89fcb66e4d"
     },
@@ -644,6 +644,8 @@ export const booksList = [
     // }
 ]
 
+
+// GIFT CERTIFICATES
 
 export const giftCertificatesList = [
         // PIANO
