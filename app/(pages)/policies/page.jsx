@@ -5,7 +5,7 @@ const Policies = () => {
 
   return (
     <main className="policies-page">
-        <PageTitle title="Policies (2024 update)" image="/images/illustrations/policies-page-illustration.png" />
+        <PageTitle title="Policies (2024)" image="/images/illustrations/policies-page-illustration.png" />
         <div className="px-5 lg:px-36 xl:px-52 py-20 bg-gray-100">
             <p className="mb-10 leading-10">Our policies are designed to make things more organized and efficient for both the school and our students. These policies must be signed by all of our families when they first begin lessons with us.</p>
             <ol className="list-decimal list-inside leading-8 bg-gray-100 w-fit mx-auto p-5 rounded">
