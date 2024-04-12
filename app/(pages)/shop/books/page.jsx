@@ -1,46 +1,18 @@
 "use client"
 
-import { booksList } from "../shopData"
-import { ShopProductCard } from "../components/ShopProductCard"
-import { BooksFilter } from "../BooksFilter"
-import { useState } from "react"
-
+import { ShopProductCategoryCard } from "../components/ShopProductCategoryCard"
+import { shopBookCategoriesArray } from "../shopData"
 
 const ShopBooksPage = () => {
 
-  const [instrumentValue, setInstrumentValue] = useState("piano")
-  const [scopeValue, setScopeValue] = useState("all")
-
-  const handleInstrumentValue = (value) => {
-    setInstrumentValue(value)
-  }
-
-  const handleScopeValue = (value) => {
-    setScopeValue(value)
-  }
-
-  console.log("instrument:", instrumentValue, "scope:", scopeValue)
-
-    
   return (
       <>
-          <div className="px-5 lg:px-36">
-            <BooksFilter handleInstrumentValue={handleInstrumentValue} handleScopeValue={handleScopeValue} />
-          </div>
-          <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
-          {scopeValue === "all" ? (
-              booksList
-                .filter((book) => book.category.includes(instrumentValue))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            ) : (
-              booksList
-                .filter((book) => book.category.includes(instrumentValue) && book.category.includes(scopeValue))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )}
+          <div className="leading-8 px-5 lg:px-36 xl:px-52 py-40 bg-gray-100">
+            <div className="flex flex-wrap gap-10 justify-center">
+                {shopBookCategoriesArray.map((product, index) => (
+                  <ShopProductCategoryCard key={index} product={product} />
+                ))}            
+            </div>
           </div>
       </>  
     )
