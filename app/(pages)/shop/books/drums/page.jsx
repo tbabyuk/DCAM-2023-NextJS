@@ -2,7 +2,7 @@
 
 import { booksList } from "../../shopData"
 import { ShopProductCard } from "../../components/ShopProductCard"
-import { BooksFilter } from "../../BooksFilter"
+import { BooksFilter } from "../../components/PianoBooksFilter"
 import { useState } from "react"
 
 

@@ -1,15 +1,18 @@
 "use client"
 
-import { booksList } from "../../shopData"
+import { guitarBooksList } from "../../guitarBooksData"
 import { ShopProductCard } from "../../components/ShopProductCard"
-import { BooksFilter } from "../../BooksFilter"
+import { GuitarBooksFilter } from "../../components/GuitarBooksFilter"
 import { useState } from "react"
 
 
 const GuitarBooksPage = () => {
 
-  const [instrumentValue, setInstrumentValue] = useState("piano")
+  const [instrumentValue, setInstrumentValue] = useState("guitar")
   const [scopeValue, setScopeValue] = useState("all")
+
+
+  console.log("Logging scope value from Guitar Books Page:", scopeValue)
 
   const handleInstrumentValue = (value) => {
     setInstrumentValue(value)
@@ -24,19 +27,17 @@ const GuitarBooksPage = () => {
     
   return (
       <>
-          <div className="px-5 lg:px-36">
-            <BooksFilter handleInstrumentValue={handleInstrumentValue} handleScopeValue={handleScopeValue} />
-          </div>
+          <GuitarBooksFilter handleInstrumentValue={handleInstrumentValue} handleScopeValue={handleScopeValue} />
           <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
           {scopeValue === "all" ? (
-              booksList
+              guitarBooksList
                 .filter((book) => book.category.includes(instrumentValue))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
             ) : (
-              booksList
-                .filter((book) => book.category.includes(instrumentValue) && book.category.includes(scopeValue))
+              guitarBooksList
+                .filter((book) => book.category.includes(scopeValue))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))

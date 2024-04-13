@@ -1,4 +1,4 @@
-import { AddToCartButton } from "../AddToCartButton"
+import { AddToCartButton } from "./AddToCartButton"
 
 export const ShopProductCard = ({product, productType}) => {
 
@@ -14,8 +14,9 @@ export const ShopProductCard = ({product, productType}) => {
             </div>
             <div className="h-[65%] px-5 product-description flex flex-col justify-evenly">
                 <h3 className="text-sm font-semibold">{product.title}</h3>
-                <small>Author: {product.author}</small>
-                <small>Publisher: {product.publisher}</small>
+                {product.author && <small>Author: {product.author}</small>}
+                {product.publisher && <small>Publisher: {product.publisher}</small>}
+                {product.edition && <small>Edition: {product.edition}</small> }
                 <small>${product.price}</small>
                 <AddToCartButton item={product} id={product.id} origin="shop" />
             </div>

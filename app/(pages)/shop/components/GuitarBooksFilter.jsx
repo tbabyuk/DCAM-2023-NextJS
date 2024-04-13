@@ -3,7 +3,7 @@ import { useState } from "react"
 
 
 
-export const BooksFilter = ({handleInstrumentValue, handleScopeValue}) => {
+export const GuitarBooksFilter = ({handleInstrumentValue, handleScopeValue}) => {
 
     const [instrument, setInstrument] = useState("piano")
     const [scope, setScope] = useState("all")
@@ -24,21 +24,20 @@ export const BooksFilter = ({handleInstrumentValue, handleScopeValue}) => {
 
 
     return (
-        <div className="flex flex-col md:flex-row pt-12 pb-8 border-b-2 border-gray-300">
-            <div className="w-full sm:w-[250px] mb-6 md:mb-0 mr-10">
-                <p className="mb-1">Choose instrument/subject:</p>
+        <div className="px-5 lg:px-36 xl:px-52 py-8 border-b-2 bg-gray-100 border-gray-300">
+            {/* <div className="w-full sm:w-[250px] mb-6 md:mb-0 mr-10">
+                <p className="mb-1">Instrument/subject:</p>
                 <select 
                     className="w-full h-8 cursor-pointer border-2 border-gray-400" 
                     value={instrument}
                     onChange={(e) => handleInstrumentChange(e.target.value)}
                 >
-                    <option value="piano">piano books</option>
-                    <option value="theory">music theory books</option>
+                    <option value="piano">guitar books</option>
                 </select>
-            </div>
+            </div> */}
             <div className="flex">
                 <label className="flex flex-col pr-8">
-                    <span className="mb-2">All Books</span>
+                    <span className="mb-2">All Guitar Books</span>
                     <input 
                         type="radio" 
                         name="scope" 
@@ -48,7 +47,7 @@ export const BooksFilter = ({handleInstrumentValue, handleScopeValue}) => {
                     />
                 </label>
                 <label className="flex flex-col">
-                    <span className="mb-2">RCM Books Only</span>
+                    <span className="mb-2">RCM Guitar Books Only</span>
                     <input 
                         type="radio" 
                         name="scope" 
