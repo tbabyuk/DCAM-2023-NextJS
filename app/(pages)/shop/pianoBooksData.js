@@ -6,6 +6,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJ2aMCO3Yh2jr9tnwBljEzZ",
         title: "ABC of Piano Playing - Book 1",
+        slug: "abc-of-piano-playing-1",
         publisher: "RCM Publishing",
         author: "Boris Berlin",
         price: 14.95,
@@ -17,6 +18,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJ2cjCO3Yh2jr9tVeGH8Pji",
         title: "ABC of Piano Playing - Book 2",
+        slug: "abc-of-piano-playing-2",
         author: "Boris Berlin",
         publisher: "RCM Publishing",
         price: 14.95,
@@ -28,6 +30,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJ2dZCO3Yh2jr9tTZYE6Eu9",
         title: "ABC of Piano Playing - Book 3",
+        slug: "abc-of-piano-playing-3",
         author: "Boris Berlin",
         publisher: "RCM Publishing",
         price: 14.95,
@@ -42,6 +45,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJLqKCO3Yh2jr9tkQ6pWBud",
         title: "RCM Prep - Technical Requirements",
+        slug: "rcm-prep-technical-requirements",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 12.95,
@@ -53,6 +57,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJKtCCO3Yh2jr9tFl7ITVli",
         title: "RCM Prep A Piano - Repertoire",
+        slug: "rcm-prep-a-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -64,6 +69,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJKv9CO3Yh2jr9t02PkKGjM",
         title: "RCM Prep B Piano - Repertoire",
+        slug: "rcm-prep-b-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -75,6 +81,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJKpWCO3Yh2jr9t0asJIfKm",
         title: "RCM Prep - Theory",
+        slug: "rcm-prep-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -89,6 +96,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJHw8CO3Yh2jr9ttG3MYfhr",
         title: "RCM Lvl 1 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 13.95,
@@ -100,6 +108,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJHzqCO3Yh2jr9tj9JoDzZq",
         title: "RCM Level 1 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
@@ -111,6 +120,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJI4LCO3Yh2jr9t8vxAMO0s",
         title: "RCM Level 1 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
@@ -122,6 +132,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJI82CO3Yh2jr9tkrSSS0z8",
         title: "RCM Level 1 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
@@ -133,6 +144,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIBLCO3Yh2jr9t2Ib01P9F",
         title: "RCM Level 1 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -147,6 +159,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIDMCO3Yh2jr9ttmDvwdIX",
         title: "RCM Lvl 2 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
@@ -158,6 +171,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIFQCO3Yh2jr9tbs6chZ1X",
         title: "RCM Level 2 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
@@ -169,6 +183,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIHxCO3Yh2jr9tBoTfniJb",
         title: "RCM Level 2 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
@@ -180,6 +195,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIJRCO3Yh2jr9txDNrkox6",
         title: "RCM Level 2 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
@@ -191,6 +207,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJILDCO3Yh2jr9tiKHmFsaB",
         title: "RCM Level 2 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -205,6 +222,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJISICO3Yh2jr9tWhFVsg4b",
         title: "RCM Lvl 3 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
@@ -216,6 +234,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIU5CO3Yh2jr9tMhHmvO7g",
         title: "RCM Level 3 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
@@ -227,6 +246,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIXDCO3Yh2jr9t647ERTDO",
         title: "RCM Level 3 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
@@ -238,6 +258,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIYzCO3Yh2jr9tDdm7JRPU",
         title: "RCM Level 3 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
@@ -249,6 +270,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIc3CO3Yh2jr9tZxJRhCOd",
         title: "RCM Level 3 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -263,6 +285,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJInpCO3Yh2jr9tdXLp8VOR",
         title: "RCM Lvl 4 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 14.95,
@@ -274,6 +297,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIpJCO3Yh2jr9tDUURiuqW",
         title: "RCM Level 4 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
@@ -285,6 +309,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIqjCO3Yh2jr9t0pxAVcq4",
         title: "RCM Level 4 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
@@ -296,6 +321,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIs3CO3Yh2jr9tqk7RxMk7",
         title: "RCM Level 4 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 17.95,
@@ -307,6 +333,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJItDCO3Yh2jr9tatYE15gg",
         title: "RCM Level 4 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -321,6 +348,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIwSCO3Yh2jr9tMM8nzvgq",
         title: "RCM Lvl 5 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 15.95,
@@ -332,6 +360,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIxnCO3Yh2jr9tS0riC35l",
         title: "RCM Level 5 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -343,6 +372,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIz7CO3Yh2jr9t9kKmDF96",
         title: "RCM Level 5 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 15.95,
@@ -354,6 +384,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJ0RCO3Yh2jr9t5LjP72qC",
         title: "RCM Level 5 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -365,6 +396,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJ1lCO3Yh2jr9tAeGs1Owa",
         title: "RCM Level 5 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -379,6 +411,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJ8hCO3Yh2jr9tNTsNbWoB",
         title: "RCM Lvl 6 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 16.95,
@@ -390,6 +423,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJBMCO3Yh2jr9tyIyiStMb",
         title: "RCM Level 6 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 23.95,
@@ -401,6 +435,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJCfCO3Yh2jr9teKg1nOpx",
         title: "RCM Level 6 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 16.95,
@@ -412,6 +447,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJEECO3Yh2jr9t0O97Qrul",
         title: "RCM Level 6 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -423,6 +459,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJFeCO3Yh2jr9ty0D8woc5",
         title: "RCM Level 6 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -437,6 +474,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJI8CO3Yh2jr9tABhNpcEM",
         title: "RCM Lvl 7 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 17.95,
@@ -448,6 +486,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJJNCO3Yh2jr9t7Dwxuh5l",
         title: "RCM Level 7 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 23.95,
@@ -459,6 +498,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJKeCO3Yh2jr9tzZulmsCU",
         title: "RCM Level 7 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 16.95,
@@ -470,6 +510,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJLjCO3Yh2jr9t7ljYKXNT",
         title: "RCM Level 7 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -481,6 +522,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJNACO3Yh2jr9tTYKg5dcG",
         title: "RCM Level 7 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -495,6 +537,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJYwCO3Yh2jr9tKLFiI1cV",
         title: "RCM Lvl 8 Piano - Technical Requirements",
+        slug: "placeholder",
         author: "The Royal Conservatory", 
         publisher: "RCM Publishing",
         price: 18.95,
@@ -506,6 +549,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJaPCO3Yh2jr9td3mTCe0m",
         title: "RCM Level 8 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 26.95,
@@ -517,6 +561,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJcDCO3Yh2jr9tKEzxClXD",
         title: "RCM Level 8 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 19.95,
@@ -528,6 +573,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJdeCO3Yh2jr9tmnx7wPTD",
         title: "RCM Level 8 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,
@@ -539,6 +585,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJfBCO3Yh2jr9tQZsNzL3Y",
         title: "RCM Level 8 Piano - Theory",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 28.95,
@@ -553,6 +600,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJoBCO3Yh2jr9tMFNVKWST",
         title: "RCM Level 9 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 39.95,
@@ -564,6 +612,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJpvCO3Yh2jr9tbtdU8TdI",
         title: "RCM Level 9 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 20.95,
@@ -575,6 +624,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJt4CO3Yh2jr9tk4qkNnjB",
         title: "RCM Level 9 Piano - Ear Tests",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 24.95,
@@ -586,6 +636,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJjlCO3Yh2jr9t6zVyi2hI",
         title: "RCM Level 9 - Harmony",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 48.95,
@@ -597,6 +648,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJJlkCO3Yh2jr9t21aizBr7",
         title: "RCM Level 9 - History",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 51.95,
@@ -611,6 +663,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJKj8CO3Yh2jr9tHxUl3WYA",
         title: "RCM Level 10 Piano - Repertoire",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 43.95,
@@ -622,6 +675,7 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJKlLCO3Yh2jr9tFu15rAY7",
         title: "RCM Level 10 Piano - Etudes",
+        slug: "placeholder",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         price: 21.95,

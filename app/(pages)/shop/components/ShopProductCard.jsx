@@ -1,6 +1,16 @@
+"use client"
+
 import { AddToCartButton } from "./AddToCartButton"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
+
 
 export const ShopProductCard = ({product, productType}) => {
+
+  const path = usePathname()
+
+
+  console.log("logging current path:", path)
 
 
   // PRODUCT CARD JSX IS DIFFERENT DEPENDING ON PRODUCT TYPE
@@ -9,9 +19,9 @@ export const ShopProductCard = ({product, productType}) => {
 
   return (
         <div className="product-card mx-auto text-center flex flex-col" style={{width: "250px", height: "380px"}}>
-            <div className="h-[35%]">
+            <Link className="h-[35%]" href={`${path}/${product.slug}`}>
                 <img className="mx-auto h-full" src={product.source} alt={product.title} />
-            </div>
+            </Link>
             <div className="h-[65%] px-5 product-description flex flex-col justify-evenly">
                 <h3 className="text-sm font-semibold">{product.title}</h3>
                 {product.author && <small>Author: {product.author}</small>}
