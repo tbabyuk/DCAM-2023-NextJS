@@ -7,12 +7,17 @@ export const pianoBooksList = [
         id: "price_1OJ2aMCO3Yh2jr9tnwBljEzZ",
         title: "ABC of Piano Playing - Book 1",
         slug: "abc-of-piano-playing-1",
-        publisher: "RCM Publishing",
         author: "Boris Berlin",
+        publisher: "RCM Publishing",
+        description: "A popular beginner piano method book using the Middle C approach to teaching piano. The book is structured with writing exercises on the left and piano pieces on the right, delivering a well-balanced approach for beginner piano students. A trusted and solid choice for students just starting to learn the piano. Book 1 of 3 in the series.",
+        pages: "48",
+        year: "2001",
+        ISBN: "978-0-88797-182-2",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
+        stock: 4,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc1.png?alt=media&token=ebdf0f8f-146f-4e62-b459-2c893de95fae"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_1.jpg?alt=media&token=53b0c8e2-26a8-445f-84c6-e5f25e2f5abc"
     },
     {
         // live id
@@ -21,10 +26,15 @@ export const pianoBooksList = [
         slug: "abc-of-piano-playing-2",
         author: "Boris Berlin",
         publisher: "RCM Publishing",
+        description: "A popular beginner piano method book using the Middle C approach to teaching piano. The book is structured with writing exercises on the left and piano pieces on the right, delivering a well-balanced approach for beginner piano students. A trusted and solid choice for students just starting to learn the piano. Book 2 of 3 in the series.",
+        pages: "40",
+        year: "2001",
+        ISBN: "978-0-88797-149-5",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
+        stock: 4,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc2.png?alt=media&token=c37d1ee6-2b6d-47e9-b3ec-08ccbd7fab35"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_2.jpg?alt=media&token=c5e4f4a1-23cf-4702-8dc8-030e2b4f9a22"
     },
     {
         // live id
@@ -33,10 +43,15 @@ export const pianoBooksList = [
         slug: "abc-of-piano-playing-3",
         author: "Boris Berlin",
         publisher: "RCM Publishing",
+        description: "A popular beginner piano method book using the Middle C approach to teaching piano. The book is structured with writing exercises on the left and piano pieces on the right, delivering a well-balanced approach for beginner piano students. A trusted and solid choice for students just starting to learn the piano. Book 3 of 3 in the series.",
+        pages: "40",
+        year: "2003",
+        ISBN: "978-1-55440-197-0",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
+        stock: 4,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbook_piano_abc3.png?alt=media&token=7e7fa82d-fc89-44ac-9f07-a4a63f787a37"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_3.jpg?alt=media&token=1bdb0eca-315f-4cad-8b63-3fb54525ba42"
     },
 
 
@@ -45,13 +60,18 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJLqKCO3Yh2jr9tkQ6pWBud",
         title: "RCM Prep - Technical Requirements",
-        slug: "rcm-prep-technical-requirements",
+        slug: "rcm-prep-piano-technical-requirements",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "A first preparatory book in the RCM series with simple 5-note scales for piano students just starting out on the instrument.",
+        pages: "16",
+        year: "2015",
+        ISBN: "978-1-55440-730-9",
         price: 12.95,
         category: ["piano", "beginner", "technical", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_technical.jpg?alt=media&token=b8ee9656-8855-457e-8861-f6941375cc75"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_piano_technical.jpg?alt=media&token=8c128e94-ce92-4d62-93a5-86ee7069ade1"
     },
     {
         // live id
@@ -60,10 +80,15 @@ export const pianoBooksList = [
         slug: "rcm-prep-a-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "The first Preparatory Repertoire book in the RCM repertoire series.",
+        pages: "32",
+        year: "2022",
+        ISBN: "978-1-55440-931-0",
         price: 19.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_a_rep.jpg?alt=media&token=f6ea60bb-9930-4d90-bd5e-3570675c8eeb"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_a_piano_repertoire.jpg?alt=media&token=b7e066c1-4595-43c0-887e-18599eb6b903"
     },
     {
         // live id
@@ -72,10 +97,15 @@ export const pianoBooksList = [
         slug: "rcm-prep-b-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "The second Preparatory Repertoire book in the RCM repertoire series.",
+        pages: "32",
+        year: "2022",
+        ISBN: "978-1-55440-932-7",
         price: 19.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_prep_piano%2Fprep_b_rep.jpg?alt=media&token=ae544ae0-4971-43dd-8108-d0242195f2fa"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_b_piano_repertoire.jpg?alt=media&token=edb02ce5-982a-4621-a82d-61d70d7000e3"
     },
     {
         // live id
