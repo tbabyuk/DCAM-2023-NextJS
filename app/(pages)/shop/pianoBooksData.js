@@ -109,78 +109,108 @@ export const pianoBooksList = [
     },
     {
         // live id
-        id: "price_1OJKpWCO3Yh2jr9t0asJIfKm",
-        title: "RCM Prep - Theory",
+        id: "price_1P63wlCO3Yh2jr9tN0GmM6Xb",
+        title: "RCM Preparatory - Theory",
         slug: "rcm-prep-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Preparatory Music Theory book",
+        pages: "72",
+        year: "2016",
+        ISBN: "978-1-55440-803-0",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
+        stock: 1,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Fpreptheory.jpg?alt=media&token=9d42896c-1e98-455f-ba28-22e88190e698"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Fprep_theory_2016.jpg?alt=media&token=c4122927-e438-4626-af27-a52893dc81df"
     },
 
 
         // LEVEL 1 BOOKS
     {
         // live id
-        id: "price_1OJHw8CO3Yh2jr9ttG3MYfhr",
-        title: "RCM Lvl 1 Piano - Technical Requirements",
-        slug: "placeholder",
-        author: "The Royal Conservatory", 
+        id: "price_1P63BBCO3Yh2jr9tP57OK1Td",
+        title: "RCM Level 1 Piano - Technical Requirements",
+        slug: "rcm-lvl-1-piano-technical",
+        author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 1 Piano Technical Requirements book",
+        pages: "16",
+        year: "2015",
+        ISBN: "978-1-55440-731-6",
         price: 13.95,
         category: ["piano", "beginner", "technical", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1tech.jpg?alt=media&token=f969c293-3457-47ab-a91e-477c19947ae4"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
     },
     {
         // live id
-        id: "price_1OJHzqCO3Yh2jr9tj9JoDzZq",
+        id: "price_1P63KNCO3Yh2jr9txcEs9q9k",
         title: "RCM Level 1 Piano - Repertoire",
-        slug: "placeholder",
+        slug: "rcm-lvl-1-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 1 Piano Repertoire book",
+        pages: "44",
+        year: "2022",
+        ISBN: "978-1-55440-933-4",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1rep2022.jpg?alt=media&token=10fe4a36-c502-45e2-ae69-f7fbd6d088fb"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
     },
     {
         // live id
-        id: "price_1OJI4LCO3Yh2jr9t8vxAMO0s",
+        id: "price_1P63QJCO3Yh2jr9tzTQVyfCL",
         title: "RCM Level 1 Piano - Etudes",
-        slug: "placeholder",
+        slug: "rcm-lvl-1-piano-etudes",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 1 Piano Etudes book",
+        pages: "24",
+        year: "2022",
+        ISBN: "978-1-55440-943-3",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1etu2022.jpg?alt=media&token=4d9fdd4e-1601-44bf-8cc5-82818aa82c92"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_etudes_2022.jpg?alt=media&token=58ae2cad-91a6-4ecd-b3f9-d2c0b01e5cfc"
     },
     {
         // live id
-        id: "price_1OJI82CO3Yh2jr9tkrSSS0z8",
-        title: "RCM Level 1 Piano - Ear Tests",
-        slug: "placeholder",
+        id: "price_1P63fcCO3Yh2jr9tW7WGEKEw",
+        title: "RCM Level 1 - Sight Reading & Ear Tests",
+        slug: "rcm-lvl-1-sight-reading-ear-tests",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 1 Sight Reading and Ear Tests book",
+        pages: "48",
+        year: "2015",
+        ISBN: "978-1-55440-742-2",
         price: 17.95,
         category: ["piano", "beginner", "ear tests", "four star", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_1_piano%2Flvl1sight.jpg?alt=media&token=b674641d-b559-4b6d-a70c-a2cf2b558956"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl1_fourstar_2015.jpg?alt=media&token=a285e5f0-2c79-455c-8f97-545f69f30905"
     },
     {
         // live id
-        id: "price_1OJIBLCO3Yh2jr9t2Ib01P9F",
+        id: "price_1P632ICO3Yh2jr9tPOva1Fyw",
         title: "RCM Level 1 Piano - Theory",
-        slug: "placeholder",
+        slug: "rcm-lvl-1-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 1 Theory book",
+        pages: "80",
+        year: "2016",
+        ISBN: "978-1-55440-931-0",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl1theory.jpg?alt=media&token=83bbd90e-48c9-4a3c-951d-fb9ccd9dd575"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl1_theory_2016.jpg?alt=media&token=5af408a5-b273-4c47-90ea-509aceafe181"
     },
 
 
