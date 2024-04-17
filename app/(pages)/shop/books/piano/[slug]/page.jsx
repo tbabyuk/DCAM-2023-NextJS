@@ -16,7 +16,7 @@ const SingleBookPage = ({params}) => {
     <div className="px-5 lg:px-36 xl:px-52 py-12 bg-gray-100">
         <div className="bg-white p-5 flex flex-col sm:flex-row gap-5">
             <div className="flex-1 mb-8 sm:mb-0">
-              <img className="mx-auto w-[75%]" src={targetBook.source} alt={targetBook.title} />
+              <img className="mx-auto w-[73%]" src={targetBook.source} alt={targetBook.title} />
             </div>
             <div className="flex-1">
               <h1 className="font-bold text-2xl mb-6">{targetBook.title}</h1>
