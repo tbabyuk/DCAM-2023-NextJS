@@ -198,7 +198,7 @@ export const pianoBooksList = [
     {
         // live id
         id: "price_1P632ICO3Yh2jr9tPOva1Fyw",
-        title: "RCM Level 1 Piano - Theory",
+        title: "RCM Level 1 - Theory",
         slug: "rcm-lvl-1-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
@@ -219,61 +219,86 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIDMCO3Yh2jr9ttmDvwdIX",
         title: "RCM Lvl 2 Piano - Technical Requirements",
-        slug: "placeholder",
-        author: "The Royal Conservatory", 
+        slug: "rcm-lvl-2-piano-technical",
+        author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 2 Piano Technical Requirements book",
+        pages: "16",
+        year: "2015",
+        ISBN: "978-1-55440-732-3",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2tech.jpg?alt=media&token=b3bc6695-d05f-442b-8d19-5f7db37a1be0"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_technical_2015.jpg?alt=media&token=e7b86bfb-799f-4b35-997e-6f45b65e7c00"
     },
     {
         // live id
         id: "price_1OJIFQCO3Yh2jr9tbs6chZ1X",
         title: "RCM Level 2 Piano - Repertoire",
-        slug: "placeholder",
+        slug: "rcm-lvl-2-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 2 Piano Repertoire book",
+        pages: "48",
+        year: "2022",
+        ISBN: "978-1-55440-934-1",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2rep2022.jpg?alt=media&token=35c1a83b-4e28-4142-bb1d-bc644f550d47"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_repertoire_2022.jpg?alt=media&token=479b5348-6059-42f9-8e7a-f6cd9d609490"
     },
     {
         // live id
         id: "price_1OJIHxCO3Yh2jr9tBoTfniJb",
         title: "RCM Level 2 Piano - Etudes",
-        slug: "placeholder",
+        slug: "rcm-lvl-2-piano-etudes",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 2 Piano Etudes book",
+        pages: "24",
+        year: "2022",
+        ISBN: "978-1-55440-944-0",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2etu2022.jpg?alt=media&token=0f264e01-4c64-4bd3-93ba-2c55c215b469"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_etudes_2022.jpg?alt=media&token=08697f92-c8e7-409a-b9b1-7459fdbb976b"
     },
     {
         // live id
         id: "price_1OJIJRCO3Yh2jr9txDNrkox6",
-        title: "RCM Level 2 Piano - Ear Tests",
-        slug: "placeholder",
+        title: "RCM Level 2 - Sight Reading & Ear Tests",
+        slug: "rcm-lvl-2-sight-reading-ear-tests",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 2 Sight Reading and Ear Tests book",
+        pages: "48",
+        year: "2015",
+        ISBN: "978-1-55440-743-9",
         price: 17.95,
         category: ["piano", "beginner", "ear tests", "four star", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_2_piano%2Flvl2sight.jpg?alt=media&token=049d8d39-0885-4e20-ac6b-fd9ce5571e9a"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl2_fourstar_2015.jpg?alt=media&token=75f389bc-e903-4103-8d08-f3c4b5c298a1"
     },
     {
         // live id
         id: "price_1OJILDCO3Yh2jr9tiKHmFsaB",
-        title: "RCM Level 2 Piano - Theory",
-        slug: "placeholder",
+        title: "RCM Level 2 - Theory",
+        slug: "rcm-lvl-2-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 2 Theory book",
+        pages: "80",
+        year: "2016",
+        ISBN: "978-1-55440-805-4",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl2theory.jpg?alt=media&token=ba8daac6-4c44-46e7-91c4-0a99ff72c6f3"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl2_theory_2016.jpg?alt=media&token=d6ebd455-73e7-4110-a10d-bd8a0aaa2151"
     },
 
 
@@ -282,61 +307,86 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJISICO3Yh2jr9tWhFVsg4b",
         title: "RCM Lvl 3 Piano - Technical Requirements",
-        slug: "placeholder",
-        author: "The Royal Conservatory", 
+        slug: "rcm-lvl-3-piano-technical",
+        author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 3 Piano Technical Requirements book",
+        pages: "15",
+        year: "2015",
+        ISBN: "978-1-55440-733-0",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3tech.jpg?alt=media&token=6003069f-f08f-4aed-9ec6-9a6282939da5"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_technical_2015.jpg?alt=media&token=9a4fe087-15a6-40f8-8755-fc33b61d0ace"
     },
     {
         // live id
         id: "price_1OJIU5CO3Yh2jr9tMhHmvO7g",
         title: "RCM Level 3 Piano - Repertoire",
-        slug: "placeholder",
+        slug: "rcm-lvl-3-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 3 Piano Repertoire book",
+        pages: "44",
+        year: "2022",
+        ISBN: "978-1-55440-935-8",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3rep2022.jpg?alt=media&token=ba2630e5-199d-484c-a62f-e76e71a4285d"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_repertoire_2022.jpg?alt=media&token=e5266a18-d8cb-45be-a607-f10559d3fd34"
     },
     {
         // live id
         id: "price_1OJIXDCO3Yh2jr9t647ERTDO",
         title: "RCM Level 3 Piano - Etudes",
-        slug: "placeholder",
+        slug: "rcm-lvl-3-piano-etudes",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 3 Piano Etudes book",
+        pages: "24",
+        year: "2022",
+        ISBN: "978-1-55440-945-7",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3etu2022.jpg?alt=media&token=45ab3bb7-1c61-4b60-8f74-23b87b7291a0"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_etudes_2022.jpg?alt=media&token=bed3526c-8c4c-4b31-96f7-2e4f728be20a"
     },
     {
         // live id
         id: "price_1OJIYzCO3Yh2jr9tDdm7JRPU",
-        title: "RCM Level 3 Piano - Ear Tests",
-        slug: "placeholder",
+        title: "RCM Level 3 - Sight Reading & Ear Tests",
+        slug: "rcm-lvl-3-sight-reading-ear-tests",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 3 Sight Reading and Ear Tests book",
+        pages: "48",
+        year: "2015",
+        ISBN: "978-1-55440-744-6",
         price: 17.95,
         category: ["piano", "ear tests", "four star", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_3_piano%2Flvl3sight.jpg?alt=media&token=9152e739-a906-4159-9dc0-ab9a8f3e6f44"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl3_fourstar_2015.jpg?alt=media&token=41d4ac4f-eecb-4d38-9375-d1afcbbeb0f6"
     },
     {
         // live id
         id: "price_1OJIc3CO3Yh2jr9tZxJRhCOd",
-        title: "RCM Level 3 Piano - Theory",
-        slug: "placeholder",
+        title: "RCM Level 3 - Theory",
+        slug: "rcm-lvl-3-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 3 Theory book",
+        pages: "80",
+        year: "2016",
+        ISBN: "978-1-55440-806-1",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl3theory.jpg?alt=media&token=9fa4675d-be4b-45f0-a003-5ab2801bbde7"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl3_theory_2016.jpg?alt=media&token=96d5a269-f280-46d1-ba39-24ee5df29a75"
     },
 
 
@@ -345,61 +395,86 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJInpCO3Yh2jr9tdXLp8VOR",
         title: "RCM Lvl 4 Piano - Technical Requirements",
-        slug: "placeholder",
-        author: "The Royal Conservatory", 
+        slug: "rcm-lvl-4-piano-technical",
+        author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 4 Piano Technical Requirements book",
+        pages: "19",
+        year: "2015",
+        ISBN: "978-1-55440-734-7",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4tech.jpg?alt=media&token=9a6c8c7a-dc36-4856-bbe2-06f7cb0f038b"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_technical_2015.jpg?alt=media&token=f8527c3c-e4ea-4175-a483-da86ce1cc894"
     },
     {
         // live id
         id: "price_1OJIpJCO3Yh2jr9tDUURiuqW",
         title: "RCM Level 4 Piano - Repertoire",
-        slug: "placeholder",
+        slug: "rcm-lvl-4-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 4 Piano Repertoire book",
+        pages: "44",
+        year: "2022",
+        ISBN: "978-1-55440-936-5",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4rep2022.jpg?alt=media&token=b77c7ffb-97ef-4d4e-9f9c-41d2be6f61c9"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_repertoire_2022.jpg?alt=media&token=44ed750c-6b40-4e3f-a557-8c3f0859b9ae"
     },
     {
         // live id
         id: "price_1OJIqjCO3Yh2jr9t0pxAVcq4",
         title: "RCM Level 4 Piano - Etudes",
-        slug: "placeholder",
+        slug: "rcm-lvl-4-piano-etudes",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 4 Piano Etudes book",
+        pages: "24",
+        year: "2022",
+        ISBN: "978-1-55440-946-4",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4etu2022.jpg?alt=media&token=38f97ca6-94ed-4874-8940-d861a04a82df"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_etudes_2022.jpg?alt=media&token=6ab063c0-a4e3-481f-91a9-2c07ff11f913"
     },
     {
         // live id
         id: "price_1OJIs3CO3Yh2jr9tqk7RxMk7",
-        title: "RCM Level 4 Piano - Ear Tests",
-        slug: "placeholder",
+        title: "RCM Level 4 - Sight Reading & Ear Tests",
+        slug: "rcm-lvl-4-sight-reading-ear-tests",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 4 Sight Reading and Ear Tests book",
+        pages: "48",
+        year: "2015",
+        ISBN: "978-1-55440-745-3",
         price: 17.95,
         category: ["piano", "ear tests", "four star", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_4_piano%2Flvl4sight.jpg?alt=media&token=f35df6ec-08e1-4ddc-8984-a7c6e79912c4"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl4_fourstar_2015.jpg?alt=media&token=205969f6-d409-4c50-a8d2-cf1ee9579b0e"
     },
     {
         // live id
         id: "price_1OJItDCO3Yh2jr9tatYE15gg",
-        title: "RCM Level 4 Piano - Theory",
-        slug: "placeholder",
+        title: "RCM Level 4 - Theory",
+        slug: "rcm-lvl-4-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 4 Theory book",
+        pages: "88",
+        year: "2016",
+        ISBN: "978-1-55440-807-8",
         price: 21.95,
         category: ["beginner", "theory", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl4theory.jpg?alt=media&token=b1159e85-9359-40f3-8507-a3719aa42900"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl4_theory_2016.jpg?alt=media&token=d24d1321-b5be-4e93-aa5f-92e9a7a9767d"
     },
 
 
@@ -408,61 +483,86 @@ export const pianoBooksList = [
         // live id
         id: "price_1OJIwSCO3Yh2jr9tMM8nzvgq",
         title: "RCM Lvl 5 Piano - Technical Requirements",
-        slug: "placeholder",
-        author: "The Royal Conservatory", 
+        slug: "rcm-lvl-5-piano-technical",
+        author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 5 Piano Technical Requirements book",
+        pages: "19",
+        year: "2015",
+        ISBN: "978-1-55440-735-4",
         price: 15.95,
         category: ["piano", "intermediate", "technical", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5tech.jpg?alt=media&token=bbc0c84b-50f6-4897-af3b-118da51a42ef"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_technical_2015.jpg?alt=media&token=41fc9b8c-34bf-4c32-8660-46dec22d2c0b"
     },
     {
         // live id
         id: "price_1OJIxnCO3Yh2jr9tS0riC35l",
         title: "RCM Level 5 Piano - Repertoire",
-        slug: "placeholder",
+        slug: "rcm-lvl-5-piano-repertoire",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 5 Piano Repertoire book",
+        pages: "48",
+        year: "2022",
+        ISBN: "978-1-55440-937-2",
         price: 21.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5rep2022.jpg?alt=media&token=564dfcad-a3ca-4bb6-bacc-8bf0850636a9"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_repertoire_2022.jpg?alt=media&token=51d11fcd-cec0-4555-bf9e-f8df8ecc5c5f"
     },
     {
         // live id
         id: "price_1OJIz7CO3Yh2jr9t9kKmDF96",
         title: "RCM Level 5 Piano - Etudes",
-        slug: "placeholder",
+        slug: "rcm-lvl-5-piano-etudes",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 5 Piano Etudes book",
+        pages: "24",
+        year: "2022",
+        ISBN: "978-1-55440-947-1",
         price: 15.95,
         category: ["piano", "intermediate", "etudes", "rcm"],
+        stock: 3,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5etu2022.jpg?alt=media&token=c587d197-0c24-4b13-b9b7-b9fbfa86f98b"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_etudes_2022.jpg?alt=media&token=99d56a7a-d7f5-448b-b917-ca50eb753166"
     },
     {
         // live id
         id: "price_1OJJ0RCO3Yh2jr9t5LjP72qC",
-        title: "RCM Level 5 Piano - Ear Tests",
-        slug: "placeholder",
+        title: "RCM Level 5 - Sight Reading & Ear Tests",
+        slug: "rcm-lvl-5-sight-reading-ear-tests",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 5 Sight Reading and Ear Tests book",
+        pages: "48",
+        year: "2015",
+        ISBN: "978-1-55440-746-0",
         price: 21.95,
         category: ["piano", "ear tests", "four star", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_5_piano%2Flvl5sight.jpg?alt=media&token=39db4275-b8a0-4ad4-b901-81376246e7b9"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl5_fourstar_2015.jpg?alt=media&token=36d97763-86a4-4c8e-98c5-6349aea7ddad"
     },
     {
         // live id
         id: "price_1OJJ1lCO3Yh2jr9tAeGs1Owa",
-        title: "RCM Level 5 Piano - Theory",
-        slug: "placeholder",
+        title: "RCM Level 5 - Theory",
+        slug: "rcm-lvl-5-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
+        description: "RCM Level 5 Theory book",
+        pages: "96",
+        year: "2016",
+        ISBN: "978-1-55440-808-5",
         price: 21.95,
         category: ["intermediate", "theory", "rcm"],
+        stock: 2,
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks_rcm_theory%2Flvl5theory.jpg?alt=media&token=1f560f46-7741-4b32-a50f-bd8c10a7d823"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl5_theory_2016.jpg?alt=media&token=d4f1d5db-4829-475e-84bf-fde2ec2aa58e"
     },
 
 
