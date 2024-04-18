@@ -1,39 +1,39 @@
 "use client"
 
 
-import { pianoBooksList } from "../../pianoBooksData"
+import { theoryBooksList } from "../../theoryBooksData"
 import { ShopProductCard } from "../../components/ShopProductCard"
-import { PianoBooksFilter } from "../../components/PianoBooksFilter"
+import { TheoryBooksFilter } from "../../components/TheoryBooksFilter"
 import { useState } from "react"
 
 
-const PianoBooksPage = () => {
+const TheoryBooksPage = () => {
 
-  const [filterValue, setFilterValue] = useState("piano-all")
+  const [filterValue, setFilterValue] = useState("theory-all")
 
     
   return (
       <>
-          <PianoBooksFilter setFilterValue={setFilterValue} />
+          <TheoryBooksFilter setFilterValue={setFilterValue} />
           <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
-          {filterValue === "piano-all" && (
-              pianoBooksList
+          {filterValue === "theory-all" && (
+              theoryBooksList
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
             )
           }
-          {filterValue === "piano-rcm" && (
-              pianoBooksList
+          {filterValue === "theory-rcm" && (
+              theoryBooksList
                 .filter((book) => book.category.includes("rcm"))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
             )
           }
-          {filterValue === "piano-non-rcm" && (
-              pianoBooksList
-                .filter((book) => !book.category.includes("rcm"))
+          {filterValue === "theory-non-rcm" && (
+              theoryBooksList
+                .filter((book) => book.category.includes("non-rcm"))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
@@ -44,4 +44,4 @@ const PianoBooksPage = () => {
     )
 }
 
-export default PianoBooksPage
+export default TheoryBooksPage

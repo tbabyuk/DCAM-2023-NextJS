@@ -1,39 +1,40 @@
 "use client"
 
 
-import { pianoBooksList } from "../../pianoBooksData"
+import { sightReadingBooksList } from "../../sightReadingBooksData"
 import { ShopProductCard } from "../../components/ShopProductCard"
-import { PianoBooksFilter } from "../../components/PianoBooksFilter"
+import { SightReadingBooksFilter } from "../../components/SightReadingBooksFilter"
 import { useState } from "react"
 
 
-const PianoBooksPage = () => {
 
-  const [filterValue, setFilterValue] = useState("piano-all")
+const SightReadingBooksPage = () => {
+
+  const [filterValue, setFilterValue] = useState("sight-reading-all")
 
     
   return (
       <>
-          <PianoBooksFilter setFilterValue={setFilterValue} />
+          <SightReadingBooksFilter setFilterValue={setFilterValue} />
           <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
-          {filterValue === "piano-all" && (
-              pianoBooksList
+          {filterValue === "sight-reading-all" && (
+              sightReadingBooksList
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
             )
           }
-          {filterValue === "piano-rcm" && (
-              pianoBooksList
+          {filterValue === "sight-reading-rcm" && (
+              sightReadingBooksList
                 .filter((book) => book.category.includes("rcm"))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
             )
           }
-          {filterValue === "piano-non-rcm" && (
-              pianoBooksList
-                .filter((book) => !book.category.includes("rcm"))
+          {filterValue === "sight-reading-non-rcm" && (
+              sightReadingBooksList
+                .filter((book) => book.category.includes("non-rcm"))
                 .map((product) => (
                   <ShopProductCard key={product.id} product={product} productType="book" />
                 ))
@@ -44,4 +45,4 @@ const PianoBooksPage = () => {
     )
 }
 
-export default PianoBooksPage
+export default SightReadingBooksPage

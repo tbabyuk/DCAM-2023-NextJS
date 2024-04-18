@@ -95,7 +95,7 @@ export const giftCertificatesList = [
 export const shopProductCategoriesArray = [
     {
         category: "MUSIC BOOKS",
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Frcm_books_category.jpg?alt=media&token=ae63b788-5431-4344-a789-92245b852284",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_category_piano.png?alt=media&token=4a076209-88ee-4aa6-9f9b-dc6e762fd936",
         productPage: "/shop/books"
     },
     {
@@ -110,13 +110,23 @@ export const shopProductCategoriesArray = [
 export const shopBookCategoriesArray = [
     {
         category: "PIANO BOOKS",
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Frcm_books_category.jpg?alt=media&token=ae63b788-5431-4344-a789-92245b852284",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_category_piano.png?alt=media&token=4a076209-88ee-4aa6-9f9b-dc6e762fd936",
         productPage: "/shop/books/piano"
     },
+    // {
+    //     category: "GUITAR BOOKS",
+    //     source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_guitar_books.png?alt=media&token=0936c127-2a3a-4193-8af1-aac50a83b766",
+    //     productPage: "/shop/books/guitar"
+    // },
     {
-        category: "GUITAR BOOKS",
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_guitar_books.png?alt=media&token=0936c127-2a3a-4193-8af1-aac50a83b766",
-        productPage: "/shop/books/guitar"
+        category: "MUSIC THEORY BOOKS",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_category_theory.png?alt=media&token=c51642b0-6321-4c15-ae92-797fcd18a440",
+        productPage: "/shop/books/theory"
+    },
+    {
+        category: "SIGHT READING BOOKS",
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fproduct_categories%2Fshop_category_sight_reading.png?alt=media&token=abacd5e6-324a-463f-863f-d7990325cc78",
+        productPage: "/shop/books/sight-reading"
     },
     // {
     //     category: "DRUMS BOOKS",

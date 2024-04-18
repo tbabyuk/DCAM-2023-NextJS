@@ -13,6 +13,25 @@ export const guitarBooksList = [
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fguitar_books%2Fstandard_guitar_method_1.jpg?alt=media&token=89a41ebf-5380-4e5b-ae8f-c659fe93a1ff"
     },
+
+    // {
+    //     // live id
+    //     id: "price_1OJJjlCO3Yh2jr9t6zVyi2hI",
+    //     title: "RCM Level 10 - Harmony & Counterpoint",
+    //     slug: "rcm-lvl-10-harmony-counterpoint",
+    //     author: "The Royal Conservatory",
+    //     publisher: "RCM Publishing",
+    //     description: "RCM Level 10 Harmony and Counterpoint book",
+    //     pages: "240",
+    //     year: "2016",
+    //     ISBN: "978-1-55440-815-3",
+    //     price: 49.95,
+    //     category: ["advanced", "harmony", "non-rcm"],
+    //     stock: 2,
+    //     quantity: 1,
+    //     source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl10_harmony_counterpoint_2016.jpg?alt=media&token=d6662d8c-07ff-4ee2-adf6-2cc7f0cfb09b"
+    // }
+
     {
         // live id
         id: "price_1P4vdpCO3Yh2jr9teK0eWzb8",
