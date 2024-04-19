@@ -3,7 +3,7 @@
 export const sightReadingBooksList = [
     {
         // live id
-        id: "price_1P63fcCO3Yh2jr9tW7WGEKEw",
+        id: "price_1P76e8CO3Yh2jr9tNzvMyGT0",
         title: "RCM Prep B - Sight Reading & Ear Tests",
         slug: "rcm-prep-b-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -37,7 +37,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJIJRCO3Yh2jr9txDNrkox6",
+        id: "price_1P76gECO3Yh2jr9tL5ie2sd6",
         title: "RCM Level 2 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-2-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -54,7 +54,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJIYzCO3Yh2jr9tDdm7JRPU",
+        id: "price_1P76hYCO3Yh2jr9tLXEIlZxt",
         title: "RCM Level 3 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-3-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -71,7 +71,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJIs3CO3Yh2jr9tqk7RxMk7",
+        id: "price_1P76j9CO3Yh2jr9tmZRiEp0F",
         title: "RCM Level 4 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-4-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -88,7 +88,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJ0RCO3Yh2jr9t5LjP72qC",
+        id: "price_1P76kDCO3Yh2jr9tczinkai4",
         title: "RCM Level 5 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-5-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -105,7 +105,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJEECO3Yh2jr9t0O97Qrul",
+        id: "price_1P76lCCO3Yh2jr9t2hdfd5r4",
         title: "RCM Level 6 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-6-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -122,7 +122,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJLjCO3Yh2jr9t7ljYKXNT",
+        id: "price_1P76mWCO3Yh2jr9tgxpVScxt",
         title: "RCM Level 7 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-7-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -139,7 +139,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJdeCO3Yh2jr9tmnx7wPTD",
+        id: "price_1P76neCO3Yh2jr9taR2RWrDD",
         title: "RCM Level 8 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-8-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -156,7 +156,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJt4CO3Yh2jr9tk4qkNnjB",
+        id: "price_1P76vlCO3Yh2jr9tVjVDTxcp",
         title: "RCM Level 9 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-9-sight-reading-ear-tests",
         author: "The Royal Conservatory",
@@ -173,7 +173,7 @@ export const sightReadingBooksList = [
     },
     {
         // live id
-        id: "price_1OJJt4CO3Yh2jr9tk4qkNnjB",
+        id: "price_1P76x6CO3Yh2jr9txbGZJmXI",
         title: "RCM Level 10 - Sight Reading & Ear Tests",
         slug: "rcm-lvl-10-sight-reading-ear-tests",
         author: "The Royal Conservatory",

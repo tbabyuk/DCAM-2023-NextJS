@@ -9,6 +9,9 @@ export const Breadcrumbs = () => {
 
   const crumbs = path.split("/").filter(Boolean)
 
+  crumbs.pop()
+
+
   console.log("logging crumb:", crumbs)
 
   return (

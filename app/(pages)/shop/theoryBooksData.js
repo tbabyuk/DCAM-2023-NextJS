@@ -5,7 +5,7 @@ export const theoryBooksList = [
     {
         // live id
         id: "price_1P63wlCO3Yh2jr9tN0GmM6Xb",
-        title: "RCM Preparatory - Theory",
+        title: "RCM Prep - Theory",
         slug: "rcm-prep-theory",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
@@ -38,7 +38,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJILDCO3Yh2jr9tiKHmFsaB",
+        id: "price_1P772hCO3Yh2jr9twdpmsd37",
         title: "RCM Level 2 - Theory",
         slug: "rcm-lvl-2-theory",
         author: "The Royal Conservatory",
@@ -55,7 +55,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJIc3CO3Yh2jr9tZxJRhCOd",
+        id: "price_1P773oCO3Yh2jr9t2CFOEVUv",
         title: "RCM Level 3 - Theory",
         slug: "rcm-lvl-3-theory",
         author: "The Royal Conservatory",
@@ -72,7 +72,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJItDCO3Yh2jr9tatYE15gg",
+        id: "price_1P7752CO3Yh2jr9tspPInwv7",
         title: "RCM Level 4 - Theory",
         slug: "rcm-lvl-4-theory",
         author: "The Royal Conservatory",
@@ -89,7 +89,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJ1lCO3Yh2jr9tAeGs1Owa",
+        id: "price_1P775zCO3Yh2jr9trwVwaAod",
         title: "RCM Level 5 - Theory",
         slug: "rcm-lvl-5-theory",
         author: "The Royal Conservatory",
@@ -106,7 +106,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJFeCO3Yh2jr9ty0D8woc5",
+        id: "price_1P7771CO3Yh2jr9tEZHy81uR",
         title: "RCM Level 6 - Theory",
         slug: "rcm-lvl-6-theory",
         author: "The Royal Conservatory",
@@ -123,7 +123,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJNACO3Yh2jr9tTYKg5dcG",
+        id: "price_1P777yCO3Yh2jr9tAxPHdKth",
         title: "RCM Level 7 - Theory",
         slug: "rcm-lvl-7-theory",
         author: "The Royal Conservatory",
@@ -140,7 +140,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJfBCO3Yh2jr9tQZsNzL3Y",
+        id: "price_1P779CCO3Yh2jr9tA1jPtJj3",
         title: "RCM Level 8 - Theory",
         slug: "rcm-lvl-8-theory",
         author: "The Royal Conservatory",
@@ -157,7 +157,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJjlCO3Yh2jr9t6zVyi2hI",
+        id: "price_1P77AKCO3Yh2jr9tjci2a5Xb",
         title: "RCM Level 9 - Harmony",
         slug: "rcm-lvl-9-harmony",
         author: "The Royal Conservatory",
@@ -174,7 +174,7 @@ export const theoryBooksList = [
     },
     {
         // live id
-        id: "price_1OJJjlCO3Yh2jr9t6zVyi2hI",
+        id: "price_1P77BcCO3Yh2jr9tnVTKnHKc",
         title: "RCM Level 10 - Harmony & Counterpoint",
         slug: "rcm-lvl-10-harmony-counterpoint",
         author: "The Royal Conservatory",
