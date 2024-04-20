@@ -59,8 +59,8 @@ export const pianoBooksList = [
     {
         // live id confirmed
         id: "price_1OJLqKCO3Yh2jr9tkQ6pWBud",
-        title: "RCM Prep - Technical Requirements",
-        slug: "rcm-prep-piano-technical-requirements",
+        title: "RCM Prep Piano - Technical Requirements",
+        slug: "rcm-prep-piano-technical",
         author: "The Royal Conservatory",
         publisher: "RCM Publishing",
         description: "A first preparatory book in the RCM series with simple 5-note scales for piano students just starting out on the instrument.",

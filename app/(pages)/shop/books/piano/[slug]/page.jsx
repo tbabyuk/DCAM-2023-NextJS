@@ -1,8 +1,23 @@
-
-
 import { pianoBooksList } from "../../../pianoBooksData"
 import { AddToCartButton } from "../../../components/AddToCartButton"
 import { BookSpecsDropdown } from "../../../components/BookSpecsDropdown"
+
+
+export async function generateStaticParams() {
+  return pianoBooksList.map((book) => ({
+      slug: book.slug
+  }))
+}
+
+export async function generateMetadata({params}) {
+
+  const targetBook = pianoBooksList.find((book) => book.slug == params.slug)
+
+  return {
+    title: `${targetBook.title} | Da Capo Academy of Music Shop`,
+    description: targetBook.description
+  }
+}
 
 
 const SingleBookPage = ({params}) => {

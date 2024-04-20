@@ -1,47 +1,27 @@
-"use client"
+import SightReadingBooksClientPage from "./SightReadingBooksClientPage"
 
 
-import { sightReadingBooksList } from "../../sightReadingBooksData"
-import { ShopProductCard } from "../../components/ShopProductCard"
-import { SightReadingBooksFilter } from "../../components/SightReadingBooksFilter"
-import { useState } from "react"
-
+export const metadata = {
+  title: "Shop for Sight Reading and Ear Training Books | Da Capo Academy of Music",
+  description: "Shop for sight reading and ear training books",
+  robots: { index: true, follow: true},
+  authors: [{name: "Taras (Terry) Babyuk"}],
+  openGraph: {
+      title: "Shop for Sight Reading and Ear Training Books | Da Capo Academy of Music",
+      description: "Shop for sight reading and ear training books",
+      url: "https://dacapomusic.ca/shop/books/piano",
+      siteName: "Da Capo Academy of Music",
+      locale: "en_US",
+      type: "article"
+  }
+}
 
 
 const SightReadingBooksPage = () => {
 
-  const [filterValue, setFilterValue] = useState("sight-reading-all")
 
-    
   return (
-      <>
-          <SightReadingBooksFilter setFilterValue={setFilterValue} />
-          <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
-          {filterValue === "sight-reading-all" && (
-              sightReadingBooksList
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          {filterValue === "sight-reading-rcm" && (
-              sightReadingBooksList
-                .filter((book) => book.category.includes("rcm"))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          {filterValue === "sight-reading-non-rcm" && (
-              sightReadingBooksList
-                .filter((book) => book.category.includes("non-rcm"))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          </div>
-      </>  
+      <SightReadingBooksClientPage />
     )
 }
 

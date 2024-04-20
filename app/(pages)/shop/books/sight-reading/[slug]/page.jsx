@@ -1,8 +1,23 @@
-
-
 import { sightReadingBooksList } from "../../../sightReadingBooksData"
 import { AddToCartButton } from "../../../components/AddToCartButton"
 import { BookSpecsDropdown } from "../../../components/BookSpecsDropdown"
+
+
+export async function generateStaticParams() {
+  return sightReadingBooksList.map((book) => ({
+      slug: book.slug
+  }))
+}
+
+export async function generateMetadata({params}) {
+
+  const targetBook = sightReadingBooksList.find((book) => book.slug == params.slug)
+
+  return {
+    title: `${targetBook.title} | Da Capo Academy of Music Shop`,
+    description: targetBook.description
+  }
+}
 
 
 const SingleBookPage = ({params}) => {

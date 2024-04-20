@@ -1,46 +1,27 @@
-"use client"
+import TheoryBooksClientPage from "./TheoryBooksClientPage"
 
 
-import { theoryBooksList } from "../../theoryBooksData"
-import { ShopProductCard } from "../../components/ShopProductCard"
-import { TheoryBooksFilter } from "../../components/TheoryBooksFilter"
-import { useState } from "react"
+export const metadata = {
+  title: "Shop for Music Theory Books | Da Capo Academy of Music",
+  description: "Shop for music theory books",
+  robots: { index: true, follow: true},
+  authors: [{name: "Taras (Terry) Babyuk"}],
+  openGraph: {
+      title: "Shop for Music Theory Books | Da Capo Academy of Music",
+      description: "Shop for music theory books",
+      url: "https://dacapomusic.ca/shop/books/theory",
+      siteName: "Da Capo Academy of Music",
+      locale: "en_US",
+      type: "article"
+  }
+}
 
 
 const TheoryBooksPage = () => {
 
-  const [filterValue, setFilterValue] = useState("theory-all")
 
-    
   return (
-      <>
-          <TheoryBooksFilter setFilterValue={setFilterValue} />
-          <div className="books-list grid gap-y-28 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 px-5 lg:px-36 py-20">
-          {filterValue === "theory-all" && (
-              theoryBooksList
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          {filterValue === "theory-rcm" && (
-              theoryBooksList
-                .filter((book) => book.category.includes("rcm"))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          {filterValue === "theory-non-rcm" && (
-              theoryBooksList
-                .filter((book) => book.category.includes("non-rcm"))
-                .map((product) => (
-                  <ShopProductCard key={product.id} product={product} productType="book" />
-                ))
-            )
-          }
-          </div>
-      </>  
+      <TheoryBooksClientPage />
     )
 }
 
