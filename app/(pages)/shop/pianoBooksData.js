@@ -15,7 +15,7 @@ export const pianoBooksList = [
         ISBN: "978-0-88797-182-2",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
-        stock: 4,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_1.jpg?alt=media&token=53b0c8e2-26a8-445f-84c6-e5f25e2f5abc"
     },
@@ -32,7 +32,7 @@ export const pianoBooksList = [
         ISBN: "978-0-88797-149-5",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
-        stock: 4,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_2.jpg?alt=media&token=c5e4f4a1-23cf-4702-8dc8-030e2b4f9a22"
     },
@@ -49,7 +49,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-197-0",
         price: 14.95,
         category: ["piano", "beginner", "abc"],
-        stock: 4,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_3.jpg?alt=media&token=1bdb0eca-315f-4cad-8b63-3fb54525ba42"
     },
@@ -69,7 +69,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-730-9",
         price: 12.95,
         category: ["piano", "beginner", "technical", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_piano_technical.jpg?alt=media&token=8c128e94-ce92-4d62-93a5-86ee7069ade1"
     },
@@ -86,7 +86,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-931-0",
         price: 19.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_a_piano_repertoire.jpg?alt=media&token=b7e066c1-4595-43c0-887e-18599eb6b903"
     },
@@ -103,7 +103,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-932-7",
         price: 19.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm_prep_b_piano_repertoire.jpg?alt=media&token=edb02ce5-982a-4621-a82d-61d70d7000e3"
     },
@@ -123,7 +123,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-731-6",
         price: 13.95,
         category: ["piano", "beginner", "technical", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
     },
@@ -140,7 +140,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-933-4",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
     },
@@ -157,7 +157,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-943-3",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_etudes_2022.jpg?alt=media&token=58ae2cad-91a6-4ecd-b3f9-d2c0b01e5cfc"
     },
@@ -177,7 +177,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-732-3",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_technical_2015.jpg?alt=media&token=e7b86bfb-799f-4b35-997e-6f45b65e7c00"
     },
@@ -194,7 +194,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-934-1",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_repertoire_2022.jpg?alt=media&token=479b5348-6059-42f9-8e7a-f6cd9d609490"
     },
@@ -211,7 +211,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-944-0",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl2_etudes_2022.jpg?alt=media&token=08697f92-c8e7-409a-b9b1-7459fdbb976b"
     },
@@ -231,7 +231,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-733-0",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_technical_2015.jpg?alt=media&token=9a4fe087-15a6-40f8-8755-fc33b61d0ace"
     },
@@ -248,7 +248,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-935-8",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_repertoire_2022.jpg?alt=media&token=e5266a18-d8cb-45be-a607-f10559d3fd34"
     },
@@ -265,7 +265,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-945-7",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl3_etudes_2022.jpg?alt=media&token=bed3526c-8c4c-4b31-96f7-2e4f728be20a"
     },
@@ -285,7 +285,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-734-7",
         price: 14.95,
         category: ["piano", "beginner", "technical", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_technical_2015.jpg?alt=media&token=f8527c3c-e4ea-4175-a483-da86ce1cc894"
     },
@@ -302,7 +302,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-936-5",
         price: 20.95,
         category: ["piano", "beginner", "repertoire", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_repertoire_2022.jpg?alt=media&token=44ed750c-6b40-4e3f-a557-8c3f0859b9ae"
     },
@@ -319,7 +319,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-946-4",
         price: 15.95,
         category: ["piano", "beginner", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl4_etudes_2022.jpg?alt=media&token=6ab063c0-a4e3-481f-91a9-2c07ff11f913"
     },
@@ -339,7 +339,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-735-4",
         price: 15.95,
         category: ["piano", "intermediate", "technical", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_technical_2015.jpg?alt=media&token=41fc9b8c-34bf-4c32-8660-46dec22d2c0b"
     },
@@ -356,7 +356,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-937-2",
         price: 21.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
-        stock: 3,
+        stock: "out of stock",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_repertoire_2022.jpg?alt=media&token=51d11fcd-cec0-4555-bf9e-f8df8ecc5c5f"
     },
@@ -373,7 +373,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-947-1",
         price: 15.95,
         category: ["piano", "intermediate", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_etudes_2022.jpg?alt=media&token=99d56a7a-d7f5-448b-b917-ca50eb753166"
     },
@@ -393,7 +393,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-736-1",
         price: 16.95,
         category: ["piano", "intermediate", "technical", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl6_technical_2015.jpg?alt=media&token=b94e081f-a4c1-4fce-9b0e-1410b2867ef1"
     },
@@ -410,7 +410,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-938-9",
         price: 23.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl6_repertoire_2022.jpg?alt=media&token=ebe67b35-acd2-4935-addf-eaaeba75425e"
     },
@@ -427,7 +427,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-948-8",
         price: 16.95,
         category: ["piano", "intermediate", "etudes", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl6_etudes_2022.jpg?alt=media&token=8ec2c97e-c303-4f4f-8815-f4a28de0cbc6"
     },
@@ -447,7 +447,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-737-8",
         price: 17.95,
         category: ["piano", "intermediate", "technical", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl7_technical_2015.jpg?alt=media&token=cae5c26c-1b49-4c03-bde8-63f983fd2ba4"
     },
@@ -464,7 +464,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-939-6",
         price: 23.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl7_repertoire_2022.jpg?alt=media&token=c19bfc5c-a58d-4bc9-8475-26a8ddde293e"
     },
@@ -481,7 +481,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-949-5",
         price: 16.95,
         category: ["piano", "intermediate", "etudes", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl7_etudes_2022.jpg?alt=media&token=b1ffe5b1-6fb5-4a1c-999f-987907883fd7"
     },
@@ -501,7 +501,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-738-5",
         price: 18.95,
         category: ["piano", "advanced", "technical", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl8_technical_2015.jpg?alt=media&token=92f7b482-760c-4ee1-a2fb-b9f9340fcfd0"
     },
@@ -518,7 +518,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-940-2",
         price: 26.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl8_repertoire_2022.jpg?alt=media&token=e8f80f4b-125c-4817-a044-160c06c537d1"
     },
@@ -535,7 +535,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-950-1",
         price: 19.95,
         category: ["piano", "intermediate", "etudes", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl8_etudes_2022.jpg?alt=media&token=e78dd65a-044e-4873-87b1-174bcfa299ea"
     },
@@ -555,7 +555,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-941-9",
         price: 39.95,
         category: ["piano", "advanced", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl9_repertoire_2022.jpg?alt=media&token=c9ebc942-760e-40cd-8a7a-86da7c28e36b"
     },
@@ -572,7 +572,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-951-8",
         price: 20.95,
         category: ["piano", "advanced", "etudes", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl9_etudes_2022.jpg?alt=media&token=03487acc-aea4-43b5-aa83-89468d1abef2"
     },
@@ -589,7 +589,7 @@ export const pianoBooksList = [
     //     ISBN: "978-1-55440-818-4",
     //     price: 51.95,
     //     category: ["piano", "history", "rcm"],
-    //     stock: 2,
+    //     stock: "available",
     //     quantity: 1,
     //     source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl9_history_2016.jpg?alt=media&token=71a6f149-607e-498c-b328-97dafbc45468"
     // },
@@ -609,7 +609,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-942-6",
         price: 43.95,
         category: ["piano", "advanced", "repertoire", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl10_repertoire_2022.jpg?alt=media&token=c47902f3-a82e-4ac2-8685-0579b23efe43"
     },
@@ -626,7 +626,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-952-5",
         price: 21.95,
         category: ["piano", "advanced", "etudes", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl10_etudes_2022.jpg?alt=media&token=e1531f7b-7151-4a11-93da-6b1e1ecd6bf3"
     },

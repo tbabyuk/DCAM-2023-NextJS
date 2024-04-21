@@ -14,7 +14,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-741-5",
         price: 16.95,
         category: ["beginner", "ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Fprepb_fourstar_2015.jpg?alt=media&token=7860d769-99a6-4f06-b906-2684a4dbda44"
     },
@@ -31,7 +31,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-742-2",
         price: 17.95,
         category: ["beginner", "ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl1_fourstar_2015.jpg?alt=media&token=a285e5f0-2c79-455c-8f97-545f69f30905"
     },
@@ -48,7 +48,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-743-9",
         price: 17.95,
         category: ["beginner", "ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl2_fourstar_2015.jpg?alt=media&token=75f389bc-e903-4103-8d08-f3c4b5c298a1"
     },
@@ -65,7 +65,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-744-6",
         price: 17.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl3_fourstar_2015.jpg?alt=media&token=41d4ac4f-eecb-4d38-9375-d1afcbbeb0f6"
     },
@@ -82,7 +82,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-745-3",
         price: 17.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl4_fourstar_2015.jpg?alt=media&token=205969f6-d409-4c50-a8d2-cf1ee9579b0e"
     },
@@ -99,7 +99,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-746-0",
         price: 21.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl5_fourstar_2015.jpg?alt=media&token=36d97763-86a4-4c8e-98c5-6349aea7ddad"
     },
@@ -116,7 +116,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-747-7",
         price: 21.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl6_fourstar_2015.jpg?alt=media&token=7ee0239a-ec2d-4556-a58c-1777326ddf5f"
     },
@@ -133,7 +133,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-748-4",
         price: 21.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl7_fourstar_2015.jpg?alt=media&token=7bc0d646-5435-49a3-b7e1-aa3804c468ae"
     },
@@ -150,7 +150,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-749-1",
         price: 21.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl8_fourstar_2015.jpg?alt=media&token=e1b1f504-3b12-42e9-b743-bca82c93de00"
     },
@@ -167,7 +167,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-750-7",
         price: 24.95,
         category: ["ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl9_fourstar_2015.jpg?alt=media&token=41dfaa13-c55b-4f2d-8749-a5a9e973f240"
     },
@@ -184,7 +184,7 @@ export const sightReadingBooksList = [
         ISBN: "978-1-55440-751-4",
         price: 24.95,
         category: ["piano", "ear tests", "four star", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl10_fourstar_2015.jpg?alt=media&token=040bf79b-7c74-496d-9147-0dd2e3f23e5d"
     }

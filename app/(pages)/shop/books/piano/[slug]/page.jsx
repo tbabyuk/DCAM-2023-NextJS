@@ -36,7 +36,7 @@ const SingleBookPage = ({params}) => {
             <div className="flex-1">
               <h1 className="font-bold text-2xl mb-6">{targetBook.title}</h1>
               <p className="mb-6">Price: <span className="text-green-500 font-semibold">${targetBook.price}</span></p>
-              <p className="mb-6">Stock Status: {targetBook.stock ? <span className="text-green-500 font-semibold">{targetBook.stock}</span> : <span className="text-red-500 font-semibold">out of stock</span>}</p>
+              <p className="mb-6">Stock Status: <span className={`${targetBook.stock === "available" ? "text-green-500" : "text-red-500"} font-semibold`}>{targetBook.stock}</span></p>
               <p className="mb-6">Quantity: <span className="text-sm font-semibold">you will be able to change the quantity inside the cart</span></p>
               <p className="border-2 border-gray-200 p-3 mb-6 leading-6">{targetBook.description}</p>
               <AddToCartButton item={targetBook} id={targetBook.id} origin="shop"/>

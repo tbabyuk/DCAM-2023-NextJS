@@ -15,7 +15,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-803-0",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
-        stock: 1,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Fprep_theory_2016.jpg?alt=media&token=c4122927-e438-4626-af27-a52893dc81df"
     },
@@ -32,7 +32,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-931-0",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl1_theory_2016.jpg?alt=media&token=5af408a5-b273-4c47-90ea-509aceafe181"
     },
@@ -49,7 +49,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-805-4",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl2_theory_2016.jpg?alt=media&token=d6ebd455-73e7-4110-a10d-bd8a0aaa2151"
     },
@@ -66,7 +66,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-806-1",
         price: 19.95,
         category: ["beginner", "theory", "rcm"],
-        stock: 3,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl3_theory_2016.jpg?alt=media&token=96d5a269-f280-46d1-ba39-24ee5df29a75"
     },
@@ -83,7 +83,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-807-8",
         price: 21.95,
         category: ["beginner", "theory", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl4_theory_2016.jpg?alt=media&token=d24d1321-b5be-4e93-aa5f-92e9a7a9767d"
     },
@@ -100,7 +100,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-808-5",
         price: 21.95,
         category: ["intermediate", "theory", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl5_theory_2016.jpg?alt=media&token=d4f1d5db-4829-475e-84bf-fde2ec2aa58e"
     },
@@ -117,7 +117,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-809-2",
         price: 21.95,
         category: ["intermediate", "theory", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl6_theory_2016.jpg?alt=media&token=fcfc2954-f0cd-4fda-92c8-d829bff261f6"
     },
@@ -134,7 +134,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-810-8",
         price: 21.95,
         category: ["intermediate", "theory", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl7_theory_2016.jpg?alt=media&token=dc0ccd4d-064e-463e-a966-623f230a4287"
     },
@@ -151,7 +151,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-811-5",
         price: 28.95,
         category: ["intermediate", "theory", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl8_theory_2016.jpg?alt=media&token=e08add83-4ca3-4354-9114-9556fb35e688"
     },
@@ -168,7 +168,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-814-6",
         price: 48.95,
         category: ["advanced", "harmony", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl9_harmony_2016.jpg?alt=media&token=b75115f6-80fc-4e5e-b98c-05ab003f5b0a"
     },
@@ -185,7 +185,7 @@ export const theoryBooksList = [
         ISBN: "978-1-55440-815-3",
         price: 49.95,
         category: ["advanced", "harmony", "rcm"],
-        stock: 2,
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Frcm%2Flvl10_harmony_counterpoint_2016.jpg?alt=media&token=d6662d8c-07ff-4ee2-adf6-2cc7f0cfb09b"
     }
