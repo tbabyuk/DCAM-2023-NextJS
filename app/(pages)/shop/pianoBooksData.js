@@ -356,7 +356,7 @@ export const pianoBooksList = [
         ISBN: "978-1-55440-937-2",
         price: 21.95,
         category: ["piano", "intermediate", "repertoire", "rcm"],
-        stock: "out of stock",
+        stock: "available",
         quantity: 1,
         source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl5_repertoire_2022.jpg?alt=media&token=51d11fcd-cec0-4555-bf9e-f8df8ecc5c5f"
     },

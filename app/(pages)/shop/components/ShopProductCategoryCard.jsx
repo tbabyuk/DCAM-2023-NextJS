@@ -4,12 +4,12 @@ export const ShopProductCategoryCard = ({product}) => {
   
   return (
     
-    <Link className="w-[250px] h-auto rounded-lg border-2 border-gray-200 overflow-hidden cursor-pointer hover:border-regRed" href={product.productPage}>
-        <div className="text-gray-100 text-center font-semibold bg-regRed py-2">{product.category}</div>
-        <div className="w-full h-auto">
+    <Link className="w-[250px] h-auto rounded-lg border-2 border-gray-200 overflow-hidden cursor-pointer hover:border-darkBlue" href={product.productPage}>
+        <div className="text-gray-100 text-center font-semibold bg-darkBlue py-2">{product.category}</div>
+        <div className="w-full h-auto bg-gray-100">
             <img
                 src={product.source}
-                alt="Photo of teacher Matthew"
+                alt={product.alt}
                 className="h-full w-full object-cover"
             />
         </div>
