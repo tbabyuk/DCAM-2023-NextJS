@@ -33,7 +33,7 @@ export const metadata = {
 
 const PianoLessonsPage = () => {
     return ( 
-        <main className="piano-page pb-36">
+        <main className="piano-page">
             <PageTitle title="Piano Lessons" image="/images/illustrations/piano-lessons-illustration.png" alt="piano lessons illustration" />
 
             <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">

@@ -34,7 +34,7 @@ export const metadata = {
 const VoiceLessonsPage = () => {
 
     return ( 
-        <main className="voice-page pb-36">
+        <main className="voice-page">
             <PageTitle title="Voice Lessons" image="/images/illustrations/voice-lessons-illustration.png" alt="voice lessons illustration" />
 
             <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">

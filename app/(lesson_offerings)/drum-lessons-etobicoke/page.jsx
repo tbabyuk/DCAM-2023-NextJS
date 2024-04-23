@@ -33,7 +33,7 @@ export const metadata = {
 
 const DrumLessonsPage = () => {
     return ( 
-        <main className="drums-page pb-36">
+        <main className="drums-page">
             <PageTitle title="Drum Lessons" image="/images/illustrations/drum-lessons-illustration.png" alt="drum lessons illustration" />
 
             <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">

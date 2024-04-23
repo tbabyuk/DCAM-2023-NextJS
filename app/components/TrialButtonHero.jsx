@@ -5,7 +5,7 @@ import { IoMusicalNotes } from "react-icons/io5";
 
 
 
-export const TrialButton = () => {
+export const TrialButtonHero = () => {
 
 const studentNameRef = useRef()
 const parentNameRef = useRef()
@@ -63,7 +63,7 @@ const [showErrorResponse, setShowErrorResponse] = useState(false)
 
 return ( 
     <>
-        <button className="trial-button" onClick={() => setModalIsOpen(true)}>&nbsp;Book a Free Trial</button>
+        <button className="hero-button" onClick={() => setModalIsOpen(true)}><IoMusicalNotes />&nbsp;Book a Free Trial</button>
 
         {modalIsOpen && (
             <div className="backdrop fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-70 flex justify-center items-center z-40" onClick={(e) => handleCloseModal(e)}>
@@ -162,6 +162,5 @@ return (
         }
     </>
 );
-
 
 }

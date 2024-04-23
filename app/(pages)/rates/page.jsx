@@ -30,7 +30,7 @@ const Rates = () => {
     
     return (
             <main className="rates-page pb-36">
-                <PageTitle title="Rates" image="/images/illustrations/rates-page-illustration.png" alt="rates page illustration" />
+                <PageTitle title="Rates" heatherImage="/images/illustrations/rates-page-illustration.png" alt="rates page illustration" />
                 
                 <section className="rates-intro px-5 lg:px-36 xl:px-52 bg-gray-100 py-20 mb-24">
                     <p>

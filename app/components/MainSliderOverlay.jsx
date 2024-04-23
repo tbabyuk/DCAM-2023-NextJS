@@ -1,14 +1,14 @@
 import Typewriter from "typewriter-effect"
-import { TrialButton } from "./TrialButton"
 import { RegisterButtonHero } from "./RegisterButtonHero"
+import { TrialButtonHero } from "./TrialButtonHero"
 
 
 export const MainSliderOverlay = () => {
 
   return (
         <div className="absolute top-0 right-0 py-6 text-[1.5rem] text-gray-100 h-full w-full md:w-8/12 lg:w-6/12 px-5 flex flex-col justify-evenly z-[2]" style={{backgroundImage: "linear-gradient(to right, rgba(16, 55, 86, 0), rgba(16, 55, 86, 0.8), rgba(16, 55, 86, 1)" }}>
-            <div className="flex justify-evenly xl:px-20">
-              <TrialButton />
+            <div className="flex flex-col sm:flex-row px-8 gap-5 xl:px-20 mb-4">
+              <TrialButtonHero />
               <RegisterButtonHero />
             </div>
             <h1 className="text-5xl xl:text-6xl text-center lg:px-22 xl:px-32">Discover the Joy of Music!</h1>

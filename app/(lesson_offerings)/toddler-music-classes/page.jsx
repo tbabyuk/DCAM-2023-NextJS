@@ -31,7 +31,7 @@ export const metadata = {
 
 const ToddlerMusicPage = () => {
     return ( 
-        <main className="toddler-music-page pb-36">
+        <main className="toddler-music-page">
             <PageTitle title="Toddler Music Classes" image="/images/illustrations/toddler-music-classes-illustration.png" alt="toddler music classes illustration" />
 
             <section className="overview leading-8 flex flex-col items-center sm:block px-5 lg:px-36 xl:px-52 bg-gray-100 py-20">
