@@ -12,17 +12,19 @@ export const metadata = {
     openGraph: {
         title: "Teachers | Da Capo Academy of Music",
         description: "Our teachers",
-        url: "https://dacapomusic.ca/teachers",
+        // url: "https://dacapomusic.ca/teachers",
+        metadataBase: new URL("https://dacapomusic.ca/"),
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
         type: "article",
-        images: [
-            {
-              url: "https://dcam-assets.static.domains/teachers-page-illustration.png",
-              width: 542,
-              height: 1024,
-            }
-          ],
+        // images: [
+        //     {
+        //     //   url: "https://dcam-assets.static.domains/teachers-page-illustration.png",
+        //       url: "https://dcam-assets.static.domains/teachers-page-illustration.png",
+        //       width: 542,
+        //       height: 1024,
+        //     }
+        //   ],
     },
 }
 
