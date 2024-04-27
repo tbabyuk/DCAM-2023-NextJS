@@ -128,7 +128,8 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "technical", "rcm"],
         stock: "available",
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
+        source: "https://dcam-assets.static.domains/lvl1_technical_2015.jpg"
+        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
     },
     {
         // live id confirmed
@@ -145,7 +146,8 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "repertoire", "rcm"],
         stock: "available",
         quantity: 1,
-        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
+        source: "https://dcam-assets.static.domains/lvl1_repertoire_2022.jpg"
+        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
     },
     {
         // live id confirmed
