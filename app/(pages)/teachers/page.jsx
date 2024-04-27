@@ -15,7 +15,14 @@ export const metadata = {
         url: "https://dacapomusic.ca/teachers",
         siteName: "Da Capo Academy of Music",
         locale: "en_US",
-        type: "article"
+        type: "article",
+        images: [
+            {
+              url: "https://dcam-assets.static.domains/teachers-page-illustration.png",
+              width: 542,
+              height: 1024,
+            }
+          ],
     },
 }
 
