@@ -103,11 +103,11 @@ export const teachersPageTeachersArray = [
         bio: "Senya has been studying classical piano since she was 4 and teaching classical piano since she was 14. She has completed her RCM Piano Level 8 Certificate by age 14 and RCM 10 Practical by age 16. In high school, Senya was active in the music department as a violinist, and co-president of the music council. With this involvement she gained experience in stage band, chamber string orchestra, competed in the Kiwanis music festival, and took on the role of a piano accompanist for classical violinists. Her current music goals include diversifying her performance repertoire and expanding her knowledge of music history. In the classroom, her goal is to help students build the necessary skills for success while having fun creating music."   
     },
     {
-        name: "Aaron Dawang",
-        photo: "/images/teachers/aaron.jpg",
-        alt: "piano teacher Aaron",
-        instrument: "PIANO",
-        bio: "From the young age, Aaron knew that music was his passion. At three and a half years old, he began studying piano at the Ontario Conservatory of Music, which he did for 10 years. As a student, he participated in many recitals, concerts and competitions, like the Canadian Music League (CML) and became an award-winning, recognized pianist in his community. Piano has helped open the doors for his other passions related to music, including singing and dancing. Aaron is a prime example that passion and hard work will lead to progress and success."
+        name: "Andrew Chiappetta",
+        photo: "/images/teachers/andrew.jpg",
+        alt: "guitar teacher Andrew",
+        instrument: "GUITAR, UKULELE",
+        bio: "Andrew is a recent graduate of Humber College's Bachelor of Music program, having studied with great Toronto guitarists like Nathan Hiltz and Jocelyn Gould. With nearly 6 years of teaching experience, he prides himself on an interest-forward teaching style - with every lesson, he builds on a student's connection with music, not just their technical abilities. With a wide variety of musical interests, he can provide insight on just about anything a student may want to play. Andrew is currently working on his first album, set to be released later this year."
     },
     {
         name: "Matthew Leombruni",
