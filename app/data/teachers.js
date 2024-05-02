@@ -74,21 +74,7 @@ export const teachersPageTeachersArray = [
         instrument: "VOCALS, PIANO",
         bio: "Taisiya is a jazz vocal performance student at the University of Toronto. She was raised in Russia in a musical family and grew up in a family vocal ensemble. Prior to her musical education at the University of Toronto, Taisiya studied jazz at the Jazz Academy in Moscow and got to perform in numerous jazz vocal ensembles, sing in a band, and perform with an orchestra. She graduated from Earl Haig Secondary School in 2021 with a musical degree as a piano major from Claude Watson Music Program. There she started learning about composition and modern music. Taisiya also has experience in musical theatre and has been a part of the Mainstage Theatre crew until recently. She has experience in working with kids and knows how to make classes both professional and fun!"
       },
-    {
-        name: "Tiago Cardoso",
-        photo: "/images/teachers/tiago.jpg",
-        alt: "guitar teacher Tiago",
-        instrument: "GUITAR, UKULELE",
-        bio: "A graduate of the music program at York University, Tiago has spent the last four years refining his playing through extensive jazz studies. He has studied with Canadian jazz legends such as Lorne Lofsky, Sundar Viswanathan, Roy Patterson, Anthony Michelli, and many others. It was during his studies that Tiago, alongside performing, had also discovered a love for teaching. He enjoys all kinds of music and feels as though the ultimate way to express himself is through improvisation. Tiago's passion for music has led him to play in various venues around Toronto such as The Jazz Bistro, The Emmet Ray, Hirut Café, The Royal Botanical Gardens, and Tail of the Junction."
-      },
-    {
-        name: "Chloe Dionne",
-        photo: "/images/teachers/chloe.jpg",
-        alt: "voice teacher Chloe",
-        instrument: "VOCALS",
-        bio: "Chloé is currently a vocal performance master's student at the University of Toronto. She is passionate about singing in many genres such as opera, pop, jazz, and musical theater. Chloe has performed around Nova Scotia in many events, independently, and at the Fountain School of Performing Arts where she received her Bachelors of Music degree. With the Fountain School, she was in several operas, was a prize winner in their 2023 Concerto Night, and a performer in their 2022 reopening gala performing in the same concert as artists such as Jeremy Dutcher and Kiefer Sutherland. She is also a songwriter and composer. She was recently selected to participate in a music production workshop with Nova Scotian artist and producer Erin Costelo. As a teacher, she strives to give students the confidence to expand their musical world while giving them a solid technical foundation."
-      },
-    {
+      {
         name: "Giancarlo Gianneo",
         photo: "/images/teachers/giancarlo.jpg",
         alt: "guitar teacher Giancarlo",
@@ -96,18 +82,25 @@ export const teachersPageTeachersArray = [
         bio: "Giancarlo is a guitarist who recently graduated from the 'Music Industry Arts and Performance Program' at Centennial College. His primary focus lies in playing the guitar, which has led to his performing at multiple venues across Toronto. He started his musical journey at the age of 12 by learning classical guitar and immersing himself in a wide range of musical genres such as blues, rock, bluegrass and improvising. Following his high-school graduation, he finished a pre-university program at the Barranquilla School of Fine Arts and then continued his studies at Centennial College in Toronto. Giancarlo has practical experience in recording techniques and studio recording utilizing digital audio workstations, and providing his expertise as a session musician to others. He is filled with enthusiasm for music and is committed to sharing it with his students as he helps them to develop as musicians."
     },
     {
-        name: "Senya Wickramasinghe",
-        photo: "/images/teachers/senya.jpg",
-        alt: "piano teacher Senya",
-        instrument: "PIANO",
-        bio: "Senya has been studying classical piano since she was 4 and teaching classical piano since she was 14. She has completed her RCM Piano Level 8 Certificate by age 14 and RCM 10 Practical by age 16. In high school, Senya was active in the music department as a violinist, and co-president of the music council. With this involvement she gained experience in stage band, chamber string orchestra, competed in the Kiwanis music festival, and took on the role of a piano accompanist for classical violinists. Her current music goals include diversifying her performance repertoire and expanding her knowledge of music history. In the classroom, her goal is to help students build the necessary skills for success while having fun creating music."   
-    },
-    {
+        name: "Chloe Dionne",
+        photo: "/images/teachers/chloe.jpg",
+        alt: "voice teacher Chloe",
+        instrument: "VOCALS",
+        bio: "Chloé is currently a vocal performance master's student at the University of Toronto. She is passionate about singing in many genres such as opera, pop, jazz, and musical theater. Chloe has performed around Nova Scotia in many events, independently, and at the Fountain School of Performing Arts where she received her Bachelors of Music degree. With the Fountain School, she was in several operas, was a prize winner in their 2023 Concerto Night, and a performer in their 2022 reopening gala performing in the same concert as artists such as Jeremy Dutcher and Kiefer Sutherland. She is also a songwriter and composer. She was recently selected to participate in a music production workshop with Nova Scotian artist and producer Erin Costelo. As a teacher, she strives to give students the confidence to expand their musical world while giving them a solid technical foundation."
+      },
+      {
         name: "Andrew Chiappetta",
         photo: "/images/teachers/andrew.jpg",
         alt: "guitar teacher Andrew",
         instrument: "GUITAR, UKULELE",
         bio: "Andrew is a recent graduate of Humber College's Bachelor of Music program, having studied with great Toronto guitarists like Nathan Hiltz and Jocelyn Gould. With nearly 6 years of teaching experience, he prides himself on an interest-forward teaching style - with every lesson, he builds on a student's connection with music, not just their technical abilities. With a wide variety of musical interests, he can provide insight on just about anything a student may want to play. Andrew is currently working on his first album, set to be released later this year."
+    },
+    {
+        name: "Senya Wickramasinghe",
+        photo: "/images/teachers/senya.jpg",
+        alt: "piano teacher Senya",
+        instrument: "PIANO",
+        bio: "Senya has been studying classical piano since she was 4 and teaching classical piano since she was 14. She has completed her RCM Piano Level 8 Certificate by age 14 and RCM 10 Practical by age 16. In high school, Senya was active in the music department as a violinist, and co-president of the music council. With this involvement she gained experience in stage band, chamber string orchestra, competed in the Kiwanis music festival, and took on the role of a piano accompanist for classical violinists. Her current music goals include diversifying her performance repertoire and expanding her knowledge of music history. In the classroom, her goal is to help students build the necessary skills for success while having fun creating music."   
     },
     {
         name: "Matthew Leombruni",
@@ -140,7 +133,7 @@ export const teachersPageTeachersArray = [
     },
     {
         name: "Taras (Terry) Babyuk",
-        title: "Managing Director",
+        title: "Co-Founder, Managing Director",
         photo: "/images/teachers/terry.jpg",
         alt: "managing director and piano teacher Terry",
         instrument: "PIANO, MUSIC THEORY",
