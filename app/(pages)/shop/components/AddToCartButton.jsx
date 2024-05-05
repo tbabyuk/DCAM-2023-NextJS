@@ -10,7 +10,7 @@ export const AddToCartButton = ({item, id, origin}) => {
 
   return (
     <>
-        <button className="w-full mt-1 mx-auto bg-green-500 hover:bg-green-600 rounded text-gray-50 text-sm py-3" onClick={() => addToCart(item, id, origin)}>Add to Cart</button>
+        <button className="w-full mx-auto bg-green-500 hover:bg-green-600 rounded text-gray-50 text-sm py-3" onClick={() => addToCart(item, id, origin)}>Add to Cart</button>
     </>
   )
 }
