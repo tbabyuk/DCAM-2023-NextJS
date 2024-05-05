@@ -17,8 +17,7 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "abc"],
         stock: "available",
         quantity: 1,
-        source: "https://dcam-assets.static.domains/abc_book_1.jpg",
-        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_1.jpg?alt=media&token=53b0c8e2-26a8-445f-84c6-e5f25e2f5abc"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_1.jpg?alt=media&token=53b0c8e2-26a8-445f-84c6-e5f25e2f5abc"
     },
     {
         // live id confirmed
@@ -35,8 +34,7 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "abc"],
         stock: "available",
         quantity: 1,
-        source: "https://dcam-assets.static.domains/abc_book_2.jpg"
-        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_2.jpg?alt=media&token=c5e4f4a1-23cf-4702-8dc8-030e2b4f9a22"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_2.jpg?alt=media&token=c5e4f4a1-23cf-4702-8dc8-030e2b4f9a22"
     },
     {
         // live id confirmed
@@ -53,8 +51,7 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "abc"],
         stock: "available",
         quantity: 1,
-        source: "https://dcam-assets.static.domains/abc_book_3.jpg"
-        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_3.jpg?alt=media&token=1bdb0eca-315f-4cad-8b63-3fb54525ba42"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fabc_book_3.jpg?alt=media&token=1bdb0eca-315f-4cad-8b63-3fb54525ba42"
     },
 
 
@@ -128,8 +125,7 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "technical", "rcm"],
         stock: "available",
         quantity: 1,
-        source: "https://dcam-assets.static.domains/lvl1_technical_2015.jpg"
-        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_technical_2015.jpg?alt=media&token=5361736f-e3e1-47cf-8e4e-f1dc7dd445d9"
     },
     {
         // live id confirmed
@@ -146,8 +142,7 @@ export const pianoBooksList = [
         category: ["piano", "beginner", "repertoire", "rcm"],
         stock: "available",
         quantity: 1,
-        source: "https://dcam-assets.static.domains/lvl1_repertoire_2022.jpg"
-        // source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
+        source: "https://firebasestorage.googleapis.com/v0/b/dcam-website.appspot.com/o/shop_images%2Fbooks%2Fpiano%2Frcm%2Flvl1_repertoire_2022.jpg?alt=media&token=2ca1e475-463a-4581-9aef-9848c37401f8"
     },
     {
         // live id confirmed
