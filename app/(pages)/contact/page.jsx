@@ -24,7 +24,7 @@ const Contact = () => {
     
     return ( 
             <main className="contact-page bg-gray-100 pb-36">
-                <PageTitle title="Contact" image="/images/illustrations/contact-page.png" />
+                <PageTitle title="Contact" heatherImage="/images/illustrations/contact-page.png" alt="contact page illustration" />
 
                 <div className="grid md:grid-cols-2 lg:px-36 xl:px-52 py-20 bg-gray-100">
                     <section className="contact mb-10 md:mb-0 md:pe-5 lg:pe-10 px-5 lg:px-0">

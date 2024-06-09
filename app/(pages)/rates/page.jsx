@@ -39,11 +39,14 @@ const Rates = () => {
                 </section>
 
                 <section className="private-lesson-rates px-5 lg:px-36 xl:px-52">
-                    <h2 className="font-ovo text-3xl text-regRed font-semibold text-center mb-6">PRIVATE LESSON RATES</h2>
-                    <h4 className="font-ovo text-xl text-regRed text-center mb-14">2023-2024 ACADEMIC YEAR | Fall, Winter, Spring Terms</h4>
+                    <h2 className="font-ovo text-3xl text-regRed font-semibold text-center mb-14">PRIVATE LESSON RATES</h2>
+
+                    <h4 className="font-ovo text-xl text-regRed text-center mb-6">2024 SUMMER TERM</h4>
+                    <DownloadButton text="Download Payment Schedule" file="private_lessons_summer_2024.pdf" />
+
+                    <h4 className="font-ovo text-xl text-regRed text-center mt-14 mb-6">2023-2024 ACADEMIC YEAR | Fall, Winter, Spring Terms</h4>
                     <DownloadButton text="Download Payment Schedule" file="private_lessons_2023-2024.pdf" />
-                    {/* <h4 className="font-ovo text-xl text-regRed text-center">Summer 2023 Term</h4>
-                    <DownloadButton text="Download Payment Schedule" file="private-summer-2023.pdf" /> */}
+
                     <h4 className="font-ovo text-xl text-regRed font-semibold mt-16 mb-3">PRIVATE LESSONS (one-on-one):</h4>
                     <ul className="text-sm">
                         <li className="mb-2">* there is no sales tax on music lessons - rates are exactly as indicated</li>
@@ -58,11 +61,14 @@ const Rates = () => {
                 <PageDivider />
 
                 <section className="semi-private-lesson-rates px-5 lg:px-36 xl:px-52">
-                    <h2 className="font-ovo text-3xl text-regRed font-semibold text-center mb-6">SEMI-PRIVATE LESSON RATES</h2>
-                    <h4 className="font-ovo text-xl text-regRed text-center mb-14">2023-2024 ACADEMIC YEAR | Fall, Winter, Spring Terms</h4>
+                    <h2 className="font-ovo text-3xl text-regRed font-semibold text-center mb-14">SEMI-PRIVATE LESSON RATES</h2>
+
+                    <h4 className="font-ovo text-xl text-regRed text-center mb-6">2024 SUMMER TERM</h4>
+                    <DownloadButton text="Download Payment Schedule" file="semi_private_lessons_summer_2024.pdf" />
+
+                    <h4 className="font-ovo text-xl text-regRed text-center mt-14 mb-6">2023-2024 ACADEMIC YEAR | Fall, Winter, Spring Terms</h4>
                     <DownloadButton text="Download Payment Schedule" file="semi_private_lessons_2023-2024.pdf" />
-                    {/* <h4 className="font-ovo text-xl text-regRed text-center">Summer 2023 Term</h4>
-                    <DownloadButton text="Download Payment Schedule" file="semi-private-summer-2023.pdf" /> */}
+                    
                     <h4 className="font-ovo text-xl text-regRed font-semibold mt-16 mb-3">SEMI-PRIVATE LESSONS (two students per teacher):</h4>
                     <ul className="text-sm">
                         <li className="mb-2">* There is no sales tax on music lessons - rates are exactly as indicated</li>
